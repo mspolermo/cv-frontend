@@ -1,7 +1,7 @@
 {
   "name": "web-dev-knowledge",
   "version": "0.1.0",
-  "homepage": "https://gitname.github.io/web-dev-knowledge/",
+  "homepage": "https://mspolermo.github.io/web-dev-knowledge/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
