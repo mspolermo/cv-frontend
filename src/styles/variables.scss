@@ -1,0 +1,11 @@
+$backgroundColor: #fff;
+$headingColor: #000;
+$textColor: #000;
+$activeColor: rgb(60, 59, 59);
+
+%standartText {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+    color: $textColor;
+};

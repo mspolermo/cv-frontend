@@ -1,0 +1,22 @@
+@import './fonts.scss'; //Шрифты
+@import './nullstyle.scss'; // Нормализация
+@import '/src/styles/variables.scss'; //Переменные и миксины 
+
+body {
+    font-family: iviSans,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    background-color: $backgroundColor;
+}
+.container {
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 42px;
+    padding-right: 42px;
+}
+h1 {
+    text-align: center;
+    font-size: 34px;
+  }
+
