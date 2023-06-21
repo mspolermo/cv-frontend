@@ -1,0 +1,21 @@
+@import '/src/styles/variables.scss';
+
+.header{
+    margin-bottom: 29px;
+    &__profession{
+        margin: 102px 0 19px;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: $headingColor;
+    }
+    &__heading {
+        margin-bottom: 29px;
+
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 55px;
+        color: $headingColor;
+    }
+}

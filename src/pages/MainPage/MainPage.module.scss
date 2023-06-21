@@ -1,0 +1,8 @@
+@import '/src/styles/variables.scss';
+
+.mainPage {
+    &__summary {
+        margin-bottom: 64px;
+        line-height: 20px;
+    }
+}

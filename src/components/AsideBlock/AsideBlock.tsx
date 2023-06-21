@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import classes from "./AsideBlock.module.scss"
 import about from '../../static/about.json'
-// import photo from '../../static/photo.jpg'
 import AsideList from "../AsideList/AsideList";
 
 const AsideBlock:FC = () => {

@@ -27,5 +27,33 @@
             "TeamWork"
         ] 
     },
-    "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis."
+    "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+    "projects" : [
+        {
+            "id": 1,
+            "name": "first",
+            "link": "https://github.com/",
+            "tech": [
+                "HTML5",
+                "CSS3"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "second",
+            "link": "https://github2222.com/",
+            "tech": [
+                "JavaScript"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "third",
+            "link": "https://githubsd.com/",
+            "tech": [
+                "React.js",
+                "TypeScript"
+            ]
+        }
+    ]
 }

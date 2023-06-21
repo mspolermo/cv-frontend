@@ -1,0 +1,70 @@
+@import '/src/styles/variables.scss';
+
+.shortsProjectsBlock {
+    margin-bottom: 51px;
+    &__heading {
+        margin-bottom: 8px;
+    }
+    &__list {
+
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        cursor: pointer;
+        &:hover {
+            .shortsProjectsBlock{
+                &__text {
+                   color: green; 
+                }
+                &__center {
+                    border-bottom: 1px dashed green;
+                }
+            }
+            
+        }
+    }
+    &__left {
+        display: flex;
+        align-items: center;
+    }
+    &__text {
+        color: $headingColor;
+        &_id{
+            font-weight: 700;
+            &::after{
+                content: ".";
+                margin-right: 10px;
+            }
+        }
+    }
+    &__center {
+        flex: 2 0 auto;
+        min-height: 0.8em;
+        margin: 0 4px;
+        border-bottom: 1px dashed #A8A8A8;
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+        color: $textColor;
+        &::before{
+            content: '[';
+        }
+        &::after {
+            content: ']';
+        }
+    }
+    &__tech {
+        &::before{
+            content: ', ';
+        }
+        &:first-child{
+            &::before{
+                content: '';
+            }
+        }
+    }
+}
