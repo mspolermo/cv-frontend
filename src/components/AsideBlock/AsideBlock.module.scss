@@ -1,0 +1,16 @@
+.asideBlock {
+    background-color: #E0EBFE;
+    max-width: 370px;
+    padding: 40px 40px 0;
+    &__imgContainer {  
+        margin-bottom: 51px;
+    }
+    &__img {
+        max-width: 100%;
+        border-radius: 4px;
+        //max-height: 354px;
+    }
+    &__body {
+        padding-left: 20px;
+    }
+}

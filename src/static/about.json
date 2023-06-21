@@ -1,0 +1,31 @@
+{
+    "name": "Alexander Medvedev",
+    "photo": "/src/static/photo.jpg",
+    "contacts": [
+        {
+            "type": "tel",
+            "value": "+79826985468"
+        },
+        {
+            "type": "mailto",
+            "value": "mspolermo@gmail.com"     
+        }
+    ],
+    "skills": {
+        "hard" : [
+            "HTML5",
+            "CSS3",
+            "GIT",
+            "WebPack",
+            "JavaScript",
+            "React.js"
+        ],
+        "soft": [
+            "Scrum",
+            "Agile",
+            "GTD",
+            "TeamWork"
+        ] 
+    },
+    "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis."
+}
