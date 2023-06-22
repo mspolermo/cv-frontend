@@ -1,10 +1,15 @@
-$outsideBackgroundColor: #E5E5E5;
-$mainBackgroundColor: #fff;
+$backgroundColor-outside: #E5E5E5;
+$backgroundColor-main: #fff;
+$backgroundColor-aside: #E0EBFE;
+
 $headingColor: #000000;
 $textColor: #595959;
-
 $headingColor-aside: #161D2A;
 $textColor-aside: #161D2A;
-$iconColor-aside: #161D2A;
-$circleColor-aside: #6D9BF5;;
+$textColor-additional: "#A8A8A8";
 
+$iconColor-aside: #161D2A;
+$circleColor-aside: #6D9BF5;
+$circleColor-main: #595959;
+
+$hoverColor-additional: #6D9BF5;

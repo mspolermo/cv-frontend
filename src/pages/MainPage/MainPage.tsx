@@ -2,12 +2,15 @@ import React, {FC} from "react";
 import classes from "./MainPage.module.scss"
 import about from '../../static/about.json'
 import ProjectsBlock from "../../components/ProjectsBlock/ProjectsBlock";
+import WorkExperienceBlock from "../../components/WorkExperienceBlock/WorkExperienceBlock";
 
 const MainPage:FC = () => {
     return (
         <div className={"container-internal " + classes.mainPage}>
             <p className={"text " + classes.mainPage__summary}>{about.summary}</p>
-            <ProjectsBlock type="short"/>   
+            <ProjectsBlock type="short"/>
+            <h2 className={"heading-l2 " + classes.mainPage__heading}>Work-experience</h2> 
+            <WorkExperienceBlock type="short"/>
             <div className="">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ex, non vel, aliquam cupiditate nemo beatae pariatur et illum repellendus perspiciatis veniam mollitia odit numquam maxime. Iusto dolores nostrum in.
                 Veritatis quaerat optio ut corporis itaque? Accusamus nulla illum non natus distinctio nam rem expedita excepturi quasi eius repellat, repellendus magnam voluptas? Enim minima at eius nam? Nihil, veniam sapiente.

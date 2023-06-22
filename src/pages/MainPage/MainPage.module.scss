@@ -4,5 +4,9 @@
     &__summary {
         margin-bottom: 64px;
         line-height: 20px;
+        cursor: default;
+    }
+    &__heading{
+        margin-bottom: 12px;
     }
 }

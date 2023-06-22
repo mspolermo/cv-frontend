@@ -1,6 +1,7 @@
 {
     "name": "Alexander Medvedev",
     "photo": "/src/static/photo.jpg",
+    "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
     "contacts": [
         {
             "type": "tel",
@@ -27,7 +28,6 @@
             "TeamWork"
         ] 
     },
-    "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
     "projects" : [
         {
             "id": 1,
@@ -55,5 +55,59 @@
                 "TypeScript"
             ]
         }
+    ],
+    "works" : [
+        {
+            "title": "Front-End Developer",
+            "company": "Freelance",
+            "start": "September 2019",
+            "finish": "up to now ",
+            "descriptionShort": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "Risus commodo viverra maecenas.", 
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. "
+            ],
+            "descriptionFull": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "Risus commodo viverra maecenas.", 
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. "
+            ]
+        },
+        {
+            "title": "Manager",
+            "company": "Banderogusak & Co.",
+            "start": "March 2015",
+            "finish": "October 2018",
+            "descriptionShort": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua.", 
+                "Quis ipsum suspendisse ultrices gravida.",
+                "Risus commodo viverra maecenas."
+            ],
+            "descriptionFull": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "Risus commodo viverra maecenas.", 
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. "
+            ]
+        },
+        {
+            "title": "Manager",
+            "company": "BestUA Corp.",
+            "start": "June 2014",
+            "finish": "February 2015",
+            "descriptionShort": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "Quis ipsum suspendisse ultrices gravida.",
+                "Risus commodo viverra maecenas."
+            ],
+            "descriptionFull": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "Risus commodo viverra maecenas.", 
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. "
+            ]
+        }   
     ]
 }

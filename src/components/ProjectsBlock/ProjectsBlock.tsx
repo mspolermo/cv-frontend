@@ -7,8 +7,6 @@ interface ProjectsBlockProps {
 }
 
 const ProjectsBlock:FC<ProjectsBlockProps> = ({type}) => {
-    console.log(about.projects)
-
     switch (type) {
         case 'short':
             return (
@@ -40,15 +38,19 @@ const ProjectsBlock:FC<ProjectsBlockProps> = ({type}) => {
                                 <div className={classes.shortsProjectsBlock__center}></div>
 
                                 <div className={classes.shortsProjectsBlock__right}>
+
                                     {project.tech.map( tech => 
+
                                         <div key={tech} className={"text " 
-                                        + classes.shortsProjectsBlock__text 
-                                        + " "
-                                        + classes.shortsProjectsBlock__tech}
+                                                        + classes.shortsProjectsBlock__text 
+                                                        + " "
+                                                        + classes.shortsProjectsBlock__tech}
                                         >
-                                            {tech}
+                                                {tech}
                                         </div>
+
                                     )}  
+
                                 </div>
                                 
                             </li>    

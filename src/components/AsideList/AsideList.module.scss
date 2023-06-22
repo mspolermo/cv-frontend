@@ -14,11 +14,11 @@
             &:hover {
                 .asideList{
                     &__icon {
-                        fill: green;
-                        stroke: green;    
+                        fill: $hoverColor-additional;
+                        stroke: $hoverColor-additional;    
                     }
                     &__text {
-                        color: green;
+                        color: $hoverColor-additional;
                     }
                 }
             }

@@ -17,10 +17,10 @@
         &:hover {
             .shortsProjectsBlock{
                 &__text {
-                   color: green; 
+                   color: $hoverColor-additional; 
                 }
                 &__center {
-                    border-bottom: 1px dashed green;
+                    border-bottom: 1px dashed $hoverColor-additional;
                 }
             }
             
