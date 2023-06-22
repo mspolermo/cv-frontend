@@ -11,6 +11,8 @@ const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type}) => {
     return (
         <div className={classes.workExpirience}>
 
+            <h2 className={"heading-l2 " + classes.workExpirience__mainHead}>Work-experience</h2> 
+
             {about.works.map(work =>
 
                 <div key={work.start + work.finish} className={classes.workExpirience__block}>

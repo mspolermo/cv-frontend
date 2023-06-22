@@ -2,6 +2,9 @@
 
 .workExpirience {
     margin-bottom: 40px;
+    &__mainHead {
+        margin-bottom: 12px;
+    }
     &__block {
         margin-bottom: 20px;
     }
@@ -23,7 +26,7 @@
         }
         &_additional{
             padding-left: 4px;
-            color: $hoverColor-additional;
+            color: $headingColor-additional;
         }
     }
     &__date {

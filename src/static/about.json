@@ -109,5 +109,21 @@
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. "
             ]
         }   
+    ],
+    "education" : [
+        {
+            "title": "National University of Management",
+            "info": "Management of description",
+            "start": "March 2015",
+            "finish": "October 2018",
+            "rank": "Magistry (uncompleted)" 
+        },
+        {
+            "title": "University of RSVPU",
+            "info": "Management of description",
+            "start": "April 2013",
+            "finish": "November 2014",
+            "rank": "Specialty"  
+        }
     ]
 }
