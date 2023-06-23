@@ -3,13 +3,10 @@
 @import '/src/styles/variables.scss'; //Переменные и миксины 
 
 :root {
-    //background-color: $backgroundColor-outside;
+    background-color: $backgroundColor-outside;
 }
 .app {
-    
-    background-color: $backgroundColor-outside;
-    padding: 40px 40px;
-    margin: 0 auto;
+    padding: 40px;
 }
 body {
     font-family: iviSans,sans-serif;
@@ -18,11 +15,15 @@ body {
 }
 .container {
     max-width: 1200px;
+    margin: 0 auto;
 
     display: flex;
     background-color: $backgroundColor-main;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom: 40px;
+}
+.rightPart {
+    flex: 1 0 75%;
+    padding-right: 40px;
 }
 .container-internal {
     padding: 0 40px;
@@ -40,4 +41,24 @@ body {
     color: $textColor;
 }
 
+@media (max-width:1024px) {
+    :root {
+        background-color: $backgroundColor-main;
+    }
+    .app {
+        display: flex;
+        padding: 0;
+    }
+    .container {
+        min-height: 100vh;
+        min-width: 100vw;
+        height: 100%;
+        width: 100%;
+        box-shadow: none;
+    }
+    .rightPart {
+        flex: 1 0 75%;
+        padding-right: 40px;
+    }
+}
 

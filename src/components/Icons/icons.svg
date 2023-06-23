@@ -38,5 +38,12 @@
     <symbol id='icon-any' viewBox="0 0 1024 1024" >
         <path d="M364.8 106.666667L298.666667 172.8 637.866667 512 298.666667 851.2l66.133333 66.133333L768 512z"></path>
     </symbol>
+
+    <symbol id='icon-burger' viewBox="0 0 24 24" fill="none" >
+        <path d="M5 12H20" strokeLinecap="round"></path> 
+        <path d="M5 17H20" strokeLinecap="round"></path> 
+        <path d="M5 7H20" strokeLinecap="round"></path>
+    </symbol>
+    
 </svg>
 

@@ -4,6 +4,7 @@ import about from '../../static/about.json'
 import ProjectsBlock from "../../components/ProjectsBlock/ProjectsBlock";
 import WorkExperienceBlock from "../../components/WorkExperienceBlock/WorkExperienceBlock";
 import EducationBlock from "../../components/EducationBlock/EducationBlock";
+import AboutBlock from "../../components/AboutBlock/AboutBlock";
 
 const MainPage:FC = () => {
     return (
@@ -12,6 +13,7 @@ const MainPage:FC = () => {
             <ProjectsBlock type="short"/>
             <WorkExperienceBlock type="short"/>
             <EducationBlock type="short"/>
+            <AboutBlock type="short"/>
         </div>
     )
 }

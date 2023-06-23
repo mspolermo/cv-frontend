@@ -1,0 +1,46 @@
+@import '/src/styles/variables.scss';
+
+.aboutBlock {
+    margin-bottom: 40px;
+    &__heading{
+        margin-bottom: 12px;
+    }
+    &__block {
+        &_short {
+            display: none;
+            &:first-of-type {
+                display: block;
+            }    
+        }
+        
+        
+    }
+    &__stringL1{
+        display: flex;
+        align-items: center;
+        cursor: default;
+
+    }
+    &__circle {
+        width: 4px;
+        margin-right: 10px;
+        fill: $circleColor-main;
+        stroke: $circleColor-main;
+    }
+    &__text {
+
+    }
+    &__outBlock {
+
+    }
+    &__innerBlock{
+
+    }
+    &__stringL2{
+        cursor: default;
+        &::before {
+            content: '-';
+            margin: 0 1em;
+        }
+    }
+}

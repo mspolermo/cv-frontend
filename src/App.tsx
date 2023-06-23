@@ -3,19 +3,13 @@ import './styles/App.scss';
 import AsideBlock from './components/AsideBlock/AsideBlock';
 import MainPage from './pages/MainPage/MainPage';
 import Header from './components/Header/Header';
+import Routing from './components/Routing/Routing';
 
 function App() {
   return (
     <div className="app">
-      <div className="container">
-        <AsideBlock />
-        <div>
-          <Header />
-          <MainPage /> 
-        </div>
-      </div>  
+      <Routing />  
     </div>
-
   );
 }
 

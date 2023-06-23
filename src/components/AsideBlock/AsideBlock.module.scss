@@ -4,6 +4,7 @@
     background-color: $backgroundColor-aside;
     max-width: 370px;
     padding: 40px 40px 0;
+    
     &__imgContainer {  
         margin-bottom: 51px;
     }
@@ -13,5 +14,11 @@
     }
     &__body {
         padding-left: 20px;
+    }
+}
+
+@media (max-width:1024px) {
+    .asideBlock {
+        display: none;
     }
 }
