@@ -6,8 +6,8 @@ import Icons from "../Icons/Icons";
 const Header:FC = () => {
     return (
         <div className={classes.header}>
-            <div>
-                <Icons size="40" color="black" name="burger" />
+            <div >
+                <Icons size="40" color="black" name="burger" className={classes.header__burger}/>
             </div>
             <div className="container-internal">
                 <p className={classes.header__profession}>Front-End Developer</p>

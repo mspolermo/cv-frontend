@@ -19,4 +19,20 @@
         line-height: 55px;
         color: $headingColor;
     }
+    &__burger {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        &__burger {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+    }
 }
