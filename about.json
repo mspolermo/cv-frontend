@@ -1,0 +1,151 @@
+{
+    "name": "Alexander Medvedev",
+    "photo": "/src/static/photo.jpg",
+    "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+    "contacts": [
+        {
+            "type": "tel",
+            "value": "+79826985468"
+        },
+        {
+            "type": "mailto",
+            "value": "mspolermo@gmail.com"     
+        }
+    ],
+    "skills": {
+        "hard" : [
+            "HTML5",
+            "CSS3",
+            "GIT",
+            "WebPack",
+            "JavaScript",
+            "React.js"
+        ],
+        "soft": [
+            "Scrum",
+            "Agile",
+            "GTD",
+            "TeamWork"
+        ] 
+    },
+    "projects" : [
+        {
+            "id": 1,
+            "name": "first",
+            "link": "https://github.com/",
+            "tech": [
+                "HTML5",
+                "CSS3"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "second",
+            "link": "https://github2222.com/",
+            "tech": [
+                "JavaScript"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "third",
+            "link": "https://githubsd.com/",
+            "tech": [
+                "React.js",
+                "TypeScript"
+            ]
+        }
+    ],
+    "works" : [
+        {
+            "title": "Front-End Developer",
+            "company": "Freelance",
+            "start": "September 2019",
+            "finish": "up to now ",
+            "descriptionShort": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "Risus commodo viverra maecenas.", 
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. "
+            ],
+            "descriptionFull": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "Risus commodo viverra maecenas.", 
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. "
+            ]
+        },
+        {
+            "title": "Manager",
+            "company": "Banderogusak & Co.",
+            "start": "March 2015",
+            "finish": "October 2018",
+            "descriptionShort": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua.", 
+                "Quis ipsum suspendisse ultrices gravida.",
+                "Risus commodo viverra maecenas."
+            ],
+            "descriptionFull": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "Risus commodo viverra maecenas.", 
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. "
+            ]
+        },
+        {
+            "title": "Manager",
+            "company": "BestUA Corp.",
+            "start": "June 2014",
+            "finish": "February 2015",
+            "descriptionShort": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "Quis ipsum suspendisse ultrices gravida.",
+                "Risus commodo viverra maecenas."
+            ],
+            "descriptionFull": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "Risus commodo viverra maecenas.", 
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. "
+            ]
+        }   
+    ],
+    "education" : [
+        {
+            "title": "Alibra School",
+            "info": "English lessons",
+            "start": "March 2015",
+            "finish": "May 2018",
+            "rank": "English - B1" 
+        },
+        {
+            "title": "National University of Management",
+            "info": "Management of description",
+            "start": "March 2015",
+            "finish": "October 2018",
+            "rank": "Magistry (uncompleted)" 
+        },
+        {
+            "title": "University of RSVPU",
+            "info": "Management of description",
+            "start": "April 2013",
+            "finish": "November 2014",
+            "rank": "Specialty"  
+        }
+    ],
+    "about" : [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod", 
+        {
+            "head" : "Lorem ipsum dolor sit amet",
+            "value": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod" 
+            ]
+        }
+    ]
+}
