@@ -1,13 +1,10 @@
 import React, { FC } from "react";
 import classes from "./AsideList.module.scss"
 import Icons from "../Icons/Icons";
-
-interface AsideListProps {
-    name:string, 
-    array: Array<string> | { type: string; value: string; }[]
-}
+import { AsideListProps } from "../../types/block";
 
 const AsideList:FC<AsideListProps> = ({name, array}) => {
+    
     return (
         <div className={classes.asideList}>
             <h2 className={"heading-l2 " + classes.asideList__heading}>{name}</h2>

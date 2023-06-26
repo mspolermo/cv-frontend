@@ -1,17 +1,19 @@
 import React, {FC} from "react";
 import classes from "./EducationBlock.module.scss"
-import about from '../../static/about.json'
+import { EducationBlockProps } from "../../types/block";
+import { useTypedSelector } from "../../hooks/useTypedSelector";
 
-interface EducationBlockProps {
-    type: 'short' | 'full';
-}
+
 const EducationBlock:FC<EducationBlockProps> = ({type}) => {
+
+    const {user} = useTypedSelector(state => state.user)
+
     return (
         <div className={classes.educationBlock}>
 
             <h2 className={"heading-l2 " + classes.educationBlock__heading}>Education</h2>
 
-            { about.education.map( educate =>
+            { user.education.map( educate =>
 
                 <div key={educate.start + educate.finish} className={classes.educationBlock__block}>
                     

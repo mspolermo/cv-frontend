@@ -9,7 +9,7 @@ const Routing = () => {
 		<div className="container">
 			<AsideBlock />
 			<div className='rightPart'>
-				<Header />
+				<Header/>
 				<Routes>
 					{/* <Route path={'/movies-website/person/:id'} element={<PersonPage />} /> */}
 					<Route path={'/movies-website'} element={<MainPage />} />

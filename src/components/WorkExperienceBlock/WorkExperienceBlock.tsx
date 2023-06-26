@@ -1,19 +1,19 @@
 import React, {FC} from "react";
 import classes from "./WorkExperienceBlock.module.scss"
-import about from '../../static/about.json'
 import Icons from "../Icons/Icons";
-
-interface WorkExperienceBlockProps {
-    type: "short" | "full" 
-}
+import { WorkExperienceBlockProps } from "../../types/block";
+import { useTypedSelector } from "../../hooks/useTypedSelector";
 
 const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type}) => {
+
+    const {user} = useTypedSelector(state => state.user)
+
     return (
         <div className={classes.workExpirience}>
 
             <h2 className={"heading-l2 " + classes.workExpirience__mainHead}>Work-experience</h2> 
 
-            {about.works.map(work =>
+            {user.works.map(work =>
 
                 <div key={work.start + work.finish} className={classes.workExpirience__block}>
                     

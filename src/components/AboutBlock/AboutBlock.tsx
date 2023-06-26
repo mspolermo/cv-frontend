@@ -1,19 +1,18 @@
 import React, { FC } from "react";
 import classes from "./AboutBlock.module.scss"
-import about from '../../static/about.json'
 import Icons from "../Icons/Icons";
-
-interface AboutBlockProps {
-    type: "short" | 'full'
-}
+import { AboutBlockProps } from "../../types/block";
+import { useTypedSelector } from "../../hooks/useTypedSelector";
 
 const AboutBlock:FC<AboutBlockProps> =({type}) => {
+
+    const {user} = useTypedSelector(state => state.user)
 
     return (
         <div className={classes.aboutBlock}>
             <h2 className={"heading-l2 " + classes.aboutBlock__heading}>About me</h2>
             
-            {about.about.map( (point, i) =>
+            {user.about.map( (point, i) =>
             <div key={i} className={ (type == 'short') 
                 ?
                     classes.aboutBlock__block + " " + classes.aboutBlock__block_short

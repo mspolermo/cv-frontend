@@ -1,12 +1,12 @@
 import React, {FC} from "react";
 import classes from "./ProjectsBlock.module.scss"
-import about from '../../static/about.json'
-
-interface ProjectsBlockProps {
-    type: "full" | "short"
-}
+import { useTypedSelector } from "../../hooks/useTypedSelector";
+import { ProjectsBlockProps } from "../../types/block";
 
 const ProjectsBlock:FC<ProjectsBlockProps> = ({type}) => {
+
+    const {user} = useTypedSelector(state => state.user)
+
     switch (type) {
         case 'short':
             return (
@@ -15,7 +15,7 @@ const ProjectsBlock:FC<ProjectsBlockProps> = ({type}) => {
                     <h2 className={"heading-l2 " + classes.shortsProjectsBlock__heading}>Projects</h2>
                     
                     <ul className={classes.shortsProjectsBlock__list}>
-                        {about.projects.map( project => 
+                        {user.projects.map( project => 
                             <li key={project.id} className={classes.shortsProjectsBlock__item}>
 
                                 <div className={classes.shortsProjectsBlock__left}>
