@@ -62,6 +62,7 @@
             "company": "Freelance",
             "start": "September 2019",
             "finish": "up to now ",
+            "important" : true,
             "descriptionShort": [
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -80,6 +81,7 @@
             "company": "Banderogusak & Co.",
             "start": "March 2015",
             "finish": "October 2018",
+            "important" : true,
             "descriptionShort": [
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua.", 
                 "Quis ipsum suspendisse ultrices gravida.",
@@ -89,7 +91,9 @@
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 "Risus commodo viverra maecenas.", 
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. "
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. ",
+                "Risus commodo viverra maecenasas.",
+                "Risus commodo viverra maecenasfds."
             ]
         },
         {
@@ -97,16 +101,19 @@
             "company": "BestUA Corp.",
             "start": "June 2014",
             "finish": "February 2015",
+            "important" : false,
             "descriptionShort": [
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 "Quis ipsum suspendisse ultrices gravida.",
-                "Risus commodo viverra maecenas."
+                "Risus commodo viverra maecenassdf."
             ],
             "descriptionFull": [
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 "Risus commodo viverra maecenas.", 
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. "
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. ",
+                "Risus commodo viverra maecenasasf.",
+                "Risus commodo viverra maecenasasd."
             ]
         }   
     ],
@@ -138,6 +145,15 @@
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod", 
+        {
+            "head" : "Lorem ipsum dolor sit amet",
+            "value": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod" 
+            ]
+        },
         {
             "head" : "Lorem ipsum dolor sit amet",
             "value": [
