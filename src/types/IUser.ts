@@ -1,4 +1,4 @@
-interface IUser {
+export interface IUser {
     "name": string,
     "photo": string,
     "summary" : string,
@@ -24,6 +24,7 @@ interface IUser {
             "company": string,
             "start": string,
             "finish": string,
+            "important" : boolean,
             "descriptionShort": [string],
             "descriptionFull": [string]
         }[],
@@ -42,29 +43,43 @@ interface IUser {
         }
     ]
 }
-
-export enum UserActionTypes {
-    FETCH_USER = 'FETCH_USER',
-    FETCH_USER_SUCCESS = 'FETCH_USER_SUCCESS',
-    FETCH_USER_ERROR = 'FETCH_USER_ERROR'
+export const userInit: IUser = {
+    "name": "",
+    "photo": "",
+    "summary" : "",
+    "contacts": 
+        [{
+            "type": "tel",
+            "value": ""
+        }],
+    "skills": {
+        "hard" : [""],
+        "soft": [""] 
+    },
+    "projects" : 
+        [{
+            "id": 0,
+            "name": "",
+            "link": "",
+            "tech": [""]
+        }],
+    "works" : 
+        [{
+            "title": "",
+            "company": "",
+            "start": "",
+            "finish": "",
+            "important" : false,
+            "descriptionShort": [""],
+            "descriptionFull": [""]
+        }],
+    "education" : 
+        [{
+            "title": "",
+            "info": "",
+            "start": "",
+            "finish": "",
+            "rank": "" 
+        } ],
+    "about" : [""]
 }
-
-export interface UserState {
-    user: IUser;
-    loading: boolean;
-    error: null | string;
-}
-interface FetchUsersAction {
-    type: UserActionTypes.FETCH_USER;
-}
-interface FetchUsersSuccessAction {
-    type: UserActionTypes.FETCH_USER_SUCCESS;
-    payload: IUser
-}
-interface FetchUsersErrorAction {
-    type: UserActionTypes.FETCH_USER_ERROR;
-    payload: string;
-}
-
-export type UserAction = FetchUsersAction | FetchUsersSuccessAction | FetchUsersErrorAction;
-

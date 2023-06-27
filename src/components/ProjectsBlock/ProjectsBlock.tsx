@@ -2,17 +2,23 @@ import React, {FC} from "react";
 import classes from "./ProjectsBlock.module.scss"
 import { useTypedSelector } from "../../hooks/useTypedSelector";
 import { ProjectsBlockProps } from "../../types/block";
+import { useNavigate } from "react-router-dom";
 
 const ProjectsBlock:FC<ProjectsBlockProps> = ({type}) => {
 
-    const {user} = useTypedSelector(state => state.user)
+    const {user} = useTypedSelector(state => state.user);
+    const navigate = useNavigate();
 
     switch (type) {
         case 'short':
             return (
                 <div className={classes.shortsProjectsBlock}>
 
-                    <h2 className={"heading-l2 " + classes.shortsProjectsBlock__heading}>Projects</h2>
+                    <h2 className={"heading-l2 " + classes.shortsProjectsBlock__heading}
+                        onClick={() => navigate('/cv-frontend/projects')}
+                    >
+                        Projects
+                    </h2>
                     
                     <ul className={classes.shortsProjectsBlock__list}>
                         {user.projects.map( project => 

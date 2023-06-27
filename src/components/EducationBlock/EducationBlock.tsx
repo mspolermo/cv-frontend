@@ -2,16 +2,22 @@ import React, {FC} from "react";
 import classes from "./EducationBlock.module.scss"
 import { EducationBlockProps } from "../../types/block";
 import { useTypedSelector } from "../../hooks/useTypedSelector";
+import { useNavigate } from "react-router-dom";
 
 
 const EducationBlock:FC<EducationBlockProps> = ({type}) => {
 
-    const {user} = useTypedSelector(state => state.user)
+    const {user} = useTypedSelector(state => state.user);
+    const navigate = useNavigate();
 
     return (
         <div className={classes.educationBlock}>
 
-            <h2 className={"heading-l2 " + classes.educationBlock__heading}>Education</h2>
+            <h2 className={"heading-l2 " + classes.educationBlock__heading}
+                onClick={() => navigate('/cv-frontend/education')}
+            >
+                Education
+            </h2>
 
             { user.education.map( educate =>
 
@@ -19,7 +25,7 @@ const EducationBlock:FC<EducationBlockProps> = ({type}) => {
                     
                     <h4 className={classes.educationBlock__title}>{educate.title}</h4>
 
-                    {(type == 'full') && <p className={"text " + classes.educationBlock__info}>
+                    {(type === 'full') && <p className={"text " + classes.educationBlock__info}>
                         {educate.info}
                     </p>}
                     

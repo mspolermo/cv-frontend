@@ -1,10 +1,14 @@
 @import '/src/styles/variables.scss';
 
 .asideBlock {
+    flex: 1 0 25%;
+    display: flex;
     background-color: $backgroundColor-aside;
     max-width: 370px;
     padding: 40px 40px 0;
-    
+    &__right{
+        display: none;
+    }
     &__imgContainer {  
         margin-bottom: 51px;
     }
@@ -19,6 +23,78 @@
 
 @media (max-width:1024px) {
     .asideBlock {
-        display: none;
+        padding: 20px;
+        flex: 0 0 0% ;
+        &__active {
+        }
+        &__right {
+            display: block;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+            height: 20px;
+            transition: 0.5s ease transform;
+            &_active {
+                transform: rotate(180deg);
+            }
+        }
+        &__left {
+            display: none;
+            &_active {
+                min-width: 100%;
+                display: block;
+                padding: 40px 24px 0; 
+            }
+        }
+    }
+}
+@media (max-width:768px) {
+    .asideBlock {
+        &__active {
+            min-width: 100%;
+        }
+        &__left {
+            &_active {
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }
+        &__img {
+            max-height: 480px;
+        }
+
+    }
+}
+@media (max-width: 620px) {
+    .asideBlock {
+        &__active {
+            min-width: 100%;
+        }
+        &__left {
+            &_active {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+        }
+        &__imgContainer{
+            align-self: center;
+            justify-self: center;
+        }
+        &__img {
+            max-height: 480px;
+            
+        }
+
+    }
+}
+@media (max-width: 450px) {
+    .asideBlock {
+        &__body {
+            padding-left: 0;
+        }
+
     }
 }

@@ -18,12 +18,6 @@
         line-height: 20px;
         color: $headingColor;
         cursor: default;
-        &_main{
-            &:hover {
-                color: $hoverColor-additional;
-                cursor: pointer;
-            }
-        }
         &_additional{
             padding-left: 4px;
             color: $headingColor-additional;

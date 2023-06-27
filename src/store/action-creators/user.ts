@@ -1,5 +1,5 @@
 import { Dispatch } from "redux"
-import { UserAction, UserActionTypes } from "../../types/store"
+import { UserAction, UserActionTypes } from "../../types/userStore"
 import type {} from 'redux-thunk/extend-redux'
 import axios from "axios"
 
@@ -11,7 +11,6 @@ export const fetchUser = () => {
             setTimeout( () => {
                 dispatch({type: UserActionTypes.FETCH_USER_SUCCESS, payload: response.data})    
             }, 500)
-            
         } catch (e) {
             dispatch( {type: UserActionTypes.FETCH_USER_ERROR, payload: 'Произошла ошибка'} )
         }

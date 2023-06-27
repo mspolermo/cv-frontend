@@ -15,11 +15,11 @@
             &:hover {
                 .asideList{
                     &__icon {
-                        fill: $hoverColor-additional;
-                        stroke: $hoverColor-additional;    
+                        fill: $hoverColor;
+                        stroke: $hoverColor;    
                     }
                     &__text {
-                        color: $hoverColor-additional;
+                        color: $hoverColor;
                     }
                 }
             }

@@ -11,11 +11,14 @@ import { fetchUser } from "../../store/action-creators/user";
 const MainPage:FC = () => {
     const {user, error, loading} = useTypedSelector(state => state.user)
     const dispatch = useDispatch()
-	console.log(loading)
 
     useEffect(() => {
         dispatch(fetchUser())
-    },[])
+    },[dispatch])
+
+    useEffect(() => {
+        document.body.scrollTop = document.documentElement.scrollTop = 0
+    }, [])
 
     if (loading) {
         return (

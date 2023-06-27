@@ -1,7 +1,14 @@
 @import '/src/styles/variables.scss';
 
+%transition {
+    transition: 0.3s ease color;
+}
+
 .shortsProjectsBlock {
     margin-bottom: 51px;
+
+
+
     &__heading {
         margin-bottom: 8px;
     }
@@ -17,10 +24,13 @@
         &:hover {
             .shortsProjectsBlock{
                 &__text {
-                   color: $hoverColor-additional; 
+                    color: $hoverColor; 
                 }
                 &__center {
-                    border-bottom: 1px dashed $hoverColor-additional;
+                    border-bottom: 1px dashed $hoverColor;
+                }
+                &__right {
+                    color: $hoverColor; 
                 }
             }
             
@@ -32,8 +42,10 @@
     }
     &__text {
         color: $headingColor;
+        @extend %transition; 
         &_id{
             font-weight: 700;
+            @extend %transition; 
             &::after{
                 content: ".";
                 margin-right: 10px;
@@ -50,6 +62,7 @@
         display: flex;
         align-items: center;
         color: $textColor;
+        @extend %transition; 
         &::before{
             content: '[';
         }

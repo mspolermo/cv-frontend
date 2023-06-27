@@ -1,45 +1,8 @@
-import { UserAction, UserState, UserActionTypes } from "../../types/store"
+import { userInit } from "../../types/IUser"
+import { UserAction, UserState, UserActionTypes } from "../../types/userStore"
 
 const initialState: UserState = {
-    user: {
-        "name": "",
-        "photo": "",
-        "summary" : "",
-        "contacts": 
-            [{
-                "type": "tel",
-                "value": ""
-            }],
-        "skills": {
-            "hard" : [""],
-            "soft": [""] 
-        },
-        "projects" : 
-            [{
-                "id": 0,
-                "name": "",
-                "link": "",
-                "tech": [""]
-            }],
-        "works" : 
-            [{
-                "title": "",
-                "company": "",
-                "start": "",
-                "finish": "",
-                "descriptionShort": [""],
-                "descriptionFull": [""]
-            }],
-        "education" : 
-            [{
-                "title": "",
-                "info": "",
-                "start": "",
-                "finish": "",
-                "rank": "" 
-            } ],
-        "about" : [""]
-    },
+    user: userInit,
     loading: false,
     error: null
 }
