@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import classes from "./AsideBlock.module.scss"
-import AsideList from "../AsideList/AsideList";
+import AsideList from "../Lists/AsideList/AsideList";
 import { useTypedSelector } from "../../hooks/useTypedSelector";
 import { useDispatch } from "react-redux";
 import { menuStatusFalse, menuStatusTrue } from "../../store/reducers/menuStatusReducer";

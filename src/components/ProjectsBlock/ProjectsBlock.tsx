@@ -36,7 +36,7 @@ const ProjectsBlock:FC<ProjectsBlockProps> = ({type}) => {
                                                     + classes.shortsProjectsBlock__text 
                                                     + " "}
                                     >
-                                            {project.link}
+                                            {project.name}
                                     </div>
 
                                 </div>

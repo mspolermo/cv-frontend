@@ -4,9 +4,10 @@ import { useTypedSelector } from "../../hooks/useTypedSelector";
 import { useDispatch } from "react-redux";
 import { fetchUser } from "../../store/action-creators/user";
 import ProjectsBlock from "../../components/ProjectsBlock/ProjectsBlock";
-import WorkExperienceBlock from "../../components/WorkExperienceBlock/WorkExperienceBlock";
-import EducationBlock from "../../components/EducationBlock/EducationBlock";
-import AboutBlock from "../../components/AboutBlock/AboutBlock";
+import WorkExperienceList from "../../components/Lists/WorkExperienceList/WorkExperienceList";
+import EducationList from "../../components/Lists/EducationList/EducationList";
+import Loader from "../../components/UI/Loader/Loader";
+import AboutList from "../../components/Lists/AboutList/AboutList";
 
 interface ListPageProps {
     type: 'projects' | 'works' | 'education' | 'about' 
@@ -26,7 +27,9 @@ const ListPage:FC<ListPageProps> = ({type}) => {
 
     if (loading) {
         return (
-            <div></div>
+            <div>
+                <Loader />
+            </div>
         )
     }
     if (error) {
@@ -44,19 +47,19 @@ const ListPage:FC<ListPageProps> = ({type}) => {
         case 'works':
             return (
                 <div className={"container-internal " + classes.mainPage}>
-                    <WorkExperienceBlock type="full"/>    
+                    <WorkExperienceList type="full"/>    
                 </div>
             )
         case 'education':
             return (
                 <div className={"container-internal " + classes.mainPage}>
-                    <EducationBlock type="full"/>
+                    <EducationList type="full"/>
                 </div>
             )
         case 'about':
             return (
                 <div className={"container-internal " + classes.mainPage}>
-                    <AboutBlock type="full"/>
+                    <AboutList type="full"/>
                 </div>
             )      
     }

@@ -15,8 +15,20 @@ export interface IUser {
         {
             "id": number,
             "name": string,
-            "link": string,
-            "tech": [string]
+            "repo": string,
+            "ghPage": string,
+            "important" : boolean,
+            "tech": string[],
+            "description": {"title": string, "info": string} | {
+                "title": string, 
+                "info": string | (string | {
+                    "titleL2": string,
+                    "infoL2": (string | { 
+                        "titleL3": string,
+                        "infoL3": string[] 
+                        })[]
+                })[]   
+            }[]
         }[],
     "works" : 
         {
@@ -32,9 +44,9 @@ export interface IUser {
         {
             "title": string,
             "info": string,
-            "start": string,
-            "finish": string,
-            "rank": string 
+            "year": string,
+            "rank": string,
+            "important" : boolean 
         } [],
     "about" : [
         string | {
@@ -60,8 +72,16 @@ export const userInit: IUser = {
         [{
             "id": 0,
             "name": "",
-            "link": "",
-            "tech": [""]
+            "repo": "",
+            "ghPage": "",
+            "important" : false,
+            "tech": [""],
+            "description" : [
+                {
+                    "title": "",
+                    "info": ""
+                }
+            ]
         }],
     "works" : 
         [{
@@ -77,9 +97,9 @@ export const userInit: IUser = {
         [{
             "title": "",
             "info": "",
-            "start": "",
-            "finish": "",
-            "rank": "" 
+            "year": "",
+            "rank": "",
+            "important" : false, 
         } ],
     "about" : [""]
 }

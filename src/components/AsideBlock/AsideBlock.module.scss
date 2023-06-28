@@ -1,10 +1,15 @@
 @import '/src/styles/variables.scss';
 
 .asideBlock {
-    flex: 1 0 25%;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // bottom: 0;
+
+    flex: 1 1 25% ;
     display: flex;
     background-color: $backgroundColor-aside;
-    max-width: 370px;
+    //max-width: 370px;
     padding: 40px 40px 0;
     &__right{
         display: none;
@@ -24,8 +29,9 @@
 @media (max-width:1024px) {
     .asideBlock {
         padding: 20px;
-        flex: 0 0 0% ;
+        flex: 0 1 0% ;
         &__active {
+            flex: 1 1 25% ;
         }
         &__right {
             display: block;
@@ -95,6 +101,5 @@
         &__body {
             padding-left: 0;
         }
-
     }
 }

@@ -1,12 +1,11 @@
 @import '/src/styles/variables.scss';
 
 .educationBlock {
-    padding-bottom: 40px;
-    &__heading{
-        margin-bottom: 12px;
-    }
     &__block {
         margin-bottom: 10px;
+        &_full {
+            margin-bottom: 28px;
+        }
     }
     &__title{
         font-weight: 700;
@@ -16,6 +15,8 @@
         cursor: default;
     }
     &__info{
+        margin-top: 4px;
+        font-style: italic;
         cursor: default;
     }
     &__description{

@@ -1,0 +1,39 @@
+@import '/src/styles/variables.scss';
+
+.breadcrumbs {
+    margin: 102px 0 19px;
+    display: flex;
+    &__block {
+    }
+    &__crumb{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: $headingColor;
+
+        transition: 0.3s ease color;
+        cursor: pointer;
+
+        &::first-letter {
+            text-transform: uppercase;
+        }
+        &::after{
+            content: '>';
+            padding: 0 4px;
+            vertical-align: middle;
+        }
+        &:hover {
+            color: $hoverColor;
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .breadcrumbs{
+        margin-top: 14px;
+        &__crumb {
+            font-weight: 600;
+            font-size: 12px;
+        }
+    }
+}

@@ -2,21 +2,27 @@
 
 .header{
     margin-bottom: 29px;
-    &__profession{
-        margin: 102px 0 19px;
-
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 17px;
-        color: $headingColor;
-        cursor: default;
-    }
     &__heading {
-        margin-bottom: 29px;
-
         font-weight: 700;
         font-size: 45px;
         line-height: 55px;
         color: $headingColor;
+        cursor: default;
+    }
+}
+
+@media (max-width: 620px) {
+    .header{
+        &__heading {
+            font-size: 34px;
+        }
+    }
+}
+@media (max-width: 450px) {
+    .header{
+        margin-bottom: 10px;
+        &__heading {
+            font-size: 28px;
+        }
     }
 }

@@ -9,7 +9,8 @@ import { useDispatch } from 'react-redux';
 import { fetchMain } from '../../store/action-creators/main';
 
 const Routing = () => {
-	const {mainLoading, mainError} = useTypedSelector(state => state.main)
+	const {mainLoading, mainError} = useTypedSelector(state => state.main);
+	const {menuStatus} = useTypedSelector(state => state.menuStatus);
 	const dispatch = useDispatch();
 
 	useEffect(() => {
@@ -31,7 +32,7 @@ const Routing = () => {
 	return (
 		<div className="container">
 			<AsideBlock />
-			<div className='rightPart'>
+			<div className={(!menuStatus) ? "rightPart" : "rightPart rightPart__narrow" }>
 				<Header/>
 				<Routes>
 					{/* <Route path={'/movies-website/person/:id'} element={<PersonPage />} /> */}

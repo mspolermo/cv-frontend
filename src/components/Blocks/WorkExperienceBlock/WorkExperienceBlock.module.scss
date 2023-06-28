@@ -1,13 +1,6 @@
 @import '/src/styles/variables.scss';
 
 .workExpirience {
-    margin-bottom: 40px;
-    &__mainHead {
-        margin-bottom: 12px;
-    }
-    &__block {
-        margin-bottom: 20px;
-    }
     &__headingBlock {
         display: flex;
         margin-bottom: 6px;
@@ -44,9 +37,10 @@
         line-height: 20px;
     }
     &__circle{
-        width: 4px;
+        max-width: 6px;
+        min-width: 6px;
         margin-right: 10px;
         fill: $circleColor-main;
         stroke: $circleColor-main;
     }
-}
+} 
