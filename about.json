@@ -59,9 +59,9 @@
     "works" : [
         {
             "title": "Front-End Developer",
-            "company": "Freelance",
-            "start": "September 2019",
-            "finish": "up to now ",
+            "company": "Hotels.ru",
+            "start": "02.2023",
+            "finish": "06.2023",
             "important" : true,
             "descriptionShort": [
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
@@ -77,90 +77,153 @@
             ]
         },
         {
-            "title": "Manager",
-            "company": "Banderogusak & Co.",
-            "start": "March 2015",
-            "finish": "October 2018",
+            "title": "Системный инженер",
+            "company": "SAP EMEA",
+            "start": "04.2018",
+            "finish": "02.2023",
             "important" : true,
             "descriptionShort": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua.", 
-                "Quis ipsum suspendisse ultrices gravida.",
-                "Risus commodo viverra maecenas."
+                "IT Support 2nd line - ежедневная работа в тикет-трекинговой системе ServiceNow на английском (аналог Jira): публикация пошаговых рекомендаций по исправлению проблем/багов/дефектов обнаруженных пользователями, вертикальный форвард проблем/багов, траблшутинг, поиск ошибок в логах и т.д.", 
+                "Работа в распределённой команде: регулярные митинги по текущему статус-апдейту в Teams, коммуникация между командами (общение и деловая переписка на английском языке), внедрение и тестирование оборудования/ПО.",
+                "Постоянное повышение квалификации с помощью внутренней литературы/гайдов/сертификаций на английском языке.",
+                "Стандартные обязанности системного администратора (SAP ERP, MS Azure AD, Jamf Pro, B2B Мегафон)."
             ],
             "descriptionFull": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                "Risus commodo viverra maecenas.", 
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. ",
-                "Risus commodo viverra maecenasas.",
-                "Risus commodo viverra maecenasfds."
+                "Техническая поддержка пользователей, диагностика неисправностей и настройка оборудования (Windows 10/11, MacOS, Android, iOS).", 
+                "Техническое обслуживание и регулярное обновление информационных систем (MS365, McAfee).",
+                "Организация ремонта неисправного оборудования.", 
+                "Приобретение, подготовка, выдача и замена оборудования. Учёт IT-оборудования в SAP ERP (ISP). Контроль за складом.",
+                "Второй уровень технической поддержки SAP IT (работа в тикет системах ServiceNow/IT-Direct, B2B портал Мегафон, MDSL). Подготовка отчетности, связанной с технической поддержкой пользователей и выполнение поставленных задач по заявкам на английском языке.",
+                "Администрирование MS Azure AD, JamfPro.",
+                "VPN: F5 BIG IP Edge Client, Global Protect, Cisco AnyConnect.",
+                "Решение проблем с авторизацией - SSO/MFA.",
+                "Регулярная проверка работоспособности и обслуживание VideoConference & Metting Rooms (проектора, телевизоры, Cisco , Polycom CX3000/CX5500, MTR (Lenovo ThinkSmart / Logitech Rally, системы букирования Evoko Liso, коммутация).",
+                "Maintenance серверной, с участием англоговорящей техподдержки (монтаж/демонтаж серверного оборудования, cabling).",
+                "Onboarding новых сотрудников в области IT, обучение персонала.",
+                "Парк техники: более 100 ноутбуков/Iphones, мультимедийное оборудование, сетевые secure-МФУ, Zebra, серверная.",
+                "Подготовка электронных пропусков (ParsecNET), мониторинг работоспособности видеонаблюдения (Milestone Xprotect Smart Client)."
             ]
         },
         {
-            "title": "Manager",
-            "company": "BestUA Corp.",
-            "start": "June 2014",
-            "finish": "February 2015",
+            "title": "Системный администратор",
+            "company": "ЦСПСиД",
+            "start": "06.2014",
+            "finish": "08.2019",
             "important" : false,
             "descriptionShort": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                "Quis ipsum suspendisse ultrices gravida.",
-                "Risus commodo viverra maecenassdf."
+                "Обслуживание и организация новых рабочих мест сотрудников компании.",
+                "Поддержка и обучение пользователей.",
+                "Устранение неисправностей (аппаратных и программных), возникающих при использовании ПК. Диагностика и их решение.",
+                "Участие в развитии сети (выполнение коммутационных работ).",
+                "Windows Server 2008 (AD, FTP, Backup), VipNet, SecretNet, ИССОН"
             ],
             "descriptionFull": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                "Risus commodo viverra maecenas.", 
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. ",
-                "Risus commodo viverra maecenasasf.",
-                "Risus commodo viverra maecenasasd."
+                "Обслуживание и организация новых рабочих мест сотрудников компании.",
+                "Поддержка и обучение пользователей.",
+                "Устранение неисправностей (аппаратных и программных), возникающих при использовании ПК. Диагностика и их решение.",
+                "Участие в развитии сети (выполнение коммутационных работ).",
+                "Контроль текущего состояния антивирусной защиты.",
+                "Контроль своевременной установки всех необходимых обновлений для программного обеспечения.",
+                "Мелкий ремонт копировально-множительной техники (устранение замятий бумаги, замена батарей ИБП и т.п.).",
+                "Windows Server 2008 (AD, FTP, Backup), VipNet, SecretNet, ИССОН"
             ]
-        }   
+        },
+        {
+            "title": "Специалист тендерного отдела",
+            "company": "Онлайн",
+            "start": "10.2017",
+            "finish": "01.2018",
+            "important" : false,
+            "descriptionShort": [
+                "Проектирование IT инфраструктуры предприятия и внедрение решений.",
+                "Подбор и закупка оборудования, комплектующих, софта.",
+                "Составление ТЗ в соответствии с законами 44 ФЗ.",
+                "Ввод в эксплуатацию оборудования.",
+                "Техническая поддержка пользователей."
+            ],
+            "descriptionFull": [
+                "Проектирование IT инфраструктуры предприятия и внедрение решений.",
+                "Подбор и закупка оборудования, комплектующих, софта.",
+                "Составление ТЗ в соответствии с законами 44 ФЗ.",
+                "Ввод в эксплуатацию оборудования.",
+                "Предупреждение и устранение аварий.",
+                "Техническая поддержка пользователей.",
+                "Работа в 1C 8.3"
+            ]
+        },
+        {
+            "title": "Сервисный инженер",
+            "company": "Северный мост",
+            "start": "01.2016",
+            "finish": "10.2017",
+            "important" : false,
+            "descriptionShort": [
+                "IT-Аутсорсинг фирм(16 компаний под постянным личным контролем - клининговая компания, столовые УГМК, туристическое агенство, ТСЖ, комбинаты школьного питания и т.д.): настройка и обновление ПО, антивирусная защита, своевременный ремонт и замена сопровождаемого оборудования, внедрение и перестановка рабочих мест, консультирование, обучение и поддержка пользователей, решение проблем удаленно и на месте. Обслуживание ПК, серверов, оргтехники и периферии. Замена нерабочих фискальников,сканеров штрихкода, банковских терминалов.",
+                "Сервисная работа: диагностика неисправностей ПК и ноутбуков, умение пользоваться диагностическими программами (Виктория, MHDD, Mem test и т.д.). Решение проблем программного плана, чистка от пыли, модульный и корпусной ремонт. Сборка, разборка сотен ноутбуков, нетбуков, мониторов, моноблоков и ПК. Инженерный ремонт из подручных средств. Пайка - разъемы питания, USB, спайка порванных шлейфов и кабелей, замена вздутых конденсаторов на рабочие, небольшой опыт замены видеочипов, южных и северных мостов на паяльной станции. Переустановка и настройка ОС семейства Windows, linux, mac.",
+                "Монтажные работы: ЛВС, телефония, аналоговое видеонаблюдение. Обнаружение неиспользуемой коммутации в ЛВС, протянутой сторонними лицами. Настройка маршрутизаторов и точек доступа.",
+                "1С - работа с техподдержкой по вопросам лицензий; установка и подключение готовых БД; обновление платформы и конфигурации.",
+                "Настройка доступа к госуслугам и госзакупкам. Получение и установка ЭЦП. Настройка онлайн-банков. Установка и настройка почтовых клиентов."
+            ],
+            "descriptionFull": [
+                "IT-Аутсорсинг фирм (16 компаний под постянным личным контролем - клининговая компания, столовые УГМК, туристическое агенство, ТСЖ, комбинаты школьного питания и т.д.): настройка и обновление ПО, антивирусная защита, своевременный ремонт и замена сопровождаемого оборудования, внедрение и перестановка рабочих мест, консультирование, обучение и поддержка пользователей, решение проблем удаленно и на месте. Обслуживание ПК, серверов, оргтехники и периферии. Замена нерабочих фискальников,сканеров штрихкода, банковских терминалов.",
+                "Сервисная работа: диагностика неисправностей ПК и ноутбуков, умение пользоваться диагностическими программами (Виктория, MHDD, Mem test и т.д.). Решение проблем программного плана, чистка от пыли, модульный и корпусной ремонт. Сборка, разборка сотен ноутбуков, нетбуков, мониторов, моноблоков и ПК. Инженерный ремонт из подручных средств. Пайка - разъемы питания, USB, спайка порванных шлейфов и кабелей, замена вздутых конденсаторов на рабочие, небольшой опыт замены видеочипов, южных и северных мостов на паяльной станции. Переустановка и настройка ОС семейства Windows, linux, mac.",
+                "Монтажные работы: ЛВС, телефония, аналоговое видеонаблюдение. Обнаружение неиспользуемой коммутации в ЛВС, протянутой сторонними лицами. Настройка маршрутизаторов и точек доступа."
+            ]
+        }        
     ],
     "education" : [
         {
             "title": "Alibra School",
             "info": "English lessons",
-            "start": "March 2015",
-            "finish": "May 2018",
-            "rank": "English - B1" 
+            "year": "2020",
+            "rank": "English - B2",
+            "important": false 
         },
         {
-            "title": "National University of Management",
-            "info": "Management of description",
-            "start": "March 2015",
-            "finish": "October 2018",
-            "rank": "Magistry (uncompleted)" 
+            "title": "Alibra School",
+            "info": "English lessons",
+            "year": "2019",
+            "rank": "English - B1",
+            "important": false  
         },
         {
-            "title": "University of RSVPU",
-            "info": "Management of description",
-            "start": "April 2013",
-            "finish": "November 2014",
-            "rank": "Specialty"  
+            "title": "УрФУ, Екатеринбург",
+            "info": "Уральский федеральный университет имени первого Президента России Б.Н. Ельцина, Институт радиоэлектроники и информационных технологий, Кафедра радиоэлектронных и телекоммуникационных систем.",
+            "year": "2017",
+            "rank": "Магистратура (неоконченное)",
+            "important": true  
+        },
+        {
+            "title": "РГППУ, Екатеринбург",
+            "info": "Российский государственный профессионально-педагогический университет, Кафедра информационных систем и технологий, Информатика и вычислительная техника",
+            "year": "2015",
+            "rank": "Специалитет",
+            "important": true 
+              
         }
     ],
     "about" : [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod", 
+        "Уровень Английского языка около Upper-intermediate, EF SET Quick Check - 75",
+        "Опыт работы системным администратором с 2015 года. Умение быстро развернуть и настроить необходимое ПО (macOS/linux/windows)",
+        "Имеется собственный автомобиль и права категории B",
         {
-            "head" : "Lorem ipsum dolor sit amet",
+            "head" : "Знание базовой теории тестирования. Изученные материалы:",
             "value": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod" 
+                "«Tестирование dot com» Роман Савин",
+                "«Тестирование программного обеспечения. Базовый курс» Святослав Куликов",
+                "«Тестирование программного обеспечения. Фундаментальные концепции менеджмента бизнес-приложений» Сэм Канер, Джек Фолк, Енг Кек Нгуен",
+                "Курс Артема Русова (YouTube)",
+                "Курс «Тестирование ПО» от «Контур» (Ulearn.me)" 
             ]
         },
         {
-            "head" : "Lorem ipsum dolor sit amet",
+            "head" : "Мои хобби и увлечения:",
             "value": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod" 
+                "Звукозапись и саунд-дизайн",
+                "Новые технологии",
+                "Консольный гейминг",
+                "Домашние животные",
+                "Путешествия" 
             ]
         }
     ]
