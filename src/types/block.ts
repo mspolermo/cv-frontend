@@ -1,29 +1,16 @@
+import { IUserEducation, IUserWork, IUserProject } from "./IUser"
 
-export interface AsideListProps {
-    name:string, 
-    array: Array<string> | { type: string; value: string; }[]
-}
 export interface ProjectsBlockProps {
-    type: "full" | "short"
+    type: 'short' | 'full',
+    project: IUserProject
 }
 export interface WorkExperienceBlockProps {
-    type: 'short' | 'full'
-    work : {
-        title: string,
-        company: string,
-        start: string,
-        finish: string,
-        descriptionShort: Array<string>
-    }
+    type: 'short' | 'full',
+    work : IUserWork
 }
 export interface EducationBlockProps {
-    type: 'short' | 'full'
-    educate: {
-        title: string,
-        year: string,
-        rank: string,
-        info: string
-    }
+    type: 'short' | 'full',
+    educate: IUserEducation
 }
 export interface AboutBlockProps {
     point: string | {

@@ -3,15 +3,12 @@ import classes from "./ListPage.module.scss"
 import { useTypedSelector } from "../../hooks/useTypedSelector";
 import { useDispatch } from "react-redux";
 import { fetchUser } from "../../store/action-creators/user";
-import ProjectsBlock from "../../components/ProjectsBlock/ProjectsBlock";
 import WorkExperienceList from "../../components/Lists/WorkExperienceList/WorkExperienceList";
 import EducationList from "../../components/Lists/EducationList/EducationList";
 import Loader from "../../components/UI/Loader/Loader";
 import AboutList from "../../components/Lists/AboutList/AboutList";
-
-interface ListPageProps {
-    type: 'projects' | 'works' | 'education' | 'about' 
-}
+import ProjectsList from "../../components/Lists/ProjectsList/ProjectsList";
+import { ListPageProps } from "../../types/page";
 
 const ListPage:FC<ListPageProps> = ({type}) => {
     const {error, loading} = useTypedSelector(state => state.user)
@@ -41,7 +38,7 @@ const ListPage:FC<ListPageProps> = ({type}) => {
         case 'projects':
             return (
                 <div className={"container-internal " + classes.mainPage}>
-                    <ProjectsBlock type="full"/>
+                    <ProjectsList type="full"/>
                 </div>
             )
         case 'works':

@@ -1,0 +1,19 @@
+@import '/src/styles/variables.scss';
+
+%transition {
+    transition: 0.3s ease color;
+}
+
+.projectsList {
+    margin-bottom: 51px;
+    &__heading {
+        margin-bottom: 10px;
+    }
+    &__list {
+
+    }
+    &__item {
+        
+    }
+    
+}

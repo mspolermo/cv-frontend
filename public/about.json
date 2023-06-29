@@ -14,12 +14,11 @@
     ],
     "skills": {
         "hard" : [
-            "HTML5",
-            "CSS3",
+            "TypeScript",
+            "React",
+            "SCSS",
             "GIT",
-            "WebPack",
-            "JavaScript",
-            "React.js"
+            "WebPack"
         ],
         "soft": [
             "Scrum",
@@ -32,18 +31,17 @@
         {
             "id": 1,
             "name": "Movies-website",
+            "summary" : "Упрощенная версия портала фильмов. В качестве дизайна за основу взят сайт ivi.ru",
             "repo": "https://github.com/mspolermo/movies-website",
             "ghPage" : "https://mspolermo.github.io/movies-website/",
             "important": true,
             "tech": [
-                "HTML5",
-                "CSS3"
+                "TypeScript",
+                "React",
+                "SCSS",
+                "GIT"
             ],
             "description" : [
-                {
-                    "title": "Movies-website",
-                    "info": "Упрощенная версия портала фильмов. В качестве дизайна за основу взят сайт ivi.ru"
-                },
                 {
                     "title": "Описание",
                     "info": "Написано с помощью TypeScript, React (redux, axios, i18n, storybook), SCSS. Покрытие тестами - react testing library."
@@ -124,17 +122,17 @@
         {
             "id": 2,
             "name": "Posts-web-app",
+            "summary" : "Сайт с постами, получаемыми через фейк-API JSONPlaceholder",
             "repo": "https://github.com/mspolermo/posts-web",
             "ghPage": "https://mspolermo.github.io/posts-web/",
             "important": true,
             "tech": [
-                "TypeScript"
+                "TypeScript",
+                "React",
+                "SCSS",
+                "GIT"
             ],
             "description" : [
-                {
-                    "title": "Posts-web-app",
-                    "info": "Сайт с постами, получаемыми через фейк-API JSONPlaceholder"
-                },
                 {
                     "title": "Описание",
                     "info": "Написано с помощью React (React-bootstrap, React-router, Axios, Redux), TypeScript, SCSS"
@@ -188,18 +186,17 @@
         {
             "id": 3,
             "name": "Sultan-web-app",
+            "summary" : "Часть интернет-магазина (каталог товаров, страница товара, корзина, страница администратора) с адаптивом",
             "repo": "https://github.com/mspolermo/sultan-web-app",
             "ghPage": "https://mspolermo.github.io/sultan-web-app/",
             "important": true,
             "tech": [
                 "TypeScript",
-                "React.js"
+                "React",
+                "SCSS",
+                "GIT"
             ],
             "description" : [
-                {
-                    "title": "Sultan-web-app",
-                    "info": "Часть интернет-магазина (каталог товаров, страница товара, корзина, страница администратора) с адаптивом"
-                },
                 {
                     "title": "Описание",
                     "info": "Написано с помощью React, TypeScript, SCSS. Покрытие тестами - jest, react testing library"
@@ -263,19 +260,17 @@
         {
             "id": 4,
             "name": "Evklid-web",
+            "summary" : "Pixel Perfect Layout (with adaptive)",
             "repo": "https://github.com/mspolermo/Evklid-web",
             "ghPage": "https://mspolermo.github.io/Evklid-web/",
             "important": false,
             "tech": [
-                "WebPack",
                 "JavaScript",
-                "SCSS"
+                "SCSS",
+                "WebPack",
+                "GIT"
             ],
             "description" : [
-                {
-                    "title": "Evklid-web",
-                    "info": "Pixel Perfect Layout (with adaptive)"
-                },
                 {
                     "title": "Описание",
                     "info": "Pixel perfect верстка страницы по макету (с адаптивом). Написано с помощью SCSS, JavaScript Swiper, jQuery (Accordion). Проект собран с помощью Webpack."
@@ -442,7 +437,6 @@
             "year": "2015",
             "rank": "Специалитет",
             "important": true 
-              
         }
     ],
     "about" : [

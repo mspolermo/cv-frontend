@@ -11,43 +11,9 @@ export interface IUser {
         "hard" : [string],
         "soft": [string] 
     },
-    "projects" : 
-        {
-            "id": number,
-            "name": string,
-            "repo": string,
-            "ghPage": string,
-            "important" : boolean,
-            "tech": string[],
-            "description": {"title": string, "info": string} | {
-                "title": string, 
-                "info": string | (string | {
-                    "titleL2": string,
-                    "infoL2": (string | { 
-                        "titleL3": string,
-                        "infoL3": string[] 
-                        })[]
-                })[]   
-            }[]
-        }[],
-    "works" : 
-        {
-            "title": string,
-            "company": string,
-            "start": string,
-            "finish": string,
-            "important" : boolean,
-            "descriptionShort": [string],
-            "descriptionFull": [string]
-        }[],
-    "education" : 
-        {
-            "title": string,
-            "info": string,
-            "year": string,
-            "rank": string,
-            "important" : boolean 
-        } [],
+    "projects" : IUserProject[],
+    "works" : IUserWork[],
+    "education" : IUserEducation [],
     "about" : [
         string | {
             "head" : string,
@@ -55,6 +21,43 @@ export interface IUser {
         }
     ]
 }
+
+export interface IUserProject {
+    "id": number,
+    "name": string,
+    "summary" : string,
+    "repo": string,
+    "ghPage": string,
+    "important" : boolean,
+    "tech": string[],
+    "description": { "title": string, "info": string } | {
+        "title": string, 
+        "info": string | ( string | {
+            "titleL2": string,
+            "infoL2": ( string | { 
+                "titleL3": string,
+                "infoL3": string[] 
+            })[]
+        })[]   
+    }[]
+}
+export interface IUserWork {
+    "title": string,
+    "company": string,
+    "start": string,
+    "finish": string,
+    "important" : boolean,
+    "descriptionShort": string[],
+    "descriptionFull": string[]
+}
+export interface IUserEducation {
+    "title": string,
+    "info": string,
+    "year": string,
+    "rank": string,
+    "important" : boolean 
+}
+
 export const userInit: IUser = {
     "name": "",
     "photo": "",
@@ -72,6 +75,7 @@ export const userInit: IUser = {
         [{
             "id": 0,
             "name": "",
+            "summary" : "",
             "repo": "",
             "ghPage": "",
             "important" : false,

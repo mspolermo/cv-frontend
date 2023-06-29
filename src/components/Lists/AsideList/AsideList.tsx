@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import classes from "./AsideList.module.scss"
 import Icons from "../../Icons/Icons";
-import { AsideListProps } from "../../../types/block";
+import { AsideListProps } from "../../../types/list";
 
 const AsideList:FC<AsideListProps> = ({name, array}) => {
     

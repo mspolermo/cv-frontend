@@ -12,7 +12,7 @@ const Breadcrumbs:FC= () => {
     const crumbs = location.pathname.split('/')
         .filter(crumb => crumb !== '')
         .map ( (crumb) => {
-            currentLink.push(`/${crumb}`)
+            currentLink.push(`/${crumb}/`)
             return (
                 <div key={crumb}>
                     <Link to={currentLink.join('')}>
