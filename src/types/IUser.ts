@@ -44,6 +44,7 @@ export interface IUserProject {
 export interface IUserWork {
     "title": string,
     "company": string,
+    "companyEn": string,
     "start": string,
     "finish": string,
     "important" : boolean,
@@ -91,6 +92,7 @@ export const userInit: IUser = {
         [{
             "title": "",
             "company": "",
+            "companyEn": "",
             "start": "",
             "finish": "",
             "important" : false,

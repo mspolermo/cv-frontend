@@ -48,6 +48,24 @@ body {
         }
     }
 }
+.heading-l3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: $headingColor;
+    transition: 0.3s ease;
+    transition-property: color;
+    &:hover {
+        cursor: pointer;
+        color: $hoverColor;
+    }
+    &__passive {
+        &:hover {
+            cursor: default;
+            color: $headingColor-aside;
+        }
+    }
+}
 .text {
     font-weight: 400;
     font-size: 14px;

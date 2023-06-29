@@ -5,7 +5,7 @@ export interface ProjectsBlockProps {
     project: IUserProject
 }
 export interface WorkExperienceBlockProps {
-    type: 'short' | 'full',
+    type: 'short' | 'full' | 'extended',
     work : IUserWork
 }
 export interface EducationBlockProps {

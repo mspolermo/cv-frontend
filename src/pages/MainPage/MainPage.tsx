@@ -11,15 +11,12 @@ import ProjectsList from "../../components/Lists/ProjectsList/ProjectsList";
 
 const MainPage:FC = () => {
     const {user, error, loading} = useTypedSelector(state => state.user)
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(fetchUser())
-    },[dispatch])
-
-    useEffect(() => {
-        document.body.scrollTop = document.documentElement.scrollTop = 0
-    }, [])
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+        dispatch(fetchUser());
+    },[dispatch]);
 
     if (loading) {
         return (
@@ -27,12 +24,12 @@ const MainPage:FC = () => {
                 <Loader />
             </div>
         )
-    }
+    };
     if (error) {
         return (
             <div>{error}</div>
         )
-    }
+    };
     return (
         <div className={"container-internal " + classes.mainPage}>
             <p className={"text " + classes.mainPage__summary}>{user.summary}</p>
@@ -41,7 +38,7 @@ const MainPage:FC = () => {
             <EducationList type="short"/>
             <AboutList type="short"/>
         </div>
-    )
-}
+    );
+};
 
 export default MainPage;

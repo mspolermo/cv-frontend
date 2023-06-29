@@ -7,12 +7,12 @@ export const fetchUser = () => {
     return async (dispatch: Dispatch<UserAction>) => {
         try {
             dispatch( {type: UserActionTypes.FETCH_USER})
-            const response = await axios.get('about.json')
+            const response = await axios.get('/cv-frontend/about.json')
             setTimeout( () => {
                 dispatch({type: UserActionTypes.FETCH_USER_SUCCESS, payload: response.data})    
             }, 500)
-        } catch (e) {
-            dispatch( {type: UserActionTypes.FETCH_USER_ERROR, payload: 'Произошла ошибка'} )
+        } catch {
+            dispatch( {type: UserActionTypes.FETCH_USER_ERROR, payload: `Произошла ошибка`} )
         }
     }
 }

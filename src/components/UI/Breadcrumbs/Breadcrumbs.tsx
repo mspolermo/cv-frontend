@@ -12,14 +12,14 @@ const Breadcrumbs:FC= () => {
     const crumbs = location.pathname.split('/')
         .filter(crumb => crumb !== '')
         .map ( (crumb) => {
-            currentLink.push(`/${crumb}/`)
+            currentLink.push(`${crumb}/`)
             return (
                 <div key={crumb}>
                     <Link to={currentLink.join('')}>
                         <div className={classes.breadcrumbs__crumb}>
                             {(crumb === 'cv-frontend')
                             ? ('Front-End Developer')
-                            : (crumb)}
+                            : (crumb.split('%20').join(' '))}
                         </div>
                     </Link>
                 </div>

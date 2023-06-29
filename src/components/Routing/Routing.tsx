@@ -7,6 +7,7 @@ import ListPage from '../../pages/ListPage/ListPage';
 import { useTypedSelector } from '../../hooks/useTypedSelector';
 import { useDispatch } from 'react-redux';
 import { fetchMain } from '../../store/action-creators/main';
+import WorkPage from '../../pages/WorkPage/WorkPage';
 
 const Routing = () => {
 	const {mainLoading, mainError} = useTypedSelector(state => state.main);
@@ -41,6 +42,7 @@ const Routing = () => {
 					<Route path={'/cv-frontend/work-experience'} element={<ListPage type='works'/>} />
 					<Route path={'/cv-frontend/education'} element={<ListPage type='education'/>} />
 					<Route path={'/cv-frontend/about'} element={<ListPage type='about'/>} />
+					<Route path={'/cv-frontend/work-experience/:id'} element={<WorkPage/>} />
 					<Route path={'*'} element={<MainPage />} />
 				</Routes>
 			</div>

@@ -11,16 +11,13 @@ import ProjectsList from "../../components/Lists/ProjectsList/ProjectsList";
 import { ListPageProps } from "../../types/page";
 
 const ListPage:FC<ListPageProps> = ({type}) => {
-    const {error, loading} = useTypedSelector(state => state.user)
-    const dispatch = useDispatch()
-    
-    useEffect(() => {
-        document.body.scrollTop = document.documentElement.scrollTop = 0
-    }, [])
+    const {error, loading} = useTypedSelector(state => state.user);
+    const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(fetchUser())
-    },[dispatch])
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+        dispatch(fetchUser());
+    },[dispatch]);
 
     if (loading) {
         return (
@@ -28,12 +25,12 @@ const ListPage:FC<ListPageProps> = ({type}) => {
                 <Loader />
             </div>
         )
-    }
+    };
     if (error) {
         return (
             <div>{error}</div>
         )
-    }
+    };
     switch (type) {
         case 'projects':
             return (
@@ -59,7 +56,7 @@ const ListPage:FC<ListPageProps> = ({type}) => {
                     <AboutList type="full"/>
                 </div>
             )      
-    }
-} 
+    };
+};
 
 export default ListPage;
