@@ -3,9 +3,13 @@ import classes from "./WorkExperienceBlock.module.scss"
 import Icons from "../../Icons/Icons";
 import {WorkExperienceBlockProps} from "../../../types/block";
 import { useNavigate } from "react-router-dom";
+import expirienceCount from "../../../hooks/utils";
 
 const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
     const navigate = useNavigate();
+
+   let elapsed = expirienceCount(work.start, work.finish);
+    console.log(elapsed)
 
     switch(type) {
         case 'extended':

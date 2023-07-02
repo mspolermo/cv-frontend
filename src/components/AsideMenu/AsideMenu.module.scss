@@ -1,6 +1,6 @@
 @import '/src/styles/variables.scss';
 
-.asideBlock {
+.asideMenu {
     // position: absolute;
     // top: 0;
     // left: 0;
@@ -27,7 +27,7 @@
 }
 
 @media (max-width:1024px) {
-    .asideBlock {
+    .asideMenu {
         padding: 20px;
         flex: 0 1 0% ;
         &__active {
@@ -56,7 +56,7 @@
     }
 }
 @media (max-width:768px) {
-    .asideBlock {
+    .asideMenu {
         &__active {
             min-width: 100%;
         }
@@ -73,7 +73,7 @@
     }
 }
 @media (max-width: 620px) {
-    .asideBlock {
+    .asideMenu {
         &__active {
             min-width: 100%;
         }
@@ -97,7 +97,7 @@
     }
 }
 @media (max-width: 450px) {
-    .asideBlock {
+    .asideMenu {
         &__body {
             padding-left: 0;
         }
