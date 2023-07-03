@@ -59,7 +59,7 @@ const ItemPage:FC<ItemPageProps> = ({type}) => {
         case 'project':
             return (
                 <div className={"container-internal " + classes.itemPage}>
-                    <ProjectBlock type="full" project={user.projects[itemIndex]}/>
+                    <ProjectBlock type="extended" project={user.projects[itemIndex]}/>
                 </div>
             )
 

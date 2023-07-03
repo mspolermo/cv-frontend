@@ -1,7 +1,7 @@
 import { IUserEducation, IUserWork, IUserProject } from "./IUser"
 
 export interface ProjectsBlockProps {
-    type: 'short' | 'full',
+    type: 'short' | 'full' | 'extended',
     project: IUserProject
 }
 export interface WorkExperienceBlockProps {

@@ -9,7 +9,6 @@ const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
     const navigate = useNavigate();
 
    let elapsed = expirienceCount(work.start, work.finish);
-    console.log(elapsed)
 
     switch(type) {
         case 'extended':
@@ -33,7 +32,7 @@ const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
                     </div>
         
                     <p className={classes.workExpirience__date}>
-                        {work.start + ' - ' + work.finish}
+                        {work.start + ' - ' + work.finish + ' ( ' + elapsed + ' ) '}
                     </p>
                     <div className={classes.workExpirience__description}>
 
@@ -70,7 +69,7 @@ const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
                     </div>
 
                     <p className={classes.workExpirience__date}>
-                        {work.start + ' - ' + work.finish}
+                        {work.start + ' - ' + work.finish + ' ( ' + elapsed + ' ) '}
                     </p>
                     <div className={classes.workExpirience__description}>
 

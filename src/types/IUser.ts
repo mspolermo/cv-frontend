@@ -30,7 +30,7 @@ export interface IUserProject {
     "ghPage": string,
     "important" : boolean,
     "tech": string[],
-    "description": { "title": string, "info": string } | {
+    "description": { "title": string, "info": string }  | {
         "title": string, 
         "info": string | ( string | {
             "titleL2": string,
