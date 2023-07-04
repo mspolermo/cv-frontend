@@ -1,0 +1,41 @@
+@import '/src/styles/variables.scss';
+
+.projectDescBlock {
+    cursor: default;
+    &__block {
+        margin-bottom: 10px;
+    }
+    &__mainHead{
+        margin-bottom: 10px;
+
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__body {
+        
+    }
+    &__titleL2 {
+        padding-left: 1em;
+        line-height: 20px;
+        &::before {
+            content: '\2022';
+            padding-right: 1em;
+        }
+    }
+    &__titleL3 {
+        padding-left: 2em;
+        line-height: 20px;
+        &::before {
+            content: '\25E6';
+            padding-right: 1em;
+        }
+    }
+    &__titleL4 {
+        padding-left: 3em;
+        line-height: 20px;
+        &::before {
+            content: '\25B9';
+            padding-right: 1em;
+        }
+    }
+}

@@ -8,6 +8,7 @@ import { fetchUser } from "../../store/action-creators/user";
 import Loader from "../../components/UI/Loader/Loader";
 import AboutList from "../../components/Lists/AboutList/AboutList";
 import ProjectsList from "../../components/Lists/ProjectsList/ProjectsList";
+import Modal from "../../components/UI/Modal/Modal";
 
 const MainPage:FC = () => {
     const {user, error, loading} = useTypedSelector(state => state.user)
@@ -27,7 +28,9 @@ const MainPage:FC = () => {
     };
     if (error) {
         return (
-            <div>{error}</div>
+            <div>
+                <Modal type='error' error={error}/>
+            </div>
         )
     };
     return (

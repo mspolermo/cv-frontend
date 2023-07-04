@@ -8,6 +8,7 @@ import { useTypedSelector } from '../../hooks/useTypedSelector';
 import { useDispatch } from 'react-redux';
 import { fetchMain } from '../../store/action-creators/main';
 import ItemPage from '../../pages/ItemPage/ItemPage';
+import Modal from '../UI/Modal/Modal';
 
 const Routing = () => {
 	const {mainLoading, mainError} = useTypedSelector(state => state.main);
@@ -20,12 +21,17 @@ const Routing = () => {
 
     if (mainLoading) {
         return (
-            <div>Идет загрузка</div>
+			<div>
+				<Modal type='load'/>
+			</div>
+            
         )
     }
     if (mainError) {
         return (
-            <div>{mainError}</div>
+            <div>
+				<Modal type='error' error={mainError}/>
+			</div>
         )
     }
 	

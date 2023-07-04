@@ -12,7 +12,7 @@ export const fetchMain = () => {
                 dispatch({type: MainActionTypes.FETCH_MAIN_SUCCESS, payload: response.data})    
             }, 500)
         } catch (e) {
-            dispatch( {type: MainActionTypes.FETCH_MAIN_ERROR, payload: 'Произошла ошибка'} )
+            dispatch( {type: MainActionTypes.FETCH_MAIN_ERROR, payload: `${e}` } )
         }
     }
 }

@@ -11,8 +11,8 @@ export const fetchUser = () => {
             setTimeout( () => {
                 dispatch({type: UserActionTypes.FETCH_USER_SUCCESS, payload: response.data})    
             }, 500)
-        } catch {
-            dispatch( {type: UserActionTypes.FETCH_USER_ERROR, payload: `Произошла ошибка`} )
+        } catch (e) {
+            dispatch( {type: UserActionTypes.FETCH_USER_ERROR, payload: `${e}`} )
         }
     }
 }
