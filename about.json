@@ -1,6 +1,10 @@
 {
     "name": "Alexander Medvedev",
-    "photo": "/src/static/photo.jpg",
+    "photos": [
+        "/cv-frontend/images/avatars/photo.jpg",
+        "/cv-frontend/images/avatars/photo1.jpg",
+        "/cv-frontend/images/avatars/photo2.jpg"
+    ],
     "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
     "contacts": [
         {
