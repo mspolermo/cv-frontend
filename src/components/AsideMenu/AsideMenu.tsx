@@ -5,6 +5,8 @@ import { useTypedSelector } from "../../hooks/useTypedSelector";
 import { useDispatch } from "react-redux";
 import { menuStatusFalse, menuStatusTrue } from "../../store/reducers/menuStatusReducer";
 import Icons from "../Icons/Icons";
+import Slider from "../UI/Slider/Slider";
+import cn from 'classnames';
 
 const AsideMenu:FC = () => {
     const {mainData} = useTypedSelector(state => state.main);
@@ -24,11 +26,17 @@ const AsideMenu:FC = () => {
     }
 
     return (
-        <div className={(!menuStatus) ? classes.asideMenu : classes.asideMenu + " " + classes.asideMenu__active}>
-            <div className={(!menuStatus) ? classes.asideMenu__left : classes.asideMenu__left + " " + classes.asideMenu__left_active}>
-                <div className={classes.asideMenu__imgContainer}>
-                    <img className={classes.asideMenu__img} src={require('../../static/photo.jpg')}  alt="" />
-                </div>
+        <div className={(!menuStatus) 
+                        ? classes.asideMenu 
+                        : cn(classes.asideMenu, classes.asideMenu__active)
+        }>
+
+            <div className={(!menuStatus) 
+                        ? classes.asideMenu__left 
+                        : cn(classes.asideMenu__left, classes.asideMenu__left_active)
+            }>
+                
+                <Slider images={mainData.photos} />
 
                 <div className={classes.asideMenu__body}>
                     <AsideList name='Contacts' array={mainData.contacts} />
@@ -36,7 +44,10 @@ const AsideMenu:FC = () => {
                     <AsideList name='Soft Skills' array={mainData.skills.soft} />
                 </div>
             </div>
-            <div className={(!menuStatus) ? classes.asideMenu__right : classes.asideMenu__right + " " + classes.asideMenu__right_active} onClick={openMenu}>
+            <div onClick={openMenu} className={(!menuStatus) 
+                        ? classes.asideMenu__right 
+                        : cn(classes.asideMenu__right, classes.asideMenu__right_active)} 
+            >
                 <Icons name="open" size="20" color="black"/>
             </div>
         </div>

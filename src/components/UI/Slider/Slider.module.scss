@@ -1,0 +1,51 @@
+@import '/src/styles/variables.scss';
+
+.slider {
+    height: 360px;
+    min-width: 240px;
+    margin-bottom: 51px;
+
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: opacity ease-in-out;
+    
+    &__slide{
+      display: flex;
+        min-height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;  
+    }
+    &__arrow {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: white;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.4;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+        }
+        &_left {
+            left: 14px;
+            bottom: calc(0% + 14px);
+        }
+        &_right {
+            right: 14px;
+            bottom: calc(0% + 14px);
+            transform: rotate(180deg);
+        } 
+    }
+}
+
+.fade-out {
+    opacity: 0;
+}
+.fade-in {
+    opacity: 1;
+}

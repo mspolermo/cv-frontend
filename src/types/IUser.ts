@@ -1,6 +1,6 @@
 export interface IUser {
     "name": string,
-    "photo": string,
+    "photos": string [],
     "summary" : string,
     "contacts": 
         {
@@ -61,7 +61,7 @@ export interface IUserEducation {
 
 export const userInit: IUser = {
     "name": "",
-    "photo": "",
+    "photos": [""],
     "summary" : "",
     "contacts": 
         [{

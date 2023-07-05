@@ -140,7 +140,7 @@
     }
     &__summary {
         margin-bottom: 14px;
-        line-height: 14px;
+        line-height: 14x;
         cursor: default;
     }
     &__techBlock{
@@ -148,22 +148,24 @@
         margin-bottom: 10px;
 
         font-weight: 400;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 15px;
         color: $textColor-additional;
         cursor: default;
     }
     &__techHead {
         padding-right: 4px;
-        font-size: 12px;
+        font-size: 14px;
     }
     &__techArray{
         display: flex;
         &::before {
             content: '[';
+            padding-right: 2px;
         }
         &::after {
             content: ']';
+            padding-left: 2px;
         }
     }
     &__tech{

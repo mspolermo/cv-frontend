@@ -1,25 +1,12 @@
 @import '/src/styles/variables.scss';
 
 .asideMenu {
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-    // bottom: 0;
-
     flex: 1 1 25% ;
     display: flex;
     background-color: $backgroundColor-aside;
-    //max-width: 370px;
     padding: 40px 40px 0;
     &__right{
         display: none;
-    }
-    &__imgContainer {  
-        margin-bottom: 51px;
-    }
-    &__img {
-        max-width: 100%;
-        border-radius: 4px;
     }
     &__body {
         padding-left: 20px;
@@ -66,10 +53,6 @@
                 justify-content: space-evenly;
             }
         }
-        &__img {
-            max-height: 480px;
-        }
-
     }
 }
 @media (max-width: 620px) {
@@ -85,15 +68,6 @@
                 align-items: flex-start;
             }
         }
-        &__imgContainer{
-            align-self: center;
-            justify-self: center;
-        }
-        &__img {
-            max-height: 480px;
-            
-        }
-
     }
 }
 @media (max-width: 450px) {
