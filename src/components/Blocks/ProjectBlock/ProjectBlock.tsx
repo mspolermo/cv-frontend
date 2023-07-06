@@ -4,9 +4,50 @@ import { ProjectsBlockProps } from "../../../types/block";
 import { useNavigate } from "react-router-dom";
 import ProjectDescriptionBlock from "../ProjectDescriptionBlock/ProjectDescriptionBlock";
 import Icons from "../../Icons/Icons";
+import cn from 'classnames';
+import SkillTag from "../../UI/SkillTag/SkillTag";
 
-const ProjectBlock:FC<ProjectsBlockProps> = ({type, project}) => {
+const ProjectBlock:FC<ProjectsBlockProps> = ({type, index, project}) => {
     const navigate = useNavigate();
+    
+    //Распаковка массива строк и объектов в строку и массив тегов, для отрисовки
+    const allTechArray = [];
+    const tagsArray = [];
+    for (let i=0; i<project.tech.length; i++) {
+
+        if (typeof project.tech[i] === 'string') {
+
+            allTechArray.push(project.tech[i]);
+            tagsArray.push(project.tech[i]);
+
+        } else {
+
+            let innerObject = project.tech[i];
+            type objectKeyType = keyof typeof innerObject; 
+
+            let objectValue = "";
+
+            Object.keys(innerObject).forEach((key) => {
+
+                if (typeof innerObject[key as objectKeyType] === 'string') {
+
+                    objectValue += innerObject[key as objectKeyType];
+                    tagsArray.push(innerObject[key as objectKeyType]);
+
+                } else {
+
+                    let innerArray: string[] = innerObject[key as objectKeyType];
+                    objectValue += ` (${innerArray.join(', ')})`;
+
+                    innerArray.forEach( item => tagsArray.push(item));
+
+                };
+            });
+
+            allTechArray.push(objectValue);
+        };
+    };
+    const allTechString = allTechArray.join(', ');
 
     switch (type) {
         case 'short':
@@ -17,15 +58,15 @@ const ProjectBlock:FC<ProjectsBlockProps> = ({type, project}) => {
 
                     <div className={classes.shortsProjectsBlock__left}>
 
-                        <div className={"text " + classes.shortsProjectsBlock__text 
-                                        + " " + classes.shortsProjectsBlock__text_id}
+                        <p className={cn (classes.shortsProjectsBlock__text, 
+                                            classes.shortsProjectsBlock__text_id)}
                         >
-                            {project.id}
-                        </div>
+                            {index}
+                        </p>
 
-                        <div className={"text " + classes.shortsProjectsBlock__text}>
+                        <p className={cn("text", classes.shortsProjectsBlock__text)}>
                             {project.name}
-                        </div>
+                        </p>
 
                     </div>
 
@@ -33,14 +74,17 @@ const ProjectBlock:FC<ProjectsBlockProps> = ({type, project}) => {
 
                     <div className={classes.shortsProjectsBlock__right}>
 
-                        {project.tech.map( tech => 
+                        {project.tech.map( (tech, i) =>
 
-                            <div key={tech} className={"text " 
-                                            + classes.shortsProjectsBlock__text 
-                                            + " "
-                                            + classes.shortsProjectsBlock__tech}
+                            <div key={project.name + i} 
+                                            className={classes.shortsProjectsBlock__techBlock}
                             >
-                                    {tech}
+
+                                { (typeof tech === 'string')
+                                    ? <p>{tech}</p>
+                                    : <p>{tech.title}</p>
+                                }
+
                             </div>
 
                         )}  
@@ -52,25 +96,27 @@ const ProjectBlock:FC<ProjectsBlockProps> = ({type, project}) => {
         case 'full':
             return (
                 <div className={classes.fullProjectsBlock}>
-                    <h3 className={"heading-l3 " + classes.fullProjectsBlock__heading}
+
+                    <h3 className={cn("heading-l3", classes.fullProjectsBlock__heading)}
                         onClick={() => navigate('/cv-frontend/projects/' + project.name)} 
                     >
                         {project.name}
                     </h3>
-                    <p className={"text " + classes.fullProjectsBlock__summary}>{project.summary}</p>
-                    <div className={classes.fullProjectsBlock__techBlock}>
-                        <p className={classes.fullProjectsBlock__techHead}>Используемые технологии:</p>
-                        <div className={classes.fullProjectsBlock__techArray}>
-                            {project.tech.map( tech => 
-                                <div key={tech} className={classes.fullProjectsBlock__tech}>{tech}</div>
-                            )}     
-                        </div>
-                    </div>
+
+                    <p className={cn("text", classes.fullProjectsBlock__summary)}>
+                        {project.summary}
+                    </p>
+
+                    <p className={classes.fullProjectsBlock__tech}>
+                        Используемые технологии: {allTechString}
+                    </p>
+
                 </div>
             )
         case 'extended':
             return (
                 <div className={classes.extendedProjectBlock}>
+
                     <div className={classes.extendedProjectBlock__headBlock}>
                         <h3 className={"heading-l2 heading-l2__passive " + classes.extendedProjectBlock__heading}
                         >
@@ -91,17 +137,18 @@ const ProjectBlock:FC<ProjectsBlockProps> = ({type, project}) => {
                         </div>
 
                     </div>
+
                     <p className={"text " + classes.extendedProjectBlock__summary}>{project.summary}</p>
-                    <ProjectDescriptionBlock description={project.description}/>
-                    <div className={classes.extendedProjectBlock__techBlock}>
-                        <p className={classes.extendedProjectBlock__techHead}>Используемые технологии:</p>
-                        <div className={classes.extendedProjectBlock__techArray}>
-                            {project.tech.map( tech => 
-                                <div key={tech} className={classes.extendedProjectBlock__tech}>{tech}</div>
-                            )}     
-                        </div>
-                    </div>
                     
+                    <ProjectDescriptionBlock project={project}/>
+
+                    <div className={classes.extendedProjectBlock__techBlock}>
+
+                        {tagsArray.map( (tech) => 
+                            <SkillTag key={tech.toString()} tag={tech.toString()} />
+                        )}     
+
+                    </div>
                     
                 </div>
             )

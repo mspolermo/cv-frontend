@@ -29,16 +29,29 @@
         fill: $iconColor-aside;
         stroke: $iconColor-aside;
         width: 20px;
-        &_circle {
-            width: 4px;
-
-            fill: $circleColor-aside;
-            stroke: $circleColor-aside;
-        }
     }
     &__text {
         display: inline;
-        padding-left: 10px;
+        padding-left: 1em;
         color: $textColor-aside;
+        &_mark {
+            cursor: default;
+            &::before {
+                content: '\2022';
+                color: $circleColor-aside;
+                padding-right: 1em;
+            }   
+        }
+        &_markL2 {
+            display: block;
+            padding-left: 2em;
+            cursor: default;
+            &::before {
+                content: '\2043';
+                color: $circleColor-aside;
+                padding-right: 0.5em;
+            }
+        }
+        
     }
 }

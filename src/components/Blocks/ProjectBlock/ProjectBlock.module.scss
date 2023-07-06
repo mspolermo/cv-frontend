@@ -60,14 +60,20 @@
             content: ']';
         }
     }
-    &__tech {
-        &::before{
+    &__techBlock {
+        display: flex;
+        &::before {
             content: ', ';
+            margin-right: 0.2em;
         }
-        &:first-child{
+        &:first-of-type {
             &::before{
-                content: '';
+                content: "" ;
+                margin-right: 0;
             }
+        }
+        &:nth-child(n+5) {
+            display: none;
         }
     }
 }
@@ -88,39 +94,17 @@
         line-height: 14px;
         cursor: default;
     }
-    &__techBlock{
+    &__tech{
         display: flex;
         margin-bottom: 10px;
 
         font-weight: 400;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 15px;
         color: $textColor-additional;
         cursor: default;
     }
-    &__techHead {
-        padding-right: 4px;
-        font-size: 12px;
-    }
-    &__techArray{
-        display: flex;
-        &::before {
-            content: '[';
-        }
-        &::after {
-            content: ']';
-        }
-    }
-    &__tech{
-        &::before {
-            content: ', ';
-        }
-        &:first-child{
-            &::before{
-                content: '';
-            }
-        }
-    }
+
 }
 .extendedProjectBlock {
     display: flex;
@@ -144,40 +128,10 @@
         cursor: default;
     }
     &__techBlock{
-        display: flex;
-        margin-bottom: 10px;
+        display: block;
+        margin: 40px 0 20px 2em;
+    }
 
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 15px;
-        color: $textColor-additional;
-        cursor: default;
-    }
-    &__techHead {
-        padding-right: 4px;
-        font-size: 14px;
-    }
-    &__techArray{
-        display: flex;
-        &::before {
-            content: '[';
-            padding-right: 2px;
-        }
-        &::after {
-            content: ']';
-            padding-left: 2px;
-        }
-    }
-    &__tech{
-        &::before {
-            content: ', ';
-        }
-        &:first-child{
-            &::before{
-                content: '';
-            }
-        }
-    }
     &__linkBlock {
         display: flex;
         align-items: center;

@@ -9,6 +9,7 @@ const ProjectsList:FC<ProjectsListProps> = ({type}) => {
 
     const {user} = useTypedSelector(state => state.user);
     const navigate = useNavigate();
+    const importantProjects = user.projects.filter(project => project.important === true);
 
     switch (type) {
         case 'short':
@@ -22,10 +23,10 @@ const ProjectsList:FC<ProjectsListProps> = ({type}) => {
                     </h2>
                     
                     <ul className={classes.projectsList__list}>
-                        {user.projects.map( project => 
-                            <li key={project.id} className={classes.projectsList__item}>
+                        {importantProjects.map( (project, i) => 
+                            <li key={project.name} className={classes.projectsList__item}>
                                 {(project.important) && 
-                                    <ProjectBlock type={type} project={project}/>
+                                    <ProjectBlock type={type} index={i + 1} project={project}/>
                                 }
                             </li>    
                         )}
@@ -45,7 +46,7 @@ const ProjectsList:FC<ProjectsListProps> = ({type}) => {
                     
                     <ul className={classes.projectsList__list}>
                         {user.projects.map( project => 
-                            <li key={project.id} className={classes.projectsList__item}>
+                            <li key={project.name} className={classes.projectsList__item}>
                                 <ProjectBlock type={type} project={project}/>
                             </li>    
                         )}

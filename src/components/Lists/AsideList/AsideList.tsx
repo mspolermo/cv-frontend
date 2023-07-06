@@ -2,45 +2,74 @@ import React, { FC } from "react";
 import classes from "./AsideList.module.scss"
 import Icons from "../../Icons/Icons";
 import { AsideListProps } from "../../../types/list";
+import cn from 'classnames';
 
 const AsideList:FC<AsideListProps> = ({name, array}) => {
     
     return (
         <div className={classes.asideList}>
-            <h2 className={"heading-l2 " + classes.asideList__heading}>{name}</h2>
-            <ul className={classes.asideList__list}>
+            <h2 className={cn("heading-l2", classes.asideList__heading)}>{name}</h2>
+            <div className={classes.asideList__list}>
 
                 {array.map( (info) =>
 
-                    <div key={ (typeof info == 'string')
+                    <ul key={ (typeof info == 'string')
                         ? info
-                        : info.value
+                        : info.title
                     }>
-
+                        
                         { (typeof info == 'string') 
+
                         ?
                             <li className={classes.asideList__item}>
-                                <Icons name="circle" size="10" className={classes.asideList__icon +" " + classes.asideList__icon_circle}/>
-                                <p className={"text " + classes.asideList__text}>{info}</p>
+                                <p className={ cn( "text", 
+                                                classes.asideList__text, 
+                                                classes.asideList__text_mark)
+                                }>
+                                    {info}
+                                </p>
                             </li>
-                        :
-                            <li className={classes.asideList__item + " " + classes.asideList__item_composite}>
 
-                                <Icons name={info.type} size="20" className={classes.asideList__icon}/>
+                        : (typeof info.value == 'string')
+                            ?
+                                <li className={cn(classes.asideList__item, 
+                                                classes.asideList__item_composite)
+                                }>
 
-                                <a href={`${info.type}:${info.value}`}>
-                                    <p className={"text " + classes.asideList__text}>
-                                        {info.value}
-                                    </p>
-                                </a>
-                                
-                            </li>
+                                    <Icons name={info.title} size="20" className={classes.asideList__icon}/>
+
+                                    <a href={`${info.title}:${info.value}`}>
+                                        <p className={cn("text", classes.asideList__text)}>
+                                            {info.value}
+                                        </p>
+                                    </a>
+                                    
+                                </li>
+                            :
+                                <li className={classes.asideList__item}>
+                                    <div>
+                                        <p className={cn("text", 
+                                                    classes.asideList__text, 
+                                                    classes.asideList__text_mark)
+                                        }>
+                                            {info.title}
+                                        </p>
+                                        {info.value.map( info => 
+                                            <p  key={info}className={cn("text", 
+                                                            classes.asideList__text, 
+                                                            classes.asideList__text_markL2)
+                                            }>
+                                                {info}
+                                            </p>
+                                        )}
+                                    </div>
+                                </li>
                         }
 
-                    </div>
+                    </ul>
                 )}
 
-            </ul>
+            </div>
         </div>
     );
 };

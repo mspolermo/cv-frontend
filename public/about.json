@@ -8,18 +8,26 @@
     "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
     "contacts": [
         {
-            "type": "tel",
+            "title": "tel",
             "value": "+79826985468"
         },
         {
-            "type": "mailto",
+            "title": "mailto",
             "value": "mspolermo@gmail.com"     
         }
     ],
     "skills": {
         "hard" : [
             "TypeScript",
-            "React",
+            {
+                "title": "React", 
+                "value" : [
+                    "Redux",
+                    "Axios",
+                    "I18n",
+                    "Storybook"
+                ]
+            },
             "SCSS",
             "GIT",
             "WebPack"
@@ -33,7 +41,6 @@
     },
     "projects" : [
         {
-            "id": 1,
             "name": "Movies-website",
             "summary" : "Упрощенная версия портала фильмов. В качестве дизайна за основу взят сайт ivi.ru",
             "repo": "https://github.com/mspolermo/movies-website",
@@ -41,7 +48,17 @@
             "important": true,
             "tech": [
                 "TypeScript",
-                "React",
+                {
+                    "title": "React", 
+                    "value" : [
+                        "Redux",
+                        "Axios",
+                        "I18n",
+                        "Storybook",
+                        "React-router",
+                        "React testing library"
+                    ]
+                },
                 "SCSS",
                 "GIT"
             ],
@@ -124,7 +141,6 @@
             ]
         },
         {
-            "id": 2,
             "name": "Posts-web-app",
             "summary" : "Сайт с постами, получаемыми через фейк-API JSONPlaceholder",
             "repo": "https://github.com/mspolermo/posts-web",
@@ -132,7 +148,15 @@
             "important": true,
             "tech": [
                 "TypeScript",
-                "React",
+                {
+                    "title": "React", 
+                    "value" : [
+                        "Redux",
+                        "Axios",
+                        "React-router",
+                        "React-bootstrap"
+                    ]
+                },
                 "SCSS",
                 "GIT"
             ],
@@ -188,7 +212,6 @@
             ]
         },
         {
-            "id": 3,
             "name": "Sultan-web-app",
             "summary" : "Часть интернет-магазина (каталог товаров, страница товара, корзина, страница администратора) с адаптивом",
             "repo": "https://github.com/mspolermo/sultan-web-app",
@@ -262,7 +285,6 @@
             ]
         },
         {
-            "id": 4,
             "name": "Evklid-web",
             "summary" : "Pixel Perfect Layout (with adaptive)",
             "repo": "https://github.com/mspolermo/Evklid-web",

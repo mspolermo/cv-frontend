@@ -4,32 +4,35 @@ export interface IUser {
     "summary" : string,
     "contacts": 
         {
-            "type": "tel" | "mailto" | "any",
+            "title": "tel" | "mailto" | "any",
             "value": string
         }[],
     "skills": {
-        "hard" : [string],
-        "soft": [string] 
+        "hard" : ISkill [] ,
+        "soft": ISkill [] 
     },
-    "projects" : IUserProject[],
-    "works" : IUserWork[],
+    "projects" : IUserProject [],
+    "works" : IUserWork [],
     "education" : IUserEducation [],
     "about" : [
         string | {
             "head" : string,
-            "value": [string]
+            "value": string []
         }
     ]
 }
 
+type ISkill = string | { 
+    "title": string, 
+    "value": string [] 
+}
 export interface IUserProject {
-    "id": number,
     "name": string,
     "summary" : string,
     "repo": string,
     "ghPage": string,
     "important" : boolean,
-    "tech": string[],
+    "tech": ISkill [],
     "description": { "title": string, "info": string }  | {
         "title": string, 
         "info": string | ( string | {
@@ -65,7 +68,7 @@ export const userInit: IUser = {
     "summary" : "",
     "contacts": 
         [{
-            "type": "tel",
+            "title": "tel",
             "value": ""
         }],
     "skills": {
@@ -74,7 +77,6 @@ export const userInit: IUser = {
     },
     "projects" : 
         [{
-            "id": 0,
             "name": "",
             "summary" : "",
             "repo": "",

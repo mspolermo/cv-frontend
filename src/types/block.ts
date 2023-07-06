@@ -2,6 +2,7 @@ import { IUserEducation, IUserWork, IUserProject } from "./IUser"
 
 export interface ProjectsBlockProps {
     type: 'short' | 'full' | 'extended',
+    index?: number,
     project: IUserProject
 }
 export interface WorkExperienceBlockProps {
@@ -17,4 +18,7 @@ export interface AboutBlockProps {
         head: string,
         value: Array<string>
     }
+}
+export interface ProjectDescriptionBlockProps {
+    project: IUserProject
 }

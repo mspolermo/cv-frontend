@@ -1,6 +1,6 @@
 export interface AsideListProps {
     name: string, 
-    array: Array<string> | { type: string; value: string; }[]
+    array: (string | { title: string; value: string | string[]; })[]
 }
 export interface ProjectsListProps {
     type: "full" | "short"

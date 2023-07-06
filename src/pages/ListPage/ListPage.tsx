@@ -9,9 +9,10 @@ import Loader from "../../components/UI/Loader/Loader";
 import AboutList from "../../components/Lists/AboutList/AboutList";
 import ProjectsList from "../../components/Lists/ProjectsList/ProjectsList";
 import { ListPageProps } from "../../types/page";
+import AsideList from "../../components/Lists/AsideList/AsideList";
 
 const ListPage:FC<ListPageProps> = ({type}) => {
-    const {error, loading} = useTypedSelector(state => state.user);
+    const {user, error, loading} = useTypedSelector(state => state.user);
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -55,7 +56,7 @@ const ListPage:FC<ListPageProps> = ({type}) => {
                 <div className={"container-internal " + classes.mainPage}>
                     <AboutList type="full"/>
                 </div>
-            )      
+            )
     };
 };
 
