@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cv-frontend/static/css/main.f56f34e9.css",
-    "main.js": "/cv-frontend/static/js/main.4ace5d8d.js",
+    "main.css": "/cv-frontend/static/css/main.758a45d5.css",
+    "main.js": "/cv-frontend/static/js/main.7441130f.js",
     "static/media/IvyStyleSans-LightItalic.eot": "/cv-frontend/static/media/IvyStyleSans-LightItalic.fed5019bdac3f3fb6af9.eot",
     "static/media/IvyStyleSans-LightItalic.ttf": "/cv-frontend/static/media/IvyStyleSans-LightItalic.a0de5daa72b8ff9205ed.ttf",
     "static/media/IvyStyleSans-ThinItalic.eot": "/cv-frontend/static/media/IvyStyleSans-ThinItalic.c1c452c96fef4814189a.eot",
@@ -44,11 +44,11 @@
     "static/media/IvyStyleSans-Thin.woff2": "/cv-frontend/static/media/IvyStyleSans-Thin.cc553dfc4210029cf3b2.woff2",
     "static/media/icons.svg": "/cv-frontend/static/media/icons.7d4ace4649d561851df1ddf6ed223d22.svg",
     "index.html": "/cv-frontend/index.html",
-    "main.f56f34e9.css.map": "/cv-frontend/static/css/main.f56f34e9.css.map",
-    "main.4ace5d8d.js.map": "/cv-frontend/static/js/main.4ace5d8d.js.map"
+    "main.758a45d5.css.map": "/cv-frontend/static/css/main.758a45d5.css.map",
+    "main.7441130f.js.map": "/cv-frontend/static/js/main.7441130f.js.map"
   },
   "entrypoints": [
-    "static/css/main.f56f34e9.css",
-    "static/js/main.4ace5d8d.js"
+    "static/css/main.758a45d5.css",
+    "static/js/main.7441130f.js"
   ]
 }

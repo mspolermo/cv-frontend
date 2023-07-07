@@ -138,6 +138,12 @@
                         
                     ]
                 }
+            ],
+            "screenshots": [
+                "/cv-frontend/images/projects/Posts-web-app/1.jpg",
+                "/cv-frontend/images/projects/Posts-web-app/2.jpg",
+                "/cv-frontend/images/projects/Posts-web-app/3.jpg",
+                "/cv-frontend/images/projects/Posts-web-app/4.jpg"
             ]
         },
         {
@@ -209,6 +215,12 @@
                         }
                     ]
                 }
+            ],
+            "screenshots": [
+                "/cv-frontend/images/projects/Posts-web-app/1.jpg",
+                "/cv-frontend/images/projects/Posts-web-app/2.jpg",
+                "/cv-frontend/images/projects/Posts-web-app/3.jpg",
+                "/cv-frontend/images/projects/Posts-web-app/4.jpg"
             ]
         },
         {
@@ -282,6 +294,13 @@
                         }
                     ]
                 }
+            ],
+            "screenshots": [
+                "/cv-frontend/images/projects/Sultan-web-app/1.jpg",
+                "/cv-frontend/images/projects/Sultan-web-app/2.jpg",
+                "/cv-frontend/images/projects/Sultan-web-app/3.jpg",
+                "/cv-frontend/images/projects/Sultan-web-app/4.jpg",
+                "/cv-frontend/images/projects/Sultan-web-app/5.jpg"
             ]
         },
         {
@@ -317,6 +336,13 @@
                         "В планшетной и мобильной версии сайта меню сайта окрывается с помощью нажатия на кнопку бургер-меню"
                     ]
                 }
+            ],
+            "screenshots": [
+                "/cv-frontend/images/projects/Evklid-web/1.jpg",
+                "/cv-frontend/images/projects/Evklid-web/2.jpg",
+                "/cv-frontend/images/projects/Evklid-web/3.jpg",
+                "/cv-frontend/images/projects/Evklid-web/4.jpg",
+                "/cv-frontend/images/projects/Evklid-web/5.jpg"
             ]
         }
     ],
