@@ -2,14 +2,11 @@ import React, {FC, useState} from "react";
 import classes from './Slider.module.scss';
 import cn from 'classnames';
 import Icons from "../../Icons/Icons";
-
-interface SliderProps {
-    images: string []
-}
+import { SliderProps } from "../../../types/ui";
 
 const FADE_DURATION = 300;
 
-const Slider:FC<SliderProps> = ({images}) => {
+const Slider:FC<SliderProps> = ({images, type}) => {
     const [slide, setSlide] = useState<number>(0);
     const [fadeState, setFadeState] = useState<'fade-in' | 'fade-out'>('fade-in');
     const [currentTimer, setCurrentTimer] = useState<NodeJS.Timeout>();
@@ -37,21 +34,32 @@ const Slider:FC<SliderProps> = ({images}) => {
     };
 
     return (
-        <div className={classes.slider}>
+        <div className={ type === 'wide' 
+                            ? cn(classes.slider, classes.slider__wide) 
+                            : classes.slider}
+        >
 
-            <div className={cn(classes.slider__slide, classes.fadeState)} 
+            <div className={ type === 'wide' 
+                    ? cn(classes.slider__slide, classes.slider__slide_wide, classes.fadeState)
+                    : cn(classes.slider__slide, classes.fadeState)} 
                     style={
                             {backgroundImage: `url(${images[slide]})`, 
                             transitionDuration: `${FADE_DURATION}ms`
             }}/>
 
-            <button className={cn(classes.slider__arrow, classes.slider__arrow_left)} 
+            <button className={ type === 'wide' 
+                    ? cn(classes.slider__arrow, classes.slider__arrow_wide, 
+                                                classes.slider__arrow_left)
+                    : cn(classes.slider__arrow, classes.slider__arrow_left)} 
                     onClick={() => handlerClick(-1)}
             >
                 <Icons name="arrow" size="20" color="black" />
             </button>
 
-            <button className={cn(classes.slider__arrow, classes.slider__arrow_right)} 
+            <button className={ type === 'wide' 
+                    ? cn(classes.slider__arrow, classes.slider__arrow_wide, 
+                                                classes.slider__arrow_right)
+                    : cn(classes.slider__arrow, classes.slider__arrow_right)} 
                     onClick={() => handlerClick(+1)}
             >
                 <Icons name="arrow" size="20" color="black" />

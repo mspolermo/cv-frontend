@@ -7,14 +7,8 @@ import Loader from "../../components/UI/Loader/Loader";
 import { useParams } from "react-router-dom";
 import WorkExperienceBlock from "../../components/Blocks/WorkExperienceBlock/WorkExperienceBlock";
 import ProjectBlock from "../../components/Blocks/ProjectBlock/ProjectBlock";
-
-
-type WorkPageParams = {
-    id: string;
-}
-interface ItemPageProps {
-    type: 'work' | 'project'
-}
+import { ItemPageProps, WorkPageParams } from "../../types/page";
+import ContactsBlock from "../../components/Blocks/ContactsBlock/ContactsBlock";
 
 const ItemPage:FC<ItemPageProps> = ({type}) => {
     const {user, error, loading} = useTypedSelector(state => state.user);
@@ -60,6 +54,12 @@ const ItemPage:FC<ItemPageProps> = ({type}) => {
             return (
                 <div className={"container-internal " + classes.itemPage}>
                     <ProjectBlock type="extended" project={user.projects[itemIndex]}/>
+                </div>
+            )
+        case 'contacts':
+            return (
+                <div className={"container-internal " + classes.itemPage}>
+                    <ContactsBlock type="full" contacts={user.contacts}/>
                 </div>
             )
 

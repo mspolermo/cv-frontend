@@ -8,29 +8,29 @@
         cursor: default;
 
     }
-    &__circle {
-        max-width: 6px;
-        min-width: 6px;
-        margin-right: 10px;
-        fill: $circleColor-main;
-        stroke: $circleColor-main;
-    }
     &__text {
         line-height: 22px;
+        &::before {
+            content: '\2022';
+            color: $circleColor-main;
+            padding-right: 1em;
+        }  
     }
     &__outBlock {
 
     }
     &__innerBlock{
-
+        margin-left: 1em; 
     }
     &__stringL2{
         margin: 0 1em;
         line-height: 22px;
+               
         cursor: default;
         &::before {
             content: '-';
-            margin: 0 1em;
+            color: $circleColor-main;
+            padding-right: 1em;
         }
     }
 }

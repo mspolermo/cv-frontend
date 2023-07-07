@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 import classes from "./AboutBlock.module.scss"
-import Icons from "../../Icons/Icons";
 import { AboutBlockProps } from "../../../types/block";
 
 const AboutBlock:FC<AboutBlockProps> = ({point}) => {
@@ -8,7 +7,6 @@ const AboutBlock:FC<AboutBlockProps> = ({point}) => {
         <div>
 
             { (typeof point == 'string') && <div className={classes.aboutBlock__stringL1}>
-                <Icons name="circle" size="10" color="black" className={classes.aboutBlock__circle}/>
                 <p className={"text " + classes.aboutBlock__text}>{point}</p>
             </div>}
 
@@ -16,8 +14,7 @@ const AboutBlock:FC<AboutBlockProps> = ({point}) => {
             { (typeof point == 'object') && <div className={classes.aboutBlock__outBlock}>
 
                 <div className={classes.aboutBlock__stringL1}>
-                    <Icons name="circle" size="10" color="black" className={classes.aboutBlock__circle}/>
-                    <p className={"text " + classes.aboutBlock__text}>{point.head}</p>
+                    <p className={"text " + classes.aboutBlock__text}>{point.title}</p>
                 </div>
                 
                 <div className={classes.aboutBlock__innerBlock}>

@@ -7,6 +7,7 @@ import { menuStatusFalse, menuStatusTrue } from "../../store/reducers/menuStatus
 import Icons from "../Icons/Icons";
 import Slider from "../UI/Slider/Slider";
 import cn from 'classnames';
+import ContactsBlock from "../Blocks/ContactsBlock/ContactsBlock";
 
 const AsideMenu:FC = () => {
     const {mainData} = useTypedSelector(state => state.main);
@@ -36,10 +37,10 @@ const AsideMenu:FC = () => {
                         : cn(classes.asideMenu__left, classes.asideMenu__left_active)
             }>
                 
-                <Slider images={mainData.photos} />
+                <Slider images={mainData.photos} type="small"/>
 
                 <div className={classes.asideMenu__body}>
-                    <AsideList name='Contacts' array={mainData.contacts} />
+                    <ContactsBlock type='short' contacts={mainData.contacts} />
                     <AsideList name='Tech Skills' array={mainData.skills.hard} />
                     <AsideList name='Soft Skills' array={mainData.skills.soft} />
                 </div>

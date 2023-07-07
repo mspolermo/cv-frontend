@@ -1,6 +1,8 @@
+import { IContact, ISkill } from "./IUser";
+
 export interface AsideListProps {
     name: string, 
-    array: (string | { title: string; value: string | string[]; })[]
+    array: (IContact | ISkill) []
 }
 export interface ProjectsListProps {
     type: "full" | "short"

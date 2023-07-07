@@ -2,11 +2,7 @@ export interface IUser {
     "name": string,
     "photos": string [],
     "summary" : string,
-    "contacts": 
-        {
-            "title": "tel" | "mailto" | "any",
-            "value": string
-        }[],
+    "contacts": IContact [],
     "skills": {
         "hard" : ISkill [] ,
         "soft": ISkill [] 
@@ -14,15 +10,17 @@ export interface IUser {
     "projects" : IUserProject [],
     "works" : IUserWork [],
     "education" : IUserEducation [],
-    "about" : [
-        string | {
-            "head" : string,
-            "value": string []
-        }
-    ]
+    "about" : IAbout[]
 }
-
-type ISkill = string | { 
+export type IContact = {
+    "title": string,
+    "value": string
+}
+export type ISkill = string | { 
+    "title": string, 
+    "value": string [] 
+}
+export type IAbout = string | { 
     "title": string, 
     "value": string [] 
 }
@@ -42,7 +40,8 @@ export interface IUserProject {
                 "infoL3": string[] 
             })[]
         })[]   
-    }[]
+    }[],
+    "screenshots": string []
 }
 export interface IUserWork {
     "title": string,
@@ -88,7 +87,8 @@ export const userInit: IUser = {
                     "title": "",
                     "info": ""
                 }
-            ]
+            ],
+            "screenshots": [""]
         }],
     "works" : 
         [{

@@ -2,6 +2,7 @@
 
 .projectDescBlock {
     cursor: default;
+    margin-bottom: 40px;
     &__block {
         margin-bottom: 10px;
     }
@@ -20,6 +21,7 @@
         &::before {
             content: '\2022';
             padding-right: 1em;
+            color: $circleColor-main;
         }
     }
     &__titleL3 {
@@ -28,6 +30,7 @@
         &::before {
             content: '\25E6';
             padding-right: 1em;
+            color: $circleColor-main;
         }
     }
     &__titleL4 {
@@ -36,6 +39,7 @@
         &::before {
             content: '\25B9';
             padding-right: 1em;
+            color: $circleColor-main;
         }
     }
 }

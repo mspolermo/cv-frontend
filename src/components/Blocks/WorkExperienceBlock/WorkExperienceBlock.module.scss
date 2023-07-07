@@ -30,17 +30,12 @@
         cursor: default;
     }
     &__string{
-        display: flex;
-        align-items: center;
-    }
-    &__expirience{
         line-height: 20px;
-    }
-    &__circle{
-        max-width: 6px;
-        min-width: 6px;
-        margin-right: 10px;
-        fill: $circleColor-main;
-        stroke: $circleColor-main;
+        margin-bottom: 2px;
+        &::before {
+            content: '\2022';
+            color: $circleColor-main;
+            padding-right: 1em;
+        }  
     }
 } 

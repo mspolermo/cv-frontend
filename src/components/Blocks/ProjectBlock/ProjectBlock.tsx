@@ -6,6 +6,7 @@ import ProjectDescriptionBlock from "../ProjectDescriptionBlock/ProjectDescripti
 import Icons from "../../Icons/Icons";
 import cn from 'classnames';
 import SkillTag from "../../UI/SkillTag/SkillTag";
+import Slider from "../../UI/Slider/Slider";
 
 const ProjectBlock:FC<ProjectsBlockProps> = ({type, index, project}) => {
     const navigate = useNavigate();
@@ -95,11 +96,11 @@ const ProjectBlock:FC<ProjectsBlockProps> = ({type, index, project}) => {
             )
         case 'full':
             return (
-                <div className={classes.fullProjectsBlock}>
-
-                    <h3 className={cn("heading-l3", classes.fullProjectsBlock__heading)}
+                <div className={classes.fullProjectsBlock}
                         onClick={() => navigate('/cv-frontend/projects/' + project.name)} 
-                    >
+                >
+
+                    <h3 className={cn("heading-l3", classes.fullProjectsBlock__heading)}>
                         {project.name}
                     </h3>
 
@@ -124,16 +125,16 @@ const ProjectBlock:FC<ProjectsBlockProps> = ({type, index, project}) => {
                         </h3>
 
                         <div className={classes.extendedProjectBlock__linkBlock}>
-                            <a href={project.repo} target="_blank" className={classes.extendedProjectBlock__link + ' ' + classes.extendedProjectBlock__link_gHub}>
+                            {project.repo && <a href={project.repo} target="_blank" className={classes.extendedProjectBlock__link + ' ' + classes.extendedProjectBlock__link_gHub}>
                                 <p className={classes.extendedProjectBlock__gitHub}>GitHub</p>
-                            </a>
-                            <a href={project.ghPage} target="_blank" className={classes.extendedProjectBlock__link}>
+                            </a>}
+                            {project.ghPage && <a href={project.ghPage} target="_blank" className={classes.extendedProjectBlock__link}>
                                 <Icons name="gitHub" size="20" color="black" className={classes.extendedProjectBlock__icon} />
                                 <p className={classes.extendedProjectBlock__ghPage}>
                                     <span className={classes.extendedProjectBlock__ghPage + ' ' + classes.extendedProjectBlock__ghPage_big}>GitHub</span>
                                     <span className={classes.extendedProjectBlock__ghPage + ' ' + classes.extendedProjectBlock__ghPage_small}>Pages</span>
                                 </p>
-                            </a>
+                            </a>}
                         </div>
 
                     </div>
@@ -141,6 +142,8 @@ const ProjectBlock:FC<ProjectsBlockProps> = ({type, index, project}) => {
                     <p className={"text " + classes.extendedProjectBlock__summary}>{project.summary}</p>
                     
                     <ProjectDescriptionBlock project={project}/>
+
+                    <Slider images={project.screenshots} type="wide"/>
 
                     <div className={classes.extendedProjectBlock__techBlock}>
 

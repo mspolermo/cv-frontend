@@ -8,6 +8,11 @@
     &__list {
         margin-bottom: 44px;
     }
+    &__contacts {
+        &:nth-child(n+3) {
+            display: none;
+        }
+    }
     &__item {
         display: flex;
         align-items: center;

@@ -9,6 +9,13 @@
     border-radius: 8px;
     overflow: hidden;
     transition: opacity ease-in-out;
+
+    &__wide {
+        margin-bottom: 60px;
+        padding: 20px;
+        background-color: $sliderColor;
+        border: 1px solid $sliderBorderColor;
+    }
     
     &__slide{
       display: flex;
@@ -16,6 +23,9 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;  
+        &_wide {
+            background-size: contain;  
+        }
     }
     &__arrow {
         width: 32px;
@@ -28,17 +38,21 @@
         align-items: center;
         opacity: 0.4;
         cursor: pointer;
+        bottom: calc(0% + 14px);
+        transition: opacity ease 0.4s;
         &:hover {
             opacity: 1;
         }
+        &_wide{
+            bottom: calc(50% - 20px);
+            background: lightgray;
+        }
         &_left {
             left: 14px;
-            bottom: calc(0% + 14px);
+            transform: rotate(180deg);
         }
         &_right {
             right: 14px;
-            bottom: calc(0% + 14px);
-            transform: rotate(180deg);
         } 
     }
 }

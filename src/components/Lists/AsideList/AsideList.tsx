@@ -3,20 +3,32 @@ import classes from "./AsideList.module.scss"
 import Icons from "../../Icons/Icons";
 import { AsideListProps } from "../../../types/list";
 import cn from 'classnames';
+import { useNavigate } from "react-router-dom";
 
 const AsideList:FC<AsideListProps> = ({name, array}) => {
-    
+    const navigate = useNavigate();
+    const routName = name.toLowerCase().split(' ').join('-');
+
     return (
         <div className={classes.asideList}>
-            <h2 className={cn("heading-l2", classes.asideList__heading)}>{name}</h2>
+
+            <h2 className={cn("heading-l2", classes.asideList__heading)}
+                onClick={() => navigate(`/cv-frontend/${routName}`)} 
+            >
+                {name}
+            </h2>
+
             <div className={classes.asideList__list}>
 
                 {array.map( (info) =>
 
                     <ul key={ (typeof info == 'string')
-                        ? info
-                        : info.title
-                    }>
+                                    ? info
+                                    : info.title} 
+                                className={(name === 'Contacts')  
+                                    ? classes.asideList__contacts
+                                    : classes.asideList__skills}
+                    >
                         
                         { (typeof info == 'string') 
 
@@ -70,6 +82,7 @@ const AsideList:FC<AsideListProps> = ({name, array}) => {
                 )}
 
             </div>
+            
         </div>
     );
 };

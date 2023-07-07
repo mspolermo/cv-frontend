@@ -3,5 +3,9 @@ export interface ModalProps {
     error? : string
 }
 export interface SkillTagProps {
-    tag: string;
+    tag: string
+}
+export interface SliderProps {
+    type: 'small' | 'wide',
+    images: string [];
 }

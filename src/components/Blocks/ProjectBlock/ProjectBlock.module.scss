@@ -81,18 +81,17 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 14px;
+    cursor: default;
     &__heading{
         margin-bottom: 4px;
         font-weight: 700;
         font-size: 16px;
         line-height: 20px;
         color: $headingColor;
-        cursor: default;
     }
     &__summary {
         margin-bottom: 4px;
         line-height: 14px;
-        cursor: default;
     }
     &__tech{
         display: flex;
@@ -102,7 +101,6 @@
         font-size: 14px;
         line-height: 15px;
         color: $textColor-additional;
-        cursor: default;
     }
 
 }
@@ -129,7 +127,7 @@
     }
     &__techBlock{
         display: block;
-        margin: 40px 0 20px 2em;
+        margin-bottom: 20px;
     }
 
     &__linkBlock {

@@ -14,6 +14,30 @@
         {
             "title": "mailto",
             "value": "mspolermo@gmail.com"     
+        },
+        {
+            "title": "telegram",
+            "value": "https://t.me/mspolermo"
+        },
+        {
+            "title": "whatsup",
+            "value": "https://wa.me/79826985468"
+        },
+        {
+            "title": "vkontakte",
+            "value": "https://vk.com/ms_polermo"
+        },
+        {
+            "title": "linkedin",
+            "value": "https://linkedin.com/in/medvedev-alex"
+        },
+        {
+            "title": "headHunter",
+            "value": "https://ekaterinburg.hh.ru/resume/f92de35bff0ba86eb70039ed1f51396a4f6e45"
+        },
+        {
+            "title": "gitHub",
+            "value": "https://github.com/mspolermo/"
         }
     ],
     "skills": {
@@ -138,6 +162,22 @@
                         
                     ]
                 }
+            ],
+            "screenshots": [
+                "/cv-frontend/images/projects/Movies-website/1.jpg",
+                "/cv-frontend/images/projects/Movies-website/2.jpg",
+                "/cv-frontend/images/projects/Movies-website/3.jpg",
+                "/cv-frontend/images/projects/Movies-website/4.jpg",
+                "/cv-frontend/images/projects/Movies-website/5.jpg",
+                "/cv-frontend/images/projects/Movies-website/6.jpg",
+                "/cv-frontend/images/projects/Movies-website/7.jpg",
+                "/cv-frontend/images/projects/Movies-website/8.jpg",
+                "/cv-frontend/images/projects/Movies-website/9.jpg",
+                "/cv-frontend/images/projects/Movies-website/10.jpg",
+                "/cv-frontend/images/projects/Movies-website/11.jpg",
+                "/cv-frontend/images/projects/Movies-website/12.jpg",
+                "/cv-frontend/images/projects/Movies-website/13.jpg",
+                "/cv-frontend/images/projects/Movies-website/14.jpg"
             ]
         },
         {
@@ -209,6 +249,12 @@
                         }
                     ]
                 }
+            ],
+            "screenshots": [
+                "/cv-frontend/images/projects/Posts-web-app/1.jpg",
+                "/cv-frontend/images/projects/Posts-web-app/2.jpg",
+                "/cv-frontend/images/projects/Posts-web-app/3.jpg",
+                "/cv-frontend/images/projects/Posts-web-app/4.jpg"
             ]
         },
         {
@@ -282,6 +328,13 @@
                         }
                     ]
                 }
+            ],
+            "screenshots": [
+                "/cv-frontend/images/projects/Sultan-web-app/1.jpg",
+                "/cv-frontend/images/projects/Sultan-web-app/2.jpg",
+                "/cv-frontend/images/projects/Sultan-web-app/3.jpg",
+                "/cv-frontend/images/projects/Sultan-web-app/4.jpg",
+                "/cv-frontend/images/projects/Sultan-web-app/5.jpg"
             ]
         },
         {
@@ -317,6 +370,13 @@
                         "В планшетной и мобильной версии сайта меню сайта окрывается с помощью нажатия на кнопку бургер-меню"
                     ]
                 }
+            ],
+            "screenshots": [
+                "/cv-frontend/images/projects/Evklid-web/1.jpg",
+                "/cv-frontend/images/projects/Evklid-web/2.jpg",
+                "/cv-frontend/images/projects/Evklid-web/3.jpg",
+                "/cv-frontend/images/projects/Evklid-web/4.jpg",
+                "/cv-frontend/images/projects/Evklid-web/5.jpg"
             ]
         }
     ],
@@ -472,7 +532,7 @@
         "Опыт работы системным администратором с 2015 года. Умение быстро развернуть и настроить необходимое ПО (macOS/linux/windows)",
         "Имеется автомобиль и права категории B",
         {
-            "head" : "Знание базовой теории тестирования. Изученные материалы:",
+            "title" : "Знание базовой теории тестирования. Изученные материалы:",
             "value": [
                 "«Tестирование dot com» Роман Савин",
                 "«Тестирование программного обеспечения. Базовый курс» Святослав Куликов",
@@ -482,7 +542,7 @@
             ]
         },
         {
-            "head" : "Мои хобби и увлечения:",
+            "title" : "Мои хобби и увлечения:",
             "value": [
                 "Звукозапись и саунд-дизайн",
                 "Новые технологии",

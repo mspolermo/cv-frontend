@@ -1,0 +1,78 @@
+@import '/src/styles/variables.scss';
+
+%hoverAnim {
+    transition: 0.3s ease;
+    transition-property: fill, stroke, color;
+}
+
+.contacts {
+    &__heading {
+        margin-bottom: 10px;
+    }
+    &__list {
+        margin-bottom: 20px;
+        @extend %hoverAnim ;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        &:nth-child(n+3) {
+            display: none;
+        }
+        &:hover {
+            .contacts{
+                &__icon {
+                    fill: $hoverColor;
+                    stroke: $hoverColor;    
+                }
+                &__text {
+                    color: $hoverColor;
+                }
+            }
+        }
+    }
+    &__icon {
+        fill: $iconColor-aside;
+        stroke: $iconColor-aside;
+        width: 20px;
+        @extend %hoverAnim ;
+    }
+    &__text {
+        display: inline;
+        padding-left: 0.5em;
+        color: $textColor-aside;
+        @extend %hoverAnim ;
+    }
+    &__iconsList {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+    }
+    &__iconsItem {
+        display: none;
+        margin-right: 6px;
+        &:nth-child(n+3) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &:hover {
+            .contacts__bigIcon {
+                fill: $hoverColor;
+                stroke: $hoverColor; 
+            } 
+        }
+    }
+    &__link {
+        height: 50px;
+        width: 50px;
+    }
+    &__bigIcon {
+        display: flex;
+        //width: 80%;
+        height: 80%;
+        @extend %hoverAnim ;
+        fill: $iconColor-aside;
+        stroke: $iconColor-aside;
+    }
+}

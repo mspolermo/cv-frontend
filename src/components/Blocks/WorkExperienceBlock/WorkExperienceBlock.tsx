@@ -1,6 +1,6 @@
 import React, {FC} from "react";
 import classes from "./WorkExperienceBlock.module.scss"
-import Icons from "../../Icons/Icons";
+
 import {WorkExperienceBlockProps} from "../../../types/block";
 import { useNavigate } from "react-router-dom";
 import expirienceCount from "../../../hooks/utils";
@@ -38,12 +38,9 @@ const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
 
                         {work.descriptionFull.map(descript =>
 
-                            <div key={descript} className={classes.workExpirience__string}>
-                                <Icons name="circle" size="10" className={classes.workExpirience__circle}/>
-                                <p className={"text " + classes.workExpirience__expirience}>
-                                    {descript}
-                                </p>
-                            </div>)
+                            <p key={descript} className={"text " + classes.workExpirience__string}>
+                                {descript}
+                            </p>)
                         }
                     </div>
                 </div>
@@ -75,12 +72,9 @@ const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
 
                         {work.descriptionShort.map(descript =>
 
-                            <div key={descript} className={classes.workExpirience__string}>
-                                <Icons name="circle" size="10" className={classes.workExpirience__circle}/>
-                                <p className={"text " + classes.workExpirience__expirience}>
-                                    {descript}
-                                </p>
-                            </div>)
+                            <p key={descript} className={"text " + classes.workExpirience__string}>
+                                {descript}
+                            </p>)
                         }
                     </div>
                 </div>

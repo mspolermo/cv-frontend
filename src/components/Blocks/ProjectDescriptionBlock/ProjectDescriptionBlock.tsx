@@ -7,8 +7,8 @@ import cn from 'classnames';
 const ProjectDescriptionBlock:FC<ProjectDescriptionBlockProps> = ({project}) => {
 
     return (
-        <div>
-            { Array.isArray(project.description) && <div className={classes.projectDescBlock}>
+        <div className={classes.projectDescBlock}>
+            { Array.isArray(project.description) && <div>
 
                 {project.description.map(item => <div key={item.title} 
                                                     className={classes.projectDescBlock__block}>

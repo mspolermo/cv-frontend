@@ -1,4 +1,4 @@
-import { IUserEducation, IUserWork, IUserProject } from "./IUser"
+import { IUserEducation, IUserWork, IUserProject, IAbout, IContact } from "./IUser"
 
 export interface ProjectsBlockProps {
     type: 'short' | 'full' | 'extended',
@@ -14,11 +14,12 @@ export interface EducationBlockProps {
     educate: IUserEducation
 }
 export interface AboutBlockProps {
-    point: string | {
-        head: string,
-        value: Array<string>
-    }
+    point: IAbout
 }
 export interface ProjectDescriptionBlockProps {
     project: IUserProject
+}
+export interface ContactsBlockProps {
+    type: 'short' | 'full',
+    contacts: IContact []
 }
