@@ -4,7 +4,7 @@ import { AboutBlockProps } from "../../../types/block";
 
 const AboutBlock:FC<AboutBlockProps> = ({point}) => {
     return (
-        <div>
+        <li>
 
             { (typeof point == 'string') && <div className={classes.aboutBlock__stringL1}>
                 <p className={"text " + classes.aboutBlock__text}>{point}</p>
@@ -27,7 +27,7 @@ const AboutBlock:FC<AboutBlockProps> = ({point}) => {
 
             </div>}
 
-        </div>
+        </li>
     )
 }
 

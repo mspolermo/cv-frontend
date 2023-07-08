@@ -14,16 +14,16 @@ const ProjectBlock:FC<ProjectsBlockProps> = ({type, index, project}) => {
     //Распаковка массива строк и объектов в строку и массив тегов, для отрисовки
     const allTechArray = [];
     const tagsArray = [];
-    for (let i=0; i<project.tech.length; i++) {
+    for (let i=0; i<project.skills.length; i++) {
 
-        if (typeof project.tech[i] === 'string') {
+        if (typeof project.skills[i] === 'string') {
 
-            allTechArray.push(project.tech[i]);
-            tagsArray.push(project.tech[i]);
+            allTechArray.push(project.skills[i]);
+            tagsArray.push(project.skills[i]);
 
         } else {
 
-            let innerObject = project.tech[i];
+            let innerObject = project.skills[i];
             type objectKeyType = keyof typeof innerObject; 
 
             let objectValue = "";
@@ -53,7 +53,7 @@ const ProjectBlock:FC<ProjectsBlockProps> = ({type, index, project}) => {
     switch (type) {
         case 'short':
             return (
-                <div className={classes.shortsProjectsBlock__item}
+                <li className={classes.shortsProjectsBlock__item}
                         onClick={() => navigate('/cv-frontend/projects/' + project.name)} 
                 >
 
@@ -75,15 +75,15 @@ const ProjectBlock:FC<ProjectsBlockProps> = ({type, index, project}) => {
 
                     <div className={classes.shortsProjectsBlock__right}>
 
-                        {project.tech.map( (tech, i) =>
+                        {project.skills.map( (skill, i) =>
 
                             <div key={project.name + i} 
                                             className={classes.shortsProjectsBlock__techBlock}
                             >
 
-                                { (typeof tech === 'string')
-                                    ? <p>{tech}</p>
-                                    : <p>{tech.title}</p>
+                                { (typeof skill === 'string')
+                                    ? <p>{skill}</p>
+                                    : <p>{skill.title}</p>
                                 }
 
                             </div>
@@ -92,7 +92,7 @@ const ProjectBlock:FC<ProjectsBlockProps> = ({type, index, project}) => {
 
                     </div>
                     
-                </div>   
+                </li>   
             )
         case 'full':
             return (

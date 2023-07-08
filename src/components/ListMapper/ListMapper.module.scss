@@ -1,9 +1,11 @@
 @import '/src/styles/variables.scss';
 
-.educationList {
-    padding-bottom: 40px;
-    &__heading{
+.list {
+    margin-bottom: 51px;
+    &__heading {
         margin-bottom: 12px;
     }
-    
+    &__list {
+
+    }
 }

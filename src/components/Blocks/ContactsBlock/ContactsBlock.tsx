@@ -39,7 +39,7 @@ const ContactsBlock:FC<ContactsBlockProps> = ({type, contacts}) => {
                         <li key={info.title} className={classes.contacts__iconsItem}>
 
                             <a href={info.value} target="_blank" className={classes.contacts__link}>
-                                <Icons name={info.title} size="" className={classes.contacts__bigIcon}/>    
+                                <Icons name={info.title} size="100%" className={classes.contacts__bigIcon}/>    
                             </a>
                             
                         </li>

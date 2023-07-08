@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 import classes from "./AsideMenu.module.scss"
-import AsideList from "../Lists/AsideList/AsideList";
 import { useTypedSelector } from "../../hooks/useTypedSelector";
 import { useDispatch } from "react-redux";
 import { menuStatusFalse, menuStatusTrue } from "../../store/reducers/menuStatusReducer";
@@ -8,6 +7,7 @@ import Icons from "../Icons/Icons";
 import Slider from "../UI/Slider/Slider";
 import cn from 'classnames';
 import ContactsBlock from "../Blocks/ContactsBlock/ContactsBlock";
+import ListMapper from "../ListMapper/ListMapper";
 
 const AsideMenu:FC = () => {
     const {mainData} = useTypedSelector(state => state.main);
@@ -41,8 +41,8 @@ const AsideMenu:FC = () => {
 
                 <div className={classes.asideMenu__body}>
                     <ContactsBlock type='short' contacts={mainData.contacts} />
-                    <AsideList name='Tech Skills' array={mainData.skills.hard} />
-                    <AsideList name='Soft Skills' array={mainData.skills.soft} />
+                    <ListMapper type='short' name='hard-skills' />
+                    <ListMapper type='short' name='soft-skills' />
                 </div>
             </div>
             <div onClick={openMenu} className={(!menuStatus) 

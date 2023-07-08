@@ -4,7 +4,7 @@ import { EducationBlockProps } from "../../../types/block";
 
 const EducationBlock:FC<EducationBlockProps> = ({educate, type}) => {
     return (
-        <div className={ (type === 'short')
+        <li className={ (type === 'short')
                         ? classes.educationBlock__block
                         : classes.educationBlock__block + " " + classes.educationBlock__block_full
         }>
@@ -20,7 +20,7 @@ const EducationBlock:FC<EducationBlockProps> = ({educate, type}) => {
                 {educate.info}
             </p>}
 
-        </div>
+        </li>
     )
 }
 

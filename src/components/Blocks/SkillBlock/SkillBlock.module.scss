@@ -1,0 +1,36 @@
+@import '/src/styles/variables.scss';
+
+.skillBlock {
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
+    &__text {
+        display: inline;
+        padding-left: 1em;
+        color: $textColor-aside;
+        &_mark {
+            cursor: default;
+            &::before {
+                content: '\2022';
+                color: $circleColor-aside;
+                padding-right: 1em;
+            }   
+        }
+        &_markL2 {
+            display: block;
+            padding-left: 2em;
+            cursor: default;
+            &::before {
+                content: '\2043';
+                color: $circleColor-aside;
+                padding-right: 0.5em;
+            }
+        }
+        
+    }
+}
+
+.fullSkillBlock {
+    
+}

@@ -50,7 +50,7 @@
     }
     &__iconsItem {
         display: none;
-        margin-right: 6px;
+        margin-right: 20px;
         &:nth-child(n+3) {
             display: flex;
             align-items: center;
@@ -64,13 +64,11 @@
         }
     }
     &__link {
-        height: 50px;
-        width: 50px;
+
     }
     &__bigIcon {
-        display: flex;
-        //width: 80%;
-        height: 80%;
+        height: 40px;
+        width: 40px;
         @extend %hoverAnim ;
         fill: $iconColor-aside;
         stroke: $iconColor-aside;

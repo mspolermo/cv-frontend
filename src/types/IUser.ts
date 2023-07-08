@@ -30,7 +30,7 @@ export interface IUserProject {
     "repo": string,
     "ghPage": string,
     "important" : boolean,
-    "tech": ISkill [],
+    "skills": ISkill [],
     "description": { "title": string, "info": string }  | {
         "title": string, 
         "info": string | ( string | {
@@ -50,6 +50,7 @@ export interface IUserWork {
     "start": string,
     "finish": string,
     "important" : boolean,
+    "skills": ISkill [],
     "descriptionShort": string[],
     "descriptionFull": string[]
 }
@@ -81,7 +82,7 @@ export const userInit: IUser = {
             "repo": "",
             "ghPage": "",
             "important" : false,
-            "tech": [""],
+            "skills": [""],
             "description" : [
                 {
                     "title": "",
@@ -98,6 +99,7 @@ export const userInit: IUser = {
             "start": "",
             "finish": "",
             "important" : false,
+            "skills": [""],
             "descriptionShort": [""],
             "descriptionFull": [""]
         }],

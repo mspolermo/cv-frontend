@@ -13,7 +13,7 @@ const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
     switch(type) {
         case 'extended':
             return (
-                <div>
+                <div className={classes.workExpirience}>
                                         
                     <div className={classes.workExpirience__headingBlock}>
         
@@ -47,7 +47,7 @@ const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
             )
         default:
             return (
-                <div>
+                <li className={classes.workExpirience}>
                                         
                     <div className={classes.workExpirience__headingBlock}>
 
@@ -77,7 +77,7 @@ const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
                             </p>)
                         }
                     </div>
-                </div>
+                </li>
             )    
     }
     
