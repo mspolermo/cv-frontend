@@ -57,9 +57,7 @@
             "WebPack"
         ],
         "soft": [
-            "Scrum",
-            "Agile",
-            "GTD",
+            "Data",
             "TeamWork"
         ] 
     },
@@ -70,7 +68,7 @@
             "repo": "https://github.com/mspolermo/movies-website",
             "ghPage" : "https://mspolermo.github.io/movies-website/",
             "important": true,
-            "tech": [
+            "skills": [
                 "TypeScript",
                 {
                     "title": "React", 
@@ -84,7 +82,8 @@
                     ]
                 },
                 "SCSS",
-                "GIT"
+                "GIT",
+                "TeamWork"
             ],
             "description" : [
                 {
@@ -186,7 +185,7 @@
             "repo": "https://github.com/mspolermo/posts-web",
             "ghPage": "https://mspolermo.github.io/posts-web/",
             "important": true,
-            "tech": [
+            "skills": [
                 "TypeScript",
                 {
                     "title": "React", 
@@ -263,7 +262,7 @@
             "repo": "https://github.com/mspolermo/sultan-web-app",
             "ghPage": "https://mspolermo.github.io/sultan-web-app/",
             "important": true,
-            "tech": [
+            "skills": [
                 "TypeScript",
                 "React",
                 "SCSS",
@@ -343,7 +342,7 @@
             "repo": "https://github.com/mspolermo/Evklid-web",
             "ghPage": "https://mspolermo.github.io/Evklid-web/",
             "important": false,
-            "tech": [
+            "skills": [
                 "JavaScript",
                 "SCSS",
                 "WebPack",
@@ -388,6 +387,11 @@
             "start": "02.2023",
             "finish": "06.2023",
             "important" : true,
+            "skills": [
+                "TeamWork",
+                "TypeScript",
+                "i18n"
+            ],
             "descriptionShort": [
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -408,6 +412,10 @@
             "start": "04.2018",
             "finish": "02.2023",
             "important" : true,
+            "skills": [
+                "TeamWork",
+                "Data"
+            ],
             "descriptionShort": [
                 "IT Support 2nd line - ежедневная работа в тикет-трекинговой системе ServiceNow на английском (аналог Jira): публикация пошаговых рекомендаций по исправлению проблем/багов/дефектов обнаруженных пользователями, вертикальный форвард проблем/багов, траблшутинг, поиск ошибок в логах и т.д.", 
                 "Работа в распределённой команде: регулярные митинги по текущему статус-апдейту в Teams, коммуникация между командами (общение и деловая переписка на английском языке), внедрение и тестирование оборудования/ПО.",
@@ -437,6 +445,9 @@
             "start": "06.2014",
             "finish": "08.2019",
             "important" : false,
+            "skills": [
+                "Data"
+            ],
             "descriptionShort": [
                 "Администрирование Windows Server 2008 (AD, FTP, Backup), VipNet, SecretNet, ИССОН.",
                 "Обслуживание и организация рабочих мест сотрудников компании.",
@@ -461,6 +472,9 @@
             "start": "10.2017",
             "finish": "01.2018",
             "important" : false,
+            "skills": [
+                "Data"
+            ],
             "descriptionShort": [
                 "Проектирование IT инфраструктуры предприятия и внедрение решений.",
                 "Подбор и закупка оборудования, комплектующих, софта.",
@@ -483,6 +497,9 @@
             "start": "01.2016",
             "finish": "10.2017",
             "important" : false,
+            "skills": [
+                "Data"
+            ],
             "descriptionShort": [
                 "IT-Аутсорсинг фирм: 16 компаний под постянным личным контролем.",
                 "Сервисная работа: диагностика и ремонт ПК.",
