@@ -1,5 +1,9 @@
 @import '/src/styles/variables.scss';
 
+%transition {
+    transition: 0.3s ease color;
+}
+
 .skillBlock {
     &__item {
         display: flex;
@@ -32,5 +36,19 @@
 }
 
 .fullSkillBlock {
-    
+    &__item {
+        margin-bottom: 10px;
+    }
+    &__skillName{
+        margin-bottom: 4px;
+        font-weight: 700;
+        cursor: default;
+    }
+    &__skillAprove {
+        padding-left: 2em;
+        cursor: pointer;
+        &:hover {
+            color: $hoverColor; 
+        }
+    }
 }

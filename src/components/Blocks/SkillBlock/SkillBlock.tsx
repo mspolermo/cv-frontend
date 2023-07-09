@@ -106,14 +106,16 @@ const SkillBlock:FC<SkillBlockProps> = ({skill, type}) => {
                     {(typeof skill == 'string') 
                     ?
                         <div className={classes.fullSkillBlock__item}>
-                            <p className={ cn( "text", classes.fullSkillBlock__text)}>
+                            <p className={cn("text", classes.fullSkillBlock__skillName)}>
                                 {skill}
                             </p>
 
                             {allSkillsArray.map( (project) => {
                                 if (project[2].includes(skill))
                                 return (
-                                    <div onClick={() => navigate(`${project[1]}`)} >
+                                    <div onClick={() => navigate(`${project[1]}`)} 
+                                            className={cn("text", classes.fullSkillBlock__skillAprove)}
+                                    >
                                         {project[0].toString()}
                                     </div>)
                             })}
@@ -121,29 +123,36 @@ const SkillBlock:FC<SkillBlockProps> = ({skill, type}) => {
                         </div>
                     : 
 
-                        <div className={classes.fullSkillBlock__item}>
-                            <p className={cn("text", classes.fullSkillBlock__text)}>
-                                {skill.title}
-                            </p>
+                        <div>
 
-                            {allSkillsArray.map( (project) => {
-                                if (project[2].includes(skill.title))
-                                    return (
-                                        <div onClick={() => navigate(`${project[1]}`)}>
-                                            {project[0].toString()}
-                                        </div>)
-                            })}
+                            <div className={classes.fullSkillBlock__item}>
+                                <p className={cn("text", classes.fullSkillBlock__skillName)}>
+                                    {skill.title}
+                                </p>
+
+                                {allSkillsArray.map( (project) => {
+                                    if (project[2].includes(skill.title))
+                                        return (
+                                            <div onClick={() => navigate(`${project[1]}`)}
+                                                    className={cn("text", classes.fullSkillBlock__skillAprove)}
+                                            >
+                                                {project[0].toString()}
+                                            </div>)
+                                })}
+                            </div>
                            
                             {skill.value.map( info => 
-                                <div>
-                                    <p  key={info}className={cn("text",classes.skillBlock__text)}>
+                                <div className={classes.fullSkillBlock__item}>
+                                    <p  key={info} className={cn("text", classes.fullSkillBlock__skillName)}>
                                         {info}
                                     </p>
 
                                     {allSkillsArray.map( (project) => {
                                         if (project[2].includes(info))
                                             return (
-                                                <div onClick={() => navigate(`${project[1]}`)}>
+                                                <div onClick={() => navigate(`${project[1]}`)}
+                                                        className={cn("text", classes.fullSkillBlock__skillAprove)}
+                                                >
                                                     {project[0].toString()}
                                                 </div>)
                                     })}
