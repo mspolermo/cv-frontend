@@ -55,7 +55,8 @@ const Routing = () => {
 
 					<Route path={'/cv-frontend/work-experience/:id'} element={<ItemPage type='work'/>} />
 					<Route path={'/cv-frontend/projects/:id'} element={<ItemPage type='project'/>} />
-					
+					<Route path={'/cv-frontend/skills/:id'} element={<ItemPage type='skill'/>} />
+
 					<Route path={'*'} element={<MainPage />} />
 					
 				</Routes>

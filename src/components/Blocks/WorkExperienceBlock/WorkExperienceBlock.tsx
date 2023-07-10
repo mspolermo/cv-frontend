@@ -3,12 +3,14 @@ import classes from "./WorkExperienceBlock.module.scss"
 
 import {WorkExperienceBlockProps} from "../../../types/block";
 import { useNavigate } from "react-router-dom";
-import expirienceCount from "../../../hooks/utils";
+import {expirienceCount, getAllSkills} from "../../../hooks/utils";
+import SkillTag from "../../UI/SkillTag/SkillTag";
 
 const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
     const navigate = useNavigate();
 
    let elapsed = expirienceCount(work.start, work.finish);
+   const tagsArray = getAllSkills(work, 'array');
 
     switch(type) {
         case 'extended':
@@ -34,7 +36,7 @@ const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
                     <p className={classes.workExpirience__date}>
                         {work.start + ' - ' + work.finish + ' ( ' + elapsed + ' ) '}
                     </p>
-                    <div className={classes.workExpirience__description}>
+                    <div className={classes.workExpirience__description + " " + classes.workExpirience__description_extended}>
 
                         {work.descriptionFull.map(descript =>
 
@@ -42,6 +44,14 @@ const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
                                 {descript}
                             </p>)
                         }
+                    </div>
+
+                    <div className={classes.workExpirience__techBlock}>
+
+                        {typeof tagsArray !== 'string' && tagsArray.map( (tech) => 
+                            <SkillTag key={tech.toString()} tag={tech.toString()} />
+                        )}     
+
                     </div>
                 </div>
             )

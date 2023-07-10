@@ -7,48 +7,13 @@ import Icons from "../../Icons/Icons";
 import cn from 'classnames';
 import SkillTag from "../../UI/SkillTag/SkillTag";
 import Slider from "../../UI/Slider/Slider";
+import { getAllSkills } from "../../../hooks/utils";
 
 const ProjectBlock:FC<ProjectsBlockProps> = ({type, index, project}) => {
     const navigate = useNavigate();
     
-    //Распаковка массива строк и объектов в строку и массив тегов, для отрисовки
-    const allTechArray = [];
-    const tagsArray = [];
-    for (let i=0; i<project.skills.length; i++) {
-
-        if (typeof project.skills[i] === 'string') {
-
-            allTechArray.push(project.skills[i]);
-            tagsArray.push(project.skills[i]);
-
-        } else {
-
-            let innerObject = project.skills[i];
-            type objectKeyType = keyof typeof innerObject; 
-
-            let objectValue = "";
-
-            Object.keys(innerObject).forEach((key) => {
-
-                if (typeof innerObject[key as objectKeyType] === 'string') {
-
-                    objectValue += innerObject[key as objectKeyType];
-                    tagsArray.push(innerObject[key as objectKeyType]);
-
-                } else {
-
-                    let innerArray: string[] = innerObject[key as objectKeyType];
-                    objectValue += ` (${innerArray.join(', ')})`;
-
-                    innerArray.forEach( item => tagsArray.push(item));
-
-                };
-            });
-
-            allTechArray.push(objectValue);
-        };
-    };
-    const allTechString = allTechArray.join(', ');
+    const tagsArray = getAllSkills(project, 'array');
+    const allTechString = getAllSkills(project, 'string');
 
     switch (type) {
         case 'short':
@@ -109,7 +74,7 @@ const ProjectBlock:FC<ProjectsBlockProps> = ({type, index, project}) => {
                     </p>
 
                     <p className={classes.fullProjectsBlock__tech}>
-                        Используемые технологии: {allTechString}
+                        Используемые технологии: {allTechString.toString()}
                     </p>
 
                 </div>
@@ -147,7 +112,7 @@ const ProjectBlock:FC<ProjectsBlockProps> = ({type, index, project}) => {
 
                     <div className={classes.extendedProjectBlock__techBlock}>
 
-                        {tagsArray.map( (tech) => 
+                        {typeof tagsArray !== 'string' && tagsArray.map( (tech) => 
                             <SkillTag key={tech.toString()} tag={tech.toString()} />
                         )}     
 

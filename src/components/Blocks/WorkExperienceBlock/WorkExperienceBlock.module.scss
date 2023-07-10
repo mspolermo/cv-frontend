@@ -28,7 +28,11 @@
         cursor: default;
     }
     &__description{
+        
         cursor: default;
+        &_extended {
+            margin-bottom: 60px;  
+        }
     }
     &__string{
         line-height: 20px;
@@ -38,5 +42,9 @@
             color: $circleColor-main;
             padding-right: 1em;
         }  
+    }
+    &__techBlock{
+        display: block;
+        margin-bottom: 20px;
     }
 } 
