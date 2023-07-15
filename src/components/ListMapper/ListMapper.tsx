@@ -1,15 +1,16 @@
 import React, {FC} from "react";
 import classes from "./ListMapper.module.scss";
-import cn from 'classnames';
 import { ListMapperProps } from "../../types/list";
+
+import cn from 'classnames';
 import { useNavigate } from "react-router-dom";
-import WorkExperienceBlock from "../Blocks/WorkExperienceBlock/WorkExperienceBlock";
+
 import { useTypedSelector } from "../../hooks/useTypedSelector";
+import WorkExperienceBlock from "../Blocks/WorkExperienceBlock/WorkExperienceBlock";
 import ProjectBlock from "../Blocks/ProjectBlock/ProjectBlock";
 import EducationBlock from "../Blocks/EducationBlock/EducationBlock";
 import AboutBlock from "../Blocks/AboutBlock/AboutBlock";
 import SkillBlock from "../Blocks/SkillBlock/SkillBlock";
-
 
 const ListMapper:FC<ListMapperProps> = ({type, name}) => {
     const navigate = useNavigate();
@@ -160,7 +161,7 @@ const ListMapper:FC<ListMapperProps> = ({type, name}) => {
 
                 </div>
             )
-    }
-}
+    };
+};
 
 export default ListMapper;

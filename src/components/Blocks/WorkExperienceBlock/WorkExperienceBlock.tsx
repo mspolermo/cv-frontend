@@ -1,15 +1,16 @@
 import React, {FC} from "react";
-import classes from "./WorkExperienceBlock.module.scss"
-
+import classes from "./WorkExperienceBlock.module.scss";
 import {WorkExperienceBlockProps} from "../../../types/block";
+import cn from 'classnames';
 import { useNavigate } from "react-router-dom";
+
 import {expirienceCount, getAllSkills} from "../../../hooks/utils";
 import SkillTag from "../../UI/SkillTag/SkillTag";
 
 const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
     const navigate = useNavigate();
 
-   let elapsed = expirienceCount(work.start, work.finish);
+   const elapsed = expirienceCount(work.start, work.finish);
    const tagsArray = getAllSkills(work, 'array');
 
     switch(type) {
@@ -25,9 +26,8 @@ const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
                             {work.title}    
                         </h3>
         
-                        <h4 className={classes.workExpirience__heading 
-                                        + " "
-                                        + classes.workExpirience__heading_additional}>
+                        <h4 className={cn(classes.workExpirience__heading,
+                                         classes.workExpirience__heading_additional)}>
                             {work.company}
                         </h4>   
         
@@ -36,11 +36,12 @@ const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
                     <p className={classes.workExpirience__date}>
                         {work.start + ' - ' + work.finish + ' ( ' + elapsed + ' ) '}
                     </p>
-                    <div className={classes.workExpirience__description + " " + classes.workExpirience__description_extended}>
+                    <div className={cn(classes.workExpirience__description,
+                                        classes.workExpirience__description_extended)}>
 
                         {work.descriptionFull.map(descript =>
 
-                            <p key={descript} className={"text " + classes.workExpirience__string}>
+                            <p key={descript} className={cn("text", classes.workExpirience__string)}>
                                 {descript}
                             </p>)
                         }
@@ -61,15 +62,14 @@ const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
                                         
                     <div className={classes.workExpirience__headingBlock}>
 
-                        <h3 className={ "heading-l3 " + classes.workExpirience__heading}
+                        <h3 className={cn("heading-l3", classes.workExpirience__heading)}
                             onClick={() => navigate('/cv-frontend/work-experience/' + work.companyEn)}
                         >
                             {work.title}    
                         </h3>
 
-                        <h4 className={classes.workExpirience__heading 
-                                        + " "
-                                        + classes.workExpirience__heading_additional}>
+                        <h4 className={cn(classes.workExpirience__heading,
+                                            classes.workExpirience__heading_additional)}>
                             {work.company}
                         </h4>   
 
@@ -82,14 +82,14 @@ const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
 
                         {work.descriptionShort.map(descript =>
 
-                            <p key={descript} className={"text " + classes.workExpirience__string}>
+                            <p key={descript} className={cn("text", classes.workExpirience__string)}>
                                 {descript}
                             </p>)
                         }
                     </div>
                 </li>
             )    
-    }
+    };
     
 }
 

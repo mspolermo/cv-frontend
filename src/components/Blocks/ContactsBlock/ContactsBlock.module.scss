@@ -32,9 +32,9 @@
         }
     }
     &__icon {
+        width: 20px;
         fill: $iconColor-aside;
         stroke: $iconColor-aside;
-        width: 20px;
         @extend %hoverAnim ;
     }
     &__text {

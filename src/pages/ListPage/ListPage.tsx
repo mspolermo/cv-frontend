@@ -1,10 +1,13 @@
 import React, {FC, useEffect} from "react";
-import classes from "./ListPage.module.scss"
-import { useTypedSelector } from "../../hooks/useTypedSelector";
+import classes from "./ListPage.module.scss";
+import { ListPageProps } from "../../types/page";
+
+import cn from 'classnames';
 import { useDispatch } from "react-redux";
+
 import { fetchUser } from "../../store/action-creators/user";
 import Loader from "../../components/UI/Loader/Loader";
-import { ListPageProps } from "../../types/page";
+import { useTypedSelector } from "../../hooks/useTypedSelector";
 import ListMapper from "../../components/ListMapper/ListMapper";
 import Modal from "../../components/UI/Modal/Modal";
 
@@ -32,7 +35,7 @@ const ListPage:FC<ListPageProps> = ({type}) => {
         );
     };
     return (
-        <div className={"container-internal " + classes.listPage}>
+        <div className={cn("container-internal", classes.itemPage)}>
             <ListMapper type='full' name={type} />
         </div>
     );

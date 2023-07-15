@@ -1,21 +1,25 @@
 import React, {FC, useState} from "react";
 import classes from './Slider.module.scss';
-import cn from 'classnames';
-import Icons from "../../Icons/Icons";
 import { SliderProps } from "../../../types/ui";
+
+import cn from 'classnames';
+
+import Icons from "../../Icons/Icons";
 
 const FADE_DURATION = 300;
 
 const Slider:FC<SliderProps> = ({images, type}) => {
     const [slide, setSlide] = useState<number>(0);
-    const [fadeState, setFadeState] = useState<'fade-in' | 'fade-out'>('fade-in');
     const [currentTimer, setCurrentTimer] = useState<NodeJS.Timeout>();
+
+    //eslint-disable-next-line 
+    const [fadeState, setFadeState] = useState<'fade-in' | 'fade-out'>('fade-in');
 
     const handlerClick = (move: number) => {
         const timer = setTimeout(() => {
             setSlide( (s) => {
 
-                if ( (s + move) == images.length ) {
+                if ( (s + move) === images.length ) {
                     return 0
                 }; 
 
@@ -66,8 +70,8 @@ const Slider:FC<SliderProps> = ({images, type}) => {
             </button>
 
         </div>
-    )
-}
+    );
+};
 
 export default Slider;
 

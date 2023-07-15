@@ -43,9 +43,10 @@
         }
     }
     &__center {
-        flex: 2 0 auto;
-        min-height: 0.8em;
         margin: 0 4px;
+        min-height: 0.8em;
+        flex: 2 0 auto;
+
         border-bottom: 1px dashed #A8A8A8;
     }
     &__right {
@@ -105,14 +106,14 @@
 
 }
 .extendedProjectBlock {
+    margin-bottom: 14px;    
     display: flex;
     flex-direction: column;
-    margin-bottom: 14px;
     &__headBlock {
+        margin-bottom: 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 20px;
     }
     &__heading{
         font-size: 28px;

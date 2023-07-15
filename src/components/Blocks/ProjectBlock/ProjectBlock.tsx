@@ -1,10 +1,12 @@
 import React, {FC} from "react";
-import classes from "./ProjectBlock.module.scss"
+import classes from "./ProjectBlock.module.scss";
 import { ProjectsBlockProps } from "../../../types/block";
+import cn from 'classnames';
+
 import { useNavigate } from "react-router-dom";
 import ProjectDescriptionBlock from "../ProjectDescriptionBlock/ProjectDescriptionBlock";
 import Icons from "../../Icons/Icons";
-import cn from 'classnames';
+
 import SkillTag from "../../UI/SkillTag/SkillTag";
 import Slider from "../../UI/Slider/Slider";
 import { getAllSkills } from "../../../hooks/utils";
@@ -84,27 +86,55 @@ const ProjectBlock:FC<ProjectsBlockProps> = ({type, index, project}) => {
                 <div className={classes.extendedProjectBlock}>
 
                     <div className={classes.extendedProjectBlock__headBlock}>
-                        <h3 className={"heading-l2 heading-l2__passive " + classes.extendedProjectBlock__heading}
+                        <h3 className={cn("heading-l2 heading-l2__passive", classes.extendedProjectBlock__heading)}
                         >
                             {project.name}
                         </h3>
 
                         <div className={classes.extendedProjectBlock__linkBlock}>
-                            {project.repo && <a href={project.repo} target="_blank" className={classes.extendedProjectBlock__link + ' ' + classes.extendedProjectBlock__link_gHub}>
+
+                            {project.repo && <a href={project.repo} 
+                                                target="_blank"
+                                                rel="noreferrer" 
+                                                className={cn(classes.extendedProjectBlock__link,
+                                                        classes.extendedProjectBlock__link_gHub)}
+                            >
                                 <p className={classes.extendedProjectBlock__gitHub}>GitHub</p>
                             </a>}
-                            {project.ghPage && <a href={project.ghPage} target="_blank" className={classes.extendedProjectBlock__link}>
-                                <Icons name="gitHub" size="20" color="black" className={classes.extendedProjectBlock__icon} />
+
+                            {project.ghPage && <a href={project.ghPage} 
+                                                target="_blank" 
+                                                rel="noreferrer"
+                                                className={classes.extendedProjectBlock__link}
+                            >
+                                <Icons name="gitHub" 
+                                        size="20" 
+                                        color="black" 
+                                        className={classes.extendedProjectBlock__icon} 
+                                />
                                 <p className={classes.extendedProjectBlock__ghPage}>
-                                    <span className={classes.extendedProjectBlock__ghPage + ' ' + classes.extendedProjectBlock__ghPage_big}>GitHub</span>
-                                    <span className={classes.extendedProjectBlock__ghPage + ' ' + classes.extendedProjectBlock__ghPage_small}>Pages</span>
+
+                                    <span className={cn(classes.extendedProjectBlock__ghPage, 
+                                                        classes.extendedProjectBlock__ghPage_big)}
+                                    >
+                                        GitHub
+                                    </span>
+
+                                    <span className={cn(classes.extendedProjectBlock__ghPage,
+                                                        classes.extendedProjectBlock__ghPage_small)}
+                                    >
+                                        Pages
+                                    </span>
+
                                 </p>
                             </a>}
                         </div>
 
                     </div>
 
-                    <p className={"text " + classes.extendedProjectBlock__summary}>{project.summary}</p>
+                    <p className={cn("text", classes.extendedProjectBlock__summary)}>
+                        {project.summary}
+                    </p>
                     
                     <ProjectDescriptionBlock project={project}/>
 
@@ -120,8 +150,8 @@ const ProjectBlock:FC<ProjectsBlockProps> = ({type, index, project}) => {
                     
                 </div>
             )
-    }
+    };
 
-}
+};
 
 export default ProjectBlock;

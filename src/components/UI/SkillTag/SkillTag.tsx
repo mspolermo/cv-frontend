@@ -11,7 +11,7 @@ const SkillTag:FC<SkillTagProps> = ({tag}) => {
         >
             {tag}
         </p>  
-    )
-}
+    );
+};
 
 export default SkillTag;

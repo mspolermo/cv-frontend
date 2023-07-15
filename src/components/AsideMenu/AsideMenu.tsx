@@ -1,13 +1,15 @@
 import React, { FC } from "react";
-import classes from "./AsideMenu.module.scss"
-import { useTypedSelector } from "../../hooks/useTypedSelector";
+import classes from "./AsideMenu.module.scss";
 import { useDispatch } from "react-redux";
-import { menuStatusFalse, menuStatusTrue } from "../../store/reducers/menuStatusReducer";
-import Icons from "../Icons/Icons";
-import Slider from "../UI/Slider/Slider";
 import cn from 'classnames';
+
+import { useTypedSelector } from "../../hooks/useTypedSelector";
+import { menuStatusFalse, menuStatusTrue } from "../../store/reducers/menuStatusReducer";
 import ContactsBlock from "../Blocks/ContactsBlock/ContactsBlock";
 import ListMapper from "../ListMapper/ListMapper";
+
+import Icons from "../Icons/Icons";
+import Slider from "../UI/Slider/Slider";
 
 const AsideMenu:FC = () => {
     const {mainData} = useTypedSelector(state => state.main);
@@ -24,7 +26,7 @@ const AsideMenu:FC = () => {
             case false:
                 dispatch(menuStatusTrue())
         }
-    }
+    };
 
     return (
         <div className={(!menuStatus) 
@@ -45,12 +47,14 @@ const AsideMenu:FC = () => {
                     <ListMapper type='short' name='soft-skills' />
                 </div>
             </div>
+
             <div onClick={openMenu} className={(!menuStatus) 
                         ? classes.asideMenu__right 
                         : cn(classes.asideMenu__right, classes.asideMenu__right_active)} 
             >
                 <Icons name="open" size="20" color="black"/>
             </div>
+            
         </div>
     )
 }

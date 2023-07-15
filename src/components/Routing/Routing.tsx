@@ -1,12 +1,14 @@
 import React, { useEffect } from 'react';
 import { Route, Routes } from "react-router-dom";
+import { useDispatch } from 'react-redux';
+
+import { useTypedSelector } from '../../hooks/useTypedSelector';
+import { fetchMain } from '../../store/action-creators/main';
+
 import AsideMenu from '../AsideMenu/AsideMenu';
 import Header from '../Header/Header';
 import MainPage from '../../pages/MainPage/MainPage';
 import ListPage from '../../pages/ListPage/ListPage';
-import { useTypedSelector } from '../../hooks/useTypedSelector';
-import { useDispatch } from 'react-redux';
-import { fetchMain } from '../../store/action-creators/main';
 import ItemPage from '../../pages/ItemPage/ItemPage';
 import Modal from '../UI/Modal/Modal';
 
@@ -17,7 +19,7 @@ const Routing = () => {
 
 	useEffect(() => {
         dispatch(fetchMain())
-    },[dispatch])
+    },[dispatch]);
 
     if (mainLoading) {
         return (
@@ -26,16 +28,15 @@ const Routing = () => {
 			</div>
             
         )
-    }
+    };
     if (mainError) {
         return (
             <div>
 				<Modal type='error' error={mainError}/>
 			</div>
         )
-    }
+    };
 	
-
 	return (
 		<div className="container">
 			<AsideMenu />

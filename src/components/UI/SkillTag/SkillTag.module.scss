@@ -4,9 +4,13 @@
     display: inline-block;
     padding: 4px 10px;
     margin: 0 4px 6px 0;
+    
     font-size: 12px;
-    background-color: $btnHoverColor;
     border: 1px solid $btnBorderColor;
+    transition: 0.5s ease background-color;
     border-radius: 12px;
     cursor: pointer;
+    &:hover {
+       background-color: $btnHoverColor; 
+    }
 }

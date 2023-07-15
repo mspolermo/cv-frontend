@@ -1,16 +1,18 @@
 import React, {FC} from "react";
-import classes from "./Modal.module.scss"
-import Loader from "../Loader/Loader";
-import { useNavigate } from "react-router-dom";
+import classes from "./Modal.module.scss";
 import { ModalProps } from "../../../types/ui";
+
+import { useNavigate } from "react-router-dom";
+import Loader from "../Loader/Loader";
 
 const Modal:FC<ModalProps> = ({type, error}) => {
     
     const navigate = useNavigate();
+
     function toMain () {
         navigate('/cv-frontend/');
         window.location.reload();
-    }
+    };
 
     switch (type) {
         case 'load':
@@ -35,7 +37,7 @@ const Modal:FC<ModalProps> = ({type, error}) => {
                 </div>
             )
             
-    }
-}
+    };
+};
 
 export default Modal;

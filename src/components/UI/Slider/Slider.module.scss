@@ -9,14 +9,13 @@
     border-radius: 8px;
     overflow: hidden;
     transition: opacity ease-in-out;
-
     &__wide {
         margin-bottom: 60px;
         padding: 20px;
+
         background-color: $sliderColor;
         border: 1px solid $sliderBorderColor;
     }
-    
     &__slide{
       display: flex;
         min-height: 100%;
@@ -30,16 +29,18 @@
     &__arrow {
         width: 32px;
         height: 32px;
-        border-radius: 50%;
-        background: white;
+
         position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
-        opacity: 0.4;
-        cursor: pointer;
         bottom: calc(0% + 14px);
+
+        opacity: 0.4;
         transition: opacity ease 0.4s;
+        background: white;
+        border-radius: 50%;
+        cursor: pointer;
         &:hover {
             opacity: 1;
         }

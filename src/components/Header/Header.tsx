@@ -1,5 +1,6 @@
 import React, {FC} from "react";
-import classes from "./Header.module.scss"
+import classes from "./Header.module.scss";
+
 import { useTypedSelector } from "../../hooks/useTypedSelector";
 import { useNavigate } from "react-router-dom";
 import Breadcrumbs from "../UI/Breadcrumbs/Breadcrumbs";

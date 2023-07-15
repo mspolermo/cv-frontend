@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import classes from "./ProjectDescriptionBlock.module.scss"
+import classes from "./ProjectDescriptionBlock.module.scss";
 import { ProjectDescriptionBlockProps } from '../../../types/block';
 import cn from 'classnames';
 
@@ -11,12 +11,12 @@ const ProjectDescriptionBlock:FC<ProjectDescriptionBlockProps> = ({project}) => 
             { Array.isArray(project.description) && <div>
 
                 {project.description.map(item => <div key={item.title} 
-                                                    className={classes.projectDescBlock__block}>
+                                                        className={classes.projectDescBlock__block}>
 
                     <div className={classes.projectDescBlock__mainHead}>{item.title}</div>
 
                     { (!Array.isArray(item.info)) && <div className={cn( "text", 
-                                                    classes.projectDescBlock__body)}>
+                                                            classes.projectDescBlock__body)}>
                         {item.info}
                     </div>}
                     

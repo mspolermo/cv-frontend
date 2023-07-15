@@ -1,16 +1,19 @@
 import React, {FC, useEffect} from "react";
 import classes from "./MainPage.module.scss";
-import { useTypedSelector } from "../../hooks/useTypedSelector";
+import { blockNames } from "../../types/list";
+
+import cn from 'classnames';
 import { useDispatch } from "react-redux";
+
+import { useTypedSelector } from "../../hooks/useTypedSelector";
 import { fetchUser } from "../../store/action-creators/user";
 import Loader from "../../components/UI/Loader/Loader";
 import Modal from "../../components/UI/Modal/Modal";
 import ListMapper from "../../components/ListMapper/ListMapper";
-import { blockNames } from "../../types/list";
 
 const MainPage:FC = () => {
     const blocksArray: Array<blockNames> = ['projects', 'works', 'education', 'about'];
-    const {user, error, loading} = useTypedSelector(state => state.user)
+    const {user, error, loading} = useTypedSelector(state => state.user);
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -33,7 +36,7 @@ const MainPage:FC = () => {
         )
     };
     return (
-        <div className={"container-internal " + classes.mainPage}>
+        <div className={cn("container-internal", classes.itemPage)}>
 
             <p className={"text " + classes.mainPage__summary}>{user.summary}</p>
 

@@ -4,13 +4,15 @@
     margin: 40px;
     padding: 40px;
     max-height: 300px;
-    background-color: $modalColor;
-    border-radius: 10px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    background-color: $modalColor;
     border: 1px solid $modalBorderColor;
+    border-radius: 10px;
     &__textBlock{
         margin-bottom: 40px;
         line-height: 24px;

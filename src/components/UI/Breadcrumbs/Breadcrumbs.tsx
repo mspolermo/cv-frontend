@@ -23,14 +23,14 @@ const Breadcrumbs:FC= () => {
                         </div>
                     </Link>
                 </div>
-            )
-        })
+            );
+        });
 
     return (
         <div className={classes.breadcrumbs}>
             {crumbs} 
         </div>
-    )
-}
+    );
+};
 
 export default Breadcrumbs;
