@@ -115,7 +115,7 @@ const SkillBlock:FC<SkillBlockProps> = ({skill, type}) => {
                                                         className={cn("text", classes.fullSkillBlock__skillAprove)}
                                                 >
                                                     {project[0].toString()}
-                                                </div>)};
+                                                </div>)}
                                         return null;
                                     })}
 
