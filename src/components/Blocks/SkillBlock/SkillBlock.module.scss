@@ -37,14 +37,25 @@
 
 .fullSkillBlock {
     &__item {
+        padding: 20px;
+        display: grid;
+        grid: auto-flow /0.6fr 1.4fr;
+        gap: 10px;
         margin-bottom: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        align-items: center;
     }
     &__skillName{
+        text-align: center;
         margin-bottom: 4px;
         font-weight: 700;
         cursor: default;
     }
+    &__aproveBlock {
+    }
     &__skillAprove {
+        
         padding-left: 2em;
         cursor: pointer;
         &:hover {

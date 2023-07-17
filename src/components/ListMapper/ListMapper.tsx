@@ -25,11 +25,11 @@ const ListMapper:FC<ListMapperProps> = ({type, name}) => {
     let listHeading = '';
     switch (name) {
         case 'hard-skills':
-            routPath = 'hard-skills';
+            routPath = 'skills/hard-skills';
             listHeading = 'Tech Skills';
             break;
         case 'soft-skills':
-            routPath = 'soft-skills';
+            routPath = 'skills/soft-skills';
             listHeading = 'Soft Skills';
             break;
         case 'projects':

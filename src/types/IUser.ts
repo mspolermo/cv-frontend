@@ -28,7 +28,7 @@ export interface IUserProject {
     "name": string,
     "summary" : string,
     "repo": string,
-    "ghPage": string,
+    "ghPage": string | null,
     "important" : boolean,
     "skills": ISkill [],
     "description": { "title": string, "info": string }  | {

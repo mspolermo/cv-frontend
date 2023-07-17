@@ -14,6 +14,7 @@ import WorkExperienceBlock from "../../components/Blocks/WorkExperienceBlock/Wor
 import ProjectBlock from "../../components/Blocks/ProjectBlock/ProjectBlock";
 import ContactsBlock from "../../components/Blocks/ContactsBlock/ContactsBlock";
 import SkillBlock from "../../components/Blocks/SkillBlock/SkillBlock";
+import ListMapper from "../../components/ListMapper/ListMapper";
 
 const ItemPage:FC<ItemPageProps> = ({type}) => {
     const {user, error, loading} = useTypedSelector(state => state.user);
@@ -65,7 +66,6 @@ const ItemPage:FC<ItemPageProps> = ({type}) => {
                 <div className={cn("container-internal", classes.itemPage)}>
                     <ul>
                         {params.id && <SkillBlock type="full" skill={params.id}/>}
-
                     </ul>
                 </div>
             )
@@ -73,6 +73,13 @@ const ItemPage:FC<ItemPageProps> = ({type}) => {
             return (
                 <div className={cn("container-internal", classes.itemPage)}>
                     <ContactsBlock type="full" contacts={user.contacts}/>
+                </div>
+            )
+        case 'skills' :
+            return (
+                <div className={cn("container-internal", classes.itemPage)}>
+                    <ListMapper type='short' name='hard-skills' />
+                    <ListMapper type='short' name='soft-skills' />
                 </div>
             )
 
