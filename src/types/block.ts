@@ -24,6 +24,6 @@ export interface ContactsBlockProps {
     contacts: IContact []
 }
 export interface SkillBlockProps {
-    type: 'short' | 'full',
+    type: 'short' | 'full' | 'short-AllList',
     skill : ISkill
 }

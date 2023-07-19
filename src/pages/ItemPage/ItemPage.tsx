@@ -78,8 +78,11 @@ const ItemPage:FC<ItemPageProps> = ({type}) => {
         case 'skills' :
             return (
                 <div className={cn("container-internal", classes.itemPage)}>
-                    <ListMapper type='short' name='hard-skills' />
-                    <ListMapper type='short' name='soft-skills' />
+                    <div className={classes.itemPage__skillsPage}>
+                        <ListMapper type='short' name='hard-skills-AllList' />
+                        <ListMapper type='short' name='soft-skills-AllList' />    
+                    </div>
+                    
                 </div>
             )
 

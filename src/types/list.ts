@@ -4,4 +4,5 @@ export interface ListMapperProps {
 }
 
 export type blockNames = 'hard-skills' | 'soft-skills' | 'works' | 
-                            'projects' | 'education' | 'about';
+                            'projects' | 'education' | 'about' |
+                            'hard-skills-AllList' | 'soft-skills-AllList';

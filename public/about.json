@@ -351,7 +351,7 @@
             "summary" : "Github search repositories using API Github",
             "repo": "https://github.com/mspolermo/Github-search-repositories",
             "ghPage": null,
-            "important": false,
+            "important": true,
             "skills": [
                 "JavaScript",
                 "Rest_API",
@@ -414,7 +414,7 @@
             "summary" : "Layout with comments block",
             "repo": "https://github.com/mspolermo/News-web",
             "ghPage": null,
-            "important": false,
+            "important": true,
             "skills": [
                 "JavaScript",
                 "SCSS",

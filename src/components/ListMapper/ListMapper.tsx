@@ -32,6 +32,14 @@ const ListMapper:FC<ListMapperProps> = ({type, name}) => {
             routPath = 'skills/soft-skills';
             listHeading = 'Soft Skills';
             break;
+        case 'hard-skills-AllList':
+            routPath = 'skills/hard-skills';
+            listHeading = 'Tech Skills';
+            break;
+        case 'soft-skills-AllList':
+            routPath = 'skills/soft-skills';
+            listHeading = 'Soft Skills';
+            break;
         case 'projects':
             routPath = 'projects';
             listHeading = "Projects";
@@ -74,6 +82,26 @@ const ListMapper:FC<ListMapperProps> = ({type, name}) => {
                     { (name === 'soft-skills') && <ul className={classes.list__list}>
                         {mainData.skills.soft.map( (skill) =>
                             <SkillBlock type={type} 
+                                        skill={skill} 
+                                        key={ (typeof skill == 'string')
+                                                ? skill
+                                                : skill.title} />
+                        )}
+                    </ul>}
+
+                    { (name === 'hard-skills-AllList') && <ul className={classes.list__list}>
+                        {mainData.skills.hard.map( (skill) =>
+                            <SkillBlock type='short-AllList' 
+                                        skill={skill} 
+                                        key={ (typeof skill == 'string')
+                                                ? skill
+                                                : skill.title} />
+                        )}
+                    </ul>}
+
+                    { (name === 'soft-skills-AllList') && <ul className={classes.list__list}>
+                        {mainData.skills.soft.map( (skill) =>
+                            <SkillBlock type='short-AllList'
                                         skill={skill} 
                                         key={ (typeof skill == 'string')
                                                 ? skill

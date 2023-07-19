@@ -1,5 +1,9 @@
 @import '/src/styles/variables.scss';
 
 .itemPage {
-
+    &__skillsPage {
+        display: grid;
+        grid: auto-flow /0.8fr 1.2fr;
+        gap: 20px;
+    }
 }

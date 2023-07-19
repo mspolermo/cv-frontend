@@ -19,62 +19,48 @@ const SkillBlock:FC<SkillBlockProps> = ({skill, type}) => {
     });
     const allSkillsArray = projectsSkillsArray.concat(worksSkillsArray);
 
-    switch (type) {
-        case 'short':
-            return (
-                <li className={classes.skillBlock}>
-                    {(typeof skill == 'string') 
-                    ?
-                        <div className={classes.skillBlock__item}>
-                            <p className={ cn( "text", 
-                                            classes.skillBlock__text, 
-                                            classes.skillBlock__text_mark)
-                            }>
-                                {skill}
-                            </p>
+    if (type === 'full') {
+        return (
+            <li className={classes.fullSkillBlock}>
+                {(typeof skill == 'string') 
+                ?
+                    <div className={classes.fullSkillBlock__item}>
+                        <p className={cn("text", classes.fullSkillBlock__skillName)}
+                            onClick={() => navigate('/cv-frontend/skills/' + skill)} 
+                        >
+                            {skill}
+                        </p>
 
+                        <div className={classes.fullSkillBlock__aproveBlock}>
+                            {allSkillsArray.map( (project, i) => {
+                                if (project[2].includes(skill)){
+                                    return (
+                                        <div key={i} onClick={() => navigate(`${project[1]}`)} 
+                                                className={cn("text", 
+                                                            classes.fullSkillBlock__skillAprove)}
+                                        >
+                                            {project[0].toString()}
+                                        </div>)};
+                                return null;
+                            })}
                         </div>
-                    : 
+                    </div>
+                : 
 
-                        <div className={classes.skillBlock__item}>
-                            <p className={cn("text", 
-                                        classes.skillBlock__text, 
-                                        classes.skillBlock__text_mark)
-                            }>
+                    <div>
+
+                        <div className={classes.fullSkillBlock__item}>
+                            <p className={cn("text", classes.fullSkillBlock__skillName)}
+                                onClick={() => navigate('/cv-frontend/skills/' + skill.title)} 
+                            >
                                 {skill.title}
                             </p>
-                            <div>
-                                {skill.value.map( info => 
-                                    <p key={info} className={cn("text", 
-                                                    classes.skillBlock__text, 
-                                                    classes.skillBlock__text_markL2)
-                                    }>
-                                        {info}
-                                    </p>
-                                )}
-                            </div>
-                        </div>
-
-                    }
-                </li>    
-            )
-        case "full":
-            return (
-                <li className={classes.fullSkillBlock}>
-                    {(typeof skill == 'string') 
-                    ?
-                        <div className={classes.fullSkillBlock__item}>
-                            <p className={cn("text", classes.fullSkillBlock__skillName)}>
-                                {skill}
-                            </p>
-
                             <div className={classes.fullSkillBlock__aproveBlock}>
                                 {allSkillsArray.map( (project, i) => {
-                                    if (project[2].includes(skill)){
+                                    if (project[2].includes(skill.title)){
                                         return (
-                                            <div key={i} onClick={() => navigate(`${project[1]}`)} 
-                                                    className={cn("text", 
-                                                                classes.fullSkillBlock__skillAprove)}
+                                            <div key={i} onClick={() => navigate(`${project[1]}`)}
+                                                    className={cn("text", classes.fullSkillBlock__skillAprove)}
                                             >
                                                 {project[0].toString()}
                                             </div>)};
@@ -82,56 +68,93 @@ const SkillBlock:FC<SkillBlockProps> = ({skill, type}) => {
                                 })}
                             </div>
                         </div>
-                    : 
-
-                        <div>
-
-                            <div className={classes.fullSkillBlock__item}>
-                                <p className={cn("text", classes.fullSkillBlock__skillName)}>
-                                    {skill.title}
+                       
+                        {skill.value.map( info => 
+                            <div key={info} className={classes.fullSkillBlock__item}>
+                                <p key={info} onClick={() => navigate('/cv-frontend/skills/' + info)} 
+                                    className={cn("text", classes.fullSkillBlock__skillName)}>
+                                    {info}
                                 </p>
+
                                 <div className={classes.fullSkillBlock__aproveBlock}>
                                     {allSkillsArray.map( (project, i) => {
-                                        if (project[2].includes(skill.title)){
+                                        if (project[2].includes(info)){
                                             return (
                                                 <div key={i} onClick={() => navigate(`${project[1]}`)}
                                                         className={cn("text", classes.fullSkillBlock__skillAprove)}
                                                 >
                                                     {project[0].toString()}
-                                                </div>)};
+                                                </div>)}
                                         return null;
                                     })}
                                 </div>
+
                             </div>
-                           
-                            {skill.value.map( info => 
-                                <div key={info} className={classes.fullSkillBlock__item}>
-                                    <p key={info} className={cn("text", classes.fullSkillBlock__skillName)}>
-                                        {info}
-                                    </p>
+                        )}
+                        
+                    </div>
 
-                                    <div className={classes.fullSkillBlock__aproveBlock}>
-                                        {allSkillsArray.map( (project, i) => {
-                                            if (project[2].includes(info)){
-                                                return (
-                                                    <div key={i} onClick={() => navigate(`${project[1]}`)}
-                                                            className={cn("text", classes.fullSkillBlock__skillAprove)}
-                                                    >
-                                                        {project[0].toString()}
-                                                    </div>)}
-                                            return null;
-                                        })}
-                                    </div>
-
-                                </div>
-                            )}
-                            
-                        </div>
-
-                    }
-                </li> 
-            )
+                }
+            </li> 
+        )
     };
+    return (
+        <li className={ type ==='short' 
+                        ? cn(classes.skillBlock, classes.skillBlock__short)
+                        : classes.skillBlock}>
+            {(typeof skill == 'string') 
+            ?
+                <div className={classes.skillBlock__item}>
+                    <p className={ cn( "text", 
+                                    classes.skillBlock__text, 
+                                    classes.skillBlock__text_mark)}
+                        onClick={() => navigate('/cv-frontend/skills/' + skill)} 
+                    >
+                        {skill}
+                    </p>
+
+                </div>
+            : 
+
+                <div className={classes.skillBlock__item}>
+                    <p className={ type ==='short' 
+                                ?
+                                    cn("text", 
+                                    classes.skillBlock__text, 
+                                    classes.skillBlock__text_mark,
+                                    classes.skillBlock__text_short)
+                                :
+                                    cn("text", 
+                                    classes.skillBlock__text, 
+                                    classes.skillBlock__text_mark)}
+                        onClick={() => navigate('/cv-frontend/skills/' + skill.title)}               
+                    >
+                        {skill.title}
+                    </p>
+                    <div>
+                        {skill.value.map( info => 
+                            <p key={info} className={type ==='short' 
+                                            ?
+                                                cn("text", 
+                                                classes.skillBlock__text, 
+                                                classes.skillBlock__text_markL2,
+                                                classes.skillBlock__text_short)
+                                            :
+                                                cn("text", 
+                                                classes.skillBlock__text, 
+                                                classes.skillBlock__text_markL2)}
+                                onClick={() => navigate('/cv-frontend/skills/' + info)}  
+                            >
+                                {info}
+                            </p>
+                        )}
+                    </div>
+                </div>
+
+            }
+        </li>    
+    )
+
 
 };
 

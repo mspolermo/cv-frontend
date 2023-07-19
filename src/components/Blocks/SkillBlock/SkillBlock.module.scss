@@ -5,6 +5,11 @@
 }
 
 .skillBlock {
+    &__short {
+        &:nth-child(n+5) {
+                display: none;
+            }
+    }
     &__item {
         display: flex;
         flex-direction: column;
@@ -13,8 +18,8 @@
         display: inline;
         padding-left: 1em;
         color: $textColor-aside;
+        @extend %transition;
         &_mark {
-            cursor: default;
             &::before {
                 content: '\2022';
                 color: $circleColor-aside;
@@ -24,14 +29,21 @@
         &_markL2 {
             display: block;
             padding-left: 2em;
-            cursor: default;
             &::before {
                 content: '\2043';
                 color: $circleColor-aside;
                 padding-right: 0.5em;
             }
         }
-        
+        &_short {
+            &:nth-child(n+5) {
+                display: none;
+            }    
+        }
+        &:hover {
+            cursor: pointer;
+            color: $hoverColor;  
+        }
     }
 }
 
@@ -42,7 +54,7 @@
         grid: auto-flow /0.6fr 1.4fr;
         gap: 10px;
         margin-bottom: 10px;
-        border: 1px solid black;
+        border: 1px solid $tableBorderColor;
         border-radius: 10px;
         align-items: center;
     }
@@ -50,14 +62,18 @@
         text-align: center;
         margin-bottom: 4px;
         font-weight: 700;
-        cursor: default;
+        cursor: pointer;
+        @extend %transition;
+        &:hover {
+            color: $hoverColor; 
+        }
     }
     &__aproveBlock {
     }
     &__skillAprove {
-        
         padding-left: 2em;
         cursor: pointer;
+        @extend %transition;
         &:hover {
             color: $hoverColor; 
         }
