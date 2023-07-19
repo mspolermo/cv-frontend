@@ -47,4 +47,15 @@
         display: block;
         margin-bottom: 20px;
     }
+    &__tech{
+        display: flex;
+        margin-top: 10px;
+
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 15px;
+        color: $textColor-additional;
+
+        cursor: default;
+    }
 } 

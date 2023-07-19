@@ -5,9 +5,11 @@ import { ListPageProps } from "../../types/page";
 import cn from 'classnames';
 import { useDispatch } from "react-redux";
 
-import { fetchUser } from "../../store/action-creators/user";
-import Loader from "../../components/UI/Loader/Loader";
 import { useTypedSelector } from "../../hooks/useTypedSelector";
+import { fetchUser } from "../../store/action-creators/user";
+import { menuStatusFalse } from "../../store/reducers/menuStatusReducer";
+
+import Loader from "../../components/UI/Loader/Loader";
 import ListMapper from "../../components/ListMapper/ListMapper";
 import Modal from "../../components/UI/Modal/Modal";
 
@@ -18,6 +20,7 @@ const ListPage:FC<ListPageProps> = ({type}) => {
     useEffect(() => {
         document.body.scrollTop = document.documentElement.scrollTop = 0;
         dispatch(fetchUser());
+        dispatch(menuStatusFalse());
     },[dispatch]);
 
     if (loading) {

@@ -27,3 +27,7 @@ $sliderColor: #E0EBFE;
 $sliderBorderColor: #6D9BF5;
 
 $tableBorderColor: #A8A8A8;
+$tableHoverColor: #6D9BF5;
+%tabletBorderColorsTransition {
+    transition: 0.8s ease border;
+}

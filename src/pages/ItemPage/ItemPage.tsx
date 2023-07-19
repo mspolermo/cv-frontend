@@ -8,6 +8,7 @@ import { useParams } from "react-router-dom";
 
 import { useTypedSelector } from "../../hooks/useTypedSelector";
 import { fetchUser } from "../../store/action-creators/user";
+import { menuStatusFalse } from "../../store/reducers/menuStatusReducer";
 
 import Loader from "../../components/UI/Loader/Loader";
 import WorkExperienceBlock from "../../components/Blocks/WorkExperienceBlock/WorkExperienceBlock";
@@ -32,6 +33,7 @@ const ItemPage:FC<ItemPageProps> = ({type}) => {
         document.body.scrollTop = document.documentElement.scrollTop = 0;
 
         dispatch(fetchUser());
+        dispatch(menuStatusFalse())
         //eslint-disable-next-line
     },[dispatch, type]);
 
@@ -65,7 +67,7 @@ const ItemPage:FC<ItemPageProps> = ({type}) => {
             return (
                 <div className={cn("container-internal", classes.itemPage)}>
                     <ul>
-                        {params.id && <SkillBlock type="full" skill={params.id}/>}
+                        {params.id && <SkillBlock type="fullSolo" skill={params.id}/>}
                     </ul>
                 </div>
             )

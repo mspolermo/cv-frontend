@@ -66,18 +66,24 @@ const ProjectBlock:FC<ProjectsBlockProps> = ({type, index, project}) => {
                 <div className={classes.fullProjectsBlock}
                         onClick={() => navigate('/cv-frontend/projects/' + project.name)} 
                 >
+                    <div className={classes.fullProjectsBlock__left}>
 
-                    <h3 className={cn("heading-l3", classes.fullProjectsBlock__heading)}>
-                        {project.name}
-                    </h3>
+                        <h3 className={cn("heading-l3", classes.fullProjectsBlock__heading)}>
+                            {project.name}
+                        </h3>
 
-                    <p className={cn("text", classes.fullProjectsBlock__summary)}>
-                        {project.summary}
-                    </p>
+                        <p className={cn("text", classes.fullProjectsBlock__summary)}>
+                            {project.summary}
+                        </p>
 
-                    <p className={classes.fullProjectsBlock__tech}>
-                        Используемые технологии: {allTechString.toString()}
-                    </p>
+                        <p className={classes.fullProjectsBlock__tech}>
+                            Навыки: {allTechString.toString()}
+                        </p>
+
+                    </div>
+
+                    <div className={classes.fullProjectsBlock__img}
+                        style={{backgroundImage: `url(${project.screenshots[0]})`}} />
 
                 </div>
             )

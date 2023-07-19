@@ -12,6 +12,7 @@ const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
 
    const elapsed = expirienceCount(work.start, work.finish);
    const tagsArray = getAllSkills(work, 'array');
+   const allTagsString = getAllSkills(work, 'string');
 
     switch(type) {
         case 'extended':
@@ -87,6 +88,11 @@ const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
                             </p>)
                         }
                     </div>
+                    {type ==='full' && typeof tagsArray !== 'string' &&
+                    <p className={classes.workExpirience__tech}>
+                        Навыки: {allTagsString.toString()}
+                    </p>
+                    }     
                 </li>
             )    
     };

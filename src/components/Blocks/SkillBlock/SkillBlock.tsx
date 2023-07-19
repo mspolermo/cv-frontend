@@ -19,13 +19,23 @@ const SkillBlock:FC<SkillBlockProps> = ({skill, type}) => {
     });
     const allSkillsArray = projectsSkillsArray.concat(worksSkillsArray);
 
-    if (type === 'full') {
+    if (type === 'full' || type === 'fullSolo') {
         return (
             <li className={classes.fullSkillBlock}>
                 {(typeof skill == 'string') 
                 ?
-                    <div className={classes.fullSkillBlock__item}>
-                        <p className={cn("text", classes.fullSkillBlock__skillName)}
+                    <div className={type === 'full' 
+                        ?
+                            classes.fullSkillBlock__item
+                        :
+                            cn(classes.fullSkillBlock__item, classes.fullSkillBlock__item_solo)}
+                    >
+                        <p className={ type === 'full'
+                            ?
+                                cn("text", classes.fullSkillBlock__skillName)
+                            :
+                            cn("text", classes.fullSkillBlock__skillName, classes.fullSkillBlock__skillName_solo)
+                            }
                             onClick={() => navigate('/cv-frontend/skills/' + skill)} 
                         >
                             {skill}

@@ -79,10 +79,29 @@
     }
 }
 .fullProjectsBlock {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid: auto-flow /1.5fr 0.4fr;
+    gap: 40px;
     margin-bottom: 14px;
-    cursor: default;
+    padding-bottom: 14px;
+    border-bottom: 1px solid $tableBorderColor;
+    @extend %tabletBorderColorsTransition;
+    &:hover {
+        border-bottom: 1px solid $tableHoverColor;
+    }
+    &__img {
+        //min-height: 300px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;  
+        border-radius: 4px;
+    }
+    &__left {
+        display: flex;
+        flex-direction: column;
+        cursor: default;
+    }
     &__heading{
         margin-bottom: 4px;
         font-weight: 700;
@@ -103,7 +122,6 @@
         line-height: 15px;
         color: $textColor-additional;
     }
-
 }
 .extendedProjectBlock {
     margin-bottom: 14px;    

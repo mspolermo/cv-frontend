@@ -57,6 +57,16 @@
         border: 1px solid $tableBorderColor;
         border-radius: 10px;
         align-items: center;
+        @extend %tabletBorderColorsTransition;
+        &:hover {
+            border: 1px solid $tableHoverColor;
+        }
+        &_solo {
+            border: none;
+            &:hover {
+                border: none;
+            }
+        }
     }
     &__skillName{
         text-align: center;
@@ -67,15 +77,29 @@
         &:hover {
             color: $hoverColor; 
         }
+        &_solo {
+            cursor: default;
+            &:hover {
+                color: $textColor;
+            }
+        }
     }
     &__aproveBlock {
+        border-left: 1px solid $tableBorderColor;
+        @extend %tabletBorderColorsTransition;
+        &:hover {
+            border-left: 1px solid $tableHoverColor;
+        }
     }
     &__skillAprove {
         padding-left: 2em;
         cursor: pointer;
         @extend %transition;
         &:hover {
-            color: $hoverColor; 
+            color: $hoverColor;
+            &{
+                border-left: 1px solid $tableHoverColor;
+            } 
         }
     }
 }
