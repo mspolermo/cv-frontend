@@ -1,10 +1,23 @@
 @import '/src/styles/variables.scss';
 
 .mainPage {
-    
     &__summary {
         margin-bottom: 64px;
-        line-height: 20px;
         cursor: default;
+    }
+}
+
+@media (max-width: 620px) {
+    .mainPage {
+        &__summary {
+            margin-bottom: 40px;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .mainPage {
+        &__summary {
+            margin-bottom: 20px;
+        }
     }
 }

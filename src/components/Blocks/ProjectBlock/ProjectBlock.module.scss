@@ -90,7 +90,6 @@
         border-bottom: 1px solid $tableHoverColor;
     }
     &__img {
-        //min-height: 300px;
         width: 100%;
         background-repeat: no-repeat;
         background-position: center;
@@ -103,11 +102,7 @@
         cursor: default;
     }
     &__heading{
-        margin-bottom: 4px;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
-        color: $headingColor;
+        margin-bottom: 8px;
     }
     &__summary {
         margin-bottom: 4px;
@@ -132,16 +127,17 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        cursor: default;
     }
     &__heading{
-        font-size: 28px;
-        &:hover {
-            font-size: 28px;
-        }
+        // font-size: 28px;
+        // &:hover {
+        //     font-size: 28px;
+        // }
     }
     &__summary {
         margin-bottom: 14px;
-        line-height: 14x;
+        //line-height: 14x;
         cursor: default;
     }
     &__techBlock{
@@ -184,7 +180,7 @@
     }
     &__icon {
         display: flex;
-        width: 90%;
+        //width: 90%;
         margin-bottom: 6px;
     }
     &__ghPage {
@@ -196,6 +192,99 @@
         }
         &_small {
             font-weight: 400;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .shortsProjectsBlock {
+        &__techBlock {
+            &:nth-child(n+4) {
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width:600px) {
+    .shortsProjectsBlock {
+        &__techBlock {
+            &:nth-child(n+3) {
+                display: none;
+            }
+        }
+    }
+    .fullProjectsBlock {
+        gap: 20px;
+        &__tech {
+            font-size: 12px;
+            line-height: 13px;
+        }
+    }
+}
+@media (max-width:500px) {
+    .shortsProjectsBlock {
+        &__techBlock {
+            &:nth-child(n+2) {
+                display: none;
+            }
+        }
+    }
+    .fullProjectsBlock {
+        &__summary {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+    .extendedProjectBlock {
+        &__link{
+            height: 38px;
+            max-width: 70px;
+            margin-right: 10px;
+            padding: 4px 12px;
+            &_gHub {
+                padding: 12px;
+            }
+        }
+        &__gitHub {
+            font-size: 12px;
+        }
+        &__icon {
+            height: 20px;
+            margin-bottom: 2px;
+        }
+        &__ghPage {
+            font-size: 8px;
+        }
+    }
+}
+@media (max-width:400px) {
+    .shortsProjectsBlock {
+        &__center {
+            display: none;
+        }
+        &__right {
+            display: none;
+        }
+    }
+    .fullProjectsBlock {
+        grid: auto-flow /1.2fr 0.8fr;
+    }
+    .extendedProjectBlock {
+        &__link{
+            height: 30px;
+            max-width: 68px;
+            margin-right: 0;
+            margin-left: 6px;
+            padding: 3px 8px;
+            &_gHub {
+                padding: 12px;
+            }
+        }
+        &__gitHub {
+            font-size: 10px;
+        }
+        &__ghPage {
+            font-size: 7px;
         }
     }
 }

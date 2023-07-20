@@ -38,7 +38,7 @@ const ListPage:FC<ListPageProps> = ({type}) => {
         );
     };
     return (
-        <div className={cn("container-internal", classes.itemPage)}>
+        <div className={cn("container-internal", classes.listPage)}>
             <ListMapper type='full' name={type} />
         </div>
     );

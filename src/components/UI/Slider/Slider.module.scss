@@ -10,7 +10,7 @@
     overflow: hidden;
     transition: opacity ease-in-out;
     &__wide {
-        margin-bottom: 60px;
+        margin-bottom: 20px;
         padding: 20px;
 
         background-color: $sliderColor;
@@ -63,4 +63,10 @@
 }
 .fade-in {
     opacity: 1;
+}
+
+@media (max-width: 500px) {
+    .slider{
+        margin-bottom: 26px;
+    }
 }

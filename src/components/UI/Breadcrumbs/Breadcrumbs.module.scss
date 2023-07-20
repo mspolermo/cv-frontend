@@ -3,7 +3,12 @@
 .breadcrumbs {
     margin: 102px 0 19px;
     display: flex;
+    flex-wrap: wrap;
+    
     &__block {
+        display: flex;
+        flex-wrap: nowrap;
+
     }
     &__crumb{
         font-weight: 700;

@@ -39,13 +39,16 @@ const AsideMenu:FC = () => {
                         : cn(classes.asideMenu__left, classes.asideMenu__left_active)
             }>
                 
-                <Slider images={mainData.photos} type="small"/>
-
                 <div className={classes.asideMenu__body}>
+                    <Slider images={mainData.photos} type="small"/>
                     <ContactsBlock type='short' contacts={mainData.contacts} />
+                </div>
+
+                <div className={classes.asideMenu__skills}>
                     <ListMapper type='short' name='hard-skills' />
                     <ListMapper type='short' name='soft-skills' />
                 </div>
+
             </div>
 
             <div onClick={openMenu} className={(!menuStatus) 

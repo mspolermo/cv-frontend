@@ -6,14 +6,14 @@ import cn from 'classnames';
 const EducationBlock:FC<EducationBlockProps> = ({educate, type}) => {
     return (
         <li className={ (type === 'short')
-                        ? classes.educationBlock__block
-                        : cn(classes.educationBlock__block, 
-                            classes.educationBlock__block_full)
+                        ? classes.educationBlock
+                        : cn(classes.educationBlock, 
+                            classes.educationBlock__full)
         }>
                                 
-            <h4 className={classes.educationBlock__title}>{educate.title}</h4>
+            <h4 className={cn('heading-l3', classes.educationBlock__title)}>{educate.title}</h4>
             
-            <div className={classes.educationBlock__description}>
+            <div className={cn("text", classes.educationBlock__description)}>
                 <p className={classes.educationBlock__date}>{educate.year}</p>
                 <p className={classes.educationBlock__rank} >{educate.rank}</p>
             </div>

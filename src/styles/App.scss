@@ -107,3 +107,26 @@ body {
         padding: 0 20px;
     }
 }
+@media (max-width: 500px) {
+    .text {
+        font-size: 12px;
+        line-height: 20px;
+        color: $textColor;
+    }
+    .heading-l2 {
+        font-size: 16px;
+        line-height: 20px;
+        &:hover {
+            font-size: 17px;
+        }
+        &__passive {
+            &:hover {
+                font-size: 16px;
+            }
+        }
+    }
+    .heading-l3 {
+        font-size: 13px;
+        line-height: 18px;
+    }
+}

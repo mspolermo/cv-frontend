@@ -5,7 +5,7 @@
     &__heading {
         font-weight: 700;
         font-size: 45px;
-        line-height: 55px;
+        line-height: 50px;
         color: $headingColor;
         cursor: default;
     }
@@ -13,16 +13,18 @@
 
 @media (max-width: 620px) {
     .header{
+        margin-bottom: 20px;
         &__heading {
             font-size: 34px;
         }
     }
 }
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .header{
-        margin-bottom: 10px;
+        margin-bottom: 14px;
         &__heading {
-            font-size: 28px;
+            font-size: 22px;
+            line-height: 28px;
         }
     }
 }

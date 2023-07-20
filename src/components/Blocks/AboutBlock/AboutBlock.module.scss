@@ -2,13 +2,12 @@
 
 .aboutBlock {
     &__stringL1{
-        margin-top: 16px;
+        margin-top: 10px;
         display: flex;
         align-items: center;
         cursor: default;
     }
     &__text {
-        line-height: 22px;
         &::before {
             content: '\2022';
             color: $circleColor-main;
@@ -22,7 +21,6 @@
     }
     &__stringL2{
         margin: 0 1em;
-        line-height: 22px;
                
         cursor: default;
         &::before {

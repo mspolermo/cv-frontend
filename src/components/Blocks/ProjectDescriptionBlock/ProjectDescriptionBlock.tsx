@@ -13,7 +13,11 @@ const ProjectDescriptionBlock:FC<ProjectDescriptionBlockProps> = ({project}) => 
                 {project.description.map(item => <div key={item.title} 
                                                         className={classes.projectDescBlock__block}>
 
-                    <div className={classes.projectDescBlock__mainHead}>{item.title}</div>
+                    <div className={cn("heading-l3 heading-l3__passive", 
+                                        classes.projectDescBlock__mainHead)}
+                    >
+                        {item.title}
+                    </div>
 
                     { (!Array.isArray(item.info)) && <div className={cn( "text", 
                                                             classes.projectDescBlock__body)}>

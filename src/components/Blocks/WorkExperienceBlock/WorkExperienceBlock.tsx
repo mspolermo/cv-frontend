@@ -21,20 +21,22 @@ const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
                                         
                     <div className={classes.workExpirience__headingBlock}>
         
-                        <h3 className={ classes.workExpirience__heading}
+                        <h3 className={cn("heading-l3 heading-l3__passive", 
+                                            classes.workExpirience__heading)}
                             onClick={() => navigate('/cv-frontend/work-experience/' + work.companyEn)}
                         >
                             {work.title}    
                         </h3>
         
-                        <h4 className={cn(classes.workExpirience__heading,
-                                         classes.workExpirience__heading_additional)}>
+                        <h4 className={cn("heading-l3",
+                                        classes.workExpirience__heading,
+                                        classes.workExpirience__heading_additional)}>
                             {work.company}
                         </h4>   
         
                     </div>
         
-                    <p className={classes.workExpirience__date}>
+                    <p className={classes.workExpirience__additionalInfo}>
                         {work.start + ' - ' + work.finish + ' ( ' + elapsed + ' ) '}
                     </p>
                     <div className={cn(classes.workExpirience__description,
@@ -69,14 +71,15 @@ const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
                             {work.title}    
                         </h3>
 
-                        <h4 className={cn(classes.workExpirience__heading,
+                        <h3 className={cn("heading-l3 heading-l3__passive",
+                                            classes.workExpirience__heading,
                                             classes.workExpirience__heading_additional)}>
                             {work.company}
-                        </h4>   
+                        </h3>   
 
                     </div>
 
-                    <p className={classes.workExpirience__date}>
+                    <p className={classes.workExpirience__additionalInfo}>
                         {work.start + ' - ' + work.finish + ' ( ' + elapsed + ' ) '}
                     </p>
                     <div className={classes.workExpirience__description}>
@@ -89,7 +92,7 @@ const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
                         }
                     </div>
                     {type ==='full' && typeof tagsArray !== 'string' &&
-                    <p className={classes.workExpirience__tech}>
+                    <p className={classes.workExpirience__additionalInfo}>
                         Навыки: {allTagsString.toString()}
                     </p>
                     }     

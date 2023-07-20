@@ -4,8 +4,20 @@
     margin-bottom: 51px;
     &__heading {
         margin-bottom: 12px;
+        cursor: default;
     }
     &__list {
 
+    }
+}
+
+@media (max-width: 620px) {
+    .list {
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 500px) {
+    .list {
+        margin-bottom: 20px;
     }
 }
