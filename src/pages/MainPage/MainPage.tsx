@@ -23,14 +23,14 @@ const MainPage:FC = () => {
 
     if (loading) {
         return (
-            <div>
+            <div className='cleanPage'>
                 <Loader />
             </div>
         )
     };
     if (error) {
         return (
-            <div>
+            <div className='cleanPage'>
                 <Modal type='error' error={error}/>
             </div>
         )

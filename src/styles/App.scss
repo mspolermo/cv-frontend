@@ -8,6 +8,11 @@
 .app {
     padding: 40px;
 }
+.cleanPage {
+    background-color: inherit;
+    width: 100%;
+    height: 100%;
+}
 body {
     font-family: iviSans,sans-serif;
     font-weight: normal;
@@ -130,3 +135,35 @@ body {
         line-height: 18px;
     }
 }
+@media print {
+    * {
+        -webkit-print-color-adjust: exact!important; 
+        print-color-adjust: exact!important;
+    }
+    .app {
+        display: flex;
+        padding: 0;
+    }
+    .container {
+        min-height: 100vh;
+        min-width: 100vw;
+        height: 100%;
+        width: 100%;
+        box-shadow: none;
+    }
+    .container-internal {
+        padding: 0 0 0 20px;
+    }
+    .text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .heading-l2 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .heading-l3 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+ }

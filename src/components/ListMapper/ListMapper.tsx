@@ -129,6 +129,7 @@ const ListMapper:FC<ListMapperProps> = ({type, name}) => {
 
                     { (name === 'about') && <ul className={classes.list__list}>
                         <AboutBlock point={user.about[0]}/>
+                        <AboutBlock point={user.about[1]}/>
                     </ul>}
 
                 </div>

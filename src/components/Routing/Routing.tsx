@@ -23,7 +23,7 @@ const Routing = () => {
 
     if (mainLoading) {
         return (
-			<div>
+			<div className='cleanPage'>
 				<Modal type='load'/>
 			</div>
             
@@ -31,7 +31,7 @@ const Routing = () => {
     };
     if (mainError) {
         return (
-            <div>
+            <div className='cleanPage'>
 				<Modal type='error' error={mainError}/>
 			</div>
         )

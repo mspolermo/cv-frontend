@@ -70,3 +70,13 @@
         margin-bottom: 26px;
     }
 }
+@media print {
+    .slider {
+        height: 240px;
+        min-width: 160px;
+        margin-bottom: 20px;
+        &__arrow {
+            display: none;
+        }
+    }
+}

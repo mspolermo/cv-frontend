@@ -82,3 +82,11 @@
         }
     }
 }
+@media print {
+    .contacts {
+        margin-bottom: 20px;
+        &__heading {
+            margin-bottom: 6px;
+        }
+    }
+}

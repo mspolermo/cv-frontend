@@ -16,6 +16,7 @@ import ProjectBlock from "../../components/Blocks/ProjectBlock/ProjectBlock";
 import ContactsBlock from "../../components/Blocks/ContactsBlock/ContactsBlock";
 import SkillBlock from "../../components/Blocks/SkillBlock/SkillBlock";
 import ListMapper from "../../components/ListMapper/ListMapper";
+import Modal from "../../components/UI/Modal/Modal";
 
 const ItemPage:FC<ItemPageProps> = ({type}) => {
     const {user, error, loading} = useTypedSelector(state => state.user);
@@ -39,14 +40,16 @@ const ItemPage:FC<ItemPageProps> = ({type}) => {
 
     if (loading) {
         return (
-            <div>
+            <div className='cleanPage'>
                 <Loader />
             </div>
         )
     };
     if (error) {
         return (
-            <div>{error}</div>
+            <div className='cleanPage'>
+                 <Modal type='error' error={error}/>
+            </div>
         )
     };
 

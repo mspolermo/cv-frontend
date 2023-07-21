@@ -30,3 +30,27 @@
         }
     }
 }
+@media print {
+    .educationBlock{
+        margin-bottom: 4px;
+        display: flex;
+        align-items: center;
+        &__description{
+            margin-top: 0;
+        }
+        &__rank {
+            &::before {
+                padding: 0 0.2em;
+            }
+        }
+        &__date {
+            &::before {
+                content: '|';
+                padding: 0 0.2em;
+            }
+        }
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}

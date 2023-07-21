@@ -28,3 +28,12 @@
         }
     }
 }
+@media print {
+    .header{
+        margin: 10px 0;
+        &__heading {
+            font-size: 22px;
+            line-height: 26px;
+        }
+    }
+}

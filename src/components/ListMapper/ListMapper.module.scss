@@ -21,3 +21,11 @@
         margin-bottom: 20px;
     }
 }
+@media print {
+    .list {
+        margin-bottom: 20px;
+        &__heading {
+            margin-bottom: 4px;
+        }
+    }
+}

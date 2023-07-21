@@ -21,3 +21,11 @@
         }
     }
 }
+@media print {
+    .mainPage {
+        &__summary {
+            margin-bottom: 10px;
+            line-height: 16px;
+        }
+    }
+}

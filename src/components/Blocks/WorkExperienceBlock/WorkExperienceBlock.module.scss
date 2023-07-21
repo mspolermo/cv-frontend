@@ -60,3 +60,18 @@
         margin-bottom: 20px;
     }
 }
+@media print {
+    .workExpirience {
+        margin-bottom: 10px;
+        &__headingBlock {
+            margin-bottom: 0;
+        }
+        &__additionalInfo {
+            margin: 2px 0;
+        }
+        &__string {
+            margin-bottom: 0;
+            line-height: 16px;
+        }
+    }
+}
