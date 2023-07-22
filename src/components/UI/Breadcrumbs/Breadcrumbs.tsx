@@ -1,5 +1,5 @@
 import React, {FC} from "react";
-import classes from "./Breadcrumbs.module.scss"
+import classes from "./Breadcrumbs.module.scss";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 

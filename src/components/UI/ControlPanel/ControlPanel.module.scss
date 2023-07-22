@@ -1,0 +1,10 @@
+@import '/src/styles/variables.scss'; 
+
+.controlPanel {
+
+}
+@media print {
+    .controlPanel {
+        display: none;
+    }
+}

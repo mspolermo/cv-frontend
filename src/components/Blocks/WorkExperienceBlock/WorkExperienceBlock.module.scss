@@ -18,6 +18,9 @@
             padding-left: 0.3em;
             color: $headingColor-additional;
             cursor: default !important; //чтобы перебить стили heading-l3
+            &:hover {
+                color: $headingColor-additional;
+            }
         }
     }
     &__additionalInfo {

@@ -4,8 +4,11 @@ import { ListMapperProps } from "../../types/list";
 
 import cn from 'classnames';
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
 import { useTypedSelector } from "../../hooks/useTypedSelector";
+import { menuStatusFalse } from "../../store/reducers/menuStatusReducer";
+
 import WorkExperienceBlock from "../Blocks/WorkExperienceBlock/WorkExperienceBlock";
 import ProjectBlock from "../Blocks/ProjectBlock/ProjectBlock";
 import EducationBlock from "../Blocks/EducationBlock/EducationBlock";
@@ -14,6 +17,7 @@ import SkillBlock from "../Blocks/SkillBlock/SkillBlock";
 
 const ListMapper:FC<ListMapperProps> = ({type, name}) => {
     const navigate = useNavigate();
+    const dispatch = useDispatch();
     const {user} = useTypedSelector(state => state.user);
     const {mainData} = useTypedSelector(state => state.main);
 
@@ -58,13 +62,19 @@ const ListMapper:FC<ListMapperProps> = ({type, name}) => {
             break;
     }
 
+    function clickHandler (routPath:string) {
+        navigate(`/cv-frontend/${routPath}/`);
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+        dispatch(menuStatusFalse());
+    };
+
     switch (type) {
         case 'short':
             return (
                 <div className={classes.list}>
 
                     <h3 className={cn("heading-l2", classes.list__heading)}
-                        onClick={() => navigate(`/cv-frontend/${routPath}/`)} 
+                        onClick={() => clickHandler(routPath)} 
                     >
                         {listHeading}
                     </h3>
