@@ -2,6 +2,11 @@
 
 .header{
     margin-bottom: 29px;
+    display: flex;
+    flex-direction: column;
+    &__controlPanel {
+        align-self: flex-end;
+    }
     &__heading {
         font-weight: 700;
         font-size: 45px;

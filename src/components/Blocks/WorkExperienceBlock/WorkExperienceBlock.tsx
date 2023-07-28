@@ -10,9 +10,9 @@ import SkillTag from "../../UI/SkillTag/SkillTag";
 const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
     const navigate = useNavigate();
 
-   const elapsed = expirienceCount(work.start, work.finish);
-   const tagsArray = getAllSkills(work, 'array');
-   const allTagsString = getAllSkills(work, 'string');
+    const elapsed = expirienceCount(work.start, work.finish);
+    const tagsArray = getAllSkills(work, 'array');
+    const allTagsString = getAllSkills(work, 'string');
 
     switch(type) {
         case 'extended':

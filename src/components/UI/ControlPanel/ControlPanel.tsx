@@ -5,32 +5,37 @@ import cn from 'classnames';
 import { useLocation, useNavigate } from "react-router-dom";
 
 import Icons from "../../Icons/Icons";
-
+import ThemeToogler from "../ThemeToogler/ThemeToogler";
+import { useDispatch } from "react-redux";
+import { menuStatusFalse } from "../../../store/reducers/menuStatusReducer";
 
 const ControlPanel:FC = () => {
     const navigate = useNavigate();
     const location = useLocation();
+    const dispatch = useDispatch();
 
-    async function printCv () {
-        if (location.pathname === '/cv-frontend/') {
+    async function printCv (currentLocation:string) {
+        await dispatch(menuStatusFalse());
+
+        if (currentLocation === '/cv-frontend/') {
             window.print();
         } else {
-            navigate('/cv-frontend/');
-            
-            setTimeout ( () => {
-                printCv()
-            }, 500);
+            await navigate('/cv-frontend/');
+            setTimeout ( function (){
+                window.print(); 
+            }, 1000);
         };
-        
     }
 
     return (
         <div className={classes.controlPanel}>
+            <div>Ru</div>
             <div className={cn(classes.controlPanel__btn, classes.controlPanel__btn_print)}
-                    onClick={printCv}
+                    onClick={() => printCv(location.pathname)}
             >
-                <Icons name="print" size="40px" color="black" />
+                <Icons name="print" size="20px" className={classes.controlPanel__icon}/>
             </div>
+            <ThemeToogler />
         </div>
     )
 }
