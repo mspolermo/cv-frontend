@@ -1,7 +1,9 @@
 export interface IUser {
     "name": string,
+    "nameEn": string,
     "photos": string [],
     "summary" : string,
+    "summaryEn" : string,
     "contacts": IContact [],
     "skills": {
         "hard" : ISkill [] ,
@@ -64,8 +66,10 @@ export interface IUserEducation {
 
 export const userInit: IUser = {
     "name": "",
+    "nameEn": "",
     "photos": [""],
     "summary" : "",
+    "summaryEn": "",
     "contacts": 
         [{
             "title": "tel",

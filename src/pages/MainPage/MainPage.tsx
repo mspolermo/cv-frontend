@@ -10,8 +10,12 @@ import { fetchUser } from "../../store/action-creators/user";
 import Loader from "../../components/UI/Loader/Loader";
 import Modal from "../../components/UI/Modal/Modal";
 import ListMapper from "../../components/ListMapper/ListMapper";
+import { changeLanguage } from "../../hooks/utils";
+import { useTranslation } from "react-i18next";
 
 const MainPage:FC = () => {
+    // eslint-disable-next-line
+    const {t, i18n} = useTranslation();
     const blocksArray: Array<blockNames> = ['projects', 'works', 'education', 'about'];
     const {user, error, loading} = useTypedSelector(state => state.user);
     const dispatch = useDispatch();
@@ -38,7 +42,7 @@ const MainPage:FC = () => {
     return (
         <div className={cn("container-internal", classes.itemPage)}>
 
-            <p className={"text " + classes.mainPage__summary}>{user.summary}</p>
+            <p className={"text " + classes.mainPage__summary}>{changeLanguage(user.summary, user.summaryEn, i18n.language)}</p>
 
             {blocksArray.map ( blockName => 
                 <ListMapper key={blockName} type='short' name={blockName} />   

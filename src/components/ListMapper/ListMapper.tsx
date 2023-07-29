@@ -14,10 +14,14 @@ import ProjectBlock from "../Blocks/ProjectBlock/ProjectBlock";
 import EducationBlock from "../Blocks/EducationBlock/EducationBlock";
 import AboutBlock from "../Blocks/AboutBlock/AboutBlock";
 import SkillBlock from "../Blocks/SkillBlock/SkillBlock";
+import { useTranslation } from "react-i18next";
 
 const ListMapper:FC<ListMapperProps> = ({type, name}) => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
+    // eslint-disable-next-line
+    const {t, i18n} = useTranslation();
+
     const {user} = useTypedSelector(state => state.user);
     const {mainData} = useTypedSelector(state => state.main);
 
@@ -30,35 +34,35 @@ const ListMapper:FC<ListMapperProps> = ({type, name}) => {
     switch (name) {
         case 'hard-skills':
             routPath = 'skills/hard-skills';
-            listHeading = 'Tech Skills';
+            listHeading = 'hard-skills';
             break;
         case 'soft-skills':
             routPath = 'skills/soft-skills';
-            listHeading = 'Soft Skills';
+            listHeading = 'soft-skills';
             break;
         case 'hard-skills-AllList':
             routPath = 'skills/hard-skills';
-            listHeading = 'Tech Skills';
+            listHeading = 'hard-skills';
             break;
         case 'soft-skills-AllList':
             routPath = 'skills/soft-skills';
-            listHeading = 'Soft Skills';
+            listHeading = 'soft-skills';
             break;
         case 'projects':
             routPath = 'projects';
-            listHeading = "Projects";
+            listHeading = "projects";
             break
         case 'works':
             routPath = 'work-experience';
-            listHeading = 'Work experience';
+            listHeading = 'work-experience';
             break;
         case 'education':
             routPath = 'education';
-            listHeading = 'Education';
+            listHeading = 'education';
             break;
         case 'about': 
             routPath = 'about';
-            listHeading = 'About me';
+            listHeading = 'about';
             break;
     }
 
@@ -76,7 +80,7 @@ const ListMapper:FC<ListMapperProps> = ({type, name}) => {
                     <h3 className={cn("heading-l2", classes.list__heading)}
                         onClick={() => clickHandler(routPath)} 
                     >
-                        {listHeading}
+                        {t(`headers.${listHeading}`)}
                     </h3>
 
                     { (name === 'hard-skills') && <ul className={classes.list__list}>
@@ -151,7 +155,7 @@ const ListMapper:FC<ListMapperProps> = ({type, name}) => {
                     <h3 className={cn("heading-l2 heading-l2__passive", classes.list__heading)}
                         onClick={() => navigate(`/cv-frontend/${routPath}/`)} 
                     >
-                        {listHeading}
+                        {t(`headers.${listHeading}`)}
                     </h3>
 
                     { (name === 'hard-skills') && <ul className={classes.list__list}>

@@ -4,9 +4,11 @@ import { ModalProps } from "../../../types/ui";
 
 import { useNavigate } from "react-router-dom";
 import Loader from "../Loader/Loader";
+import { useTranslation } from "react-i18next";
 
 const Modal:FC<ModalProps> = ({type, error}) => {
-    
+    // eslint-disable-next-line
+    const {t, i18n} = useTranslation();
     const navigate = useNavigate();
 
     function toMain () {
@@ -19,7 +21,7 @@ const Modal:FC<ModalProps> = ({type, error}) => {
             return (
                 <div className={classes.modal}>
                     <div className={classes.modal__textBlock}>
-                      <p>Идет загрузка...</p>  
+                      <p>{t('modal.loading')}</p>  
                     </div>
                     <Loader />
                 </div>
@@ -29,11 +31,11 @@ const Modal:FC<ModalProps> = ({type, error}) => {
                 <div className={classes.modal}>
 
                     <div className={classes.modal__textBlock}>
-                        <p>К сожалению, произошла ошибка: {error}</p>
-                        <p>Попробуйте обновить страницу</p>    
+                        <p>{t('modal.error')} {error}</p>
+                        <p>{t('modal.again')}</p>    
                     </div>
                     
-                    <p className={classes.modal__btn} onClick={toMain} > Обновить</p>
+                    <p className={classes.modal__btn} onClick={toMain}>{t('modal.refresh')}</p>
                 </div>
             )
             

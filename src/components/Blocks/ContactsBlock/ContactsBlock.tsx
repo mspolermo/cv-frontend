@@ -5,9 +5,12 @@ import { useNavigate } from "react-router-dom";
 import cn from 'classnames';
 
 import Icons from "../../Icons/Icons";
+import { useTranslation } from "react-i18next";
 
 const ContactsBlock:FC<ContactsBlockProps> = ({type, contacts}) => {
     const navigate = useNavigate();
+    // eslint-disable-next-line
+    const {t, i18n} = useTranslation();
     return (
         <div className={classes.contacts}>
 
@@ -16,7 +19,7 @@ const ContactsBlock:FC<ContactsBlockProps> = ({type, contacts}) => {
                     : cn("heading-l2", classes.contacts__heading)}
                 onClick={() => navigate(`/cv-frontend/contacts`)} 
             >
-                Contacts
+                {t('headers.contacts')}
             </h3>
 
             <div className={classes.contacts__topBlock}>

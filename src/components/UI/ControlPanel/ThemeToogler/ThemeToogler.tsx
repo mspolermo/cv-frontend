@@ -2,8 +2,8 @@ import React, {FC} from 'react';
 import styles from './ThemeToogler.module.scss';
 
 import { useDispatch } from 'react-redux';
-import { useTypedSelector } from '../../../hooks/useTypedSelector';
-import { themeReducerDarkFalse, themeReducerDarkTrue } from '../../../store/reducers/themeReducer';
+import { useTypedSelector } from '../../../../hooks/useTypedSelector';
+import { themeReducerDarkFalse, themeReducerDarkTrue } from '../../../../store/reducers/themeReducer';
 
 const ThemeToogler:FC = () => {
     const {themeDark} = useTypedSelector(state => state.themeStyle);

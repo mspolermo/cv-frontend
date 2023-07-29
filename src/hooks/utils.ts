@@ -68,3 +68,17 @@ export function getAllSkills (item: IUserProject | IUserWork, type: 'array' | 's
             return allTechArray.join(', ')
     }
 };
+
+export function changeLanguage (Ru: string , En: string , BrowserLanguage: string) {
+    if (BrowserLanguage === 'ru' && (Ru)) {
+        return Ru
+    }
+    if (BrowserLanguage === 'ru' && (!Ru)) {
+        return En
+    }
+    if (BrowserLanguage === 'en' && (En)) {
+        return En
+    } else {
+        return Ru
+    }
+}

@@ -1,0 +1,12 @@
+@import '/src/styles/variables.scss';
+
+.languageChanger {
+    &__btn {
+        background-color: transparent;
+        color: $headingColor;
+        transition: 0.3s ease color;
+        &:hover {
+            color: $hoverColor;
+        }
+    }
+}

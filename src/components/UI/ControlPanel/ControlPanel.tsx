@@ -5,9 +5,10 @@ import cn from 'classnames';
 import { useLocation, useNavigate } from "react-router-dom";
 
 import Icons from "../../Icons/Icons";
-import ThemeToogler from "../ThemeToogler/ThemeToogler";
+import ThemeToogler from "./ThemeToogler/ThemeToogler";
 import { useDispatch } from "react-redux";
 import { menuStatusFalse } from "../../../store/reducers/menuStatusReducer";
+import LanguageChanger from "./LanguageChanger/LanguageChanger";
 
 const ControlPanel:FC = () => {
     const navigate = useNavigate();
@@ -29,7 +30,7 @@ const ControlPanel:FC = () => {
 
     return (
         <div className={classes.controlPanel}>
-            <div>Ru</div>
+            <LanguageChanger />
             <div className={cn(classes.controlPanel__btn, classes.controlPanel__btn_print)}
                     onClick={() => printCv(location.pathname)}
             >
