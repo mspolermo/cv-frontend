@@ -47,12 +47,13 @@
         min-height: 0.8em;
         flex: 2 0 auto;
 
-        border-bottom: 1px dashed #A8A8A8;
+        transition: 0.3s ease border;
+        border-bottom: 1px dashed $headingColor;
     }
     &__right {
         display: flex;
         align-items: center;
-        color: $textColor;
+        color: $headingColor;
         @extend %transition; 
         &::before{
             content: '[';
@@ -164,7 +165,7 @@
 
         border: 1px solid $btnBorderColor;
         border-radius: 10px;
-        background-color: white;
+        background-color: transparent;
         transition: 0.5s ease background-color;
         &_gHub {
             padding: 16px;

@@ -2,16 +2,16 @@
 @import './nullstyle.scss'; // Нормализация
 @import '/src/styles/variables.scss'; //Переменные и миксины 
 
-:root {
-    background-color: $backgroundColor-outside;
-}
 .app {
     padding: 40px;
+    &{
+        background-color: $backgroundColor-outside;
+    }
 }
 .cleanPage {
     background-color: inherit;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 body {
     font-family: iviSans,sans-serif;

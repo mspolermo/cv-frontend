@@ -1,33 +1,100 @@
-$backgroundColor-outside: #E5E5E5;
-$backgroundColor-main: #fff;
-$backgroundColor-aside: #E0EBFE;
+.app {
+    --backgroundColor-outside: #E5E5E5;
+    --backgroundColor-main: #fff;
+    --backgroundColor-aside: #E0EBFE;
 
-$headingColor: #000000;
-$headingColor-aside: #161D2A;
-$headingColor-additional: #6D9BF5;
+    --headingColor: #4d3c3c;
+    --headingColor-aside: #161D2A;
+    --headingColor-additional: #6D9BF5;
 
-$textColor: #595959;
-$textColor-aside: #161D2A;
-$textColor-additional: #A8A8A8;
+    --textColor: #595959;
+    --textColor-aside: #161D2A;
+    --textColor-additional: #A8A8A8;
 
-$iconColor-aside: #161D2A;
-$circleColor-aside: #6D9BF5;
-$circleColor-main: #595959;
+    --iconColor-aside: #161D2A;
+    --circleColor-aside: #6D9BF5;
+    --circleColor-main: #595959;
 
-$hoverColor: #6D9BF5;
-$loaderColor: #6D9BF5;
+    --hoverColor: #6D9BF5;
+    --loaderColor: #6D9BF5;
 
-$modalColor: #E0EBFE;
-$modalBorderColor: #6D9BF5;
+    --modalColor: #E0EBFE;
+    --modalBorderColor: #6D9BF5;
 
-$btnBorderColor: #6D9BF5;
-$btnHoverColor: #E0EBFE;
+    --btnBorderColor: #6D9BF5;
+    --btnHoverColor: #E0EBFE;
 
-$sliderColor: #E0EBFE;
-$sliderBorderColor: #6D9BF5;
+    --sliderColor: #E0EBFE;
+    --sliderBorderColor: #6D9BF5;
 
-$tableBorderColor: #A8A8A8;
-$tableHoverColor: #6D9BF5;
+    --tableBorderColor: #A8A8A8;
+    --tableHoverColor: #6D9BF5;
+    
+}
+  
+.app__dark {
+    --backgroundColor-outside: #28292C;
+    --backgroundColor-main: #6b6464;
+    --backgroundColor-aside: #797575;
+
+    --headingColor: #000000;
+    --headingColor-aside: #000000;
+    --headingColor-additional: #9399b7;
+
+    --textColor: #c5baba;
+    --textColor-aside: #0c0c0c;
+    --textColor-additional: #979393;
+
+    --iconColor-aside: #0c0c0c;
+    --circleColor-aside: #9399b7;
+    --circleColor-main: #c5baba;
+
+    --hoverColor: #9399b7;
+    --loaderColor: #9399b7;
+
+    --modalColor: #797575;
+    --modalBorderColor: #9399b7;
+
+    --btnBorderColor: #9399b7;
+    --btnHoverColor: #797575;
+
+    --sliderColor: #797575;
+    --sliderBorderColor: #9399b7;
+
+    --tableBorderColor: #979393;
+    --tableHoverColor: #9399b7;
+}
+
+$backgroundColor-outside: var(--backgroundColor-outside);
+$backgroundColor-main: var(--backgroundColor-main);
+$backgroundColor-aside: var(--backgroundColor-aside);
+
+$headingColor: var(--headingColor);
+$headingColor-aside: var(--headingColor-aside);
+$headingColor-additional: var(--headingColor-additional);
+
+$textColor: var(--textColor);
+$textColor-aside: var(--textColor-aside);
+$textColor-additional: var(--textColor-additional);
+
+$iconColor-aside: var(--iconColor-aside);
+$circleColor-aside: var(--circleColor-aside);
+$circleColor-main: var(--circleColor-main);
+
+$hoverColor: var(--hoverColor);
+$loaderColor: var(--loaderColor);
+
+$modalColor: var(--modalColor);
+$modalBorderColor: var(--modalBorderColor);
+
+$btnBorderColor: var(--btnBorderColor);
+$btnHoverColor: var(--btnHoverColor);
+
+$sliderColor: var(--sliderColor);
+$sliderBorderColor: var(--sliderBorderColor);
+
+$tableBorderColor: var(--tableBorderColor);
+$tableHoverColor: var(--tableHoverColor);
 %tabletBorderColorsTransition {
     transition: 0.8s ease border;
 }
