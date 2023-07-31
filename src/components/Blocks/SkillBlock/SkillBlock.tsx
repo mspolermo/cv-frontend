@@ -9,28 +9,27 @@ import { getAllSkills } from "../../../hooks/utils";
 import { useTranslation } from "react-i18next";
 
 const SkillBlock:FC<SkillBlockProps> = ({skill, type}) => {
-    // eslint-disable-next-line
+
     const {t, i18n} = useTranslation();
     const {mainData} = useTypedSelector(state => state.main);
     const navigate = useNavigate();
 
-    let projectsSkillsArray = mainData.projects.ru.map( (project) => {
-        return [project.name, `/cv-frontend/projects/${project.name}`, getAllSkills(project)]
-    });
-    let worksSkillsArray = mainData.works.ru.map( (work) => {
-        return [work.company, `/cv-frontend/work-experience/${work.companyEn}`, getAllSkills(work)]
-    });
-    if (i18n.language === 'en') {
-        projectsSkillsArray = mainData.projects.en.map( (project) => {
-            return [project.name, `/cv-frontend/projects/${project.name}`, getAllSkills(project)]
-        });
-        worksSkillsArray = mainData.works.en.map( (work) => {
-            return [work.company, `/cv-frontend/work-experience/${work.companyEn}`, getAllSkills(work)]
-        });
-    }
-    const allSkillsArray = projectsSkillsArray.concat(worksSkillsArray);
-
-    
+    function getAllSkillsArray () {
+        const projectsSkillsArray = (i18n.language === 'en' 
+            ? mainData.projects.en.map((project) => 
+                [project.name, `/cv-frontend/projects/${project.name}`, getAllSkills(project)])
+            : mainData.projects.ru.map((project) => 
+                [project.name, `/cv-frontend/projects/${project.name}`, getAllSkills(project)])
+        );
+        const worksSkillsArray = (i18n.language === 'en' 
+            ? mainData.works.en.map((work) => 
+                [work.company, `/cv-frontend/work-experience/${work.companyEn}`, getAllSkills(work)])
+            : mainData.works.ru.map((work) => 
+                [work.company, `/cv-frontend/work-experience/${work.companyEn}`, getAllSkills(work)])
+        );
+        return projectsSkillsArray.concat(worksSkillsArray);
+    };
+    const allSkillsArray = getAllSkillsArray();
 
     if (type === 'full' || type === 'fullSolo') {
         return (
@@ -195,8 +194,6 @@ const SkillBlock:FC<SkillBlockProps> = ({skill, type}) => {
             }
         </li>    
     )
-
-
 };
 
 export default SkillBlock;

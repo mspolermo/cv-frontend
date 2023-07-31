@@ -9,12 +9,8 @@
     &__mainHead{
         margin-bottom: 10px;
     }
-    &__body {
-        
-    }
     &__titleL2 {
         padding-left: 1em;
-        //line-height: 20px;
         &::before {
             content: '\2022';
             padding-right: 1em;
@@ -23,7 +19,6 @@
     }
     &__titleL3 {
         padding-left: 2em;
-        //line-height: 20px;
         &::before {
             content: '\25E6';
             padding-right: 1em;
@@ -32,7 +27,6 @@
     }
     &__titleL4 {
         padding-left: 3em;
-        //line-height: 20px;
         &::before {
             content: '\25B9';
             padding-right: 1em;

@@ -10,8 +10,7 @@ import { useTranslation } from "react-i18next";
 import { changeLanguage } from "../../hooks/utils";
 
 const Header:FC = () => {
-    // eslint-disable-next-line
-    const {t, i18n} = useTranslation();
+    const {i18n} = useTranslation();
     const {mainData} = useTypedSelector(state => state.main);
     const navigate = useNavigate();
 

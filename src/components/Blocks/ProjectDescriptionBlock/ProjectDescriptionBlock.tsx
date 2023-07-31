@@ -13,64 +13,64 @@ const ProjectDescriptionBlock:FC<ProjectDescriptionBlockProps> = ({project}) => 
                 {project.description.map(item => <div key={item.title} 
                                                         className={classes.projectDescBlock__block}>
 
-                    <div className={cn("heading-l3 heading-l3__passive", 
+                    <h3 className={cn("heading-l3 heading-l3__passive", 
                                         classes.projectDescBlock__mainHead)}
                     >
                         {item.title}
-                    </div>
+                    </h3>
 
-                    { (!Array.isArray(item.info)) && <div className={cn( "text", 
+                    { (!Array.isArray(item.info)) && <p className={cn( "text", 
                                                             classes.projectDescBlock__body)}>
                         {item.info}
-                    </div>}
+                    </p>}
                     
-                    { (Array.isArray(item.info)) && <div>
+                    { (Array.isArray(item.info)) && <ul>
 
-                        {item.info.map( (itemL2, i) => <div key={i}>
+                        {item.info.map( (itemL2, i) => <li key={i}>
                             { (typeof itemL2 === 'string') 
 
-                            ? <div className={cn("text", classes.projectDescBlock__titleL2)}>
+                            ? <h4 className={cn("text", classes.projectDescBlock__titleL2)}>
                                 {itemL2}
-                            </div>
+                            </h4>
 
                             : <div>
 
-                                <div className={cn("text", classes.projectDescBlock__titleL2)}>
+                                <h4 className={cn("text", classes.projectDescBlock__titleL2)}>
                                     {itemL2.titleL2}
-                                </div>
+                                </h4>
 
-                                <div>{itemL2.infoL2.map( (itemL3, i) => <div key={i}>
+                                <ul>{itemL2.infoL2.map( (itemL3, i) => <li key={i}>
 
                                     { (typeof itemL3 === 'string') 
 
-                                        ? <div className={cn("text", classes.projectDescBlock__titleL3)}>
+                                        ? <h5 className={cn("text", classes.projectDescBlock__titleL3)}>
                                             {itemL3}
-                                        </div>
+                                        </h5>
 
                                         : <div>
 
-                                            <div className={cn("text", classes.projectDescBlock__titleL3)}>
+                                            <h5 className={cn("text", classes.projectDescBlock__titleL3)}>
                                                 {itemL3.titleL3}
-                                            </div>
+                                            </h5>
 
-                                            <div>
-                                                {itemL3.infoL3.map(itemL4 => <div key={itemL4} 
+                                            <ul>
+                                                {itemL3.infoL3.map(itemL4 => <li key={itemL4} 
                                                                 className={cn("text", classes.projectDescBlock__titleL4)}>
                                                     {itemL4}
-                                                </div>)}
-                                            </div>
+                                                </li>)}
+                                            </ul>
 
                                         </div>}
 
-                                    </div>)}
+                                    </li>)}
 
-                                </div>
+                                </ul>
 
                             </div>}
 
-                        </div>)}
+                        </li>)}
 
-                    </div>}
+                    </ul>}
 
                 </div>)}
                 

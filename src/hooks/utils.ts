@@ -11,14 +11,6 @@ export function expirienceCount (start: string, finish: string, language: string
     let month = Math.floor(days/30)
     let years = Math.floor(month/12)
 
-    let result;
-
-    if (years == 0) {
-        result = [0, month]
-    } else {
-        result = [years, month - years*12]
-    } 
-
     return getLocalizedDuration(years, (month - years*12), language)
 };
 function getLocalizedDuration(years: number, months: number, language: string): string {

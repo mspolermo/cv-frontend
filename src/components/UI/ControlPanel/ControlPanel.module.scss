@@ -6,7 +6,7 @@
     padding: 10px;
     display: inline-flex;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid $tableBorderColor;
     border-radius: 10px;
     &__btn {
         &_print {
@@ -23,8 +23,8 @@
     &__icon {
         width: 16px;
         height: 16px;
-        fill: black;
-        stroke: black;
+        fill: $iconColor-aside;
+        stroke: $iconColor-aside;
         transition: 0.3s ease;
         transition-duration: fill, stroke;
 

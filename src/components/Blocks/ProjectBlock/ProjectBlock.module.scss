@@ -1,9 +1,5 @@
 @import '/src/styles/variables.scss';
 
-%transition {
-    transition: 0.3s ease color;
-}
-
 .shortsProjectsBlock {
     &__item {
         display: flex;
@@ -32,10 +28,10 @@
     }
     &__text {
         color: $headingColor;
-        @extend %transition; 
+        @extend %textColorTransition; 
         &_id{
             font-weight: 700;
-            @extend %transition; 
+            @extend %textColorTransition; 
             &::after{
                 content: ".";
                 margin-right: 10px;
@@ -54,7 +50,7 @@
         display: flex;
         align-items: center;
         color: $headingColor;
-        @extend %transition; 
+        @extend %textColorTransition; 
         &::before{
             content: '[';
         }
@@ -130,15 +126,8 @@
         justify-content: space-between;
         cursor: default;
     }
-    &__heading{
-        // font-size: 28px;
-        // &:hover {
-        //     font-size: 28px;
-        // }
-    }
     &__summary {
         margin-bottom: 14px;
-        //line-height: 14x;
         cursor: default;
     }
     &__techBlock{
@@ -172,21 +161,38 @@
         }
         &:hover {
             background-color: $btnHoverColor;
+            .extendedProjectBlock {
+                &__gitHub {
+                    color: $btnInnerColor;
+                }
+                &__ghPage {
+                    color: $btnInnerColor;
+                }
+                &__icon {
+                fill: $btnInnerColor;
+                stroke: $btnInnerColor;
+                }
+            }
         }
     }
     &__gitHub {
         font-size: 16px;
-        color: black;
+        color: $headingColor-aside;
         font-weight: 600;
+        transition: 0.5s ease;
     }
     &__icon {
         display: flex;
-        //width: 90%;
         margin-bottom: 6px;
+        fill: $headingColor-aside;
+        stroke: $headingColor-aside;
+        transition: 0.5s ease;
+        transition-duration: fill, stroke;
     }
     &__ghPage {
-        color: black;
+        color: $headingColor-aside;
         font-size: 10px;
+        transition: 0.5s color;
         &_big {
             font-weight: 600;
             margin-right: 2px;

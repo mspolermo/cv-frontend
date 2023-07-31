@@ -7,10 +7,12 @@
     
     font-size: 12px;
     border: 1px solid $btnBorderColor;
-    transition: 0.5s ease background-color;
+    transition: 0.5s ease;
+    transition-duration: background-color, color;
     border-radius: 12px;
     cursor: pointer;
     &:hover {
-       background-color: $btnHoverColor; 
+       background-color: $btnHoverColor;
+       color: $btnInnerColor; 
     }
 }

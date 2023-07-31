@@ -7,8 +7,7 @@ import Loader from "../Loader/Loader";
 import { useTranslation } from "react-i18next";
 
 const Modal:FC<ModalProps> = ({type, error}) => {
-    // eslint-disable-next-line
-    const {t, i18n} = useTranslation();
+    const {t} = useTranslation();
     const navigate = useNavigate();
 
     function toMain () {
@@ -38,6 +37,8 @@ const Modal:FC<ModalProps> = ({type, error}) => {
                     <p className={classes.modal__btn} onClick={toMain}>{t('modal.refresh')}</p>
                 </div>
             )
+        default:
+            return null;
             
     };
 };

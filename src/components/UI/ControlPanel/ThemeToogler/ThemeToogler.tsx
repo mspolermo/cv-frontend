@@ -9,13 +9,11 @@ const ThemeToogler:FC = () => {
     const {themeDark} = useTypedSelector(state => state.themeStyle);
     const dispatch = useDispatch();
 
-    function changeTheme (){
-        switch (themeDark) {
-            case true:
-                dispatch(themeReducerDarkFalse());
-                break;
-            case false:
-                dispatch(themeReducerDarkTrue());
+    const toggleTheme = () => {
+        if (themeDark) {
+            dispatch(themeReducerDarkFalse());
+        } else {
+            dispatch(themeReducerDarkTrue());
         }
     };
 
@@ -24,8 +22,8 @@ const ThemeToogler:FC = () => {
             <input
                 id="toggler"
                 type="checkbox"
-                readOnly
-                onClick={changeTheme}
+                defaultChecked={themeDark}
+                onClick={toggleTheme}
             />
             <span className={styles.themeToogler__slider} />
             <span className={styles.themeToogler__wave} />

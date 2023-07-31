@@ -1,9 +1,5 @@
 @import '/src/styles/variables.scss';
 
-%transition {
-    transition: 0.3s ease color;
-}
-
 .skillBlock {
     &__short {
         &:nth-child(n+5) {
@@ -18,7 +14,7 @@
         display: inline;
         padding-left: 1em;
         color: $textColor-aside;
-        @extend %transition;
+        @extend %textColorTransition;
         &_mark {
             &::before {
                 content: '\2022';
@@ -74,7 +70,7 @@
         margin-bottom: 4px;
         font-weight: 700;
         cursor: pointer;
-        @extend %transition;
+        @extend %textColorTransition;
         &:hover {
             color: $hoverColor; 
         }
@@ -95,7 +91,7 @@
     &__skillAprove {
         padding-left: 2em;
         cursor: pointer;
-        @extend %transition;
+        @extend %textColorTransition;
         &:hover {
             color: $hoverColor;
             &{

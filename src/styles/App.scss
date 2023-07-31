@@ -67,7 +67,7 @@ body {
     &__passive {
         &:hover {
             cursor: default;
-            color: $headingColor-aside;
+            color: $headingColor;
         }
     }
 }
@@ -152,7 +152,7 @@ body {
         box-shadow: none;
     }
     .container-internal {
-        padding: 0 0 0 20px;
+        padding: 0 8px 0 20px;
     }
     .text {
         font-size: 12px;

@@ -14,7 +14,7 @@ import ItemPage from '../../pages/ItemPage/ItemPage';
 import Modal from '../UI/Modal/Modal';
 
 const Routing = () => {
-	const { t, i18n } = useTranslation();
+	const { i18n } = useTranslation();
 	const { mainLoading, mainError } = useTypedSelector(state => state.main);
 	const { menuStatus } = useTypedSelector(state => state.menuStatus);
 	const dispatch = useDispatch();

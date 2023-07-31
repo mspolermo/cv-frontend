@@ -33,36 +33,36 @@
 }
   
 .app__dark {
-    --backgroundColor-outside: #28292C;
-    --backgroundColor-main: #6b6464;
-    --backgroundColor-aside: #797575;
-
-    --headingColor: #000000;
-    --headingColor-aside: #000000;
-    --headingColor-additional: #9399b7;
-
-    --textColor: #c5baba;
-    --textColor-aside: #0c0c0c;
-    --textColor-additional: #979393;
-
-    --iconColor-aside: #0c0c0c;
-    --circleColor-aside: #9399b7;
-    --circleColor-main: #c5baba;
-
-    --hoverColor: #9399b7;
-    --loaderColor: #9399b7;
-
-    --modalColor: #797575;
-    --modalBorderColor: #9399b7;
-
-    --btnBorderColor: #9399b7;
-    --btnHoverColor: #797575;
-
-    --sliderColor: #797575;
-    --sliderBorderColor: #9399b7;
-
-    --tableBorderColor: #979393;
-    --tableHoverColor: #9399b7;
+    --backgroundColor-outside: #1F2127;
+    --backgroundColor-main: #272B32;
+    --backgroundColor-aside: #23262C;
+  
+    --headingColor: #A7A9AC;
+    --headingColor-aside: #8B8E93;
+    --headingColor-additional: #73787E;
+  
+    --textColor: #86888C;
+    --textColor-aside: #B0B2B7;
+    --textColor-additional: #919396;
+  
+    --iconColor-aside: #8B8E93;
+    --circleColor-aside: #73787E;
+    --circleColor-main: #86888C;
+  
+    --hoverColor: #73787E;
+    --loaderColor: #676A6F;
+  
+    --modalColor: #2A2D34;
+    --modalBorderColor: #8B8E93;
+  
+    --btnBorderColor: #8B8E93;
+    --btnHoverColor: #73787E;
+  
+    --sliderColor: #2A2D34;
+    --sliderBorderColor: #8B8E93;
+  
+    --tableBorderColor: #919396;
+    --tableHoverColor: #73787E;
 }
 
 $backgroundColor-outside: var(--backgroundColor-outside);
@@ -95,6 +95,12 @@ $sliderBorderColor: var(--sliderBorderColor);
 
 $tableBorderColor: var(--tableBorderColor);
 $tableHoverColor: var(--tableHoverColor);
+$toogleCircleColor: #ffffff;
+$btnInnerColor: black;
+
+%textColorTransition {
+    transition: 0.3s ease color;
+}
 %tabletBorderColorsTransition {
     transition: 0.8s ease border;
 }

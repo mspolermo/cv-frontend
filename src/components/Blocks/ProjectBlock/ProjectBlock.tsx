@@ -13,8 +13,7 @@ import { getAllSkills } from "../../../hooks/utils";
 import { useTranslation } from "react-i18next";
 
 const ProjectBlock:FC<ProjectsBlockProps> = ({type, index, project}) => {
-    // eslint-disable-next-line
-    const {t, i18n} = useTranslation();
+    const {t} = useTranslation();
     const navigate = useNavigate();
     
     const tagsArray = getAllSkills(project);

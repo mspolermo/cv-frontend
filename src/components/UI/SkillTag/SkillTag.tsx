@@ -7,18 +7,17 @@ import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const SkillTag:FC<SkillTagProps> = ({tag}) => {
-    // eslint-disable-next-line
-    const {t, i18n} = useTranslation();
+    const {t} = useTranslation();
     const navigate = useNavigate();
     return(
-        <p className={cn(classes.skillTag, 'text')}
+        <span className={cn(classes.skillTag, 'text')}
             onClick={() => navigate('/cv-frontend/skills/' + tag)} 
         >
             {t("skills." + tag).includes('.') 
                 ? tag
                 : t("skills." + tag)
             }
-        </p>  
+        </span>  
     );
 };
 

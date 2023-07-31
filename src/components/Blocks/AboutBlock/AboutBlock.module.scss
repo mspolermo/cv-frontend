@@ -14,14 +14,11 @@
             padding-right: 1em;
         }  
     }
-    &__outBlock {
-    }
     &__innerBlock{
         margin-left: 1em; 
     }
     &__stringL2{
         margin: 0 1em;
-               
         cursor: default;
         &::before {
             content: '-';

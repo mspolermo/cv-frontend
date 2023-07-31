@@ -19,71 +19,63 @@ import { useTranslation } from "react-i18next";
 const ListMapper:FC<ListMapperProps> = ({type, name}) => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
-    // eslint-disable-next-line
-    const {t, i18n} = useTranslation();
+    const {t} = useTranslation();
 
     const {user} = useTypedSelector(state => state.user);
     const {mainData} = useTypedSelector(state => state.main);
 
-    //const importantProjects = user.projects.filter(project => project.important === true);
-    //const importantWorks = user.works.ru.filter(work => work.important === true);
-    //const importantWorksEn = user.works.en.filter(work => work.important === true);
 
-    //const importantEducation = user.education.filter(educate => educate.important === true);
-    //const importantEducationEn = user.educationEn.filter(educate => educate.important === true);
-
-    let routPath = '';
-    let listHeading = '';
-    switch (name) {
-        case 'hard-skills':
-            routPath = 'skills/hard-skills';
-            listHeading = 'hard-skills';
-            break;
-        case 'soft-skills':
-            routPath = 'skills/soft-skills';
-            listHeading = 'soft-skills';
-            break;
-        case 'hard-skills-AllList':
-            routPath = 'skills/hard-skills';
-            listHeading = 'hard-skills';
-            break;
-        case 'soft-skills-AllList':
-            routPath = 'skills/soft-skills';
-            listHeading = 'soft-skills';
-            break;
-        case 'projects':
-            routPath = 'projects';
-            listHeading = "projects";
-            break
-        case 'projectsEn':
-            routPath = 'projects';
-            listHeading = "projects";
-            break
-        case 'works':
-            routPath = 'work-experience';
-            listHeading = 'work-experience';
-            break;
-        case 'worksEn':
-            routPath = 'work-experience';
-            listHeading = 'work-experience';
-            break;
-        case 'education':
-            routPath = 'education';
-            listHeading = 'education';
-            break;
-        case 'educationEn':
-            routPath = 'education';
-            listHeading = 'education';
-            break;
-        case 'about': 
-            routPath = 'about';
-            listHeading = 'about';
-            break;
-        case 'aboutEn': 
-            routPath = 'about';
-            listHeading = 'about';
-            break;
-    }
+    const listConfig = {
+        "hard-skills": {
+          routPath: "skills/hard-skills",
+          listHeading: "hard-skills",
+        },
+        "soft-skills": {
+          routPath: "skills/soft-skills",
+          listHeading: "soft-skills",
+        },
+        "hard-skills-AllList": {
+          routPath: "skills/hard-skills",
+          listHeading: "hard-skills",
+        },
+        "soft-skills-AllList": {
+          routPath: "skills/soft-skills",
+          listHeading: "soft-skills",
+        },
+        projects: {
+          routPath: "projects",
+          listHeading: "projects",
+        },
+        projectsEn: {
+          routPath: "projects",
+          listHeading: "projects",
+        },
+        works: {
+          routPath: "work-experience",
+          listHeading: "work-experience",
+        },
+        worksEn: {
+          routPath: "work-experience",
+          listHeading: "work-experience",
+        },
+        education: {
+          routPath: "education",
+          listHeading: "education",
+        },
+        educationEn: {
+          routPath: "education",
+          listHeading: "education",
+        },
+        about: {
+          routPath: "about",
+          listHeading: "about",
+        },
+        aboutEn: {
+          routPath: "about",
+          listHeading: "about",
+        },
+    };
+    const { routPath, listHeading } = listConfig[name];
 
     function clickHandler (routPath:string) {
         navigate(`/cv-frontend/${routPath}/`);

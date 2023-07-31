@@ -12,8 +12,9 @@
         height: 40px;
         
         border-radius: 50%;
-        border: 3px dashed $loaderColor;
-        animation: rotate 2s infinite linear; 
+        border: 3px solid $loaderColor;
+        border-top-color: transparent; 
+        animation: rotate 1s infinite linear; 
     }
 }
 

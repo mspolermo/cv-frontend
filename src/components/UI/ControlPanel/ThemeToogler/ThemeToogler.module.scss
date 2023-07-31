@@ -1,3 +1,4 @@
+@import '/src/styles/variables.scss'; 
 .themeToogler {
     position: relative;
     width: 24px;
@@ -11,7 +12,7 @@
       left: 0;
       z-index: 1;
       overflow: hidden;
-      background-color: #6D9BF5;
+      background-color: $hoverColor;
       border-radius: 50px;
       transition: background-color 1.4s;
       &:before,
@@ -22,7 +23,7 @@
         left: 2px;
         width: 8px;
         height: 8px;
-        background-color: #ffffff;
+        background-color: $toogleCircleColor;
         border-radius: 50px;
       }
       &:before {
@@ -53,7 +54,7 @@
     }
     input:checked ~ .themeToogler__wave  {
       display: block;
-      background-color: #100e19;
+      background-color: $hoverColor
     }
 }    
   

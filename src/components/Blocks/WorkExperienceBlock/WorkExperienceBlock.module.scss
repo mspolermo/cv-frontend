@@ -9,10 +9,6 @@
         cursor: default;
     }
     &__heading{
-        // font-weight: 700;
-        // font-size: 16px;
-        // line-height: 20px;
-        // color: $headingColor;
         cursor: default;
         &_additional{
             padding-left: 0.3em;
@@ -22,6 +18,7 @@
                 color: $headingColor-additional;
             }
         }
+
     }
     &__additionalInfo {
         margin: 6px 0 10px 0.2em;

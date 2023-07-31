@@ -9,7 +9,6 @@ import SkillTag from "../../UI/SkillTag/SkillTag";
 import { useTranslation } from "react-i18next";
 
 const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
-    // eslint-disable-next-line
     const {t, i18n} = useTranslation();
     const navigate = useNavigate();
 
@@ -23,7 +22,7 @@ const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
 
     useEffect( () => {
         setElapsed( expirienceCount(work.start, work.finish, i18n.language) )
-    }, [i18n.language])
+    }, [i18n.language, work.start, work.finish])
 
     switch(type) {
         case 'extended':

@@ -9,8 +9,7 @@ import { useTranslation } from "react-i18next";
 
 const ContactsBlock:FC<ContactsBlockProps> = ({type, contacts}) => {
     const navigate = useNavigate();
-    // eslint-disable-next-line
-    const {t, i18n} = useTranslation();
+    const {t} = useTranslation();
     return (
         <div className={classes.contacts}>
 
