@@ -26,9 +26,9 @@ const ItemPage:FC<ItemPageProps> = ({type}) => {
 
     useEffect(() => {
         if (type === 'work') {
-            setItemIndex(user.works.findIndex( work => work.companyEn === params.id));
+            setItemIndex(user.works.ru.findIndex( work => work.companyEn === params.id));
         } else if (type === 'project') {
-            setItemIndex(user.projects.findIndex( project => project.name === params.id));
+            setItemIndex(user.projects.ru.findIndex( project => project.name === params.id));
         };
         
         document.body.scrollTop = document.documentElement.scrollTop = 0;
@@ -57,13 +57,25 @@ const ItemPage:FC<ItemPageProps> = ({type}) => {
         case 'work':
             return (
                 <div className={cn("container-internal", classes.itemPage)}>
-                    <WorkExperienceBlock type="extended" work={user.works[itemIndex]} /> 
+                    <WorkExperienceBlock type="extended" work={user.works.ru[itemIndex]} /> 
+                </div>
+            )
+        case 'workEn':
+            return (
+                <div className={cn("container-internal", classes.itemPage)}>
+                    <WorkExperienceBlock type="extended" work={user.works.en[itemIndex]} /> 
                 </div>
             )
         case 'project':
             return (
                 <div className={cn("container-internal", classes.itemPage)}>
-                    <ProjectBlock type="extended" project={user.projects[itemIndex]}/>
+                    <ProjectBlock type="extended" project={user.projects.ru[itemIndex]}/>
+                </div>
+            )
+        case 'projectEn':
+            return (
+                <div className={cn("container-internal", classes.itemPage)}>
+                    <ProjectBlock type="extended" project={user.projects.en[itemIndex]}/>
                 </div>
             )
         case 'skill' :

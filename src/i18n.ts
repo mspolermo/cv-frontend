@@ -29,6 +29,18 @@ i18n.use(initReactI18next).use(LanguageDetector).use(initReactI18next).init({
                     "error": "Unfortunately, an error occurred:",
                     "again": "Try refreshing the page",
                     "refresh": "Refresh"
+                },
+                "skills": {
+                    "Team work": "Team work",
+                    "Problem-solving": "Problem-solving",
+                    "Time management": "Time management",
+                    "Emotional control": "Emotional control",
+                    "Customer orientation": "Customer orientation"
+                },
+                "jobs": {
+                    "CSPSiD": "CSPSiD",
+                    "Online": "Online",
+                    "North bridge": "North bridge"
                 }
             }
         },
@@ -50,6 +62,18 @@ i18n.use(initReactI18next).use(LanguageDetector).use(initReactI18next).init({
                     "error": "К сожалению, произошла ошибка:",
                     "again": "Попробуйте обновить страницу",
                     "refresh": "Обновить"
+                },
+                "skills": {
+                    "Team work": "Командная работа",
+                    "Problem-solving": "Решение проблем",
+                    "Time management": "Управление временем",
+                    "Emotional control": "Эмоциональный контроль",
+                    "Customer orientation": "Клиентоориентированность"
+                },
+                "jobs": {
+                    "CSPSiD": "ЦСПСиД",
+                    "Online": "Онлайн",
+                    "North bridge": "Северный мост"
                 }
             }
         }

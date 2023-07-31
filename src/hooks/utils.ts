@@ -1,6 +1,6 @@
 import { IUserProject, IUserWork } from "../types/IUser";
 
-export function expirienceCount (start: string, finish: string) {
+export function expirienceCount (start: string, finish: string, language: string = 'ru') {
     let startArr = start.split('.')
     let startTime = new Date ( +startArr[1], +startArr[0]-1)
 
@@ -19,66 +19,31 @@ export function expirienceCount (start: string, finish: string) {
         result = [years, month - years*12]
     } 
 
-
-    return (result[0] + ' years ' + result[1] + ' months' )
+    return getLocalizedDuration(years, (month - years*12), language)
 };
-
-export function getAllSkills (item: IUserProject | IUserWork, type: 'array' | 'string') {
-    const tagsArray = [];
-    const allTechArray = [];   
-
-    for (let i=0; i<item.skills.length; i++) {
-
-        if (typeof item.skills[i] === 'string') {
-
-            tagsArray.push(item.skills[i]);
-            allTechArray.push(item.skills[i]);
-
-        } else {
-
-            let innerObject = item.skills[i];
-            type objectKeyType = keyof typeof innerObject; 
-
-            let objectValue = "";
-
-            Object.keys(innerObject).forEach((key) => {
-
-                if (typeof innerObject[key as objectKeyType] === 'string') {
-
-                    tagsArray.push(innerObject[key as objectKeyType]);
-                    objectValue += innerObject[key as objectKeyType];
-
-                } else {
-
-                    let innerArray: string[] = innerObject[key as objectKeyType];
-                    objectValue += ` (${innerArray.join(', ')})`;
-
-                    innerArray.forEach( item => tagsArray.push(item));
-
-                };
-            });
-            allTechArray.push(objectValue);
-        };
-    };
-
-    switch (type) {
-        case 'array':
-            return tagsArray
-        case "string":
-            return allTechArray.join(', ')
-    }
-};
-
-export function changeLanguage (Ru: string , En: string , BrowserLanguage: string) {
-    if (BrowserLanguage === 'ru' && (Ru)) {
-        return Ru
-    }
-    if (BrowserLanguage === 'ru' && (!Ru)) {
-        return En
-    }
-    if (BrowserLanguage === 'en' && (En)) {
-        return En
+function getLocalizedDuration(years: number, months: number, language: string): string {
+    if (language === 'ru') {
+        const yearsText = years > 0 ? (years === 1 ? 'год' : (years >= 2 && years <= 4 ? 'года' : 'лет')) : '';
+        const monthsText = months === 1 ? 'месяц' : (months >= 2 && months <= 4 ? 'месяца' : 'месяцев');
+        return years > 0 ? `${years} ${yearsText} ${months} ${monthsText}` : `${months} ${monthsText}`;
     } else {
-        return Ru
+        const yearsText = years > 0 ? (years === 1 ? 'year' : 'years') : '';
+        const monthsText = months === 1 ? 'month' : 'months';
+        return years > 0 ? `${years} ${yearsText} ${months} ${monthsText}` : `${months} ${monthsText}`;
+    }
+}
+export function getAllSkills(item: IUserProject | IUserWork) {
+    const tagsArray: string[] = item.skills.flatMap((skill) =>
+        typeof skill === 'string' ? skill : Object.values(skill).flat()
+    );
+
+    return tagsArray;
+}
+
+export function changeLanguage(Ru: string, En: string, BrowserLanguage: string): string {
+    if (BrowserLanguage === 'en' && En) {
+        return En;
+    } else {
+        return Ru;
     }
 }

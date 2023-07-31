@@ -10,12 +10,19 @@ import Icons from "../../Icons/Icons";
 import SkillTag from "../../UI/SkillTag/SkillTag";
 import Slider from "../../UI/Slider/Slider";
 import { getAllSkills } from "../../../hooks/utils";
+import { useTranslation } from "react-i18next";
 
 const ProjectBlock:FC<ProjectsBlockProps> = ({type, index, project}) => {
+    // eslint-disable-next-line
+    const {t, i18n} = useTranslation();
     const navigate = useNavigate();
     
-    const tagsArray = getAllSkills(project, 'array');
-    const allTechString = getAllSkills(project, 'string');
+    const tagsArray = getAllSkills(project);
+    const translatedTagsArray = tagsArray.map(tag => 
+        t(`skills.${tag}`).includes('.') 
+            ? tag 
+            : t(`skills.${tag}`));
+    const allTagsString = translatedTagsArray.join(', ');
 
     switch (type) {
         case 'short':
@@ -77,7 +84,7 @@ const ProjectBlock:FC<ProjectsBlockProps> = ({type, index, project}) => {
                         </p>
 
                         <p className={classes.fullProjectsBlock__tech}>
-                            Навыки: {allTechString.toString()}
+                            {t('headers.skills')}: {allTagsString}
                         </p>
 
                     </div>
@@ -148,7 +155,7 @@ const ProjectBlock:FC<ProjectsBlockProps> = ({type, index, project}) => {
 
                     <div className={classes.extendedProjectBlock__techBlock}>
 
-                        {typeof tagsArray !== 'string' && tagsArray.map( (tech) => 
+                        {tagsArray.map( (tech) => 
                             <SkillTag key={tech.toString()} tag={tech.toString()} />
                         )}     
 

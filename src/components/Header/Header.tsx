@@ -25,7 +25,7 @@ const Header:FC = () => {
             <h1 className={classes.header__heading}
                 onClick={() => navigate('/cv-frontend/')}
             >
-                {changeLanguage(mainData.name, mainData.nameEn, i18n.language)}
+                {changeLanguage(mainData.name.ru, mainData.name.en, i18n.language)}
             </h1>
         </div>
     );

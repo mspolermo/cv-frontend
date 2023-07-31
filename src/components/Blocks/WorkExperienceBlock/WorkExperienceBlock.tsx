@@ -1,4 +1,4 @@
-import React, {FC} from "react";
+import React, {FC, useEffect, useState} from "react";
 import classes from "./WorkExperienceBlock.module.scss";
 import {WorkExperienceBlockProps} from "../../../types/block";
 import cn from 'classnames';
@@ -6,13 +6,24 @@ import { useNavigate } from "react-router-dom";
 
 import {expirienceCount, getAllSkills} from "../../../hooks/utils";
 import SkillTag from "../../UI/SkillTag/SkillTag";
+import { useTranslation } from "react-i18next";
 
 const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
+    // eslint-disable-next-line
+    const {t, i18n} = useTranslation();
     const navigate = useNavigate();
 
-    const elapsed = expirienceCount(work.start, work.finish);
-    const tagsArray = getAllSkills(work, 'array');
-    const allTagsString = getAllSkills(work, 'string');
+    const [elapsed, setElapsed] = useState( expirienceCount(work.start, work.finish, 'ru') );
+    const tagsArray = getAllSkills(work);
+    const translatedTagsArray = tagsArray.map(tag => 
+        t(`skills.${tag}`).includes('.') 
+            ? tag 
+            : t(`skills.${tag}`));
+    const allTagsString = translatedTagsArray.join(', ');
+
+    useEffect( () => {
+        setElapsed( expirienceCount(work.start, work.finish, i18n.language) )
+    }, [i18n.language])
 
     switch(type) {
         case 'extended':
@@ -91,9 +102,8 @@ const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
                             </p>)
                         }
                     </div>
-                    {type ==='full' && typeof tagsArray !== 'string' &&
-                    <p className={classes.workExpirience__additionalInfo}>
-                        Навыки: {allTagsString.toString()}
+                    {type ==='full' && <p className={classes.workExpirience__additionalInfo}>
+                        {t('headers.skills')}: {allTagsString}
                     </p>
                     }     
                 </li>

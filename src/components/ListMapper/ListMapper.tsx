@@ -25,9 +25,12 @@ const ListMapper:FC<ListMapperProps> = ({type, name}) => {
     const {user} = useTypedSelector(state => state.user);
     const {mainData} = useTypedSelector(state => state.main);
 
-    const importantProjects = user.projects.filter(project => project.important === true);
-    const importantWorks = user.works.filter(work => work.important === true);
-    const importantEducation = user.education.filter(educate => educate.important === true);
+    //const importantProjects = user.projects.filter(project => project.important === true);
+    //const importantWorks = user.works.ru.filter(work => work.important === true);
+    //const importantWorksEn = user.works.en.filter(work => work.important === true);
+
+    //const importantEducation = user.education.filter(educate => educate.important === true);
+    //const importantEducationEn = user.educationEn.filter(educate => educate.important === true);
 
     let routPath = '';
     let listHeading = '';
@@ -52,7 +55,15 @@ const ListMapper:FC<ListMapperProps> = ({type, name}) => {
             routPath = 'projects';
             listHeading = "projects";
             break
+        case 'projectsEn':
+            routPath = 'projects';
+            listHeading = "projects";
+            break
         case 'works':
+            routPath = 'work-experience';
+            listHeading = 'work-experience';
+            break;
+        case 'worksEn':
             routPath = 'work-experience';
             listHeading = 'work-experience';
             break;
@@ -60,7 +71,15 @@ const ListMapper:FC<ListMapperProps> = ({type, name}) => {
             routPath = 'education';
             listHeading = 'education';
             break;
+        case 'educationEn':
+            routPath = 'education';
+            listHeading = 'education';
+            break;
         case 'about': 
+            routPath = 'about';
+            listHeading = 'about';
+            break;
+        case 'aboutEn': 
             routPath = 'about';
             listHeading = 'about';
             break;
@@ -124,26 +143,55 @@ const ListMapper:FC<ListMapperProps> = ({type, name}) => {
                     </ul>}
 
                     { (name === 'projects') && <ul className={classes.projectsList__list}>
-                        {importantProjects.map( (project, i) => 
+                        {user.projects.ru.filter(project => project.important === true)
+                                            .map( (project, i) => 
+                            <ProjectBlock key={project.name} type={type} index={i + 1} project={project}/>  
+                        )}
+                    </ul>}
+
+                    { (name === 'projectsEn') && <ul className={classes.projectsList__list}>
+                        {user.projects.en.filter(project => project.important === true)
+                                            .map( (project, i) => 
                             <ProjectBlock key={project.name} type={type} index={i + 1} project={project}/>  
                         )}
                     </ul>}
 
                     { (name === 'works') && <ul className={classes.list__list}>
-                        {importantWorks.map( work => 
+                        {user.works.ru.filter(work => work.important === true)
+                                        .map( work => 
+                            <WorkExperienceBlock key={work.start + work.finish} work={work} type={type}/>
+                        )}
+                    </ul>}
+
+                    { (name === 'worksEn') && <ul className={classes.list__list}>
+                        {user.works.en.filter(work => work.important === true)
+                                        .map( work => 
                             <WorkExperienceBlock key={work.start + work.finish} work={work} type={type}/>
                         )}
                     </ul>}
 
                     { (name === 'education') && <ul className={classes.list__list}>
-                        {importantEducation.map( educate =>
+                        {user.education.ru.filter(educate => educate.important === true)
+                                        .map( educate =>
+                            <EducationBlock key={educate.title + educate.year} educate={educate} type={type}/>  
+                        )}
+                    </ul>}
+
+                    { (name === 'educationEn') && <ul className={classes.list__list}>
+                        {user.education.en.filter(educate => educate.important === true)
+                                        .map( educate =>
                             <EducationBlock key={educate.title + educate.year} educate={educate} type={type}/>  
                         )}
                     </ul>}
 
                     { (name === 'about') && <ul className={classes.list__list}>
-                        <AboutBlock point={user.about[0]}/>
-                        <AboutBlock point={user.about[1]}/>
+                        <AboutBlock point={user.about.ru[0]}/>
+                        <AboutBlock point={user.about.ru[1]}/>
+                    </ul>}
+
+                    { (name === 'aboutEn') && <ul className={classes.list__list}>
+                        <AboutBlock point={user.about.en[0]}/>
+                        <AboutBlock point={user.about.en[1]}/>
                     </ul>}
 
                 </div>
@@ -179,25 +227,49 @@ const ListMapper:FC<ListMapperProps> = ({type, name}) => {
                     </ul>}
 
                     { (name === 'projects') && <ul className={classes.projectsList__list}>
-                        {user.projects.map( (project) => 
+                        {user.projects.ru.map( (project) => 
+                            <ProjectBlock key={project.name} type={type} project={project}/>
+                        )}
+                    </ul>}
+
+                    { (name === 'projectsEn') && <ul className={classes.projectsList__list}>
+                        {user.projects.en.map( (project) => 
                             <ProjectBlock key={project.name} type={type} project={project}/>
                         )}
                     </ul>}
 
                     { (name === 'works') && <ul className={classes.list__list}>
-                        {user.works.map( work => 
+                        {user.works.ru.map( work => 
+                            <WorkExperienceBlock key={work.start + work.finish} work={work} type={type}/>
+                        )}
+                    </ul>}
+
+                    { (name === 'worksEn') && <ul className={classes.list__list}>
+                        {user.works.en.map( work => 
                             <WorkExperienceBlock key={work.start + work.finish} work={work} type={type}/>
                         )}
                     </ul>}
 
                     { (name === 'education') && <ul className={classes.list__list}>
-                        {user.education.map( educate =>
+                        {user.education.ru.map( educate =>
+                            <EducationBlock key={educate.title + educate.year} educate={educate} type={type}/>  
+                        )}
+                    </ul>}
+
+                    { (name === 'educationEn') && <ul className={classes.list__list}>
+                        {user.education.en.map( educate =>
                             <EducationBlock key={educate.title + educate.year} educate={educate} type={type}/>  
                         )}
                     </ul>}
 
                     { (name === 'about') && <ul className={classes.list__list}>
-                        {user.about.map( (point, i) =>
+                        {user.about.ru.map( (point, i) =>
+                                <AboutBlock key={i} point={point}/>
+                        )}
+                    </ul>}
+
+                    { (name === 'aboutEn') && <ul className={classes.list__list}>
+                        {user.about.en.map( (point, i) =>
                                 <AboutBlock key={i} point={point}/>
                         )}
                     </ul>}

@@ -1,4 +1,4 @@
-import React, {FC, useEffect} from "react";
+import React, {FC, useEffect, useState} from "react";
 import classes from "./MainPage.module.scss";
 import { blockNames } from "../../types/list";
 
@@ -16,14 +16,27 @@ import { useTranslation } from "react-i18next";
 const MainPage:FC = () => {
     // eslint-disable-next-line
     const {t, i18n} = useTranslation();
-    const blocksArray: Array<blockNames> = ['projects', 'works', 'education', 'about'];
+    
     const {user, error, loading} = useTypedSelector(state => state.user);
     const dispatch = useDispatch();
+
+    const blocksArrayRu: Array<blockNames> = ['projects', 'works', 'education', 'about'];
+    const blocksArrayEn: Array<blockNames> = ['projectsEn', 'worksEn', 'educationEn', 'aboutEn'];
+    const [blocksArray, setBlockArray] = useState(blocksArrayRu)
+    //const [blocksArray, setbBocksArray] = useState(['projects', 'works', 'education', 'about']);
 
     useEffect(() => {
         document.body.scrollTop = document.documentElement.scrollTop = 0;
         dispatch(fetchUser());
     },[dispatch]);
+
+    useEffect(() => {
+        if (i18n.language === 'en') {
+            setBlockArray(blocksArrayEn)
+        } else {
+            setBlockArray(blocksArrayRu)
+        }
+    },[i18n.language])
 
     if (loading) {
         return (
@@ -42,7 +55,7 @@ const MainPage:FC = () => {
     return (
         <div className={cn("container-internal", classes.itemPage)}>
 
-            <p className={"text " + classes.mainPage__summary}>{changeLanguage(user.summary, user.summaryEn, i18n.language)}</p>
+            <p className={"text " + classes.mainPage__summary}>{changeLanguage(user.summary.ru, user.summary.en, i18n.language)}</p>
 
             {blocksArray.map ( blockName => 
                 <ListMapper key={blockName} type='short' name={blockName} />   

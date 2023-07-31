@@ -6,18 +6,31 @@ import { useNavigate } from "react-router-dom";
 
 import { useTypedSelector } from "../../../hooks/useTypedSelector";
 import { getAllSkills } from "../../../hooks/utils";
+import { useTranslation } from "react-i18next";
 
 const SkillBlock:FC<SkillBlockProps> = ({skill, type}) => {
+    // eslint-disable-next-line
+    const {t, i18n} = useTranslation();
     const {mainData} = useTypedSelector(state => state.main);
     const navigate = useNavigate();
 
-    const projectsSkillsArray = mainData.projects.map( (project) => {
-        return [project.name, `/cv-frontend/projects/${project.name}`, getAllSkills(project, 'array')]
+    let projectsSkillsArray = mainData.projects.ru.map( (project) => {
+        return [project.name, `/cv-frontend/projects/${project.name}`, getAllSkills(project)]
     });
-    const worksSkillsArray = mainData.works.map( (work) => {
-        return [work.company, `/cv-frontend/work-experience/${work.companyEn}`, getAllSkills(work, 'array')]
+    let worksSkillsArray = mainData.works.ru.map( (work) => {
+        return [work.company, `/cv-frontend/work-experience/${work.companyEn}`, getAllSkills(work)]
     });
+    if (i18n.language === 'en') {
+        projectsSkillsArray = mainData.projects.en.map( (project) => {
+            return [project.name, `/cv-frontend/projects/${project.name}`, getAllSkills(project)]
+        });
+        worksSkillsArray = mainData.works.en.map( (work) => {
+            return [work.company, `/cv-frontend/work-experience/${work.companyEn}`, getAllSkills(work)]
+        });
+    }
     const allSkillsArray = projectsSkillsArray.concat(worksSkillsArray);
+
+    
 
     if (type === 'full' || type === 'fullSolo') {
         return (
@@ -38,7 +51,10 @@ const SkillBlock:FC<SkillBlockProps> = ({skill, type}) => {
                             }
                             onClick={() => navigate('/cv-frontend/skills/' + skill)} 
                         >
-                            {skill}
+                            {t(`skills.${skill}`).includes('.') 
+                                ? (skill)
+                                : t(`skills.${skill}`)
+                            }
                         </p>
 
                         <div className={classes.fullSkillBlock__aproveBlock}>
@@ -63,7 +79,10 @@ const SkillBlock:FC<SkillBlockProps> = ({skill, type}) => {
                             <p className={cn("text", classes.fullSkillBlock__skillName)}
                                 onClick={() => navigate('/cv-frontend/skills/' + skill.title)} 
                             >
-                                {skill.title}
+                                {t(`skills.${skill.title}`).includes('.') 
+                                    ? (skill.title)
+                                    : t(`skills.${skill.title}`)
+                                }
                             </p>
                             <div className={classes.fullSkillBlock__aproveBlock}>
                                 {allSkillsArray.map( (project, i) => {
@@ -83,7 +102,10 @@ const SkillBlock:FC<SkillBlockProps> = ({skill, type}) => {
                             <div key={info} className={classes.fullSkillBlock__item}>
                                 <p key={info} onClick={() => navigate('/cv-frontend/skills/' + info)} 
                                     className={cn("text", classes.fullSkillBlock__skillName)}>
-                                    {info}
+                                    {t(`skills.${info}`).includes('.') 
+                                        ? (info)
+                                        : t(`skills.${info}`)
+                                    }
                                 </p>
 
                                 <div className={classes.fullSkillBlock__aproveBlock}>
@@ -120,7 +142,10 @@ const SkillBlock:FC<SkillBlockProps> = ({skill, type}) => {
                                     classes.skillBlock__text_mark)}
                         onClick={() => navigate('/cv-frontend/skills/' + skill)} 
                     >
-                        {skill}
+                        {t(`skills.${skill}`).includes('.') 
+                            ? (skill)
+                            : t(`skills.${skill}`)
+                        }
                     </p>
 
                 </div>
@@ -139,7 +164,10 @@ const SkillBlock:FC<SkillBlockProps> = ({skill, type}) => {
                                     classes.skillBlock__text_mark)}
                         onClick={() => navigate('/cv-frontend/skills/' + skill.title)}               
                     >
-                        {skill.title}
+                        {t(`skills.${skill.title}`).includes('.') 
+                            ? (skill.title)
+                            : t(`skills.${skill.title}`)
+                        }
                     </p>
                     <div>
                         {skill.value.map( info => 
@@ -155,7 +183,10 @@ const SkillBlock:FC<SkillBlockProps> = ({skill, type}) => {
                                                 classes.skillBlock__text_markL2)}
                                 onClick={() => navigate('/cv-frontend/skills/' + info)}  
                             >
-                                {info}
+                                {t(`skills.${info}`).includes('.') 
+                                    ? (info)
+                                    : t(`skills.${info}`)
+                                }
                             </p>
                         )}
                     </div>

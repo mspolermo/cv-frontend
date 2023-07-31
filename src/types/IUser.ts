@@ -1,18 +1,34 @@
 export interface IUser {
-    "name": string,
-    "nameEn": string,
+    "name": {
+        "ru": string,
+        "en": string
+    },
     "photos": string [],
-    "summary" : string,
-    "summaryEn" : string,
+    "summary" : {
+        "ru": string,
+        "en": string
+    },
     "contacts": IContact [],
     "skills": {
         "hard" : ISkill [] ,
         "soft": ISkill [] 
     },
-    "projects" : IUserProject [],
-    "works" : IUserWork [],
-    "education" : IUserEducation [],
-    "about" : IAbout[]
+    "projects" : {
+        "ru": IUserProject [],
+        "en": IUserProject []
+    },
+    "works" : {
+        "ru": IUserWork [],
+        "en" : IUserWork []
+    },
+    "education" : {
+        "ru" : IUserEducation [],
+        "en" : IUserEducation []
+    },
+    "about" : {
+        "ru" : IAbout[],
+        "en" : IAbout[]
+    }
 }
 export type IContact = {
     "title": string,
@@ -65,11 +81,15 @@ export interface IUserEducation {
 }
 
 export const userInit: IUser = {
-    "name": "",
-    "nameEn": "",
+    "name": {
+        "ru": "",
+        "en": ""
+    },
     "photos": [""],
-    "summary" : "",
-    "summaryEn": "",
+    "summary" : {
+        "ru": "",
+        "en": ""
+    },
     "contacts": 
         [{
             "title": "tel",
@@ -79,8 +99,8 @@ export const userInit: IUser = {
         "hard" : [""],
         "soft": [""] 
     },
-    "projects" : 
-        [{
+    "projects" : {
+        "ru": [{
             "name": "",
             "summary" : "",
             "repo": "",
@@ -95,8 +115,24 @@ export const userInit: IUser = {
             ],
             "screenshots": [""]
         }],
-    "works" : 
-        [{
+        "en": [{
+            "name": "",
+            "summary" : "",
+            "repo": "",
+            "ghPage": "",
+            "important" : false,
+            "skills": [""],
+            "description" : [
+                {
+                    "title": "",
+                    "info": ""
+                }
+            ],
+            "screenshots": [""]
+        }]
+    },
+    "works" : {
+        "ru": [{
             "title": "",
             "company": "",
             "companyEn": "",
@@ -107,13 +143,37 @@ export const userInit: IUser = {
             "descriptionShort": [""],
             "descriptionFull": [""]
         }],
-    "education" : 
-        [{
+        "en" : [{
+            "title": "",
+            "company": "",
+            "companyEn": "",
+            "start": "",
+            "finish": "",
+            "important" : false,
+            "skills": [""],
+            "descriptionShort": [""],
+            "descriptionFull": [""]
+        }]
+    },
+    "education" : {
+        "ru": [{
             "title": "",
             "info": "",
             "year": "",
             "rank": "",
             "important" : false, 
         } ],
-    "about" : [""]
+        "en" : 
+            [{
+                "title": "",
+                "info": "",
+                "year": "",
+                "rank": "",
+                "important" : false, 
+            } ]
+    },
+    "about" : {
+        "ru": [""],
+        "en" : [""]
+    }
 }
