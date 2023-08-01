@@ -1,46 +1,51 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# CV-frontend
+Реализация интерактивного резюме
+## Описание
+Проект "CV-frontend" представляет собой интерактивное резюме, разработанное с использованием TypeScript и React, а также дополнительных библиотек, таких как Redux, Axios, i18n и React-router. Верстка выполнена с помощью SCSS.
+## Инструкция по запуску проекта
+Для запуска проекта выполните следующие шаги:
+- Склонируйте репозиторий на ваш ПК.
+- Перейдите в терминале в корневую папку проекта и переключитесь на ветку "master" с помощью команды git checkout master.
+- Запустите проект с помощью команды npm start в терминале в корне проекта.
+## Функционал и внешний вид 
+Проект "CV-frontend" обладает следующими функциями и особенностями:
+- Главная страница
+  - Содержит краткую информацию о проектах, опыте работы, образовании и о себе.
+  - Предоставляет навигацию на страницы с полной информацией.
+- Шапка портала
+  - Включает блок панели управления с возможностью смены языка, функцией печати резюме на 1 страницу и реализацией смены цветового оформления.
+  - Предоставляет хлебные крошки для навигации на предыдущие разделы сайта с поддержкой английского и русского языка.
+- Меню сайта
+  - Содержит слайдер с фотографиями.
+  - Включает блок контактов с интерактивными кнопками. По клику на пункт "Контакты" открывается страница с контактной информацией.
+  - Предоставляет блок навыков, при клике на заголовок которого открывается страница с полным списком навыков, а при клике на определенный навык - страница с ссылками на проекты и опыт работы, подтверждающие получение навыка.
+  - Реализован адаптивный дизайн, позволяющий сворачивать и разворачивать меню при необходимости.
+- Страница "Проекты"
+  - Содержит краткое описание проектов, включающее название, информацию о проекте, навыки, полученные на проекте, и превью.
+  - При клике на название проекта открывается страница проекта с полной информацией.
+- Страница конкретного проекта
+  - Предоставляет полную информацию о проекте.
+  - Включает кнопки GitHub и GitHub Pages для просмотра репозитория и самого проекта, размещенного на GitHub Pages.
+  - Содержит слайдер со скриншотами проекта и теги навыков, полученных на проекте.
+    - По клику на тег навыка открывается страница с сылками на проекты\опыт работы, подтверждающие получение навыка
+- Страница "Опыт работы"
+  - Предоставляет краткое описание опыта работы, включая суммарное время работы в компании, описание и навыки, полученные на работе.
+  - При клике на название должности открывается страница с полной информацией.
+- Страница работы
+  - Содержит полную информацию о рабочих обязанностях, включая суммарное время работы в компании и теги навыков, полученных на работе.
+    - По клику на тег навыка открывается страница с сылками на проекты\опыт работы, подтверждающие получение навыка
+- Страница "Образование"
+  - Предоставляет информацию об образовании и пройденных курсах.
+- Страница "Обо мне"
+  - Включает информацию о себе.
+- Страница "Контакты"
+  - Страница с интерактивными кнопками для связи.
+- Страница "Навыки"
+  - Содержит список всех навыков, полученных на проектах.
+  - При клике на конкретный навык открывается страница с ссылками на проекты и опыт работы, подтверждающие получение навыка.
+## Дополнительная информация
+- Проект реализован с поддержкой планшетной, мобильной и версии для одностраничной печати.
+- Приложение поддерживает различные языки и предоставляет возможность выбора языка интерфейса.
+- Все данные, необходимые для отображения резюме, получает из JSON-файла.
+  
+  
