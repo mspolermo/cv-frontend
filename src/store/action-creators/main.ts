@@ -1,7 +1,7 @@
-import { Dispatch } from "redux"
-import type {} from 'redux-thunk/extend-redux'
-import axios from "axios"
-import { MainAction, MainActionTypes } from "../../types/mainStore"
+import { Dispatch } from "redux";
+import type {} from 'redux-thunk/extend-redux';
+import axios from "axios";
+import { MainAction, MainActionTypes } from "../../types/mainStore";
 
 export const fetchMain = () => {
     return async (dispatch: Dispatch<MainAction>) => {

@@ -27,8 +27,12 @@ const ItemPage:FC<ItemPageProps> = ({type}) => {
     useEffect(() => {
         if (type === 'work') {
             setItemIndex(user.works.ru.findIndex( work => work.companyEn === params.id));
-        } else if (type === 'project') {
+        }else if (type === 'workEn') {
+            setItemIndex(user.works.en.findIndex( work => work.companyEn === params.id));
+        }else if (type === 'project') {
             setItemIndex(user.projects.ru.findIndex( project => project.name === params.id));
+        }else if (type === 'projectEn') {
+            setItemIndex(user.projects.en.findIndex( project => project.name === params.id));
         };
         
         document.body.scrollTop = document.documentElement.scrollTop = 0;

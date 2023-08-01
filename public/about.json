@@ -57,7 +57,7 @@
                     "I18n",
                     "Storybook",
                     "Jest",
-                    "React Testing Library",
+                    "React testing library",
                     "React-router",
                     "React-bootstrap"
                 ]
@@ -66,7 +66,9 @@
             "SCSS",
             "Git",
             "WebPack",
-            "JavaScript"
+            "JavaScript",
+            "Swiper",
+            "jQuery"
         ],
         "soft": [
             "Team work",
@@ -109,7 +111,7 @@
                     },
                     {
                         "title": "Инструкция по запуску проекта",
-                        "info": "Полная инструкция размещена на github"
+                        "info": "Для демонстрации полноценного функционала необходимо поднимать бэкенд в докере, максимально урезанную версию (без бэкенда) можно посмотреть на ghpages. Полная инструкция по запуску приложения размещена на github"
                     },
                     {
                         "title": "Функционал и внешний вид портала",
@@ -198,7 +200,7 @@
             },
             {
                 "name": "Posts-web-app",
-                "summary" : "Сайт с постами, получаемыми через фейк-API JSONPlaceholder",
+                "summary" : "Веб-приложение с постами, получаемыми через API JSONPlaceholder",
                 "repo": "https://github.com/mspolermo/posts-web",
                 "ghPage": "https://mspolermo.github.io/posts-web/",
                 "important": true,
@@ -282,7 +284,14 @@
                 "important": true,
                 "skills": [
                     "TypeScript",
-                    "React",
+                    {
+                        "title": "React", 
+                        "value" : [
+                            "React-router",
+                            "Jest",
+                            "React testing library"
+                        ]
+                    },
                     "SCSS",
                     "Git"
                 ],
@@ -356,7 +365,7 @@
             },
             {
                 "name": "Github-search-repositories",
-                "summary" : "Github search repositories using API Github",
+                "summary" : "Веб-приложение с реализацией поиска репозиториев GitHub при помощи API GitHub",
                 "repo": "https://github.com/mspolermo/Github-search-repositories",
                 "ghPage": null,
                 "important": true,
@@ -370,7 +379,7 @@
                 "description" : [
                     {
                         "title": "Описание",
-                        "info": "Поиск репозиториев github по подстроке"
+                        "info": "Написано с помощью JavaScript, SCSS. Приложение собрано с помощью WebPack"
                     },
                     {
                         "title": "Инструкция по запуску проекта",
@@ -419,7 +428,7 @@
             },
             {
                 "name": "News-web",
-                "summary" : "Layout with comments block",
+                "summary" : "Реализация страницы новостного сайта с функциональным блоком комментариев",
                 "repo": "https://github.com/mspolermo/News-web",
                 "ghPage": null,
                 "important": true,
@@ -432,7 +441,7 @@
                 "description" : [
                     {
                         "title": "Описание",
-                        "info": "Реализация страницы новостного сайта с функциональным блоком комментариев"
+                        "info": "Написано с помощью JavaScript, SCSS. Приложение собрано с помощью WebPack"
                     },
                     {
                         "title": "Инструкция по запуску проекта",
@@ -517,7 +526,7 @@
             },
             {
                 "name": "Evklid-web",
-                "summary" : "Pixel Perfect Layout (with adaptive)",
+                "summary" : "Pixel-perfect верстка страницы по макету, с реализацией адаптива, слайдера и аккордеона",
                 "repo": "https://github.com/mspolermo/Evklid-web",
                 "ghPage": "https://mspolermo.github.io/Evklid-web/",
                 "important": false,
@@ -525,12 +534,14 @@
                     "JavaScript",
                     "SCSS",
                     "WebPack",
-                    "Git"
+                    "Git",
+                    "Swiper",
+                    "jQuery"
                 ],
                 "description" : [
                     {
                         "title": "Описание",
-                        "info": "Pixel perfect верстка страницы по макету (с адаптивом). Написано с помощью SCSS, JavaScript Swiper, jQuery (Accordion). Проект собран с помощью Webpack."
+                        "info": "Написано с помощью SCSS, JavaScript, Swiper, jQuery (Accordion). Проект собран с помощью Webpack."
                     },
                     {
                         "title": "Инструкция по запуску проекта",
@@ -583,80 +594,69 @@
                     "Git",
                     "Team work"
                 ],
-                "description" : [
+                "description": [
                     {
-                        "title": "Описание",
-                        "info": "Написано с помощью TypeScript, React (redux, axios, i18n, storybook), SCSS. Покрытие тестами - react testing library."
+                        "title": "Description",
+                        "info": "Built with TypeScript, React (redux, axios, i18n, storybook), and SCSS. Test coverage includes react testing library."
                     },
                     {
-                        "title": "Инструкция по запуску проекта",
-                        "info": "Полная инструкция размещена на github"
+                        "title": "Project Launch Instructions",
+                        "info": "For a full demonstration of the application's functionality, it is necessary to run the backend in Docker. A heavily simplified version (without the backend) can be viewed on ghpages. The complete instructions for running the application are available on GitHub."
                     },
                     {
-                        "title": "Функционал и внешний вид портала",
+                        "title": "Functionality and Appearance of the Film Portal",
                         "info": [
-                            "Главная страница",
+                            "Main Page",
                             {
-                                "titleL2": "Страница списка фильмов (/films/)",
+                                "titleL2": "Film List Page (/films/)",
                                 "infoL2": [
-                                {
-                                    "titleL3": "Функциональные фильтры",
-                                    "infoL3": [
-                                        "По странам/жанрам/годам",
-                                        "По рейтингу - возможность вводить конкретное значение ползунком с точностью до десятых",
-                                        "По количеству оценок - возможность вводить конкретное значение ползунком",
-                                        "По режиссеру/ по актеру. Поле ввода ведет себя как автосаджест (подсказывает по первым буквам подходящих режиссеров)",
-                                        "Все фильтры разом доступны на странице /movies/ и сразу при выборе пользователя применяются без перезагрузки страницы",
-                                        "Выбор жанров влияет на хлебные крошки"
-                                    ]
-                                },
-                                {
-                                    "titleL3": "Сортировка",
-                                    "infoL3" : [
-                                        "По количеству оценок",
-                                        "По рейтингу",
-                                        "По дате выхода (сначала свежие)",
-                                        "По алфавиту"
-                                    ]
-                                },
-                                {
-                                    "titleL3": "Сортировка",
-                                    "infoL3" : [
-                                        "По количеству оценок",
-                                        "По рейтингу",
-                                        "По дате выхода (сначала свежие)",
-                                        "По алфавиту"
-                                    ]
-                                },
-                                "Список карточек со всеми эффектами верстки (но по функционалу только переход к конкретному фильму)"
-                            ]
-                                
-                            },
-                            {
-                                "titleL2": "Страница конкретного фильма (/film/:id)",
-                                "infoL2": [
-                                    "Трейлер",
-                                    "Описание фильма с реальными данными",
-                                    "Создание отзывов и комментариев к фильму"
-                                ]
-                            },
-                            "Страница актера (/person/:id)",
-                            {
-                                "titleL2": "Страница авторизации (/auth/)",
-                                "infoL2": [
-                                    "Авторизация по почте/паролю, аккаунту google, аккаунту Vk"
+                                    {
+                                        "titleL3": "Functional Filters",
+                                        "infoL3": [
+                                            "By countries/genres/years",
+                                            "By rating - ability to enter a specific value using a slider with a precision of tenths",
+                                            "By number of ratings - ability to enter a specific value using a slider",
+                                            "By director/actor. The input field behaves like an autosuggest (provides hints based on the first letters of matching directors)",
+                                            "All filters are available on the /movies/ page and are applied immediately when selected by the user without reloading the page",
+                                            "Selecting genres affects the breadcrumbs"
+                                        ]
+                                    },
+                                    {
+                                        "titleL3": "Sorting",
+                                        "infoL3" : [
+                                            "By number of ratings",
+                                            "By rating",
+                                            "By release date (newest first)",
+                                            "By alphabetical order"
+                                        ]
+                                    },
+                                    "List of cards with all layout effects (but only functionality for navigating to a specific film)"
                                 ]
                             },
                             {
-                                "titleL2": "Страница администратора (/admin)",
+                                "titleL2": "Specific Film Page (/film/:id)",
                                 "infoL2": [
-                                    "Доступ только у администратора (проверка на бэкенде, ссылка появляется в шапке при наличии роли)",
-                                    "Возможность редактировать названия фильма (для фильмов) и название жанра (для жанров) на русском и английском языке"
+                                    "Trailer",
+                                    "Film description with real data",
+                                    "Creating reviews and comments for the film"
                                 ]
                             },
-                            "Поиск",
-                            "Функционал перевода сайта на английский язык (переключатель в шапке)"
-                            
+                            "Actor Page (/person/:id)",
+                            {
+                                "titleL2": "Authorization Page (/auth/)",
+                                "infoL2": [
+                                    "Authorization via email/password, Google account, Vk account"
+                                ]
+                            },
+                            {
+                                "titleL2": "Administrator Page (/admin)",
+                                "infoL2": [
+                                    "Accessible only to the administrator (backend check, the link appears in the header if the role exists)",
+                                    "Ability to edit film titles (for films) and genre names (for genres) in Russian and English languages"
+                                ]
+                            },
+                            "Search",
+                            "Functionality of translating the site into English (toggle in the header)"
                         ]
                     }
                 ],
@@ -679,15 +679,15 @@
             },
             {
                 "name": "Posts-web-app",
-                "summary" : "Сайт с постами, получаемыми через фейк-API JSONPlaceholder",
+                "summary": "Web application with posts fetched from the JSONPlaceholder API",
                 "repo": "https://github.com/mspolermo/posts-web",
                 "ghPage": "https://mspolermo.github.io/posts-web/",
                 "important": true,
                 "skills": [
                     "TypeScript",
                     {
-                        "title": "React", 
-                        "value" : [
+                        "title": "React",
+                        "value": [
                             "Redux",
                             "Axios",
                             "React-router",
@@ -698,51 +698,50 @@
                     "SCSS",
                     "Git"
                 ],
-                "description" : [
+                "description": [
                     {
-                        "title": "Описание",
-                        "info": "Написано с помощью React (React-bootstrap, React-router, Axios, Redux), TypeScript, SCSS"
+                        "title": "Description",
+                        "info": "Built using React (React-bootstrap, React-router, Axios, Redux), TypeScript, SCSS"
                     },
                     {
-                        "title": "Инструкция по запуску проекта",
+                        "title": "Project Setup Instructions",
                         "info": [
-                            "Склонировать репозиторий на ПК",
-                            "Переключиться на master ветку с помощью команды `git checkout master` в терминале в корне проекта",
-                            "Запустить с помощью команды `npm start` в терминале в корне проекта"
+                            "Clone the repository to your computer",
+                            "Switch to the master branch using the git checkout master command in the terminal at the project root",
+                            "Run the project using the npm start command in the terminal at the project root"
                         ]
                     },
                     {
-                        "title": "Функционал и внешний вид портала",
+                        "title": "Functionality and Appearance",
                         "info": [
                             {
-                                "titleL2": "Главная страница (список постов)",
+                                "titleL2": "Home Page (List of Posts)",
                                 "infoL2": [
-                                    "Содержит список всех постов",
-                                    "Каждый пост состоит из заголовка, текста, аватара автора и списка комментариев",
-                                    "Заголовок и текст получены из API",
-                                    "При клике на аватар происходит переход на страницу `Подробности о пользователе`",
-                                    "Список комментариев изначально скрыт, доступна лишь кнопка `Комментарии`. При нажатии на кнопку `Комментарии`,показывается список комментариев к данному посту. При повторном нажатии список скрывается",
-                                    "Комментарий состоит из заголовка(email) и текста",
-                                    "Присутствует хэдер с «меню-бургером». При нажатии на него слева всплывает навигационное меню, где присутствует 2 ссылки на страницы `Главная страница` (список постов) и `Обо мне`, а также отображается аватар, имя и почтовый адрес",
-                                    "Возможность поиска по заголовку поста, с возможностью очистки поля через крестик",
-                                    "Возможность сортировки по заголовку поста",
-                                    "Присутствует пагинация"
-                                ]
-                                
-                            },
-                            {
-                                "titleL2": "Страница `Обо мне`",
-                                "infoL2": [
-                                    "Немного информации о себе",
-                                    "Возможность скачать CV"
+                                    "Displays a list of all posts",
+                                    "Each post includes a title, text, author's avatar, and a list of comments",
+                                    "The title and text are fetched from the API",
+                                    "Clicking on the avatar leads to the User Details page",
+                                    "The list of comments is initially hidden and can be shown by clicking the Comments button. Clicking the button again hides the list",
+                                    "Each comment includes a title (email) and text",
+                                    "A header with a burger menu is present. Clicking on it reveals a navigation menu with 2 links to the Home Page (list of posts) and About Me page. It also displays the avatar, name, and email address",
+                                    "Search functionality based on the post title, with the ability to clear the search field using a cross icon",
+                                    "Sorting posts by title",
+                                    "Pagination feature is available"
                                 ]
                             },
                             {
-                                "titleL2": "Страница `Подробности о пользователе` (переход при нажатии по аватару у поста)",
+                                "titleL2": "About Me Page",
                                 "infoL2": [
-                                    "Карточка, куда выводится краткая информация о пользователе, соответствующая автору поста",
-                                    "Список постов принадлежащих только данному пользователю",
-                                    "Кнопка «Назад», при нажатии на которую произойдет переход на главную страницу"
+                                    "Provides some information about the author",
+                                    "Offers the option to download CV"
+                                ]
+                            },
+                            {
+                                "titleL2": "User Details Page (Accessed by clicking on the avatar of a post)",
+                                "infoL2": [
+                                    "Displays a card with brief information about the user who authored the post",
+                                    "Shows a list of posts that belong only to the specific user",
+                                    "A 'Back' button is available, clicking on which will navigate back to the home page"
                                 ]
                             }
                         ]
@@ -757,71 +756,77 @@
             },
             {
                 "name": "Sultan-web-app",
-                "summary" : "Часть интернет-магазина (каталог товаров, страница товара, корзина, страница администратора) с адаптивом",
+                "summary" : "Part of an online store (product catalog, product page, shopping cart, admin page) with responsiveness",
                 "repo": "https://github.com/mspolermo/sultan-web-app",
                 "ghPage": "https://mspolermo.github.io/sultan-web-app/",
                 "important": true,
                 "skills": [
                     "TypeScript",
-                    "React",
+                    {
+                        "title": "React", 
+                        "value" : [
+                            "React-router",
+                            "Jest",
+                            "React testing library"
+                        ]
+                    },
                     "SCSS",
                     "Git"
                 ],
-                "description" : [
+                "description": [
                     {
-                        "title": "Описание",
-                        "info": "Написано с помощью React, TypeScript, SCSS. Покрытие тестами - jest, react testing library"
+                        "title": "Description",
+                        "info": "Developed using React, TypeScript, and SCSS. Test coverage includes jest and react testing library."
                     },
                     {
-                        "title": "Инструкция по запуску проекта",
+                        "title": "Project Launch Instructions",
                         "info": [
-                            "Склонировать репозиторий на ПК",
-                            "Переключиться на master ветку с помощью команды `git checkout master` в терминале в корне проекта",
-                            "Запустить с помощью команды `npm start` в терминале в корне проекта"
+                            "Clone the repository to your PC.",
+                            "Switch to the master branch using the command `git checkout master` in the terminal at the project root.",
+                            "Start the project using the command `npm start` in the terminal at the project root."
                         ]
                     },
                     {
-                        "title": "Функционал и внешний вид портала",
+                        "title": "Functionality and Appearance of the Portal",
                         "info": [
                             {
-                                "titleL2": "Шапка сайта",
+                                "titleL2": "Site Header",
                                 "infoL2": [
-                                    "Активная корзина"
-                                ]
-                                
-                            },
-                            {
-                                "titleL2": "Страница `Каталог товаров` (список товаров)",
-                                "infoL2": [
-                                    "Сортировка товаров (4 варианта: по цене и по названию, по убыванию и возрастанию)",
-                                    "Фильтры (По цене, по производителю, по типу товара (Уход за телом/ Уход за руками / Уход за ногами / Уход за лицом и пр.) )",
-                                    "Кнопки постраничного перехода",
-                                    "Переход на страницу `Карточка товара` по клику на товар (каждый товар открывается по своему url)",
-                                    "Добавление товара в корзину по нажатию на кнопку `В корзину`"
+                                    "Active shopping cart icon"
                                 ]
                             },
                             {
-                                "titleL2": "Страница карточки товара",
+                                "titleL2": "Product Catalog Page",
                                 "infoL2": [
-                                    "Хлебные крошки (Главная - Каталог - Id товара)",
-                                    "Картинка и информация о товаре (данные подставляются из JSON/ Local Stroage)",
-                                    "Добавление товара в корзину по нажатию на кнопку `В корзину`"
+                                    "Product sorting (4 options: by price and by name, in ascending and descending order)",
+                                    "Filters (by price, by manufacturer, by product type (Body Care / Hand Care / Foot Care / Facial Care, etc.))",
+                                    "Pagination buttons",
+                                    "Clicking on a product leads to the 'Product Card' page (each product has its own URL)",
+                                    "Add products to the shopping cart by clicking the 'Add to Cart' button"
                                 ]
                             },
                             {
-                                "titleL2": "Корзина",
+                                "titleL2": "Product Card Page",
                                 "infoL2": [
-                                    "Блок в шапке обновляется при действиях пользователя",
-                                    "Активные кнопки +/-, удалить из корзины",
-                                    "По нажатию кнопки `Оформить заказ` отображается модальное окно `Спасибо за заказ` и корзина очищается"
+                                    "Breadcrumbs (Home - Catalog - Product Id)",
+                                    "Product image and information (data retrieved from JSON / Local Storage)",
+                                    "Add products to the shopping cart by clicking the 'Add to Cart' button"
                                 ]
                             },
                             {
-                                "titleL2": "Страница администратора",
+                                "titleL2": "Shopping Cart",
                                 "infoL2": [
-                                    "Возможность редактировать, добавлять, удалять товары. Сохранять это в localStorage",
-                                    "Если список пуст (админ все удалил или с самого старта), то наполнение из json (предварительно подготовлен и добавлен в /src/goods/goodsJSON.json",
-                                    "Возможность работать со списком типов ухода. При добавлении/редактировании тип ухода можно выбрать из списка"
+                                    "The cart icon in the header updates based on user actions",
+                                    "Active +/- buttons to adjust the quantity, and 'Remove from Cart' button",
+                                    "Clicking the 'Checkout' button shows a modal 'Thank You for Your Order', and the cart is cleared"
+                                ]
+                            },
+                            {
+                                "titleL2": "Admin Page",
+                                "infoL2": [
+                                    "Ability to edit, add, and delete products. Data is saved to Local Storage",
+                                    "If the list is empty (all products have been deleted or from the start), it is populated from JSON (previously prepared and added to /src/goods/goodsJSON.json)",
+                                    "Ability to manage the list of product types. When adding/editing, the product type can be selected from the list"
                                 ]
                             }
                         ]
@@ -837,7 +842,7 @@
             },
             {
                 "name": "Github-search-repositories",
-                "summary" : "Github search repositories using API Github",
+                "summary" : "GitHub search repositories using API Github",
                 "repo": "https://github.com/mspolermo/Github-search-repositories",
                 "ghPage": null,
                 "important": true,
@@ -848,48 +853,48 @@
                     "WebPack",
                     "Git"
                 ],
-                "description" : [
+                "description": [
                     {
-                        "title": "Описание",
-                        "info": "Поиск репозиториев github по подстроке"
+                        "title": "Description",
+                        "info": "Developed using JavaScript and SCSS. The application is built with WebPack."
                     },
                     {
-                        "title": "Инструкция по запуску проекта",
+                        "title": "Project Launch Instructions",
                         "info": [
-                            "Склонировать репозиторий на ПК",
-                            "Переключиться на master ветку с помощью команды `git checkout master` в терминале в корне проекта",
-                            "Запустить с помощью команды `npm start` в терминале в корне проекта"
+                            "Clone the repository to your PC.",
+                            "Switch to the master branch using the command `git checkout master` in the terminal at the project root.",
+                            "Start the project using the command `npm start` in the terminal at the project root."
                         ]
                     },
                     {
-                        "title": "Функционал и внешний вид портала",
+                        "title": "Functionality and Appearance of the Portal",
                         "info": [
-                            "Форма срабатывает по кнопке `Search` или по нажатию клавиши Enter",
-                            "Cписок с результатами выводит только первые 10 найденных репозиториев",
+                            "The form is triggered by the `Search` button or by pressing the Enter key.",
+                            "The list displays only the first 10 found repositories.",
                             {
-                                "titleL2": "Поле ввода (для подстроки поиска):",
+                                "titleL2": "Input field (for substring search):",
                                 "infoL2": [
-                                    "Если символов недостаточно, то выдается сообщение об ошибке"
+                                    "If there are not enough characters, an error message is displayed."
                                 ]
                             },
-                            "В результатах поиска выводится название репозитория, искользуемый язык, видимость, описание репозитория, автар, ник и id владельца репозитория",
+                            "The search results display the repository name, the used language, visibility, repository description, avatar, nickname, and repository owner's ID.",
                             {
-                                "titleL2": "Название по совместительству является ссылкой на соответвующий git репозиторий",
+                                "titleL2": "The name is also a link to the corresponding Git repository.",
                                 "infoL2": [
-                                    "Ссылки окрываются в новой вкладке браузера"
+                                    "Links open in a new browser tab."
                                 ]
                             },
                             {
-                                "titleL2": "Дополнительно",
+                                "titleL2": "Additional Notes",
                                 "infoL2": [
-                                    "Изначально пустой список",
-                                    "Если по запросу ничего не найдено, то вместо списка выводится сообщение `Sorry, nothing found`",
-                                    "В случае возникновение ошибок при запросе к API, вместо списка выводится сообщение `ERROR - Something went wrong`"
+                                    "The list is initially empty.",
+                                    "If nothing is found for the query, the message `Sorry, nothing found` is displayed instead of the list.",
+                                    "In case of API request errors, the message `ERROR - Something went wrong` is displayed instead of the list."
                                 ]
                             }
                         ]
                     }
-                ],
+                ],                
                 "screenshots": [
                     "/cv-frontend/images/projects/Evklid-web/1.jpg",
                     "/cv-frontend/images/projects/Evklid-web/2.jpg",
@@ -900,7 +905,7 @@
             },
             {
                 "name": "News-web",
-                "summary" : "Layout with comments block",
+                "summary" : "Implementation of a news website page with a functional comments block.",
                 "repo": "https://github.com/mspolermo/News-web",
                 "ghPage": null,
                 "important": true,
@@ -910,84 +915,84 @@
                     "WebPack",
                     "Git"
                 ],
-                "description" : [
+                "description": [
                     {
-                        "title": "Описание",
-                        "info": "Реализация страницы новостного сайта с функциональным блоком комментариев"
+                      "title": "Description",
+                      "info": "Developed using JavaScript and SCSS. The application is built with WebPack."
                     },
                     {
-                        "title": "Инструкция по запуску проекта",
-                        "info": [
-                            "Склонировать репозиторий на ПК",
-                            "Переключиться на master ветку с помощью команды `git checkout master` в терминале в корне проекта",
-                            "Запустить с помощью команды `npm start` в терминале в корне проекта"
-                        ]
+                      "title": "Project Setup Instructions",
+                      "info": [
+                        "Clone the repository to your PC",
+                        "Switch to the master branch using the `git checkout master` command in the terminal at the root of the project",
+                        "Run with the `npm start` command in the terminal at the root of the project"
+                      ]
                     },
                     {
-                        "title": "Функционал",
-                        "info": [
-                            "Комментарий создается при нажатии кнопки `Отправить` или при нажатии на кнопку Enter",
+                      "title": "Functionality",
+                      "info": [
+                        "A comment is created by clicking the `Submit` button or pressing the Enter key",
+                        {
+                          "titleL2": "Validation. If the form is filled incorrectly, an error message is displayed next to the field",
+                          "infoL2": [
                             {
-                                "titleL2": "Валидация. Если форма заполнена некорректно, то рядом с полем сообщение об ошибке",
-                                "infoL2": [
-                                {
-                                    "titleL3": "Имя комментатора",
-                                    "infoL3": [
-                                        "Минимальная длина 2 буквы",
-                                        "Запрет использования чисел и спецсимволов"
-                                    ]
-                                },
-                                {
-                                    "titleL3": "Текст комментария",
-                                    "infoL3" : [
-                                        "Минимальная длина 1 символ"
-                                    ]
-                                },
-                                "При продолжении печати в поле ввода ошибка исчезает"
-                            ]
-                            },
-                            "Комментарии можно удалять, по нажатию кнопки удаления (иконки корзины)",
-                            "Комментариям можно выставлять и убирать лайки",
-                            "При добавлении нового коментария счетчики комментариев вверху странцы и в блоке комментариев обновляются автоматически"
-                        ]
-                    },
-                    {
-                        "title": "Внешний вид",
-                        "info": [
-                            {
-                                "titleL2": "Форма добавления коментария:",
-                                "infoL2": [
-                                    "Имя комментатора",
-                                    "Текст комментария",
-                                {
-                                    "titleL3": "Возможность указать дату или оставить ее пустой",
-                                    "infoL3": [
-                                        "Если дата не задана, то автоматически подставляется текущая дата"
-                                    ]
-                                },
-                                    "Кнопка отправки"
-                                ]
+                              "titleL3": "Commentator's Name",
+                              "infoL3": [
+                                "Minimum length of 2 letters",
+                                "Numbers and special characters are not allowed"
+                              ]
                             },
                             {
-                                "titleL2": "Список комментариев:",
-                                "infoL2": [
-                                    "Имя комментатора",
-                                    "Текст комментария",
-                                {
-                                    "titleL3": "Дата, время добавления",
-                                    "infoL3": [
-                                        "Если текущая дата: `Сегодня, 16:23` (ключевое - слово сегодня, время подставляется)",
-                                        "Если вчерашняя дата: `Вчера, 18:39` (ключевое - слово вчера, рандомное время генерируется и подставляется автоматически)",
-                                        "Другие даты отображаются в формате `год-месяц-день`, рандомное время генерируется и подставляется автоматически"
-                                    ]
-                                },
-                                    "Кнопка удаления комментария (иконка корзины)",
-                                    "Сердечко лайка"
-                                ]
-                            }
-                        ]
+                              "titleL3": "Comment Text",
+                              "infoL3": [
+                                "Minimum length of 1 character"
+                              ]
+                            },
+                            "The error message disappears when continuing to type in the input field"
+                          ]
+                        },
+                        "Comments can be deleted by clicking the delete button (trash icon)",
+                        "Likes can be added or removed from comments",
+                        "When adding a new comment, the comment counters at the top of the page and in the comments block are updated automatically"
+                      ]
+                    },
+                    {
+                      "title": "Appearance",
+                      "info": [
+                        {
+                          "titleL2": "Comment Submission Form:",
+                          "infoL2": [
+                            "Commentator's Name",
+                            "Comment Text",
+                            {
+                              "titleL3": "Option to specify the date or leave it empty",
+                              "infoL3": [
+                                "If the date is not specified, the current date is automatically inserted"
+                              ]
+                            },
+                            "Submit Button"
+                          ]
+                        },
+                        {
+                          "titleL2": "List of Comments:",
+                          "infoL2": [
+                            "Commentator's Name",
+                            "Comment Text",
+                            {
+                              "titleL3": "Date and Time of Addition",
+                              "infoL3": [
+                                "If the current date: `Today, 16:23` (keyword - 'Today', time is automatically added)",
+                                "If the date is yesterday: `Yesterday, 18:39` (keyword - 'Yesterday', random time is generated and automatically inserted)",
+                                "Other dates are displayed in the `year-month-day` format, random time is generated and automatically inserted"
+                              ]
+                            },
+                            "Delete Comment Button (trash icon)",
+                            "Like Heart Icon"
+                          ]
+                        }
+                      ]
                     }
-                ],
+                ],                  
                 "screenshots": [
                     "/cv-frontend/images/projects/Evklid-web/1.jpg",
                     "/cv-frontend/images/projects/Evklid-web/2.jpg",
@@ -998,7 +1003,8 @@
             },
             {
                 "name": "Evklid-web",
-                "summary" : "Pixel Perfect Layout (with adaptive)",
+                "summary" : 
+                "Pixel-perfect layout of the page according to the design, with implementation of responsiveness, slider, and accordion.",
                 "repo": "https://github.com/mspolermo/Evklid-web",
                 "ghPage": "https://mspolermo.github.io/Evklid-web/",
                 "important": false,
@@ -1006,28 +1012,30 @@
                     "JavaScript",
                     "SCSS",
                     "WebPack",
-                    "Git"
+                    "Git",
+                    "Swiper",
+                    "jQuery"
                 ],
-                "description" : [
+                "description": [
                     {
-                        "title": "Описание",
-                        "info": "Pixel perfect верстка страницы по макету (с адаптивом). Написано с помощью SCSS, JavaScript Swiper, jQuery (Accordion). Проект собран с помощью Webpack."
+                      "title": "Description",
+                      "info": "Developed using SCSS, JavaScript, Swiper, jQuery (Accordion). The project is built with Webpack."
                     },
                     {
-                        "title": "Инструкция по запуску проекта",
-                        "info": [
-                            "Склонировать репозиторий на ПК",
-                            "Переключиться на master ветку с помощью команды `git checkout master` в терминале в корне проекта",
-                            "Запустить с помощью команды `npm start` в терминале в корне проекта"
-                        ]
+                      "title": "Instructions to Run the Project",
+                      "info": [
+                        "Clone the repository to your PC",
+                        "Switch to the master branch using the command 'git checkout master' in the terminal at the root of the project",
+                        "Start the project using the command 'npm start' in the terminal at the root of the project"
+                      ]
                     },
                     {
-                        "title": "Функционал и внешний вид",
-                        "info": [
-                            "Анимация и выделение по наведению/фокусеровке на кнопки, формы, ссылки",
-                            "Реализован слайдер, аккардеон, табы",
-                            "В планшетной и мобильной версии сайта меню сайта окрывается с помощью нажатия на кнопку бургер-меню"
-                        ]
+                      "title": "Functionality and Appearance",
+                      "info": [
+                        "Animation and highlighting on hover/focus for buttons, forms, and links",
+                        "Implemented slider, accordion, and tabs",
+                        "In the tablet and mobile versions of the website, the site menu opens by clicking on the burger menu button"
+                      ]
                     }
                 ],
                 "screenshots": [
@@ -1053,10 +1061,12 @@
                     "TypeScript",
                     "React",
                     "Redux",
-                    "Rest_API",
+                    "Axios",
+                    "React-router",
                     "I18n",
                     "Jest",
-                    "React Testing Library",
+                    "React testing library",
+                    "Rest_API",
                     "SCSS",
                     "Git",
                     "Team work",
@@ -1215,10 +1225,12 @@
                     "TypeScript",
                     "React",
                     "Redux",
-                    "Rest_API",
+                    "Axios",
+                    "React-router",
                     "I18n",
                     "Jest",
-                    "React Testing Library",
+                    "React testing library",
+                    "Rest_API",
                     "SCSS",
                     "Git",
                     "Team work",

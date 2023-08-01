@@ -34,7 +34,7 @@ const ControlPanel:FC = () => {
             <div className={cn(classes.controlPanel__btn, classes.controlPanel__btn_print)}
                     onClick={() => printCv(location.pathname)}
             >
-                <Icons name="print" size="20px" className={classes.controlPanel__icon}/>
+                <Icons name="print" size="20px" className={classes.controlPanel__icon} strokeWidth="0.6"/>
             </div>
             <ThemeToogler />
         </div>

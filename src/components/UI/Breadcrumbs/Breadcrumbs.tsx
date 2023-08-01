@@ -19,6 +19,7 @@ const Breadcrumbs:FC= () => {
             return t("headers." + crumb.split('%20').join(' '))
         }
         if (!t("skills." + crumb.split('%20').join(' ')).includes('.')) {
+            console.log(crumb.split('%20').join(' '))
             return t("skills." + crumb.split('%20').join(' '))
         }
         if (!t("jobs." + crumb.split('%20').join(' ')).includes('.')) {
