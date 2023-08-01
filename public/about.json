@@ -367,7 +367,7 @@
                 "name": "Github-search-repositories",
                 "summary" : "Веб-приложение с реализацией поиска репозиториев GitHub при помощи API GitHub",
                 "repo": "https://github.com/mspolermo/Github-search-repositories",
-                "ghPage": null,
+                "ghPage": "https://mspolermo.github.io/Github-search-repositories",
                 "important": true,
                 "skills": [
                     "JavaScript",
@@ -419,18 +419,16 @@
                     }
                 ],
                 "screenshots": [
-                    "/cv-frontend/images/projects/Evklid-web/1.jpg",
-                    "/cv-frontend/images/projects/Evklid-web/2.jpg",
-                    "/cv-frontend/images/projects/Evklid-web/3.jpg",
-                    "/cv-frontend/images/projects/Evklid-web/4.jpg",
-                    "/cv-frontend/images/projects/Evklid-web/5.jpg"
+                    "/cv-frontend/images/projects/Github-search-repositories/1.jpg",
+                    "/cv-frontend/images/projects/Github-search-repositories/2.jpg",
+                    "/cv-frontend/images/projects/Github-search-repositories/3.jpg"
                 ]
             },
             {
                 "name": "News-web",
                 "summary" : "Реализация страницы новостного сайта с функциональным блоком комментариев",
                 "repo": "https://github.com/mspolermo/News-web",
-                "ghPage": null,
+                "ghPage": "https://mspolermo.github.io/News-web/",
                 "important": true,
                 "skills": [
                     "JavaScript",
@@ -517,11 +515,10 @@
                     }
                 ],
                 "screenshots": [
-                    "/cv-frontend/images/projects/Evklid-web/1.jpg",
-                    "/cv-frontend/images/projects/Evklid-web/2.jpg",
-                    "/cv-frontend/images/projects/Evklid-web/3.jpg",
-                    "/cv-frontend/images/projects/Evklid-web/4.jpg",
-                    "/cv-frontend/images/projects/Evklid-web/5.jpg"
+                    "/cv-frontend/images/projects/News-web/1.jpg",
+                    "/cv-frontend/images/projects/News-web/2.jpg",
+                    "/cv-frontend/images/projects/News-web/3.jpg",
+                    "/cv-frontend/images/projects/News-web/4.jpg"
                 ]
             },
             {
@@ -844,7 +841,7 @@
                 "name": "Github-search-repositories",
                 "summary" : "GitHub search repositories using API Github",
                 "repo": "https://github.com/mspolermo/Github-search-repositories",
-                "ghPage": null,
+                "ghPage": "https://mspolermo.github.io/Github-search-repositories",
                 "important": true,
                 "skills": [
                     "JavaScript",
@@ -896,18 +893,16 @@
                     }
                 ],                
                 "screenshots": [
-                    "/cv-frontend/images/projects/Evklid-web/1.jpg",
-                    "/cv-frontend/images/projects/Evklid-web/2.jpg",
-                    "/cv-frontend/images/projects/Evklid-web/3.jpg",
-                    "/cv-frontend/images/projects/Evklid-web/4.jpg",
-                    "/cv-frontend/images/projects/Evklid-web/5.jpg"
+                    "/cv-frontend/images/projects/Github-search-repositories/1.jpg",
+                    "/cv-frontend/images/projects/Github-search-repositories/2.jpg",
+                    "/cv-frontend/images/projects/Github-search-repositories/3.jpg"
                 ]
             },
             {
                 "name": "News-web",
                 "summary" : "Implementation of a news website page with a functional comments block.",
                 "repo": "https://github.com/mspolermo/News-web",
-                "ghPage": null,
+                "ghPage": "https://mspolermo.github.io/News-web/",
                 "important": true,
                 "skills": [
                     "JavaScript",
@@ -994,11 +989,10 @@
                     }
                 ],                  
                 "screenshots": [
-                    "/cv-frontend/images/projects/Evklid-web/1.jpg",
-                    "/cv-frontend/images/projects/Evklid-web/2.jpg",
-                    "/cv-frontend/images/projects/Evklid-web/3.jpg",
-                    "/cv-frontend/images/projects/Evklid-web/4.jpg",
-                    "/cv-frontend/images/projects/Evklid-web/5.jpg"
+                    "/cv-frontend/images/projects/News-web/1.jpg",
+                    "/cv-frontend/images/projects/News-web/2.jpg",
+                    "/cv-frontend/images/projects/News-web/3.jpg",
+                    "/cv-frontend/images/projects/News-web/4.jpg"
                 ]
             },
             {
