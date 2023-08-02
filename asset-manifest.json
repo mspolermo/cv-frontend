@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cv-frontend/static/css/main.372ff5c5.css",
+    "main.css": "/cv-frontend/static/css/main.de903048.css",
     "main.js": "/cv-frontend/static/js/main.20ce93dd.js",
     "static/media/Roboto-MediumItalic.woff": "/cv-frontend/static/media/Roboto-MediumItalic.92fd4c62ef139f27b29e.woff",
     "static/media/Roboto-LightItalic.woff": "/cv-frontend/static/media/Roboto-LightItalic.861f499a989f9d956017.woff",
@@ -22,11 +22,11 @@
     "static/media/Roboto-Light.woff2": "/cv-frontend/static/media/Roboto-Light.450f323c0736cffc6041.woff2",
     "static/media/icons.svg": "/cv-frontend/static/media/icons.6639a8eb153fddd728c97aca391fc5a6.svg",
     "index.html": "/cv-frontend/index.html",
-    "main.372ff5c5.css.map": "/cv-frontend/static/css/main.372ff5c5.css.map",
+    "main.de903048.css.map": "/cv-frontend/static/css/main.de903048.css.map",
     "main.20ce93dd.js.map": "/cv-frontend/static/js/main.20ce93dd.js.map"
   },
   "entrypoints": [
-    "static/css/main.372ff5c5.css",
+    "static/css/main.de903048.css",
     "static/js/main.20ce93dd.js"
   ]
 }
