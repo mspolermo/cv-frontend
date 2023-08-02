@@ -8,10 +8,9 @@
     &__block {
         display: flex;
         flex-wrap: nowrap;
-
     }
     &__crumb{
-        font-weight: 700;
+        font-weight: 400;
         font-size: 14px;
         line-height: 17px;
         color: $headingColor;
@@ -30,6 +29,9 @@
         &:hover {
             color: $hoverColor;
         }
+        &_last {
+            font-weight: 700;
+        }
     }
 }
 
@@ -37,8 +39,10 @@
     .breadcrumbs{
         margin-top: 14px;
         &__crumb {
-            font-weight: 600;
             font-size: 12px;
+            &_last {
+               font-weight: 600; 
+            }
         }
     }
 }

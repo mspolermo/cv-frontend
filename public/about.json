@@ -5,8 +5,7 @@
     },
     "photos": [
         "/cv-frontend/images/avatars/photo.jpg",
-        "/cv-frontend/images/avatars/photo1.jpg",
-        "/cv-frontend/images/avatars/photo2.jpg"
+        "/cv-frontend/images/avatars/photo1.jpg"
     ],
     "summary" : {
         "ru": "Стремительный и амбициозный Frontend-разработчик с опытом работы системным администратором в международной компании-разработчике софта SAP. Специализируюсь в разработке программного обеспечения, системной интеграции и автоматизации бизнес-процессов. Обладаю высшим образованием в области информационных технологий. Готов внести значимый вклад в проекты, используя передовые технологии и методы разработки.",
@@ -196,6 +195,193 @@
                     "/cv-frontend/images/projects/Movies-website/12.jpg",
                     "/cv-frontend/images/projects/Movies-website/13.jpg",
                     "/cv-frontend/images/projects/Movies-website/14.jpg"
+                ]
+            },
+            {
+                "name": "CV-frontend",
+                "summary" : "Реализация интерактивного резюме",
+                "repo": "https://github.com/mspolermo/cv-frontend",
+                "ghPage" : "https://mspolermo.github.io/cv-frontend/",
+                "important": true,
+                "skills": [
+                    "TypeScript",
+                    {
+                        "title": "React", 
+                        "value" : [
+                            "Redux",
+                            "Axios",
+                            "I18n",
+                            "React-router"
+                        ]
+                    },
+                    "Rest_API",
+                    "SCSS",
+                    "Git"
+                ],
+                "description" : [
+                    {
+                        "title": "Описание",
+                        "info": "Проект представляет собой интерактивное резюме, разработанное с использованием TypeScript и React, а также дополнительных библиотек, таких как Redux, Axios, i18n и React-router. Верстка выполнена с помощью SCSS."
+                    },
+                    {
+                        "title": "Инструкция по запуску проекта",
+                        "info": [
+                            "Склонировать репозиторий на ПК",
+                            "Переключиться на master ветку с помощью команды `git checkout master` в терминале в корне проекта",
+                            "Запустить с помощью команды `npm start` в терминале в корне проекта"
+                        ]
+                    },
+                    {
+                        "title": "Функционал и внешний вид",
+                        "info": [
+                            {
+                                "titleL2": "Главная страница",
+                                "infoL2": [
+                                    "Краткая информация о проектах, опыте работы, образовании и о себе",
+                                    "Навигация на страницы с полной информацией"
+                                ]
+                            },
+                            {
+                                "titleL2": "Шапка портала",
+                                "infoL2": [
+                                    {
+                                        "titleL3": "Блок панели управления",
+                                        "infoL3": [
+                                            "Возможность сменить язык",
+                                            "Функционал печати резме на 1 страницу",
+                                            "Реализация смены цветового оформления"
+                                        ]
+                                    },
+                                    {
+                                        "titleL3": "Хлебные крошки",
+                                        "infoL3": [
+                                            "Навигация на предыдущие разделы сайта по клику ",
+                                            "Поддержка английского и русского языка"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "titleL2": "Меню сайта",
+                                "infoL2": [
+                                    "Слайдер с фотографиями",
+                                    {
+                                        "titleL3": "Блок контактов",
+                                        "infoL3": [
+                                            "По клику на пункт `Контакты` открывается страница с контактной информацией",
+                                            "Интерактивные кнопки"
+                                        ]
+                                    },
+                                    {
+                                        "titleL3": "Блок навыков",
+                                        "infoL3": [
+                                            "По клику на заголовок навыков открывается страница с полным списком навыков",
+                                            "По клику на определенный навык открывается страница с сылками на проекты/опыт работы, подтверждающие получение навыка"
+                                        ]
+                                    },
+                                    "Реализован адаптивный дизайн, позволяющий сворачивать и разворачивать меню при необходимости."
+                                ]
+                            },
+                            {
+                                "titleL2": "Страница `Проекты`",
+                                "infoL2": [
+                                    {
+                                        "titleL3": "Краткое описание проектов",
+                                        "infoL3": [
+                                            "Название",
+                                            "Информация о проекте",
+                                            "Навыки полученные на проекте",
+                                            "Превью"
+                                        ]
+                                    },
+                                    "По клику на название проекта открывается страница проекта с полной информацией"
+                                ]
+                            },
+                            {
+                                "titleL2": "Страница конкретного проекта",
+                                "infoL2": [
+                                    "Полная информация о проекте",
+                                    "Функциональные кнопки GitHub и GitHub Pages для просмотра репозитория и самого проекта, размещенного на GitHub Pages",
+                                    "Слайдер со скриншотами проекта",
+                                    {
+                                        "titleL3": "Теги навыков, полученных на проекте",
+                                        "infoL3": [
+                                            "По клику на тег навыка открывается страница с сылками на проекты/опыт работы, подтверждающие получение навыка"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "titleL2": "Страница `Опыт работы`",
+                                "infoL2": [
+                                    {
+                                        "titleL3": "Краткое описание опыта работы",
+                                        "infoL3": [
+                                            "Суммарное время работы в компании",
+                                            "Описание",
+                                            "Навыки полученные на работе"
+                                        ]
+                                    },
+                                    "По клику на название должности открывается страница с полной информацией."
+                                ]
+                            },
+                            {
+                                "titleL2": "Страница работы",
+                                "infoL2": [
+                                    "Полная информация о рабочих обязанностях",
+                                    "Суммарное время работы в компании",
+                                    {
+                                        "titleL3": "Теги навыков полученных на работе",
+                                        "infoL3": [
+                                            "По клику на тег навыка открывается страница с сылками на проекты/опыт работы, подтверждающие получение навыка"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "titleL2": "Страница `Образование`",
+                                "infoL2": [
+                                    "Информация об образовании и пройденых курсах"
+                                ]
+                            },
+                            {
+                                "titleL2": "Страница `Обо мне`",
+                                "infoL2": [
+                                    "Информация о себе"
+                                ]
+                            },
+                            {
+                                "titleL2": "Страница `Контакты`",
+                                "infoL2": [
+                                    "Страница с интерактивными кнопками для связи."
+                                ]
+                            },
+                            {
+                                "titleL2": "Страница `Навыки`",
+                                "infoL2": [
+                                    "Список всех навыков, полученных на проектах",
+                                    "По клику на конкретный навык открывается страница с ссылками на проекты и опыт работы, подтверждающие получение навыка."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Дополнительная информация",
+                        "info": [
+                            "Проект реализован с поддержкой планшетной, мобильной и версии для одностраничной печати.",
+                            "Приложение поддерживает различные языки и предоставляет возможность выбора языка интерфейса.",
+                            "Все данные, необходимые для отображения резюме, получает из JSON-файла."
+                        ]
+                    }
+                ],
+                "screenshots": [
+                    "/cv-frontend/images/projects/CV-frontend/1.jpg",
+                    "/cv-frontend/images/projects/CV-frontend/2.jpg",
+                    "/cv-frontend/images/projects/CV-frontend/3.jpg",
+                    "/cv-frontend/images/projects/CV-frontend/4.jpg",
+                    "/cv-frontend/images/projects/CV-frontend/5.jpg",
+                    "/cv-frontend/images/projects/CV-frontend/6.jpg",
+                    "/cv-frontend/images/projects/CV-frontend/7.jpg"
                 ]
             },
             {
@@ -429,7 +615,7 @@
                 "summary" : "Реализация страницы новостного сайта с функциональным блоком комментариев",
                 "repo": "https://github.com/mspolermo/News-web",
                 "ghPage": "https://mspolermo.github.io/News-web/",
-                "important": true,
+                "important": false,
                 "skills": [
                     "JavaScript",
                     "SCSS",
@@ -675,6 +861,193 @@
                 ]
             },
             {
+                "name": "CV-frontend",
+                "summary" : "Interactive resume implementation",
+                "repo": "https://github.com/mspolermo/cv-frontend",
+                "ghPage" : "https://mspolermo.github.io/cv-frontend/",
+                "important": true,
+                "skills": [
+                    "TypeScript",
+                    {
+                        "title": "React", 
+                        "value" : [
+                            "Redux",
+                            "Axios",
+                            "I18n",
+                            "React-router"
+                        ]
+                    },
+                    "Rest_API",
+                    "SCSS",
+                    "Git"
+                ],
+                "description": [
+                    {
+                      "title": "Description",
+                      "info": "The project represents an interactive resume developed using TypeScript and React, along with additional libraries like Redux, Axios, i18n, and React-router. The layout is implemented with SCSS."
+                    },
+                    {
+                      "title": "Project Setup Instructions",
+                      "info": [
+                        "Clone the repository to your local machine.",
+                        "Switch to the master branch using the command `git checkout master` in the project root directory.",
+                        "Start the project using the command `npm start` in the project root directory."
+                      ]
+                    },
+                    {
+                      "title": "Functionality and Appearance",
+                      "info": [
+                        {
+                          "titleL2": "Homepage",
+                          "infoL2": [
+                            "Brief information about projects, work experience, education, and personal details.",
+                            "Navigation to pages with detailed information."
+                          ]
+                        },
+                        {
+                          "titleL2": "Portal Header",
+                          "infoL2": [
+                            {
+                              "titleL3": "Control Panel Block",
+                              "infoL3": [
+                                "Language selection feature.",
+                                "Functionality to print the resume on a single page.",
+                                "Implementation of theme color change."
+                              ]
+                            },
+                            {
+                              "titleL3": "Breadcrumbs",
+                              "infoL3": [
+                                "Navigation to previous sections of the website by clicking.",
+                                "Support for English and Russian languages."
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "titleL2": "Website Menu",
+                          "infoL2": [
+                            "Slider with photographs.",
+                            {
+                              "titleL3": "Contact Block",
+                              "infoL3": [
+                                "Clicking on `Contacts` opens a page with contact information.",
+                                "Interactive buttons."
+                              ]
+                            },
+                            {
+                              "titleL3": "Skills Block",
+                              "infoL3": [
+                                "Clicking on the skills header opens a page with a full list of skills.",
+                                "Clicking on a specific skill opens a page with links to projects or work experience confirming the acquisition of the skill."
+                              ]
+                            },
+                            "Responsive design allows collapsing and expanding the menu as needed."
+                          ]
+                        },
+                        {
+                          "titleL2": "Projects Page",
+                          "infoL2": [
+                            {
+                              "titleL3": "Brief Project Descriptions",
+                              "infoL3": [
+                                "Project name.",
+                                "Project information.",
+                                "Skills acquired on the project.",
+                                "Preview."
+                              ]
+                            },
+                            "Clicking on the project name opens the project page with full details."
+                          ]
+                        },
+                        {
+                          "titleL2": "Specific Project Page",
+                          "infoL2": [
+                            "Full project information.",
+                            "Functional GitHub and GitHub Pages buttons to view the repository and the project hosted on GitHub Pages.",
+                            "Slider with project screenshots.",
+                            {
+                              "titleL3": "Tags of skills acquired on the project",
+                              "infoL3": [
+                                "Clicking on a skill tag opens a page with links to projects or work experience confirming the acquisition of the skill."
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "titleL2": "Work Experience Page",
+                          "infoL2": [
+                            {
+                              "titleL3": "Brief Job Descriptions",
+                              "infoL3": [
+                                "Total time worked in the company.",
+                                "Job description.",
+                                "Skills acquired during the job."
+                              ]
+                            },
+                            "Clicking on the job title opens the page with full details."
+                          ]
+                        },
+                        {
+                          "titleL2": "Job Details Page",
+                          "infoL2": [
+                            "Full details of work responsibilities.",
+                            "Total time worked in the company.",
+                            {
+                              "titleL3": "Tags of skills acquired during the job",
+                              "infoL3": [
+                                "Clicking on a skill tag opens a page with links to projects or work experience confirming the acquisition of the skill."
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "titleL2": "Education Page",
+                          "infoL2": [
+                            "Information about education and completed courses."
+                          ]
+                        },
+                        {
+                          "titleL2": "About Me Page",
+                          "infoL2": [
+                            "Personal information."
+                          ]
+                        },
+                        {
+                          "titleL2": "Contacts Page",
+                          "infoL2": [
+                            "Page with interactive buttons for contact."
+                          ]
+                        },
+                        {
+                          "titleL2": "Skills Page",
+                          "infoL2": [
+                            "List of all skills acquired on projects.",
+                            "Clicking on a specific skill opens a page with links to projects or work experience confirming the acquisition of the skill."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Additional Information",
+                      "info": [
+                        "The project is implemented with support for tablet, mobile, and single-page print versions.",
+                        "The application supports various languages and provides the option to select the interface language.",
+                        "All data needed to display the resume is obtained from a JSON file."
+                      ]
+                    }
+                  ],
+                "screenshots": [
+                    "/cv-frontend/images/projects/CV-frontend/1.jpg",
+                    "/cv-frontend/images/projects/CV-frontend/2.jpg",
+                    "/cv-frontend/images/projects/CV-frontend/3.jpg",
+                    "/cv-frontend/images/projects/CV-frontend/4.jpg",
+                    "/cv-frontend/images/projects/CV-frontend/5.jpg",
+                    "/cv-frontend/images/projects/CV-frontend/6.jpg",
+                    "/cv-frontend/images/projects/CV-frontend/7.jpg"
+                ]
+            },
+            {
                 "name": "Posts-web-app",
                 "summary": "Web application with posts fetched from the JSONPlaceholder API",
                 "repo": "https://github.com/mspolermo/posts-web",
@@ -903,7 +1276,7 @@
                 "summary" : "Implementation of a news website page with a functional comments block.",
                 "repo": "https://github.com/mspolermo/News-web",
                 "ghPage": "https://mspolermo.github.io/News-web/",
-                "important": true,
+                "important": false,
                 "skills": [
                     "JavaScript",
                     "SCSS",

@@ -101,7 +101,10 @@ const WorkExperienceBlock:FC<WorkExperienceBlockProps> = ({type, work}) => {
                             </p>)
                         }
                     </div>
-                    {type ==='full' && <p className={classes.workExpirience__additionalInfo}>
+                    {type ==='full' && <p className={cn(
+                                            classes.workExpirience__additionalInfo,
+                                            classes.workExpirience__additionalInfo_bottom)
+                    }>
                         {t('headers.skills')}: {allTagsString}
                     </p>
                     }     

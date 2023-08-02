@@ -11,6 +11,7 @@
         flex-direction: column;
     }
     &__text {
+        margin-bottom: 6px;
         display: inline;
         padding-left: 1em;
         color: $textColor-aside;

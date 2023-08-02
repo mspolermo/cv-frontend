@@ -4,32 +4,34 @@
     cursor: default;
     margin-bottom: 10px;
     &__block {
-        margin-bottom: 10px;
+        margin-bottom: 6px;
     }
     &__mainHead{
-        margin-bottom: 10px;
+        margin-bottom: 6px;
     }
     &__titleL2 {
-        padding-left: 1em;
+        //padding-left: 0.8em;
         &::before {
             content: '\2022';
-            padding-right: 1em;
+            padding-right: 0.5em;
             color: $circleColor-main;
         }
     }
     &__titleL3 {
-        padding-left: 2em;
+        padding-left: 1em;
+        font-weight: 300;
         &::before {
             content: '\25E6';
-            padding-right: 1em;
+            padding-right: 0.5em;
             color: $circleColor-main;
         }
     }
     &__titleL4 {
-        padding-left: 3em;
+        padding-left: 2em;
+        font-weight: 300;
         &::before {
             content: '\25B9';
-            padding-right: 1em;
+            padding-right: 0.5em;
             color: $circleColor-main;
         }
     }

@@ -5,7 +5,7 @@
     &__headingBlock {
         display: flex;
         align-items: center;
-        margin-bottom: 6px;
+        //margin-bottom: 6px;
         cursor: default;
     }
     &__heading{
@@ -21,13 +21,20 @@
 
     }
     &__additionalInfo {
-        margin: 6px 0 10px 0.2em;
+        //margin: 6px 0 10px 0.2em;
+        margin: 2px 0;
+        padding-left: 0.2em;
 
-        font-weight: 400;
-        font-size: 14px;
+        font-size: 12px;
+        font-weight: 300;
         line-height: 20px;
         color: $textColor-additional;
         cursor: default;
+        &_bottom {
+            font-size: 14px;
+            font-weight: 300;
+            font-style: italic;
+        }
     }
     &__description{ 
         cursor: default;

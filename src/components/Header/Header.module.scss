@@ -8,7 +8,7 @@
         align-self: flex-end;
     }
     &__heading {
-        font-weight: 700;
+        font-weight: 900;
         font-size: 45px;
         line-height: 50px;
         color: $headingColor;
@@ -35,7 +35,7 @@
 }
 @media print {
     .header{
-        margin: 10px 0;
+        margin: 8px 0;
         &__heading {
             font-size: 22px;
             line-height: 26px;

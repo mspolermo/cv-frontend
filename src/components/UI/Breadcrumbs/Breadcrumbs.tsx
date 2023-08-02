@@ -1,6 +1,7 @@
 import React, {FC} from "react";
 import classes from "./Breadcrumbs.module.scss";
 
+import cn from 'classnames';
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -30,12 +31,17 @@ const Breadcrumbs:FC= () => {
     
     const crumbs = location.pathname.split('/')
         .filter(crumb => crumb !== '')
-        .map ( (crumb) => {
-            currentLink.push(`${crumb}/`)
+        .map ( (crumb, index, array) => {
+            currentLink.push(`${crumb}/`);
+            const isLastCrumb = index === array.length - 1;
+            const crumbStyle = isLastCrumb
+            ? cn(classes.breadcrumbs__crumb, classes.breadcrumbs__crumb_last)
+            : classes.breadcrumbs__crumb;
+
             return (
                 <div key={crumb} className={classes.breadcrumbs__block}>
                     <Link to={currentLink.join('')}>
-                        <div className={classes.breadcrumbs__crumb}>
+                        <div className={crumbStyle}>
                             {localesCrumbCheck(crumb)}
                         </div>
                     </Link>

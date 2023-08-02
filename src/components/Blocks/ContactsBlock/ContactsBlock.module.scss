@@ -15,6 +15,7 @@
         @extend %hoverAnim ;
     }
     &__item {
+        margin-bottom: 6px;
         display: flex;
         align-items: center;
         &:nth-child(n+3) {

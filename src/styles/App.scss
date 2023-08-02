@@ -6,6 +6,8 @@
     padding: 40px;
     &{
         background-color: $backgroundColor-outside;
+        min-height: 100vh;
+        width: 100%;
     }
 }
 .cleanPage {
@@ -14,8 +16,8 @@
     height: 100vh;
 }
 body {
-    font-family: iviSans,sans-serif;
-    font-weight: normal;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight: 400;
     font-style: normal;
 }
 .container {
@@ -54,7 +56,7 @@ body {
     }
 }
 .heading-l3 {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
     line-height: 20px;
     color: $headingColor;
@@ -74,7 +76,7 @@ body {
 .text {
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 20px;
     color: $textColor;
 }
 
@@ -156,7 +158,7 @@ body {
     }
     .text {
         font-size: 12px;
-        line-height: 18px;
+        line-height: 16px;
     }
     .heading-l2 {
         font-size: 16px;

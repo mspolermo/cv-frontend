@@ -2,7 +2,7 @@
 
 .aboutBlock {
     &__stringL1{
-        margin-top: 10px;
+        margin-top: 4px;
         display: flex;
         align-items: center;
         cursor: default;
@@ -11,14 +11,14 @@
         &::before {
             content: '\2022';
             color: $circleColor-main;
-            padding-right: 1em;
+            padding-right: 0.5em;
         }  
     }
     &__innerBlock{
-        margin-left: 1em; 
+        margin-left: 0.5em; 
     }
     &__stringL2{
-        margin: 0 1em;
+        margin: 0 0.5em;
         cursor: default;
         &::before {
             content: '-';
