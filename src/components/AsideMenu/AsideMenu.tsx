@@ -55,7 +55,7 @@ const AsideMenu:FC = () => {
                         ? classes.asideMenu__right 
                         : cn(classes.asideMenu__right, classes.asideMenu__right_active)} 
             >
-                <Icons name="open" size="20" color="black"/>
+                <Icons name="open" size="20" className={classes.asideMenu__iconBtn}/>
             </div>
             
         </div>

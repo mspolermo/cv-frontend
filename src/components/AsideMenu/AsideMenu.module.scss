@@ -31,6 +31,10 @@
                 transform: rotate(180deg);
             }
         }
+        &__iconBtn {
+            fill: $iconColor-aside;
+            stroke: $iconColor-aside;
+        }
         &__left {
             display: none;
             &_active {
