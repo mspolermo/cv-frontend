@@ -8,7 +8,7 @@
         "/cv-frontend/images/avatars/photo1.jpg"
     ],
     "summary" : {
-        "ru": "Стремительный и амбициозный Frontend-разработчик с опытом работы системным администратором в международной компании-разработчике софта SAP. Специализируюсь в разработке программного обеспечения, системной интеграции и автоматизации бизнес-процессов. Обладаю высшим образованием в области информационных технологий. Готов внести значимый вклад в проекты, используя передовые технологии и методы разработки.",
+        "ru": "Ответственный и амбициозный Frontend-разработчик с опытом работы системным администратором в международной компании-разработчике софта SAP. Специализируюсь в разработке программного обеспечения, системной интеграции и автоматизации бизнес-процессов. Имею высшее образование в области информационных технологий. Готов внести значимый вклад в проекты, используя передовые технологии и методы разработки.",
         "en": "Agile and responsible Frontend developer with experience as a system administrator in the international software company SAP. I specialize in software, development of system protection and business processes. I have a higher education in information technology. Ready to consider a significant contribution to projects using advanced technologies and development methods."
     },
     "contacts": [
@@ -61,6 +61,7 @@
                     "React-bootstrap"
                 ]
             },
+            "Node.JS",
             "Rest_API",
             "SCSS",
             "Git",
@@ -195,6 +196,46 @@
                     "/cv-frontend/images/projects/Movies-website/12.jpg",
                     "/cv-frontend/images/projects/Movies-website/13.jpg",
                     "/cv-frontend/images/projects/Movies-website/14.jpg"
+                ]
+            },
+            {
+                "name": "Films-mirror-tgBot",
+                "summary" : "Telegram bot для получения ссылки на зеркало KINOLAND.BIZ",
+                "repo": "https://github.com/mspolermo/films-mirror-tgBot",
+                "ghPage": null,
+                "important": true,
+                "skills": [
+                    "JavaScript",
+                    "Node.JS"
+                ],
+                "description" : [
+                    {
+                        "title": "Описание",
+                        "info": "Данный Telegram бот разработан с целью облегчить процесс запроса зеркала для сайта с фильмами. Он предоставляет удобный интерфейс для отправки запроса на получение зеркала и позволяет открыть последнее письмо с ссылкой на зеркало. Бот написан на Node.js и активно использует различные библиотеки для работы с Telegram API, электронной почтой и IMAP-серверами."
+                    },
+                    {
+                        "title": "Основные функции:",
+                        "info": [
+                            "Открытие последней ссылки на зеркало: Бот проверяет наличие ответного письма с ссылкой на зеркало от KINOLAND.BIZ через протокол IMAP. Если бот обнаружит ответное письмо с ссылкой на зеркало, он перешлет его пользователю.",
+                            "Запрос на обновление зеркала: Пользователи могут отправлять запрос на обновление зеркала для фильмов, в случае если ссылка из письма устаревает и больше не функционирует. При нажатии соответствующей кнопки, бот отправляет письмо на указанный адрес с запросом на предоставление зеркала.",
+                            "Отправка репорта в техподдержку: Если новая ссылка на зеркало не приходит в течение долгого времени, пользователи могут отправить жалобу в техническую поддержку. Бот предоставляет кнопку для отправки репорта в техподдержку.",
+                            "Бот работает в реальном времени и реагирует на сообщения пользователей и кнопки."
+                        ]
+                    },
+                    {
+                        "title": "Установка и запуск",
+                        "info": [
+                            "Скопировать репозиторий на хостинг",
+                            "Выполнить команду 'npm install' в корне проекта",
+                            "Запустить с помощью 'npm start'",
+                            "В данный момент бот доступен по адресу @makatels-films-bot в telegram. Внимание - по данному адресу используется слегка другой дизайн (кнопки, сообщения, изображение), но функционал идентичен."
+                        ]
+                    }
+                ],
+                "screenshots": [
+                    "/cv-frontend/images/projects/Films-mirror-tgBot/1.jpg",
+                    "/cv-frontend/images/projects/Films-mirror-tgBot/2.jpg",
+                    "/cv-frontend/images/projects/Films-mirror-tgBot/3.jpg"
                 ]
             },
             {
@@ -858,6 +899,46 @@
                     "/cv-frontend/images/projects/Movies-website/12.jpg",
                     "/cv-frontend/images/projects/Movies-website/13.jpg",
                     "/cv-frontend/images/projects/Movies-website/14.jpg"
+                ]
+            },
+            {
+                "name": "Films-mirror-tgBot",
+                "summary": "Telegram bot for obtaining links to KINOLAND.BIZ mirrors",
+                "repo": "https://github.com/mspolermo/films-mirror-tgBot",
+                "ghPage": null,
+                "important": true,
+                "skills": [
+                    "JavaScript",
+                    "Node.JS"
+                ],
+                "description": [
+                    {
+                        "title": "Description",
+                        "info": "This Telegram bot is developed to simplify the process of requesting mirrors for a movie website. It provides a user-friendly interface for sending a mirror request and allows opening the latest email with a mirror link. The bot is written in Node.js and actively utilizes various libraries to work with the Telegram API, email, and IMAP servers."
+                    },
+                    {
+                        "title": "Main Features:",
+                        "info": [
+                            "Opening the latest mirror link: The bot checks for the presence of a response email with a mirror link from KINOLAND.BIZ via the IMAP protocol. If the bot finds a response email with a mirror link, it forwards it to the user.",
+                            "Requesting mirror update: Users can send a request to update the mirror for movies if the link from the email becomes outdated and no longer works. When the corresponding button is pressed, the bot sends an email to the specified address requesting a mirror.",
+                            "Sending a report to tech support: If a new mirror link does not arrive within a long time, users can send a complaint to technical support. The bot provides a button for sending a report to tech support.",
+                            "The bot works in real-time and responds to user messages and buttons."
+                        ]
+                    },
+                    {
+                        "title": "Installation and Launch",
+                        "info": [
+                            "Copy the repository to hosting",
+                            "Run the 'npm install' command in the project root",
+                            "Launch using 'npm start'",
+                            "Currently, the bot is available at @makatels-films-bot on Telegram. Please note that this address uses a slightly different design (buttons, messages, images), but the functionality is the same."
+                        ]
+                    }
+                ],
+                "screenshots": [
+                    "/cv-frontend/images/projects/Films-mirror-tgBot/1.jpg",
+                    "/cv-frontend/images/projects/Films-mirror-tgBot/2.jpg",
+                    "/cv-frontend/images/projects/Films-mirror-tgBot/3.jpg"
                 ]
             },
             {
@@ -1541,12 +1622,12 @@
                 "descriptionShort": [
                     "Проектировал IT инфраструктуру предприятий и внедрял решения.",
                     "Занимался подбором и закупкой оборудования, комплектующих, софта.",
-                    "Составлял ТЗ в соответствии с законами 44 ФЗ."
+                    "Составлял ТЗ в соответствии с законами № 44-ФЗ и № 223-ФЗ."
                 ],
                 "descriptionFull": [
                     "Проектирование IT инфраструктуры предприятия и внедрение решений.",
                     "Подбор и закупка оборудования, комплектующих, софта.",
-                    "Составление ТЗ в соответствии с законами 44 ФЗ.",
+                    "Составление ТЗ в соответствии с законами № 44-ФЗ и № 223-ФЗ.",
                     "Ввод в эксплуатацию оборудования.",
                     "Предупреждение и устранение аварий.",
                     "Техническая поддержка пользователей.",
@@ -1572,7 +1653,7 @@
                     "Монтажные работы: ЛВС, телефония, аналоговое видеонаблюдение."
                 ],
                 "descriptionFull": [
-                    "IT-Аутсорсинг фирм(16 компаний под постянным личным контролем - клининговая компания, столовые УГМК, туристическое агенство, ТСЖ, комбинаты школьного питания и т.д.): настройка и обновление ПО, антивирусная защита, своевременный ремонт и замена сопровождаемого оборудования, внедрение и перестановка рабочих мест, консультирование, обучение и поддержка пользователей, решение проблем удаленно и на месте. Обслуживание ПК, серверов, оргтехники и периферии. Замена нерабочих фискальников,сканеров штрихкода, банковских терминалов.",
+                    "IT-Аутсорсинг фирм(16 компаний под постоянным личным контролем - клининговая компания, столовые УГМК, туристическое агенство, ТСЖ, комбинаты школьного питания и т.д.): настройка и обновление ПО, антивирусная защита, своевременный ремонт и замена сопровождаемого оборудования, внедрение и перестановка рабочих мест, консультирование, обучение и поддержка пользователей, решение проблем удаленно и на месте. Обслуживание ПК, серверов, оргтехники и периферии. Замена нерабочих фискальников,сканеров штрихкода, банковских терминалов.",
                     "Сервисная работа: диагностика неисправностей ПК и ноутбуков, умение пользоваться диагностическими программами (Виктория, MHDD, Mem test и т.д.). Решение проблем программного плана, чистка от пыли, модульный и корпусной ремонт. Сборка, разборка сотен ноутбуков, нетбуков, мониторов, моноблоков и ПК. Инженерный ремонт из подручных средств. Пайка - разъемы питания, USB, спайка порванных шлейфов и кабелей, замена вздутых конденсаторов на рабочие, небольшой опыт замены видеочипов, южных и северных мостов на паяльной станции. Переустановка и настройка ОС семейства Windows, linux, mac.",
                     "Монтажные работы: ЛВС, телефония, аналоговое видеонаблюдение. Обнаружение неиспользуемой коммутации в ЛВС, протянутой сторонними лицами. Настройка маршрутизаторов и точек доступа.",
                     "1С - работа с техподдержкой по вопросам лицензий; установка и подключение готовых БД; обновление платформы и конфигурации.",
