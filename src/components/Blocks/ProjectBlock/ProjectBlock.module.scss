@@ -311,8 +311,12 @@
         &__left {
             margin-bottom: 1px;
         }
+        &__right {
+            font-size: 12px;
+        }
         &__techBlock {
             display: flex !important;
+            font-size: 12px;
             &:nth-child(n+4) {
                 display: none !important;
             }
