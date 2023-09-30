@@ -1890,6 +1890,7 @@
     "about" : {
         "ru": [
             "Уровень Английского языка около Upper-intermediate, EF SET Quick Check - 75.",
+            "Знание SQL на базовом уровне.",
             "Знание базовой теории тестирования.",
             {
                 "title" : "Изученные материалы по теории тестирования:",
@@ -1917,6 +1918,7 @@
         ],
         "en" : [
             "English level is close to Upper-intermediate, EF SET Quick Check - 75.",
+            "Basic knowledge of SQL.",
             "Knowledge of testing theory.",
             {
                 "title" : "Studied materials on the theory of testing:",
