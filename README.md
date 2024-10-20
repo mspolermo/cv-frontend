@@ -1,13 +1,48 @@
-# CV-frontend
+![React](https://img.shields.io/badge/React-18.2.0-blue)
+![Redux](https://img.shields.io/badge/Redux-4.2.1-purple)
+![React_Router](https://img.shields.io/badge/React--Router--DOM-6.13.0-orange)
+![Axios](https://img.shields.io/badge/Axios-1.4.0-red)
+![TypeScript](https://img.shields.io/badge/TypeScript-4.9.5-blue)
+![Sass](https://img.shields.io/badge/Sass-1.63.4-pink)
+![i18next](https://img.shields.io/badge/i18next-23.4.1-lightgrey)
+![React_i18next](https://img.shields.io/badge/React--i18next-13.0.3-green)
+![Node](https://img.shields.io/badge/Node-16.18.0-green)
+![Storybook](https://img.shields.io/badge/Storybook-7.0.5-lightgray)
+
+# 🪪 CV-frontend
 Реализация интерактивного резюме
-## Описание
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px;">
+  <a href="./public/screenshots/Main.png" target="_blank">
+    <img src="./public/screenshots/Main.png" alt="Главная страница" style="width: 240px; border-radius: 8px;" />
+  </a>
+  <a href="./public/screenshots/Projects.png" target="_blank">
+    <img src="./public/screenshots/Projects.png" alt="Проекты" style="width: 240px; border-radius: 8px;" />
+  </a>
+  <a href="./public/screenshots/Project.png" target="_blank">
+    <img src="./public/screenshots/Project.png" alt="Проект" style="width: 240px; border-radius: 8px;" />
+  </a>
+  <a href="./public/screenshots/Skills.png" target="_blank">
+    <img src="./public/screenshots/Skills.png" alt="Навыки" style="width: 240px; border-radius: 8px;" />
+  </a>
+  <a href="./public/screenshots/Work.png" target="_blank">
+    <img src="./public/screenshots/Skills.png" alt="Работа" style="width: 240px; border-radius: 8px;" />
+  </a>
+  <a href="./public/screenshots/Contacts.png" target="_blank">
+    <img src="./public/screenshots/Contacts.png" alt="Контакты" style="width: 240px; border-radius: 8px;" />
+  </a>
+</div>
+
+## 📃 Описание
 Проект "CV-frontend" представляет собой интерактивное резюме, разработанное с использованием TypeScript и React, а также дополнительных библиотек, таких как Redux, Axios, i18n и React-router. Верстка выполнена с помощью SCSS.
-## Инструкция по запуску проекта
+
+## 🔖 Инструкция по запуску проекта
 Для запуска проекта выполните следующие шаги:
 - Склонируйте репозиторий на ваш ПК.
 - Перейдите в терминале в корневую папку проекта и переключитесь на ветку "master" с помощью команды git checkout master.
 - Запустите проект с помощью команды npm start в терминале в корне проекта.
-## Функционал и внешний вид 
+
+## 🛠️ Функционал и внешний вид 
 Проект "CV-frontend" обладает следующими функциями и особенностями:
 - Главная страница
   - Содержит краткую информацию о проектах, опыте работы, образовании и о себе.
@@ -43,7 +78,7 @@
 - Страница "Навыки"
   - Содержит список всех навыков, полученных на проектах.
   - При клике на конкретный навык открывается страница с ссылками на проекты и опыт работы, подтверждающие получение навыка.
-## Дополнительная информация
+## 📎 Дополнительная информация
 - Проект реализован с поддержкой планшетной, мобильной и версии для одностраничной печати.
 - Приложение поддерживает различные языки и предоставляет возможность выбора языка интерфейса.
 - Все данные, необходимые для отображения резюме, получает из JSON-файла.
