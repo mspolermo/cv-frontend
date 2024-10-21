@@ -26,7 +26,7 @@
     <img src="./public/screenshots/Skills.png" alt="Навыки" style="width: 240px; border-radius: 8px;" />
   </a>
   <a href="./public/screenshots/Work.png" target="_blank">
-    <img src="./public/screenshots/Skills.png" alt="Работа" style="width: 240px; border-radius: 8px;" />
+    <img src="./public/screenshots/Work.png" alt="Работа" style="width: 240px; border-radius: 8px;" />
   </a>
   <a href="./public/screenshots/Contacts.png" target="_blank">
     <img src="./public/screenshots/Contacts.png" alt="Контакты" style="width: 240px; border-radius: 8px;" />
