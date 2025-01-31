@@ -19,10 +19,14 @@
     }
 }
 @media print {
+
     .list {
         margin-bottom: 16px;
         &__heading {
             margin-bottom: 4px;
+        }
+        &__hidden {
+            display: none;
         }
     }
 }

@@ -308,6 +308,9 @@
 }
 @media print {
     .shortsProjectsBlock {
+        &__item {
+            display: none;
+        }
         &__left {
             margin-bottom: 1px;
         }

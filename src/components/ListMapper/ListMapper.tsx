@@ -88,7 +88,7 @@ const ListMapper:FC<ListMapperProps> = ({type, name}) => {
             return (
                 <div className={classes.list}>
 
-                    <h3 className={cn("heading-l2", classes.list__heading)}
+                    <h3 className={cn("heading-l2", classes.list__heading, {[classes.list__hidden]: listHeading === 'projects'})}
                         onClick={() => clickHandler(routPath)} 
                     >
                         {t(`headers.${listHeading}`)}

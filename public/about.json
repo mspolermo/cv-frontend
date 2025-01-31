@@ -8,8 +8,8 @@
         "/cv-frontend/images/avatars/photo1.jpg"
     ],
     "summary" : {
-        "ru": "Ответственный и амбициозный Frontend-разработчик с опытом работы системным администратором в международной компании-разработчике софта SAP. Специализируюсь в разработке программного обеспечения, системной интеграции и автоматизации бизнес-процессов. Имею высшее образование в области информационных технологий. Готов внести значимый вклад в проекты, используя передовые технологии и методы разработки.",
-        "en": "Agile and responsible Frontend developer with experience as a system administrator in the international software company SAP. I specialize in software, development of system protection and business processes. I have a higher education in information technology. Ready to consider a significant contribution to projects using advanced technologies and development methods."
+        "ru": "До профессиональной разработки работал в международной IT-корпорации SAP (4 года) на позиции Location Responsible (системный администратор / IT-Support 2 line / тестировщик). В области программирования пробовал себя в Backend разработке (Node.js, Nest.js, Express, MongoDB, PostgreSQL, MySQL, Firebase), но понял что ближе по душе Frontend (React, Vue). Специализируюсь как на создании SPA/SSR/PWA с нуля и их поддержке, так и на разработке telegram-ботов и сервисов.",
+        "en": "Before professional development, she worked at the international IT corporation SAP (4 years) in the position of Location Responsible (system administrator / IT support 2nd line / coordinator). In the field of programming, I tried my hand at Backend development (Node.js, Nest.js, Express, MongoDB, PostgreSQL, MySQL, Firebase), but realized that Frontend (React, Vue) was more to my liking. Specializes both in creating SPA/SSR/PWA from scratch and supporting them, as well as in developing telegram bots and services."
     },
     "contacts": [
         {
@@ -1499,11 +1499,109 @@
     "works" : {
         "ru": [
             {
-                "title": "Front-End Разработчик",
+                "title": "Frontend-разработчик (React)",
+                "company": "SpectrumData",
+                "companyEn": "SpectrumData",
+                "start": "07.2024",
+                "finish": "02.2025",
+                "important" : true,
+                "skills": [
+                    "TypeScript",
+                    "React",
+                    "Next",
+                    "Recoil",
+                    "Vite",
+                    "Material-UI",
+                    "Sentry",
+                    "Playwright",
+                    "OpenAPI",
+                    "Storybook",
+                    "Docker",
+                    "Kubernetes",
+                    "EsLint",
+                    "Prettier",
+                    "Husky",
+                    "YouTrack",
+                    "Git",
+                    "Team work",
+                    "Problem-solving"
+                ],
+                "descriptionShort": [
+                    "С нуля и до релиза разрабатывал высоконагруженный продукт для крупных клиентов компании (РЕСО, Ренессанс, Т-банк и пр.).",
+                    "Реализовал интерактивный редактор повреждений (референс - визуальная часть draw.io): по клику на автозапчасти в GIF-канвасе и SVG-изображениях пользователи могут добавлять повреждения, которые автоматически отмечаются цветами на изображениях. С нуля собрал формы редактора и отображения уже добавленных повреждений. Добавил табличное представление всех деталей и их поиск. Внедрил сохранение всего текущего состояния взаимодействия в query-параметрах, что решило задачу при шаринге ссылки открывать редактор с выбранными частями изображения и активностью редактора другого пользователя.",
+                    "Разработал функционал для работы с формами: создание и редактирование страховых дел.",
+                    "Создал админ-панель для управления клиентами, квотами, биллингами и другими сущностями (добавление, просмотр, редактирование).",
+                    "Реализовал обширный функционал для работы со списком страховых дел: отчеты, перенаправление, отклонение, возвраты, отладочные функции, сортировки и прочее.",
+                    "Разделял большие монолитные компоненты на самостоятельные модули, улучшив читаемость, тестируемость и повторное использование кода.",
+                    "Значительно расширил и оптимизировал UI-kit компании, внедрив новые компоненты и улучшив существующие.",
+                    "Развивал тестирование приложений (скриншотные и e2e тесты на Playwright), что снизило количество ошибок на этапе разработки.",
+                    "Участвовал в проектировании и внедрении новой архитектуры проектов."
+                ],
+                "descriptionFull": [
+                    "С нуля и до релиза разрабатывал высоконагруженный продукт для крупных клиентов компании (РЕСО, Ренессанс, Т-банк и пр.).",
+                    "Реализовал интерактивный редактор повреждений (референс - визуальная часть draw.io): по клику на автозапчасти в GIF-канвасе и SVG-изображениях пользователи могут добавлять повреждения, которые автоматически отмечаются цветами на изображениях. С нуля собрал формы редактора и отображения уже добавленных повреждений. Добавил табличное представление всех деталей и их поиск. Внедрил сохранение всего текущего состояния взаимодействия в query-параметрах, что решило задачу при шаринге ссылки открывать редактор с выбранными частями изображения и активностью редактора другого пользователя.",
+                    "Разработал функционал для работы с формами: создание и редактирование страховых дел.",
+                    "Создал админ-панель для управления клиентами, квотами, биллингами и другими сущностями (добавление, просмотр, редактирование).",
+                    "Реализовал обширный функционал для работы со списком страховых дел: отчеты, перенаправление, отклонение, возвраты, отладочные функции, сортировки и прочее.",
+                    "Разделял большие монолитные компоненты на самостоятельные модули, улучшив читаемость, тестируемость и повторное использование кода.",
+                    "Значительно расширил и оптимизировал UI-kit компании, внедрив новые компоненты и улучшив существующие.",
+                    "Развивал тестирование приложений (скриншотные и e2e тесты на Playwright), что снизило количество ошибок на этапе разработки.",
+                    "Участвовал в проектировании и внедрении новой архитектуры проектов."
+                ]
+            },
+            {
+                "title": "Инженер-программист",
+                "company": "ОКБ Новатор",
+                "companyEn": "OKB Novator",
+                "start": "11.2022",
+                "finish": "7.2024",
+                "important" : true,
+                "skills": [
+                    "TypeScript",
+                    "JavaScript",
+                    "C#",
+                    "React",
+                    "Redux",
+                    "MobX",
+                    "Webpack",
+                    "Vite",
+                    "Yarn WorkSpaces",
+                    "Storybook",
+                    "CSS",
+                    "EsLint",
+                    "Prettier",
+                    "Cshtml",
+                    ".NET",
+                    "YouTrack",
+                    "Git",
+                    "Team work",
+                    "Problem-solving"
+                ],
+                "descriptionShort": [
+                    "Поддерживал и развивал Frontend-часть внутреннего документооборота военного завода (критическая инфраструктура оборонного предприятия, 5000+ пользователей). Разрабатывал формы, шаблоны и различные компоненты с референсальным визуалом общей дизайн-системы (без привлечения дизайнера).",
+                    "Занимался глобальным переводом текущего Legacy-кода (JS, классовый React) на современный стэк (TypeScript, React Hooks), чтобы улучшить читаемость и понизить порог входа на проект. Самостоятельно разобрался и покрыл код документацией.",
+                    "Развивал клиентский функционал по работе со служебными записками и приказами: создание, одобрение, подтверждение, просмотр истории и пр.",
+                    "Перенастроил webpack конфигурацию, что значительно ускорило сборку проекта, а также сократило время релиза.",
+                    "Верстал шаблоны и черновики документов на cshtml. Брал на себя часть разработки бизнес-логики на бэкенде (C#).",
+                    "Разработал и внедрил монорепозиторий с кастомными UI-компонентами, хуками и хелперами. Настроил EsLint, Prettier, Storybook и переиспользуемый сборщик.",
+                    "Писал служебные скрипты и плагины для браузера на ванильном JavaScript."
+                ],
+                "descriptionFull": [
+                    "Поддерживал и развивал Frontend-часть внутреннего документооборота военного завода (критическая инфраструктура оборонного предприятия, 5000+ пользователей). Разрабатывал формы, шаблоны и различные компоненты с референсальным визуалом общей дизайн-системы (без привлечения дизайнера).",
+                    "Занимался глобальным переводом текущего Legacy-кода (JS, классовый React) на современный стэк (TypeScript, React Hooks), чтобы улучшить читаемость и понизить порог входа на проект. Самостоятельно разобрался и покрыл код документацией.",
+                    "Развивал клиентский функционал по работе со служебными записками и приказами: создание, одобрение, подтверждение, просмотр истории и пр.",
+                    "Перенастроил webpack конфигурацию, что значительно ускорило сборку проекта, а также сократило время релиза.",
+                    "Верстал шаблоны и черновики документов на cshtml. Брал на себя часть разработки бизнес-логики на бэкенде (C#).",
+                    "Разработал и внедрил монорепозиторий с кастомными UI-компонентами, хуками и хелперами. Настроил EsLint, Prettier, Storybook и переиспользуемый сборщик.",
+                    "Писал служебные скрипты и плагины для браузера на ванильном JavaScript."
+                ]
+            },
+            {
+                "title": "Web-разработчик (TypeScript, React)",
                 "company": "Hotels.ru",
                 "companyEn": "Hotels.ru",
-                "start": "02.2023",
-                "finish": "06.2023",
+                "start": "07.2021",
+                "finish": "10.2022",
                 "important" : true,
                 "skills": [
                     "TypeScript",
@@ -1547,7 +1645,7 @@
                 "companyEn": "SAP",
                 "start": "04.2018",
                 "finish": "02.2023",
-                "important" : true,
+                "important" : false,
                 "skills": [
                     "Team work",
                     "Time management",
@@ -1663,12 +1761,110 @@
         ],
         "en" : [
             {
-                "title": "Front-End Developer",
+                "title": "Frontend Developer (React)",
+                "company": "SpectrumData",
+                "companyEn": "SpectrumData",
+                "start": "07.2024",
+                "finish": "02.2025",
+                "important": true,
+                "skills": [
+                    "TypeScript",
+                    "React",
+                    "Next",
+                    "Recoil",
+                    "Vite",
+                    "Material-UI",
+                    "Sentry",
+                    "Playwright",
+                    "OpenAPI",
+                    "Storybook",
+                    "Docker",
+                    "Kubernetes",
+                    "EsLint",
+                    "Prettier",
+                    "Husky",
+                    "YouTrack",
+                    "Git",
+                    "Team work",
+                    "Problem-solving"
+                ],
+                "descriptionShort": [
+                    "Developed a high-load product from scratch to release for major company clients (RESO, Renaissance, T-Bank, etc.).",
+                    "Implemented an interactive damage editor (visual reference: draw.io): enabled users to add damages by clicking on car parts in a GIF canvas and SVG images, with damages automatically marked by color. Built the editor forms and damage display from scratch. Added a tabular view for parts with a search feature. Implemented state-saving in query parameters, solving the issue of link sharing by allowing the editor to open with selected image parts and user activity preserved.",
+                    "Developed functionality for working with forms: creating and editing insurance cases.",
+                    "Created an admin panel to manage clients, quotas, billings, and other entities (add, view, edit).",
+                    "Implemented extensive functionality for working with insurance case lists: reports, redirects, rejections, returns, debug functions, sorting, etc.",
+                    "Refactored large monolithic components into independent modules, improving readability, testability, and reusability.",
+                    "Significantly expanded and optimized the company UI-kit by adding new components and improving existing ones.",
+                    "Enhanced application testing (screenshot and e2e tests using Playwright), reducing bugs during development.",
+                    "Participated in designing and implementing a new project architecture."
+                ],
+                "descriptionFull": [
+                    "Developed a high-load product from scratch to release for major company clients (RESO, Renaissance, T-Bank, etc.).",
+                    "Implemented an interactive damage editor (visual reference: draw.io): enabled users to add damages by clicking on car parts in a GIF canvas and SVG images, with damages automatically marked by color. Built the editor forms and damage display from scratch. Added a tabular view for parts with a search feature. Implemented state-saving in query parameters, solving the issue of link sharing by allowing the editor to open with selected image parts and user activity preserved.",
+                    "Developed functionality for working with forms: creating and editing insurance cases.",
+                    "Created an admin panel to manage clients, quotas, billings, and other entities (add, view, edit).",
+                    "Implemented extensive functionality for working with insurance case lists: reports, redirects, rejections, returns, debug functions, sorting, etc.",
+                    "Refactored large monolithic components into independent modules, improving readability, testability, and reusability.",
+                    "Significantly expanded and optimized the company UI-kit by adding new components and improving existing ones.",
+                    "Enhanced application testing (screenshot and e2e tests using Playwright), reducing bugs during development.",
+                    "Participated in designing and implementing a new project architecture."
+                ]
+            },
+            {
+                "title": "Software Engineer",
+                "company": "OKB Novator",
+                "companyEn": "OKB Novator",
+                "start": "11.2022",
+                "finish": "07.2024",
+                "important": true,
+                "skills": [
+                    "TypeScript",
+                    "JavaScript",
+                    "C#",
+                    "React",
+                    "Redux",
+                    "MobX",
+                    "Webpack",
+                    "Vite",
+                    "Yarn WorkSpaces",
+                    "Storybook",
+                    "CSS",
+                    "EsLint",
+                    "Prettier",
+                    "Cshtml",
+                    ".NET",
+                    "YouTrack",
+                    "Git",
+                    "Team work",
+                    "Problem-solving"
+                ],
+                "descriptionShort": [
+                    "Maintained and developed the Frontend part of the internal document management system for a military plant (critical infrastructure with 5000+ users). Developed forms, templates, and components based on a unified design system without involving a designer.",
+                    "Migrated legacy code (JS, class-based React) to a modern stack (TypeScript, React Hooks) to improve readability and lower the project entry barrier. Independently documented the code.",
+                    "Developed client-side features for working with memos and orders: creation, approval, confirmation, history viewing, etc.",
+                    "Reconfigured Webpack, significantly speeding up project builds and reducing release time.",
+                    "Designed templates and drafts for documents in Cshtml. Contributed to backend business logic development using C#.",
+                    "Developed and implemented a monorepository with custom UI components, hooks, and helpers. Configured EsLint, Prettier, Storybook, and reusable bundlers.",
+                    "Created utility scripts and browser plugins using vanilla JavaScript."
+                ],
+                "descriptionFull": [
+                    "Maintained and developed the Frontend part of the internal document management system for a military plant (critical infrastructure with 5000+ users). Developed forms, templates, and components based on a unified design system without involving a designer.",
+                    "Migrated legacy code (JS, class-based React) to a modern stack (TypeScript, React Hooks) to improve readability and lower the project entry barrier. Independently documented the code.",
+                    "Developed client-side features for working with memos and orders: creation, approval, confirmation, history viewing, etc.",
+                    "Reconfigured Webpack, significantly speeding up project builds and reducing release time.",
+                    "Designed templates and drafts for documents in Cshtml. Contributed to backend business logic development using C#.",
+                    "Developed and implemented a monorepository with custom UI components, hooks, and helpers. Configured EsLint, Prettier, Storybook, and reusable bundlers.",
+                    "Created utility scripts and browser plugins using vanilla JavaScript."
+                ]
+            },
+            {
+                "title": "Web Developer (TypeScript, React)",
                 "company": "Hotels.ru",
                 "companyEn": "Hotels.ru",
-                "start": "02.2023",
-                "finish": "06.2023",
-                "important" : true,
+                "start": "07.2021",
+                "finish": "10.2022",
+                "important": true,
                 "skills": [
                     "TypeScript",
                     "React",
@@ -1685,33 +1881,33 @@
                     "Problem-solving"
                 ],
                 "descriptionShort": [
-                    "Developed and maintained web applications using modern technologies, including TypeScript, React, Redux, SCSS and others.",
-                    "Participated in all stages of project development, including requirements analysis, interface design, writing and debugging code, testing and deploying applications.",
-                    "Optimized the user interface for high application responsiveness.",
-                    "Developed an adaptive and cross-browser interface using modern layout methods and CSS processors.",
-                    "Interacted with the API and integrated third-party services to receive and process data.",
-                    "Optimized and improved existing code, fixed bugs and fixed issues to improve the quality and performance of applications.",
-                    "Exchanged experience and applied best development practices to improve code quality and work efficiency.",
-                    "Researched new technologies, frameworks and development tools to constantly improve my skills."
+                    "Developed and maintained web applications using modern technologies, including TypeScript, React, Redux, SCSS, and others.",
+                    "Participated in all stages of project development, including requirements analysis, interface design, coding, debugging, testing, and application deployment.",
+                    "Optimized user interfaces to ensure high application responsiveness.",
+                    "Developed adaptive and cross-browser interfaces using modern layout methods and CSS preprocessors.",
+                    "Interacted with APIs and integrated third-party services for data retrieval and processing.",
+                    "Optimized and improved existing code, fixed bugs, and addressed issues to enhance application quality and performance.",
+                    "Shared knowledge and applied best development practices to improve code quality and work efficiency.",
+                    "Explored new technologies, frameworks, and tools for continuous skill improvement."
                 ],
                 "descriptionFull": [
-                    "Participation in the development and support of web applications using modern technologies, including TypeScript, React, Redux, HTML, CSS and others.",
-                    "Active participation in all stages of project development: requirements analysis, interface design, writing and debugging code, testing and deploying applications.",
-                    "User interface optimization for application responsiveness.",
-                    "Development of an adaptive and cross-browser interface using modern layout methods and CSS processors.",
-                    "Interaction with API and integration of third-party services for receiving and processing data.",
-                    "Optimizing and improving existing code, fixing bugs, and fixing issues to improve application quality and performance.",
-                    "Exchange of experience and use of best development practices to improve code quality and work efficiency.",
-                    "Exploration of new technologies, frameworks and development tools for continuous improvement of skills."
+                    "Participated in the development and support of web applications using modern technologies, including TypeScript, React, Redux, HTML, CSS, and others.",
+                    "Actively involved in all stages of project development: requirements analysis, interface design, coding, debugging, testing, and application deployment.",
+                    "Optimized user interfaces to ensure responsiveness.",
+                    "Developed adaptive and cross-browser interfaces using modern layout methods and CSS preprocessors.",
+                    "Interacted with APIs and integrated third-party services for data retrieval and processing.",
+                    "Optimized and improved existing code, fixed bugs, and addressed issues to enhance application quality and performance.",
+                    "Shared knowledge and applied best development practices to improve code quality and work efficiency.",
+                    "Explored new technologies, frameworks, and tools for continuous skill improvement."
                 ]
-            },
+            },            
             {
                 "title": "System engineer",
                 "company": "SAP",
                 "companyEn": "SAP",
                 "start": "04.2018",
                 "finish": "02.2023",
-                "important" : true,
+                "important" : false,
                 "skills": [
                     "Team work",
                     "Time management",
