@@ -8,8 +8,8 @@
         "/cv-frontend/images/avatars/photo1.jpg"
     ],
     "summary" : {
-        "ru": "До профессиональной разработки работал в международной IT-корпорации SAP (4 года) на позиции Location Responsible (системный администратор / IT-Support 2 line / тестировщик). В области программирования пробовал себя в Backend разработке (Node.js, Nest.js, Express, MongoDB, PostgreSQL, MySQL, Firebase), но понял что ближе по душе Frontend (React, Vue). Специализируюсь как на создании SPA/SSR/PWA с нуля и их поддержке, так и на разработке telegram-ботов и сервисов.",
-        "en": "Before professional development, she worked at the international IT corporation SAP (4 years) in the position of Location Responsible (system administrator / IT support 2nd line / coordinator). In the field of programming, I tried my hand at Backend development (Node.js, Nest.js, Express, MongoDB, PostgreSQL, MySQL, Firebase), but realized that Frontend (React, Vue) was more to my liking. Specializes both in creating SPA/SSR/PWA from scratch and supporting them, as well as in developing telegram bots and services."
+        "ru": "Специализируюсь на создании SPA/SSR/PWA с нуля и их поддержке. Увлекаюсь разработкой telegram-ботов и сервисов. Имею бэкграунд работы в международной IT-корпорации SAP (4 года) на позиции Location Responsible (системный администратор / IT-Support 2 line / тестировщик). TypeScript. Могу в бэк (Node.js, Nest.js, Express, MongoDB, PostgreSQL, MySQL, Firebase), но ближе по душе фронт (React, Vue).",
+        "en": "Before professional development worked at the international IT corporation SAP (4 years) in the position of Location Responsible (system administrator / IT support 2nd line / coordinator). In the field of programming, I tried my hand at Backend development (Node.js, Nest.js, Express, MongoDB, PostgreSQL, MySQL, Firebase), but realized that Frontend (React, Vue) was more to my liking. Specializes both in creating SPA/SSR/PWA from scratch and supporting them, as well as in developing telegram bots and services."
     },
     "contacts": [
         {
@@ -52,174 +52,151 @@
                 "title": "React", 
                 "value" : [
                     "Redux",
+                    "MobX",
+                    "Storybook",
+                    "Cypress",
                     "Axios",
                     "I18n",
-                    "Storybook",
                     "Jest",
                     "React testing library",
                     "React-router",
                     "React-bootstrap"
                 ]
             },
+            {
+                "title": "Vue", 
+                "value" : [
+                    "Vuex",
+                    "Pinia",
+                    "Vitest",
+                    "Vuetify"
+                ]
+            },
+            {
+                "title": "Nest", 
+                "value" : [
+                    "Swagger",
+                    "Sequelize"
+                ]
+            },
+            "Next",
+            "PostgreSQL",
+            "MongoDB",
             "Node.JS",
             "Rest_API",
             "SCSS",
             "Git",
             "WebPack",
+            "Vite",
             "JavaScript",
             "Swiper",
-            "jQuery"
+            "Tailwind",
+            "jQuery",
+            "OOP",
+            "Firebase",
+            "MaterialUI"
         ],
         "soft": [
             "Team work",
             "Problem-solving",
             "Time management",
-            "Customer orientation",
             "Emotional control"
         ] 
     },
     "projects" : {
         "ru": [
             {
-                "name": "Movies-website",
-                "summary" : "Упрощенная версия портала фильмов. В качестве дизайна за основу взят сайт ivi.ru",
-                "repo": "https://github.com/mspolermo/movies-website",
-                "ghPage" : "https://mspolermo.github.io/movies-website/",
+                "name": "ORGSTRUCTURE",
+                "summary" : "Визуализация оргструктуры предприятия",
+                "repo": "https://github.com/mspolermo/org-structure",
+                "ghPage": null,
                 "important": true,
                 "skills": [
-                    "TypeScript",
-                    {
-                        "title": "React", 
-                        "value" : [
-                            "Redux",
-                            "Axios",
-                            "I18n",
-                            "Storybook",
-                            "React-router",
-                            "React testing library"
-                        ]
-                    },
-                    "Rest_API",
-                    "SCSS",
-                    "Git",
-                    "Team work"
+                    "Nest",
+                    "PostgreSQL",
+                    "React",
+                    "Node.JS",
+                    "MobX",
+                    "Swagger",
+                    "Sequelize",
+                    "TypeScript"
                 ],
                 "description" : [
                     {
                         "title": "Описание",
-                        "info": "Написано с помощью TypeScript, React (redux, axios, i18n, storybook), SCSS. Покрытие тестами - react testing library."
+                        "info": "OrgStructure — это комплексная платформа для упрощения управления справочной информации, администрирования и визуализации организационной структуры предприятия."
                     },
                     {
-                        "title": "Инструкция по запуску проекта",
-                        "info": "Для демонстрации полноценного функционала необходимо поднимать бэкенд в докере, максимально урезанную версию (без бэкенда) можно посмотреть на ghpages. Полная инструкция по запуску приложения размещена на github"
-                    },
-                    {
-                        "title": "Функционал и внешний вид портала",
+                        "title": "Проект состоит из трех ключевых компонентов::",
                         "info": [
-                            "Главная страница",
-                            {
-                                "titleL2": "Страница списка фильмов (/films/)",
-                                "infoL2": [
-                                {
-                                    "titleL3": "Функциональные фильтры",
-                                    "infoL3": [
-                                        "По странам/жанрам/годам",
-                                        "По рейтингу - возможность вводить конкретное значение ползунком с точностью до десятых",
-                                        "По количеству оценок - возможность вводить конкретное значение ползунком",
-                                        "По режиссеру/ по актеру. Поле ввода ведет себя как автосаджест (подсказывает по первым буквам подходящих режиссеров)",
-                                        "Все фильтры разом доступны на странице /movies/ и сразу при выборе пользователя применяются без перезагрузки страницы",
-                                        "Выбор жанров влияет на хлебные крошки"
-                                    ]
-                                },
-                                {
-                                    "titleL3": "Сортировка",
-                                    "infoL3" : [
-                                        "По количеству оценок",
-                                        "По рейтингу",
-                                        "По дате выхода (сначала свежие)",
-                                        "По алфавиту"
-                                    ]
-                                },
-                                {
-                                    "titleL3": "Сортировка",
-                                    "infoL3" : [
-                                        "По количеству оценок",
-                                        "По рейтингу",
-                                        "По дате выхода (сначала свежие)",
-                                        "По алфавиту"
-                                    ]
-                                },
-                                "Список карточек со всеми эффектами верстки (но по функционалу только переход к конкретному фильму)"
-                            ]
-                                
-                            },
-                            {
-                                "titleL2": "Страница конкретного фильма (/film/:id)",
-                                "infoL2": [
-                                    "Трейлер",
-                                    "Описание фильма с реальными данными",
-                                    "Создание отзывов и комментариев к фильму"
-                                ]
-                            },
-                            "Страница актера (/person/:id)",
-                            {
-                                "titleL2": "Страница авторизации (/auth/)",
-                                "infoL2": [
-                                    "Авторизация по почте/паролю, аккаунту google, аккаунту Vk"
-                                ]
-                            },
-                            {
-                                "titleL2": "Страница администратора (/admin)",
-                                "infoL2": [
-                                    "Доступ только у администратора (проверка на бэкенде, ссылка появляется в шапке при наличии роли)",
-                                    "Возможность редактировать названия фильма (для фильмов) и название жанра (для жанров) на русском и английском языке"
-                                ]
-                            },
-                            "Поиск",
-                            "Функционал перевода сайта на английский язык (переключатель в шапке)"
-                            
+                            "Клиентская часть (Front-End) — пользовательский интерфейс, обеспечивающий взаимодействие с системой.",
+                            "Серверная часть (Back-End) — серверное приложение, отвечающее за бизнес-логику и обработку данных.",
+                            "Расширение (Extension) — браузерное расширение, дополняющее функционал платформы."
+                        ]
+                    },
+                    {
+                        "title": "Клиентская часть:",
+                        "info": [
+                            "Визуализация организационных структур.",
+                            "Удобный интерфейс для создания, редактирования и просмотра данных."
+                        ]
+                    },
+                    {
+                        "title": "Серверная часть:",
+                        "info": [
+                            "API для обработки данных организационных структур.",
+                            "Авторизация и аутентификация.",
+                            "Работа с базой данных."
+                        ]
+                    },
+                    {
+                        "title": "Браузерное расширение",
+                        "info": [
+                            "Быстрый доступ к основным функциям платформы через браузер.",
+                            "Интеграция с клиентской частью."
                         ]
                     }
                 ],
                 "screenshots": [
-                    "/cv-frontend/images/projects/Movies-website/1.jpg",
-                    "/cv-frontend/images/projects/Movies-website/2.jpg",
-                    "/cv-frontend/images/projects/Movies-website/3.jpg",
-                    "/cv-frontend/images/projects/Movies-website/4.jpg",
-                    "/cv-frontend/images/projects/Movies-website/5.jpg",
-                    "/cv-frontend/images/projects/Movies-website/6.jpg",
-                    "/cv-frontend/images/projects/Movies-website/7.jpg",
-                    "/cv-frontend/images/projects/Movies-website/8.jpg",
-                    "/cv-frontend/images/projects/Movies-website/9.jpg",
-                    "/cv-frontend/images/projects/Movies-website/10.jpg",
-                    "/cv-frontend/images/projects/Movies-website/11.jpg",
-                    "/cv-frontend/images/projects/Movies-website/12.jpg",
-                    "/cv-frontend/images/projects/Movies-website/13.jpg",
-                    "/cv-frontend/images/projects/Movies-website/14.jpg"
+                    "/cv-frontend/images/projects/Orgstructure/1.png",
+                    "/cv-frontend/images/projects/Orgstructure/2.png",
+                    "/cv-frontend/images/projects/Orgstructure/3.png",
+                    "/cv-frontend/images/projects/Orgstructure/4.png",
+                    "/cv-frontend/images/projects/Orgstructure/5.png",
+                    "/cv-frontend/images/projects/Orgstructure/6.png",
+                    "/cv-frontend/images/projects/Orgstructure/7.png",
+                    "/cv-frontend/images/projects/Orgstructure/8.png",
+                    "/cv-frontend/images/projects/Orgstructure/9.png",
+                    "/cv-frontend/images/projects/Orgstructure/10.png",
+                    "/cv-frontend/images/projects/Orgstructure/11.png"
                 ]
             },
             {
-                "name": "Films-mirror-tgBot",
-                "summary" : "Telegram bot для получения ссылки на зеркало KINOLAND.BIZ",
-                "repo": "https://github.com/mspolermo/films-mirror-tgBot",
+                "name": "Makatels-bot",
+                "summary" : "Telegram-бот с разнообразным функционалом ",
+                "repo": "https://github.com/mspolermo/makatels-bot",
                 "ghPage": null,
                 "important": true,
                 "skills": [
+                    "Node.JS",
+                    "React",
+                    "Vue",
+                    "TypeScript",
                     "JavaScript",
-                    "Node.JS"
+                    "OOP"
                 ],
                 "description" : [
                     {
                         "title": "Описание",
-                        "info": "Данный Telegram бот разработан с целью облегчить процесс запроса зеркала для сайта с фильмами. Он предоставляет удобный интерфейс для отправки запроса на получение зеркала и позволяет открыть последнее письмо с ссылкой на зеркало. Бот написан на Node.js и активно использует различные библиотеки для работы с Telegram API, электронной почтой и IMAP-серверами."
+                        "info": "Данный Telegram бот разработан с целью облегчить процесс запроса зеркал для сайта с фильмами. Он предоставляет удобный интерфейс для отправки запроса на получение зеркала и позволяет открыть последнее письмо с ссылкой на зеркало. Бот написан на Node.js и активно использует различные библиотеки для работы с Telegram API, электронной почтой и IMAP-серверами."
                     },
                     {
                         "title": "Основные функции:",
                         "info": [
-                            "Открытие последней ссылки на зеркало: Бот проверяет наличие ответного письма с ссылкой на зеркало от KINOLAND.BIZ через протокол IMAP. Если бот обнаружит ответное письмо с ссылкой на зеркало, он перешлет его пользователю.",
-                            "Запрос на обновление зеркала: Пользователи могут отправлять запрос на обновление зеркала для фильмов, в случае если ссылка из письма устаревает и больше не функционирует. При нажатии соответствующей кнопки, бот отправляет письмо на указанный адрес с запросом на предоставление зеркала.",
-                            "Отправка репорта в техподдержку: Если новая ссылка на зеркало не приходит в течение долгого времени, пользователи могут отправить жалобу в техническую поддержку. Бот предоставляет кнопку для отправки репорта в техподдержку.",
-                            "Бот работает в реальном времени и реагирует на сообщения пользователей и кнопки."
+                            "Получение/обновление уникальной ссылки на сайты с фильмами без прав на прокат;",
+                            "Отображение актуальных сервисов такси в Полевском;",
+                            "Мини-приложение Расписание автобусов с возможностью посмотреть расписание/обратное расписание автобусов Полевской - Екатеринбург;",
+                            "Пожаловаться на работу бота/предложить функционал."
                         ]
                     },
                     {
@@ -228,14 +205,18 @@
                             "Скопировать репозиторий на хостинг",
                             "Выполнить команду 'npm install' в корне проекта",
                             "Запустить с помощью 'npm start'",
-                            "В данный момент бот доступен по адресу @makatels-films-bot в telegram. Внимание - по данному адресу используется слегка другой дизайн (кнопки, сообщения, изображение), но функционал идентичен."
+                            "В данный момент бот доступен по адресу @makatels-films-bot в telegram."
                         ]
                     }
                 ],
                 "screenshots": [
-                    "/cv-frontend/images/projects/Films-mirror-tgBot/1.jpg",
-                    "/cv-frontend/images/projects/Films-mirror-tgBot/2.jpg",
-                    "/cv-frontend/images/projects/Films-mirror-tgBot/3.jpg"
+                    "/cv-frontend/images/projects/Makatels-bot/1.png",
+                    "/cv-frontend/images/projects/Makatels-bot/2.png",
+                    "/cv-frontend/images/projects/Makatels-bot/3.png",
+                    "/cv-frontend/images/projects/Makatels-bot/4.png",
+                    "/cv-frontend/images/projects/Makatels-bot/5.png",
+                    "/cv-frontend/images/projects/Makatels-bot/6.png",
+                    "/cv-frontend/images/projects/Makatels-bot/7.png"
                 ]
             },
             {
@@ -245,7 +226,6 @@
                 "ghPage" : "https://mspolermo.github.io/cv-frontend/",
                 "important": true,
                 "skills": [
-                    "TypeScript",
                     {
                         "title": "React", 
                         "value" : [
@@ -255,7 +235,8 @@
                             "React-router"
                         ]
                     },
-                    "Rest_API",
+                    "TypeScript",
+                    "Vite",
                     "SCSS",
                     "Git"
                 ],
@@ -426,11 +407,355 @@
                 ]
             },
             {
-                "name": "Posts-web-app",
+                "name": "Movies Platform",
+                "summary" : "Упрощенная версия портала фильмов. В качестве дизайна за основу взят сайт ivi.ru",
+                "repo": "https://github.com/mspolermo/movies-website",
+                "ghPage" : "https://mspolermo.github.io/movies-website/",
+                "important": true,
+                "skills": [
+                    {
+                        "title": "React", 
+                        "value" : [
+                            "Redux",
+                            "Axios",
+                            "I18n",
+                            "Storybook",
+                            "React-router",
+                            "React testing library"
+                        ]
+                    },
+                    "TypeScript",
+                    "Webpack",
+                    "SCSS",
+                    "Git",
+                    "Team work"
+                ],
+                "description" : [
+                    {
+                        "title": "Описание",
+                        "info": "Написано с помощью TypeScript, React (redux, axios, i18n, storybook), SCSS. Покрытие тестами - react testing library."
+                    },
+                    {
+                        "title": "Инструкция по запуску проекта",
+                        "info": "Для демонстрации полноценного функционала необходимо поднимать бэкенд в докере, максимально урезанную версию (без бэкенда) можно посмотреть на ghpages. Полная инструкция по запуску приложения размещена на github"
+                    },
+                    {
+                        "title": "Функционал и внешний вид портала",
+                        "info": [
+                            "Главная страница",
+                            {
+                                "titleL2": "Страница списка фильмов (/films/)",
+                                "infoL2": [
+                                {
+                                    "titleL3": "Функциональные фильтры",
+                                    "infoL3": [
+                                        "По странам/жанрам/годам",
+                                        "По рейтингу - возможность вводить конкретное значение ползунком с точностью до десятых",
+                                        "По количеству оценок - возможность вводить конкретное значение ползунком",
+                                        "По режиссеру/ по актеру. Поле ввода ведет себя как автосаджест (подсказывает по первым буквам подходящих режиссеров)",
+                                        "Все фильтры разом доступны на странице /movies/ и сразу при выборе пользователя применяются без перезагрузки страницы",
+                                        "Выбор жанров влияет на хлебные крошки"
+                                    ]
+                                },
+                                {
+                                    "titleL3": "Сортировка",
+                                    "infoL3" : [
+                                        "По количеству оценок",
+                                        "По рейтингу",
+                                        "По дате выхода (сначала свежие)",
+                                        "По алфавиту"
+                                    ]
+                                },
+                                {
+                                    "titleL3": "Сортировка",
+                                    "infoL3" : [
+                                        "По количеству оценок",
+                                        "По рейтингу",
+                                        "По дате выхода (сначала свежие)",
+                                        "По алфавиту"
+                                    ]
+                                },
+                                "Список карточек со всеми эффектами верстки (но по функционалу только переход к конкретному фильму)"
+                            ]
+                                
+                            },
+                            {
+                                "titleL2": "Страница конкретного фильма (/film/:id)",
+                                "infoL2": [
+                                    "Трейлер",
+                                    "Описание фильма с реальными данными",
+                                    "Создание отзывов и комментариев к фильму"
+                                ]
+                            },
+                            "Страница актера (/person/:id)",
+                            {
+                                "titleL2": "Страница авторизации (/auth/)",
+                                "infoL2": [
+                                    "Авторизация по почте/паролю, аккаунту google, аккаунту Vk"
+                                ]
+                            },
+                            {
+                                "titleL2": "Страница администратора (/admin)",
+                                "infoL2": [
+                                    "Доступ только у администратора (проверка на бэкенде, ссылка появляется в шапке при наличии роли)",
+                                    "Возможность редактировать названия фильма (для фильмов) и название жанра (для жанров) на русском и английском языке"
+                                ]
+                            },
+                            "Поиск",
+                            "Функционал перевода сайта на английский язык (переключатель в шапке)"
+                            
+                        ]
+                    }
+                ],
+                "screenshots": [
+                    "/cv-frontend/images/projects/Movies-website/1.jpg",
+                    "/cv-frontend/images/projects/Movies-website/2.jpg",
+                    "/cv-frontend/images/projects/Movies-website/3.jpg",
+                    "/cv-frontend/images/projects/Movies-website/4.jpg",
+                    "/cv-frontend/images/projects/Movies-website/5.jpg",
+                    "/cv-frontend/images/projects/Movies-website/6.jpg",
+                    "/cv-frontend/images/projects/Movies-website/7.jpg",
+                    "/cv-frontend/images/projects/Movies-website/8.jpg",
+                    "/cv-frontend/images/projects/Movies-website/9.jpg",
+                    "/cv-frontend/images/projects/Movies-website/10.jpg",
+                    "/cv-frontend/images/projects/Movies-website/11.jpg",
+                    "/cv-frontend/images/projects/Movies-website/12.jpg",
+                    "/cv-frontend/images/projects/Movies-website/13.jpg",
+                    "/cv-frontend/images/projects/Movies-website/14.jpg"
+                ]
+            },
+            {
+                "name": "Articles Platform",
+                "summary" : "Веб-приложение для просмотра и публикации статей",
+                "repo": "https://github.com/mspolermo/production-project",
+                "ghPage" : "https://fluffy-semifreddo-7d715d.netlify.app/",
+                "important": true,
+                "skills": [
+                    {
+                        "title": "React", 
+                        "value" : [
+                            "Redux",
+                            "Axios",
+                            "Sttorybook",
+                            "I18n",
+                            "React-router",
+                            "Jest",
+                            "Cypress",
+                            "Husky",
+                            "Vite"
+                        ]
+                    },
+                    "TypeScript",
+                    "Webpack",
+                    "SCSS",
+                    "Git"
+                ],
+                "description" : [
+                    {
+                        "title": "О проекте",
+                        "info": "Articles Platform — это веб-приложение для просмотра и публикации статей, разработанное с помощью React, Vite, Webpack, Redux и прочих технолочий. Проект предоставляет собой удобный интерфейс для управления статьями, пользователями и пользовательскими данными. Включает в себе версию с 2 видами дизайна и различными темами оформления. Внедрена поддержка перевода интерфейса на русский и английский языки."
+                    },
+                    {
+                        "title": "Архитектура проекта",
+                        "info": [
+                            "Проект написан в соответствии с методологией Feature sliced design"
+                        ]
+                    },
+                    {
+                        "title": " Тесты",
+                        "info": [
+                            {
+                                "titleL2": "В проекте используются 4 вида тестов:",
+                                "infoL2": [
+                                    "Обычные unit тесты на jest",
+                                    "Тесты на компоненты с React testing library",
+                                    "Скриншотное тестирование с loki",
+                                    "E2e тестирование с Cypress"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Storybook",
+                        "info": [
+                            "В проекте для каждого компонента описываются стори-кейсы. Запросы на сервер мокаются с помощью storybook-addon-mock."
+                        ]
+                    },
+                    {
+                        "title": "CI pipeline и pre commit хуки",
+                        "info": [
+                            "Конфигурация github actions находится в /.github/workflows. В ci прогоняются все виды тестов, сборка проекта, линтинг. После прохождения тестов, формируется отчет для ghPages",
+                            "В прекоммит хуках проверяем проект линтерами, конфиг в /.husky"
+                        ]
+                    },
+                    {
+                        "title": "Работа с данными",
+                        "info": [
+                            "Взаимодействие с данными осуществляется с помощью redux toolkit. По возможности переиспользуемые сущности необходимо нормализовать с помощью EntityAdapter",
+                            "Запросы на сервер отправляются с помощью RTK query",
+                            "Для асинхронного подключения редюсеров (чтобы не тянуть их в общий бандл) используется DynamicModuleLoader"
+                        ]
+                    }
+                ],
+                "screenshots": [
+                    "/cv-frontend/images/projects/Articles/1.png",
+                    "/cv-frontend/images/projects/Articles/2.png",
+                    "/cv-frontend/images/projects/Articles/3.png",
+                    "/cv-frontend/images/projects/Articles/4.png",
+                    "/cv-frontend/images/projects/Articles/5.png",
+                    "/cv-frontend/images/projects/Articles/6.png",
+                    "/cv-frontend/images/projects/Articles/7.png",
+                    "/cv-frontend/images/projects/Articles/8.png"
+                ]
+            },
+            {
+                "name": "Music Platform (PWA)",
+                "summary" : "Веб-приложение для прослушивания музыки",
+                "repo": "https://github.com/mspolermo/music-platform-vue",
+                "ghPage" : "https://music-platform-a8axons85-mspolermos-projects.vercel.app/",
+                "important": true,
+                "skills": [
+                    {
+                        "title": "Vue", 
+                        "value" : [
+                            "Pinia",
+                            "Cypress",
+                            "Vitest",
+                            "Firebase"
+                        ]
+                    },
+                    "TypeScript",
+                    "Vite",
+                    "Tailwind"
+
+                ],
+                "description" : [
+                    {
+                        "title": "О проекте",
+                        "info": "Music Platform — это веб-приложение для прослушивания музыки, разработанное с использованием Vue 3, Vite и Firebird. Проект предоставляет пользователям удобный интерфейс для управления музыкальными треками, создания плейлистов и прослушивания музыки."
+                    },
+                    {
+                        "title": "Используемые технологии",
+                        "info": [
+                            "Vue 3 — современный фреймворк для создания пользовательских интерфейсов.",
+                            "Vite — инструмент для быстрой сборки и разработки.",
+                            "Tailwind CSS — утилитарный CSS-фреймворк для создания адаптивного дизайна.",
+                            "Cypress и Vitest — для End-to-End и Unit тестирования.",
+                            "Firebase — облачная платформа для хранения данных пользователей и музыкальных треков, обеспечивающая надежное и эффективное управление данным"
+                        ]
+                    }
+                ],
+                "screenshots": [
+                    "/cv-frontend/images/projects/MusicPlatform/1.png",
+                    "/cv-frontend/images/projects/MusicPlatform/2.png",
+                    "/cv-frontend/images/projects/MusicPlatform/3.png",
+                    "/cv-frontend/images/projects/MusicPlatform/4.png"
+                ]
+            },
+            {
+                "name": "Music Platform (SSR)",
+                "summary" : "Платформа для потокового воспроизведения музыки",
+                "repo": "https://github.com/mspolermo/music-platform",
+                "ghPage" : null,
+                "important": true,
+                "skills": [
+                    "Nest",
+                    "Next",
+                    {
+                        "title": "React", 
+                        "value" : [
+                            "Redux",
+                            "MaterialUI"
+                        ]
+                    },
+                    "MongoDB",
+                    "TypeScript"
+
+                ],
+                "description" : [
+                    {
+                        "title": "О проекте",
+                        "info": "Открытая платформа для потокового воспроизведения музыки, созданная с использованием TypeScript, NestJS, MongoDB, NextJS/ReactJS, MaterialUi."
+                    },
+                    {
+                        "title": "Функционал",
+                        "info": [
+                            "Потоковое воспроизведение музыки из библиотеки",
+                            "Современный и адаптивный интерфейс",
+                            "Поиск песен",
+                            "Возможность добавлять, удалять песни, изображение песни, текст"
+                        ]
+                    }
+                ],
+                "screenshots": [
+                    "/cv-frontend/images/projects/MusicPlatform/1.png"
+                ]
+            },
+            {
+                "name": "Photo gallery",
+                "summary" : "Веб-приложение для просмотра и добавления фотографий ",
+                "repo": "https://github.com/mspolermo/gallery",
+                "ghPage" : "https://mspolermo.github.io/gallery/",
+                "important": false,
+                "skills": [
+                    {
+                        "title": "Vue", 
+                        "value" : [
+                            "Vuetify",
+                            "Vuex"
+                        ]
+                    },
+                    "SAAS",
+                    "TypeScript"
+
+                ],
+                "description" : [
+                    {
+                        "title": "О проекте",
+                        "info": "Простое приложение для просмотра и добавления фотографий на Vue.js с использованием Vuex и Vue Router. Данные берутся асинхронно с fake-API JSONPlaceholder."
+                    },
+                    {
+                        "title": "Функционал",
+                        "info": [
+                            "На главной странице отображается список фотографий.",
+                            "Нажмите на фотографию, чтобы открыть диалоговое окно с полноразмерным изображением и названием фотографии.",
+                            "Нажмите кнопку Добавить на главной странице, чтобы загрузить новую фотографию."
+                        ]
+                    }
+                ],
+                "screenshots": [
+                    "/cv-frontend/images/projects/PhotoGallery/1.png"
+                ]
+            },
+            {
+                "name": "Chess game",
+                "summary" : "Игра в шахматы",
+                "repo": "https://github.com/mspolermo/chess-game",
+                "ghPage" : null,
+                "important": false,
+                "skills": [
+                    "React",
+                    "TypeScript",
+                    "OOP"
+                ],
+                "description" : [
+                    {
+                        "title": "О проекте",
+                        "info": "Игра в шахматы на классовом React"
+                    }
+                ],
+                "screenshots": [
+                    "/cv-frontend/images/projects/ChessGame/1.png",
+                    "/cv-frontend/images/projects/ChessGame/2.png",
+                    "/cv-frontend/images/projects/ChessGame/3.png"
+                ]
+            },
+            {
+                "name": "Posts-web-app (React)",
                 "summary" : "Веб-приложение с постами, получаемыми через API JSONPlaceholder",
                 "repo": "https://github.com/mspolermo/posts-web",
                 "ghPage": "https://mspolermo.github.io/posts-web/",
-                "important": true,
+                "important": false,
                 "skills": [
                     "TypeScript",
                     {
@@ -504,11 +829,47 @@
                 ]
             },
             {
+                "name": "Posts-web-app (Vue)",
+                "summary" : "Веб-приложение для просмотра и добавления постов",
+                "repo": "https://github.com/mspolermo/vue3-project",
+                "ghPage" : null,
+                "important": false,
+                "skills": [
+                    {
+                        "title": "Vue", 
+                        "value" : [
+                            "Vuex",
+                            "Axios"
+                        ]
+                    },
+                    "JavaScript"
+
+                ],
+                "description" : [
+                    {
+                        "title": "О проекте",
+                        "info": "Простое приложение для просмотра и добавления постов на Vue.js с использованием Vuex и Vue Router. Данные берутся асинхронно с fake-API JSONPlaceholder."
+                    },
+                    {
+                        "title": "Функционал",
+                        "info": [
+                            "На главной странице отображается список постов.",
+                            "Нажмите на кнопку Открыть, чтобы открыть страницу с постом.",
+                            "Нажмите кнопку Создать пост, чтобы создать новый пост.",
+                            "Нажмите кнопку Удалить, чтобы удалить пост."
+                        ]
+                    }
+                ],
+                "screenshots": [
+                    "/cv-frontend/images/projects/Posts-web-app/vue.png"
+                ]
+            },
+            {
                 "name": "Sultan-web-app",
                 "summary" : "Часть интернет-магазина (каталог товаров, страница товара, корзина, страница администратора) с адаптивом",
                 "repo": "https://github.com/mspolermo/sultan-web-app",
                 "ghPage": "https://mspolermo.github.io/sultan-web-app/",
-                "important": true,
+                "important": false,
                 "skills": [
                     "TypeScript",
                     {
@@ -595,7 +956,7 @@
                 "summary" : "Веб-приложение с реализацией поиска репозиториев GitHub при помощи API GitHub",
                 "repo": "https://github.com/mspolermo/Github-search-repositories",
                 "ghPage": "https://mspolermo.github.io/Github-search-repositories",
-                "important": true,
+                "important": false,
                 "skills": [
                     "JavaScript",
                     "Rest_API",
@@ -795,16 +1156,316 @@
         ],
         "en": [
             {
-                "name": "Movies-website",
-                "summary" : "Simplified version of a movies portal. The design is based on the ivi.ru website.",
-                "repo": "https://github.com/mspolermo/movies-website",
-                "ghPage" : "https://mspolermo.github.io/movies-website/",
+                "name": "ORGSTRUCTURE",
+                "summary": "Visualization of the organizational structure of an enterprise",
+                "repo": "https://github.com/mspolermo/org-structure",
+                "ghPage": null,
                 "important": true,
                 "skills": [
-                    "TypeScript",
+                    "Nest",
+                    "PostgreSQL",
+                    "React",
+                    "Node.JS",
+                    "MobX",
+                    "Swagger",
+                    "Sequelize",
+                    "TypeScript"
+                ],
+                "description": [
                     {
-                        "title": "React", 
-                        "value" : [
+                        "title": "Description",
+                        "info": "OrgStructure is a comprehensive platform designed to simplify reference data management, administration, and visualization of an enterprise's organizational structure."
+                    },
+                    {
+                        "title": "The project consists of three key components:",
+                        "info": [
+                            "Client-side (Front-End) — the user interface that provides interaction with the system.",
+                            "Server-side (Back-End) — the server application responsible for business logic and data processing.",
+                            "Extension — a browser extension that complements the platform's functionality."
+                        ]
+                    },
+                    {
+                        "title": "Client-side:",
+                        "info": [
+                            "Visualization of organizational structures.",
+                            "User-friendly interface for creating, editing, and viewing data."
+                        ]
+                    },
+                    {
+                        "title": "Server-side:",
+                        "info": [
+                            "API for processing organizational structure data.",
+                            "Authorization and authentication.",
+                            "Database operations."
+                        ]
+                    },
+                    {
+                        "title": "Browser extension:",
+                        "info": [
+                            "Quick access to the platform's core functions through the browser.",
+                            "Integration with the client-side."
+                        ]
+                    }
+                ],
+                "screenshots": [
+                    "/cv-frontend/images/projects/Orgstructure/1.png",
+                    "/cv-frontend/images/projects/Orgstructure/2.png",
+                    "/cv-frontend/images/projects/Orgstructure/3.png",
+                    "/cv-frontend/images/projects/Orgstructure/4.png",
+                    "/cv-frontend/images/projects/Orgstructure/5.png",
+                    "/cv-frontend/images/projects/Orgstructure/6.png",
+                    "/cv-frontend/images/projects/Orgstructure/7.png",
+                    "/cv-frontend/images/projects/Orgstructure/8.png",
+                    "/cv-frontend/images/projects/Orgstructure/9.png",
+                    "/cv-frontend/images/projects/Orgstructure/10.png",
+                    "/cv-frontend/images/projects/Orgstructure/11.png"
+                ]
+            },            
+            {
+                "name": "Makatels-bot",
+                "summary": "Telegram bot with diverse functionality",
+                "repo": "https://github.com/mspolermo/makatels-bot",
+                "ghPage": null,
+                "important": true,
+                "skills": [
+                    "Node.JS",
+                    "React",
+                    "Vue",
+                    "TypeScript",
+                    "JavaScript",
+                    "OOP"
+                ],
+                "description": [
+                    {
+                        "title": "Description",
+                        "info": "This Telegram bot is designed to simplify the process of requesting mirrors for a movie website. It provides a user-friendly interface for submitting mirror requests and allows opening the latest email with a mirror link. The bot is written in Node.js and actively uses various libraries for working with the Telegram API, email, and IMAP servers."
+                    },
+                    {
+                        "title": "Main features:",
+                        "info": [
+                            "Retrieve/update a unique link to websites with unlicensed movies;",
+                            "Display up-to-date taxi services in Polevskoy;",
+                            "Mini-app for Bus Schedules with the ability to view schedules/return schedules for Polevskoy - Yekaterinburg buses;",
+                            "Report bot issues/suggest functionality."
+                        ]
+                    },
+                    {
+                        "title": "Installation and launch",
+                        "info": [
+                            "Clone the repository to a hosting server",
+                            "Run the command 'npm install' in the project root",
+                            "Start using 'npm start'",
+                            "The bot is currently available at @makatels-films-bot on Telegram."
+                        ]
+                    }
+                ],
+                "screenshots": [
+                    "/cv-frontend/images/projects/Makatels-bot/1.png",
+                    "/cv-frontend/images/projects/Makatels-bot/2.png",
+                    "/cv-frontend/images/projects/Makatels-bot/3.png",
+                    "/cv-frontend/images/projects/Makatels-bot/4.png",
+                    "/cv-frontend/images/projects/Makatels-bot/5.png",
+                    "/cv-frontend/images/projects/Makatels-bot/6.png",
+                    "/cv-frontend/images/projects/Makatels-bot/7.png"
+                ]
+            },
+            {
+                "name": "CV-frontend",
+                "summary": "Interactive resume implementation",
+                "repo": "https://github.com/mspolermo/cv-frontend",
+                "ghPage": "https://mspolermo.github.io/cv-frontend/",
+                "important": true,
+                "skills": [
+                    {
+                        "title": "React",
+                        "value": [
+                            "Redux",
+                            "Axios",
+                            "I18n",
+                            "React-router"
+                        ]
+                    },
+                    "TypeScript",
+                    "Vite",
+                    "SCSS",
+                    "Git"
+                ],
+                "description": [
+                    {
+                        "title": "Description",
+                        "info": "The project is an interactive resume developed using TypeScript and React, as well as additional libraries such as Redux, Axios, i18n, and React-router. The layout is implemented with SCSS."
+                    },
+                    {
+                        "title": "Instructions for project launch",
+                        "info": [
+                            "Clone the repository to your PC",
+                            "Switch to the master branch using the command `git checkout master` in the terminal in the project root",
+                            "Start using the command `npm start` in the terminal in the project root"
+                        ]
+                    },
+                    {
+                        "title": "Functionality and appearance",
+                        "info": [
+                            {
+                                "titleL2": "Homepage",
+                                "infoL2": [
+                                    "Brief information about projects, work experience, education, and personal details",
+                                    "Navigation to pages with full information"
+                                ]
+                            },
+                            {
+                                "titleL2": "Portal header",
+                                "infoL2": [
+                                    {
+                                        "titleL3": "Control panel block",
+                                        "infoL3": [
+                                            "Language switching capability",
+                                            "Resume printing functionality (one-page format)",
+                                            "Theme color customization"
+                                        ]
+                                    },
+                                    {
+                                        "titleL3": "Breadcrumbs",
+                                        "infoL3": [
+                                            "Navigation to previous sections of the site by clicking",
+                                            "Supports English and Russian languages"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "titleL2": "Site menu",
+                                "infoL2": [
+                                    "Photo slider",
+                                    {
+                                        "titleL3": "Contacts block",
+                                        "infoL3": [
+                                            "Clicking 'Contacts' opens a page with contact information",
+                                            "Interactive buttons"
+                                        ]
+                                    },
+                                    {
+                                        "titleL3": "Skills block",
+                                        "infoL3": [
+                                            "Clicking on the skills header opens a page with the full list of skills",
+                                            "Clicking on a specific skill opens a page with links to projects/work experience that verify the skill"
+                                        ]
+                                    },
+                                    "Adaptive design that allows collapsing and expanding the menu when needed."
+                                ]
+                            },
+                            {
+                                "titleL2": "Projects page",
+                                "infoL2": [
+                                    {
+                                        "titleL3": "Project overview",
+                                        "infoL3": [
+                                            "Title",
+                                            "Project information",
+                                            "Skills gained on the project",
+                                            "Preview"
+                                        ]
+                                    },
+                                    "Clicking on the project title opens a page with full project information"
+                                ]
+                            },
+                            {
+                                "titleL2": "Specific project page",
+                                "infoL2": [
+                                    "Full project details",
+                                    "Functional GitHub and GitHub Pages buttons for viewing the repository and the project hosted on GitHub Pages",
+                                    "Slider with project screenshots",
+                                    {
+                                        "titleL3": "Skill tags acquired in the project",
+                                        "infoL3": [
+                                            "Clicking on a skill tag opens a page with links to projects/work experience that confirm the skill"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "titleL2": "Work experience page",
+                                "infoL2": [
+                                    {
+                                        "titleL3": "Work experience overview",
+                                        "infoL3": [
+                                            "Total time spent in the company",
+                                            "Description",
+                                            "Skills gained at work"
+                                        ]
+                                    },
+                                    "Clicking on the job title opens a page with full details."
+                                ]
+                            },
+                            {
+                                "titleL2": "Work details page",
+                                "infoL2": [
+                                    "Complete information about job responsibilities",
+                                    "Total time spent in the company",
+                                    {
+                                        "titleL3": "Tags of skills gained at work",
+                                        "infoL3": [
+                                            "Clicking on a skill tag opens a page with links to projects/work experience that confirm the skill"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "titleL2": "Education page",
+                                "infoL2": [
+                                    "Information about education and completed courses"
+                                ]
+                            },
+                            {
+                                "titleL2": "About me page",
+                                "infoL2": [
+                                    "Personal information"
+                                ]
+                            },
+                            {
+                                "titleL2": "Contacts page",
+                                "infoL2": [
+                                    "Page with interactive buttons for communication."
+                                ]
+                            },
+                            {
+                                "titleL2": "Skills page",
+                                "infoL2": [
+                                    "List of all skills acquired in projects",
+                                    "Clicking on a specific skill opens a page with links to projects and work experience that verify the skill."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Additional information",
+                        "info": [
+                            "The project is implemented with support for tablet, mobile, and single-page print versions.",
+                            "The application supports multiple languages and allows users to choose the interface language.",
+                            "All data required to display the resume is retrieved from a JSON file."
+                        ]
+                    }
+                ],
+                "screenshots": [
+                    "/cv-frontend/images/projects/CV-frontend/1.jpg",
+                    "/cv-frontend/images/projects/CV-frontend/2.jpg",
+                    "/cv-frontend/images/projects/CV-frontend/3.jpg",
+                    "/cv-frontend/images/projects/CV-frontend/4.jpg",
+                    "/cv-frontend/images/projects/CV-frontend/5.jpg",
+                    "/cv-frontend/images/projects/CV-frontend/6.jpg",
+                    "/cv-frontend/images/projects/CV-frontend/7.jpg"
+                ]
+            },
+            {
+                "name": "Movies Platform",
+                "summary": "A simplified version of a movie portal. The design is inspired by the ivi.ru website.",
+                "repo": "https://github.com/mspolermo/movies-website",
+                "ghPage": "https://mspolermo.github.io/movies-website/",
+                "important": true,
+                "skills": [
+                    {
+                        "title": "React",
+                        "value": [
                             "Redux",
                             "Axios",
                             "I18n",
@@ -813,7 +1474,8 @@
                             "React testing library"
                         ]
                     },
-                    "Rest_API",
+                    "TypeScript",
+                    "Webpack",
                     "SCSS",
                     "Git",
                     "Team work"
@@ -821,66 +1483,66 @@
                 "description": [
                     {
                         "title": "Description",
-                        "info": "Built with TypeScript, React (redux, axios, i18n, storybook), and SCSS. Test coverage includes react testing library."
+                        "info": "Developed using TypeScript, React (Redux, Axios, I18n, Storybook), and SCSS. Includes test coverage with React Testing Library."
                     },
                     {
                         "title": "Project Launch Instructions",
-                        "info": "For a full demonstration of the application's functionality, it is necessary to run the backend in Docker. A heavily simplified version (without the backend) can be viewed on ghpages. The complete instructions for running the application are available on GitHub."
+                        "info": "To demonstrate full functionality, the backend must be run in Docker. A minimal version (without the backend) is available on ghPages. Full instructions for launching the application are available on GitHub."
                     },
                     {
-                        "title": "Functionality and Appearance of the Film Portal",
+                        "title": "Functionality and Portal Interface",
                         "info": [
-                            "Main Page",
+                            "Home Page",
                             {
-                                "titleL2": "Film List Page (/films/)",
+                                "titleL2": "Movies List Page (/films/)",
                                 "infoL2": [
                                     {
                                         "titleL3": "Functional Filters",
                                         "infoL3": [
                                             "By countries/genres/years",
-                                            "By rating - ability to enter a specific value using a slider with a precision of tenths",
-                                            "By number of ratings - ability to enter a specific value using a slider",
-                                            "By director/actor. The input field behaves like an autosuggest (provides hints based on the first letters of matching directors)",
-                                            "All filters are available on the /movies/ page and are applied immediately when selected by the user without reloading the page",
-                                            "Selecting genres affects the breadcrumbs"
+                                            "By rating - allows users to input precise values using a slider with decimal accuracy",
+                                            "By the number of ratings - allows precise input via slider",
+                                            "By director/actor - input field with autosuggest functionality based on initial letters",
+                                            "All filters are available simultaneously on the /movies/ page and apply instantly without page reloads",
+                                            "Genre selection updates the breadcrumbs dynamically"
                                         ]
                                     },
                                     {
                                         "titleL3": "Sorting",
-                                        "infoL3" : [
+                                        "infoL3": [
                                             "By number of ratings",
                                             "By rating",
                                             "By release date (newest first)",
                                             "By alphabetical order"
                                         ]
                                     },
-                                    "List of cards with all layout effects (but only functionality for navigating to a specific film)"
+                                    "Card list with all styling effects (functional only for navigation to a specific movie)"
                                 ]
                             },
                             {
-                                "titleL2": "Specific Film Page (/film/:id)",
+                                "titleL2": "Movie Details Page (/film/:id)",
                                 "infoL2": [
                                     "Trailer",
-                                    "Film description with real data",
-                                    "Creating reviews and comments for the film"
+                                    "Detailed movie description",
+                                    "Review and comment creation"
                                 ]
                             },
                             "Actor Page (/person/:id)",
                             {
-                                "titleL2": "Authorization Page (/auth/)",
+                                "titleL2": "Authentication Page (/auth/)",
                                 "infoL2": [
-                                    "Authorization via email/password, Google account, Vk account"
+                                    "Login with email/password, Google account, or VK account"
                                 ]
                             },
                             {
-                                "titleL2": "Administrator Page (/admin)",
+                                "titleL2": "Admin Page (/admin)",
                                 "infoL2": [
-                                    "Accessible only to the administrator (backend check, the link appears in the header if the role exists)",
-                                    "Ability to edit film titles (for films) and genre names (for genres) in Russian and English languages"
+                                    "Access limited to admins (checked on backend, link visible only with admin role)",
+                                    "Ability to edit movie titles and genres in Russian and English"
                                 ]
                             },
-                            "Search",
-                            "Functionality of translating the site into English (toggle in the header)"
+                            "Search functionality",
+                            "Website translation to English (toggle available in header)"
                         ]
                     }
                 ],
@@ -902,238 +1564,234 @@
                 ]
             },
             {
-                "name": "Films-mirror-tgBot",
-                "summary": "Telegram bot for obtaining links to KINOLAND.BIZ mirrors",
-                "repo": "https://github.com/mspolermo/films-mirror-tgBot",
-                "ghPage": null,
+                "name": "Articles Platform",
+                "summary": "A web application for viewing and publishing articles.",
+                "repo": "https://github.com/mspolermo/production-project",
+                "ghPage": "https://fluffy-semifreddo-7d715d.netlify.app/",
                 "important": true,
                 "skills": [
-                    "JavaScript",
-                    "Node.JS"
-                ],
-                "description": [
                     {
-                        "title": "Description",
-                        "info": "This Telegram bot is developed to simplify the process of requesting mirrors for a movie website. It provides a user-friendly interface for sending a mirror request and allows opening the latest email with a mirror link. The bot is written in Node.js and actively utilizes various libraries to work with the Telegram API, email, and IMAP servers."
-                    },
-                    {
-                        "title": "Main Features:",
-                        "info": [
-                            "Opening the latest mirror link: The bot checks for the presence of a response email with a mirror link from KINOLAND.BIZ via the IMAP protocol. If the bot finds a response email with a mirror link, it forwards it to the user.",
-                            "Requesting mirror update: Users can send a request to update the mirror for movies if the link from the email becomes outdated and no longer works. When the corresponding button is pressed, the bot sends an email to the specified address requesting a mirror.",
-                            "Sending a report to tech support: If a new mirror link does not arrive within a long time, users can send a complaint to technical support. The bot provides a button for sending a report to tech support.",
-                            "The bot works in real-time and responds to user messages and buttons."
-                        ]
-                    },
-                    {
-                        "title": "Installation and Launch",
-                        "info": [
-                            "Copy the repository to hosting",
-                            "Run the 'npm install' command in the project root",
-                            "Launch using 'npm start'",
-                            "Currently, the bot is available at @makatels-films-bot on Telegram. Please note that this address uses a slightly different design (buttons, messages, images), but the functionality is the same."
-                        ]
-                    }
-                ],
-                "screenshots": [
-                    "/cv-frontend/images/projects/Films-mirror-tgBot/1.jpg",
-                    "/cv-frontend/images/projects/Films-mirror-tgBot/2.jpg",
-                    "/cv-frontend/images/projects/Films-mirror-tgBot/3.jpg"
-                ]
-            },
-            {
-                "name": "CV-frontend",
-                "summary" : "Interactive resume implementation",
-                "repo": "https://github.com/mspolermo/cv-frontend",
-                "ghPage" : "https://mspolermo.github.io/cv-frontend/",
-                "important": true,
-                "skills": [
-                    "TypeScript",
-                    {
-                        "title": "React", 
-                        "value" : [
+                        "title": "React",
+                        "value": [
                             "Redux",
                             "Axios",
+                            "Storybook",
                             "I18n",
-                            "React-router"
+                            "React-router",
+                            "Jest",
+                            "Cypress",
+                            "Husky",
+                            "Vite"
                         ]
                     },
-                    "Rest_API",
+                    "TypeScript",
+                    "Webpack",
                     "SCSS",
                     "Git"
                 ],
                 "description": [
                     {
-                      "title": "Description",
-                      "info": "The project represents an interactive resume developed using TypeScript and React, along with additional libraries like Redux, Axios, i18n, and React-router. The layout is implemented with SCSS."
+                        "title": "About the Project",
+                        "info": "Articles Platform is a web application for viewing and publishing articles, built with React, Vite, Webpack, Redux, and other technologies. It provides a user-friendly interface for managing articles, users, and their data. It includes two design versions with theme switching and supports interface translation between Russian and English."
                     },
                     {
-                      "title": "Project Setup Instructions",
-                      "info": [
-                        "Clone the repository to your local machine.",
-                        "Switch to the master branch using the command `git checkout master` in the project root directory.",
-                        "Start the project using the command `npm start` in the project root directory."
-                      ]
+                        "title": "Project Architecture",
+                        "info": [
+                            "The project follows the Feature Sliced Design methodology."
+                        ]
                     },
                     {
-                      "title": "Functionality and Appearance",
-                      "info": [
-                        {
-                          "titleL2": "Homepage",
-                          "infoL2": [
-                            "Brief information about projects, work experience, education, and personal details.",
-                            "Navigation to pages with detailed information."
-                          ]
-                        },
-                        {
-                          "titleL2": "Portal Header",
-                          "infoL2": [
+                        "title": "Tests",
+                        "info": [
                             {
-                              "titleL3": "Control Panel Block",
-                              "infoL3": [
-                                "Language selection feature.",
-                                "Functionality to print the resume on a single page.",
-                                "Implementation of theme color change."
-                              ]
-                            },
-                            {
-                              "titleL3": "Breadcrumbs",
-                              "infoL3": [
-                                "Navigation to previous sections of the website by clicking.",
-                                "Support for English and Russian languages."
-                              ]
+                                "titleL2": "Four types of tests are used in the project:",
+                                "infoL2": [
+                                    "Standard unit tests with Jest",
+                                    "Component tests with React Testing Library",
+                                    "Screenshot tests with Loki",
+                                    "E2E tests with Cypress"
+                                ]
                             }
-                          ]
-                        },
-                        {
-                          "titleL2": "Website Menu",
-                          "infoL2": [
-                            "Slider with photographs.",
-                            {
-                              "titleL3": "Contact Block",
-                              "infoL3": [
-                                "Clicking on `Contacts` opens a page with contact information.",
-                                "Interactive buttons."
-                              ]
-                            },
-                            {
-                              "titleL3": "Skills Block",
-                              "infoL3": [
-                                "Clicking on the skills header opens a page with a full list of skills.",
-                                "Clicking on a specific skill opens a page with links to projects or work experience confirming the acquisition of the skill."
-                              ]
-                            },
-                            "Responsive design allows collapsing and expanding the menu as needed."
-                          ]
-                        },
-                        {
-                          "titleL2": "Projects Page",
-                          "infoL2": [
-                            {
-                              "titleL3": "Brief Project Descriptions",
-                              "infoL3": [
-                                "Project name.",
-                                "Project information.",
-                                "Skills acquired on the project.",
-                                "Preview."
-                              ]
-                            },
-                            "Clicking on the project name opens the project page with full details."
-                          ]
-                        },
-                        {
-                          "titleL2": "Specific Project Page",
-                          "infoL2": [
-                            "Full project information.",
-                            "Functional GitHub and GitHub Pages buttons to view the repository and the project hosted on GitHub Pages.",
-                            "Slider with project screenshots.",
-                            {
-                              "titleL3": "Tags of skills acquired on the project",
-                              "infoL3": [
-                                "Clicking on a skill tag opens a page with links to projects or work experience confirming the acquisition of the skill."
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "titleL2": "Work Experience Page",
-                          "infoL2": [
-                            {
-                              "titleL3": "Brief Job Descriptions",
-                              "infoL3": [
-                                "Total time worked in the company.",
-                                "Job description.",
-                                "Skills acquired during the job."
-                              ]
-                            },
-                            "Clicking on the job title opens the page with full details."
-                          ]
-                        },
-                        {
-                          "titleL2": "Job Details Page",
-                          "infoL2": [
-                            "Full details of work responsibilities.",
-                            "Total time worked in the company.",
-                            {
-                              "titleL3": "Tags of skills acquired during the job",
-                              "infoL3": [
-                                "Clicking on a skill tag opens a page with links to projects or work experience confirming the acquisition of the skill."
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "titleL2": "Education Page",
-                          "infoL2": [
-                            "Information about education and completed courses."
-                          ]
-                        },
-                        {
-                          "titleL2": "About Me Page",
-                          "infoL2": [
-                            "Personal information."
-                          ]
-                        },
-                        {
-                          "titleL2": "Contacts Page",
-                          "infoL2": [
-                            "Page with interactive buttons for contact."
-                          ]
-                        },
-                        {
-                          "titleL2": "Skills Page",
-                          "infoL2": [
-                            "List of all skills acquired on projects.",
-                            "Clicking on a specific skill opens a page with links to projects or work experience confirming the acquisition of the skill."
-                          ]
-                        }
-                      ]
+                        ]
                     },
                     {
-                      "title": "Additional Information",
-                      "info": [
-                        "The project is implemented with support for tablet, mobile, and single-page print versions.",
-                        "The application supports various languages and provides the option to select the interface language.",
-                        "All data needed to display the resume is obtained from a JSON file."
-                      ]
+                        "title": "Storybook",
+                        "info": [
+                            "Story cases are created for each component in the project. Server requests are mocked using the storybook-addon-mock plugin."
+                        ]
+                    },
+                    {
+                        "title": "CI Pipeline and Pre-Commit Hooks",
+                        "info": [
+                            "GitHub Actions configuration is located in /.github/workflows. CI runs all types of tests, project builds, and linting. After passing tests, a report is generated for ghPages.",
+                            "Pre-commit hooks check the project with linters. Configuration is in /.husky."
+                        ]
+                    },
+                    {
+                        "title": "Data Handling",
+                        "info": [
+                            "Data interaction is implemented with Redux Toolkit. Reusable entities are normalized using EntityAdapter.",
+                            "Server requests are handled with RTK Query.",
+                            "DynamicModuleLoader is used for asynchronously connecting reducers (to avoid bundling them all together)."
+                        ]
                     }
-                  ],
+                ],
                 "screenshots": [
-                    "/cv-frontend/images/projects/CV-frontend/1.jpg",
-                    "/cv-frontend/images/projects/CV-frontend/2.jpg",
-                    "/cv-frontend/images/projects/CV-frontend/3.jpg",
-                    "/cv-frontend/images/projects/CV-frontend/4.jpg",
-                    "/cv-frontend/images/projects/CV-frontend/5.jpg",
-                    "/cv-frontend/images/projects/CV-frontend/6.jpg",
-                    "/cv-frontend/images/projects/CV-frontend/7.jpg"
+                    "/cv-frontend/images/projects/Articles/1.png",
+                    "/cv-frontend/images/projects/Articles/2.png",
+                    "/cv-frontend/images/projects/Articles/3.png",
+                    "/cv-frontend/images/projects/Articles/4.png",
+                    "/cv-frontend/images/projects/Articles/5.png",
+                    "/cv-frontend/images/projects/Articles/6.png",
+                    "/cv-frontend/images/projects/Articles/7.png",
+                    "/cv-frontend/images/projects/Articles/8.png"
                 ]
             },
             {
-                "name": "Posts-web-app",
-                "summary": "Web application with posts fetched from the JSONPlaceholder API",
+                "name": "Music Platform (PWA)",
+                "summary": "Web application for music listening",
+                "repo": "https://github.com/mspolermo/music-platform-vue",
+                "ghPage": "https://music-platform-a8axons85-mspolermos-projects.vercel.app/",
+                "important": true,
+                "skills": [
+                    {
+                        "title": "Vue",
+                        "value": [
+                            "Pinia",
+                            "Cypress",
+                            "Vitest",
+                            "Firebase"
+                        ]
+                    },
+                    "TypeScript",
+                    "Vite",
+                    "Tailwind"
+                ],
+                "description": [
+                    {
+                        "title": "About the Project",
+                        "info": "Music Platform is a web application for listening to music, developed using Vue 3, Vite, and Firebase. The project offers users an intuitive interface for managing music tracks, creating playlists, and listening to music."
+                    },
+                    {
+                        "title": "Technologies Used",
+                        "info": [
+                            "Vue 3 — a modern framework for building user interfaces.",
+                            "Vite — a tool for fast build and development.",
+                            "Tailwind CSS — a utility-first CSS framework for responsive design.",
+                            "Cypress and Vitest — for End-to-End and Unit testing.",
+                            "Firebase — a cloud platform for storing user data and music tracks, ensuring reliable and efficient data management."
+                        ]
+                    }
+                ],
+                "screenshots": [
+                    "/cv-frontend/images/projects/MusicPlatform/1.png",
+                    "/cv-frontend/images/projects/MusicPlatform/2.png",
+                    "/cv-frontend/images/projects/MusicPlatform/3.png",
+                    "/cv-frontend/images/projects/MusicPlatform/4.png"
+                ]
+            },
+            {
+                "name": "Music Platform (SSR)",
+                "summary": "A platform for music streaming",
+                "repo": "https://github.com/mspolermo/music-platform",
+                "ghPage": null,
+                "important": true,
+                "skills": [
+                    "Nest",
+                    "Next",
+                    {
+                        "title": "React",
+                        "value": [
+                            "Redux",
+                            "MaterialUI"
+                        ]
+                    },
+                    "MongoDB",
+                    "TypeScript"
+                ],
+                "description": [
+                    {
+                        "title": "About the Project",
+                        "info": "An open platform for music streaming, developed using TypeScript, NestJS, MongoDB, NextJS/ReactJS, and MaterialUI."
+                    },
+                    {
+                        "title": "Features",
+                        "info": [
+                            "Music streaming from the library.",
+                            "Modern and responsive interface.",
+                            "Song search functionality.",
+                            "Ability to add or delete songs, album images, and lyrics."
+                        ]
+                    }
+                ],
+                "screenshots": [
+                    "/cv-frontend/images/projects/MusicPlatform/1.png"
+                ]
+            },
+            {
+                "name": "Photo Gallery",
+                "summary": "Web application for viewing and adding photos",
+                "repo": "https://github.com/mspolermo/gallery",
+                "ghPage": "https://mspolermo.github.io/gallery/",
+                "important": false,
+                "skills": [
+                    {
+                        "title": "Vue",
+                        "value": [
+                            "Vuetify",
+                            "Vuex"
+                        ]
+                    },
+                    "SAAS",
+                    "TypeScript"
+                ],
+                "description": [
+                    {
+                        "title": "About the Project",
+                        "info": "A simple application for viewing and adding photos built with Vue.js using Vuex and Vue Router. Data is fetched asynchronously from the fake API JSONPlaceholder."
+                    },
+                    {
+                        "title": "Features",
+                        "info": [
+                            "The homepage displays a list of photos.",
+                            "Click on a photo to open a dialog with a full-size image and the photo title.",
+                            "Click the Add button on the homepage to upload a new photo."
+                        ]
+                    }
+                ],
+                "screenshots": [
+                    "/cv-frontend/images/projects/PhotoGallery/1.png"
+                ]
+            },            
+            {
+                "name": "Chess game",
+                "summary": "Chess game",
+                "repo": "https://github.com/mspolermo/chess-game",
+                "ghPage": null,
+                "important": false,
+                "skills": [
+                    "React",
+                    "TypeScript",
+                    "OOP"
+                ],
+                "description": [
+                    {
+                        "title": "About the project",
+                        "info": "A chess game built with class-based React"
+                    }
+                ],
+                "screenshots": [
+                    "/cv-frontend/images/projects/ChessGame/1.png",
+                    "/cv-frontend/images/projects/ChessGame/2.png",
+                    "/cv-frontend/images/projects/ChessGame/3.png"
+                ]
+            },
+            {
+                "name": "Posts-web-app (React)",
+                "summary": "A web application for posts fetched via JSONPlaceholder API",
                 "repo": "https://github.com/mspolermo/posts-web",
                 "ghPage": "https://mspolermo.github.io/posts-web/",
-                "important": true,
+                "important": false,
                 "skills": [
                     "TypeScript",
                     {
@@ -1145,54 +1803,54 @@
                             "React-bootstrap"
                         ]
                     },
-                    "Rest_API",
+                    "REST API",
                     "SCSS",
                     "Git"
                 ],
                 "description": [
                     {
                         "title": "Description",
-                        "info": "Built using React (React-bootstrap, React-router, Axios, Redux), TypeScript, SCSS"
+                        "info": "Developed using React (React-bootstrap, React-router, Axios, Redux), TypeScript, SCSS"
                     },
                     {
-                        "title": "Project Setup Instructions",
+                        "title": "Project launch instructions",
                         "info": [
-                            "Clone the repository to your computer",
-                            "Switch to the master branch using the git checkout master command in the terminal at the project root",
-                            "Run the project using the npm start command in the terminal at the project root"
+                            "Clone the repository to your PC",
+                            "Switch to the master branch using the `git checkout master` command in the terminal at the project root",
+                            "Run the project using the `npm start` command in the terminal at the project root"
                         ]
                     },
                     {
-                        "title": "Functionality and Appearance",
+                        "title": "Functionality and portal appearance",
                         "info": [
                             {
-                                "titleL2": "Home Page (List of Posts)",
+                                "titleL2": "Main page (list of posts)",
                                 "infoL2": [
                                     "Displays a list of all posts",
-                                    "Each post includes a title, text, author's avatar, and a list of comments",
-                                    "The title and text are fetched from the API",
-                                    "Clicking on the avatar leads to the User Details page",
-                                    "The list of comments is initially hidden and can be shown by clicking the Comments button. Clicking the button again hides the list",
-                                    "Each comment includes a title (email) and text",
-                                    "A header with a burger menu is present. Clicking on it reveals a navigation menu with 2 links to the Home Page (list of posts) and About Me page. It also displays the avatar, name, and email address",
-                                    "Search functionality based on the post title, with the ability to clear the search field using a cross icon",
-                                    "Sorting posts by title",
-                                    "Pagination feature is available"
+                                    "Each post consists of a title, body, author's avatar, and a list of comments",
+                                    "The title and body are fetched from the API",
+                                    "Clicking on the avatar navigates to the `User Details` page",
+                                    "The comments list is initially hidden, only a `Comments` button is available. Clicking `Comments` displays the list of comments for that post. Clicking again hides the list",
+                                    "A comment includes a title (email) and text",
+                                    "A header with a burger menu. Clicking it reveals a navigation menu on the left with links to `Main page` (post list) and `About me`, along with the avatar, name, and email",
+                                    "Search functionality for posts by title with a clear button",
+                                    "Sort posts by title",
+                                    "Pagination is available"
                                 ]
                             },
                             {
-                                "titleL2": "About Me Page",
+                                "titleL2": "About me page",
                                 "infoL2": [
-                                    "Provides some information about the author",
-                                    "Offers the option to download CV"
+                                    "Some information about the author",
+                                    "Option to download the CV"
                                 ]
                             },
                             {
-                                "titleL2": "User Details Page (Accessed by clicking on the avatar of a post)",
+                                "titleL2": "User details page (navigated via avatar click on a post)",
                                 "infoL2": [
-                                    "Displays a card with brief information about the user who authored the post",
-                                    "Shows a list of posts that belong only to the specific user",
-                                    "A 'Back' button is available, clicking on which will navigate back to the home page"
+                                    "A card showing brief user information corresponding to the post author",
+                                    "A list of posts belonging only to this user",
+                                    "A `Back` button that navigates back to the main page"
                                 ]
                             }
                         ]
@@ -1206,16 +1864,51 @@
                 ]
             },
             {
+                "name": "Posts-web-app (Vue)",
+                "summary": "A web application for viewing and adding posts",
+                "repo": "https://github.com/mspolermo/vue3-project",
+                "ghPage": null,
+                "important": false,
+                "skills": [
+                    {
+                        "title": "Vue",
+                        "value": [
+                            "Vuex",
+                            "Axios"
+                        ]
+                    },
+                    "JavaScript"
+                ],
+                "description": [
+                    {
+                        "title": "About the project",
+                        "info": "A simple application for viewing and adding posts built with Vue.js using Vuex and Vue Router. Data is fetched asynchronously from the JSONPlaceholder fake API."
+                    },
+                    {
+                        "title": "Functionality",
+                        "info": [
+                            "The main page displays a list of posts.",
+                            "Click the `Open` button to open a page with a post.",
+                            "Click the `Create post` button to add a new post.",
+                            "Click the `Delete` button to remove a post."
+                        ]
+                    }
+                ],
+                "screenshots": [
+                    "/cv-frontend/images/projects/Posts-web-app/vue.png"
+                ]
+            },
+            {
                 "name": "Sultan-web-app",
-                "summary" : "Part of an online store (product catalog, product page, shopping cart, admin page) with responsiveness",
+                "summary": "Part of an online store (product catalog, product page, cart, admin page) with responsive design",
                 "repo": "https://github.com/mspolermo/sultan-web-app",
                 "ghPage": "https://mspolermo.github.io/sultan-web-app/",
-                "important": true,
+                "important": false,
                 "skills": [
                     "TypeScript",
                     {
-                        "title": "React", 
-                        "value" : [
+                        "title": "React",
+                        "value": [
                             "React-router",
                             "Jest",
                             "React testing library"
@@ -1227,57 +1920,57 @@
                 "description": [
                     {
                         "title": "Description",
-                        "info": "Developed using React, TypeScript, and SCSS. Test coverage includes jest and react testing library."
+                        "info": "Developed using React, TypeScript, SCSS. Covered with tests using Jest and React Testing Library"
                     },
                     {
-                        "title": "Project Launch Instructions",
+                        "title": "Project launch instructions",
                         "info": [
-                            "Clone the repository to your PC.",
-                            "Switch to the master branch using the command `git checkout master` in the terminal at the project root.",
-                            "Start the project using the command `npm start` in the terminal at the project root."
+                            "Clone the repository to your PC",
+                            "Switch to the master branch using the `git checkout master` command in the terminal at the project root",
+                            "Run the project using the `npm start` command in the terminal at the project root"
                         ]
                     },
                     {
-                        "title": "Functionality and Appearance of the Portal",
+                        "title": "Functionality and portal appearance",
                         "info": [
                             {
-                                "titleL2": "Site Header",
+                                "titleL2": "Website header",
                                 "infoL2": [
-                                    "Active shopping cart icon"
+                                    "Active cart"
                                 ]
                             },
                             {
-                                "titleL2": "Product Catalog Page",
+                                "titleL2": "Product catalog page",
                                 "infoL2": [
-                                    "Product sorting (4 options: by price and by name, in ascending and descending order)",
-                                    "Filters (by price, by manufacturer, by product type (Body Care / Hand Care / Foot Care / Facial Care, etc.))",
+                                    "Product sorting (4 options: by price and name, ascending and descending)",
+                                    "Filters (by price, manufacturer, product type (Body care / Hand care / Foot care / Face care, etc.))",
                                     "Pagination buttons",
-                                    "Clicking on a product leads to the 'Product Card' page (each product has its own URL)",
-                                    "Add products to the shopping cart by clicking the 'Add to Cart' button"
+                                    "Navigate to the `Product card` page by clicking on a product (each product opens with its own URL)",
+                                    "Add a product to the cart by clicking the `Add to cart` button"
                                 ]
                             },
                             {
-                                "titleL2": "Product Card Page",
+                                "titleL2": "Product card page",
                                 "infoL2": [
-                                    "Breadcrumbs (Home - Catalog - Product Id)",
-                                    "Product image and information (data retrieved from JSON / Local Storage)",
-                                    "Add products to the shopping cart by clicking the 'Add to Cart' button"
+                                    "Breadcrumbs (Home - Catalog - Product ID)",
+                                    "Image and product information (data from JSON/Local Storage)",
+                                    "Add a product to the cart by clicking the `Add to cart` button"
                                 ]
                             },
                             {
-                                "titleL2": "Shopping Cart",
+                                "titleL2": "Cart",
                                 "infoL2": [
-                                    "The cart icon in the header updates based on user actions",
-                                    "Active +/- buttons to adjust the quantity, and 'Remove from Cart' button",
-                                    "Clicking the 'Checkout' button shows a modal 'Thank You for Your Order', and the cart is cleared"
+                                    "The header block updates based on user actions",
+                                    "Active buttons for increment/decrement and remove from cart",
+                                    "When the `Place Order` button is clicked, a `Thank you for your order` modal is displayed, and the cart is cleared"
                                 ]
                             },
                             {
-                                "titleL2": "Admin Page",
+                                "titleL2": "Admin page",
                                 "infoL2": [
-                                    "Ability to edit, add, and delete products. Data is saved to Local Storage",
-                                    "If the list is empty (all products have been deleted or from the start), it is populated from JSON (previously prepared and added to /src/goods/goodsJSON.json)",
-                                    "Ability to manage the list of product types. When adding/editing, the product type can be selected from the list"
+                                    "Edit, add, delete products and save them to localStorage",
+                                    "If the list is empty (admin deleted all or at the start), it populates from a JSON file prepared in `/src/goods/goodsJSON.json`",
+                                    "Manage product care types. When adding/editing, you can select the care type from a list"
                                 ]
                             }
                         ]
@@ -1293,10 +1986,10 @@
             },
             {
                 "name": "Github-search-repositories",
-                "summary" : "GitHub search repositories using API Github",
+                "summary": "Web application for searching GitHub repositories using the GitHub API",
                 "repo": "https://github.com/mspolermo/Github-search-repositories",
                 "ghPage": "https://mspolermo.github.io/Github-search-repositories",
-                "important": true,
+                "important": false,
                 "skills": [
                     "JavaScript",
                     "Rest_API",
@@ -1307,45 +2000,45 @@
                 "description": [
                     {
                         "title": "Description",
-                        "info": "Developed using JavaScript and SCSS. The application is built with WebPack."
+                        "info": "Built with JavaScript, SCSS. The application is bundled using WebPack."
                     },
                     {
                         "title": "Project Launch Instructions",
                         "info": [
-                            "Clone the repository to your PC.",
-                            "Switch to the master branch using the command `git checkout master` in the terminal at the project root.",
-                            "Start the project using the command `npm start` in the terminal at the project root."
+                            "Clone the repository to your PC",
+                            "Switch to the master branch using the command `git checkout master` in the terminal at the project root",
+                            "Run the project using the command `npm start` in the terminal at the project root"
                         ]
                     },
                     {
-                        "title": "Functionality and Appearance of the Portal",
+                        "title": "Functionality and Portal Appearance",
                         "info": [
-                            "The form is triggered by the `Search` button or by pressing the Enter key.",
-                            "The list displays only the first 10 found repositories.",
+                            "The form works by clicking the `Search` button or pressing the Enter key.",
+                            "The results list shows only the first 10 repositories found.",
                             {
-                                "titleL2": "Input field (for substring search):",
+                                "titleL2": "Input field (for search substring):",
                                 "infoL2": [
                                     "If there are not enough characters, an error message is displayed."
                                 ]
                             },
-                            "The search results display the repository name, the used language, visibility, repository description, avatar, nickname, and repository owner's ID.",
+                            "The search results display the repository name, programming language, visibility, description, avatar, username, and the repository owner's ID.",
                             {
-                                "titleL2": "The name is also a link to the corresponding Git repository.",
+                                "titleL2": "Repository names also serve as links to the corresponding GitHub repositories:",
                                 "infoL2": [
                                     "Links open in a new browser tab."
                                 ]
                             },
                             {
-                                "titleL2": "Additional Notes",
+                                "titleL2": "Additional features:",
                                 "infoL2": [
-                                    "The list is initially empty.",
-                                    "If nothing is found for the query, the message `Sorry, nothing found` is displayed instead of the list.",
-                                    "In case of API request errors, the message `ERROR - Something went wrong` is displayed instead of the list."
+                                    "Initially, the list is empty.",
+                                    "If no results are found, a message `Sorry, nothing found` is displayed instead of the list.",
+                                    "In case of an API error, a message `ERROR - Something went wrong` is displayed instead of the list."
                                 ]
                             }
                         ]
                     }
-                ],                
+                ],
                 "screenshots": [
                     "/cv-frontend/images/projects/Github-search-repositories/1.jpg",
                     "/cv-frontend/images/projects/Github-search-repositories/2.jpg",
@@ -1354,7 +2047,7 @@
             },
             {
                 "name": "News-web",
-                "summary" : "Implementation of a news website page with a functional comments block.",
+                "summary": "Implementation of a news site page with a functional comment section",
                 "repo": "https://github.com/mspolermo/News-web",
                 "ghPage": "https://mspolermo.github.io/News-web/",
                 "important": false,
@@ -1366,82 +2059,82 @@
                 ],
                 "description": [
                     {
-                      "title": "Description",
-                      "info": "Developed using JavaScript and SCSS. The application is built with WebPack."
+                        "title": "Description",
+                        "info": "Built with JavaScript, SCSS. The application is bundled using WebPack."
                     },
                     {
-                      "title": "Project Setup Instructions",
-                      "info": [
-                        "Clone the repository to your PC",
-                        "Switch to the master branch using the `git checkout master` command in the terminal at the root of the project",
-                        "Run with the `npm start` command in the terminal at the root of the project"
-                      ]
+                        "title": "Project Launch Instructions",
+                        "info": [
+                            "Clone the repository to your PC",
+                            "Switch to the master branch using the command `git checkout master` in the terminal at the project root",
+                            "Run the project using the command `npm start` in the terminal at the project root"
+                        ]
                     },
                     {
-                      "title": "Functionality",
-                      "info": [
-                        "A comment is created by clicking the `Submit` button or pressing the Enter key",
-                        {
-                          "titleL2": "Validation. If the form is filled incorrectly, an error message is displayed next to the field",
-                          "infoL2": [
+                        "title": "Functionality",
+                        "info": [
+                            "A comment is created by clicking the `Submit` button or pressing the Enter key.",
                             {
-                              "titleL3": "Commentator's Name",
-                              "infoL3": [
-                                "Minimum length of 2 letters",
-                                "Numbers and special characters are not allowed"
-                              ]
+                                "titleL2": "Validation: If the form is filled out incorrectly, an error message is displayed next to the field.",
+                                "infoL2": [
+                                    {
+                                        "titleL3": "Commenter Name",
+                                        "infoL3": [
+                                            "Minimum length of 2 characters.",
+                                            "Numbers and special characters are not allowed."
+                                        ]
+                                    },
+                                    {
+                                        "titleL3": "Comment Text",
+                                        "infoL3": [
+                                            "Minimum length of 1 character."
+                                        ]
+                                    },
+                                    "The error disappears as you continue typing in the input field."
+                                ]
                             },
-                            {
-                              "titleL3": "Comment Text",
-                              "infoL3": [
-                                "Minimum length of 1 character"
-                              ]
-                            },
-                            "The error message disappears when continuing to type in the input field"
-                          ]
-                        },
-                        "Comments can be deleted by clicking the delete button (trash icon)",
-                        "Likes can be added or removed from comments",
-                        "When adding a new comment, the comment counters at the top of the page and in the comments block are updated automatically"
-                      ]
+                            "Comments can be deleted by clicking the delete button (trash can icon).",
+                            "Comments can be liked or unliked.",
+                            "When a new comment is added, the comment counters at the top of the page and in the comment block update automatically."
+                        ]
                     },
                     {
-                      "title": "Appearance",
-                      "info": [
-                        {
-                          "titleL2": "Comment Submission Form:",
-                          "infoL2": [
-                            "Commentator's Name",
-                            "Comment Text",
+                        "title": "Appearance",
+                        "info": [
                             {
-                              "titleL3": "Option to specify the date or leave it empty",
-                              "infoL3": [
-                                "If the date is not specified, the current date is automatically inserted"
-                              ]
+                                "titleL2": "Comment addition form:",
+                                "infoL2": [
+                                    "Commenter name.",
+                                    "Comment text.",
+                                    {
+                                        "titleL3": "Option to specify a date or leave it empty:",
+                                        "infoL3": [
+                                            "If no date is provided, the current date is automatically set."
+                                        ]
+                                    },
+                                    "Submit button."
+                                ]
                             },
-                            "Submit Button"
-                          ]
-                        },
-                        {
-                          "titleL2": "List of Comments:",
-                          "infoL2": [
-                            "Commentator's Name",
-                            "Comment Text",
                             {
-                              "titleL3": "Date and Time of Addition",
-                              "infoL3": [
-                                "If the current date: `Today, 16:23` (keyword - 'Today', time is automatically added)",
-                                "If the date is yesterday: `Yesterday, 18:39` (keyword - 'Yesterday', random time is generated and automatically inserted)",
-                                "Other dates are displayed in the `year-month-day` format, random time is generated and automatically inserted"
-                              ]
-                            },
-                            "Delete Comment Button (trash icon)",
-                            "Like Heart Icon"
-                          ]
-                        }
-                      ]
+                                "titleL2": "Comment list:",
+                                "infoL2": [
+                                    "Commenter name.",
+                                    "Comment text.",
+                                    {
+                                        "titleL3": "Date and time of submission:",
+                                        "infoL3": [
+                                            "If the current date: `Today, 16:23` (key term - today, time is auto-filled).",
+                                            "If the previous day: `Yesterday, 18:39` (key term - yesterday, random time is generated and auto-filled).",
+                                            "Other dates are displayed as `year-month-day`, with random times generated and auto-filled."
+                                        ]
+                                    },
+                                    "Delete comment button (trash can icon).",
+                                    "Like button (heart icon)."
+                                ]
+                            }
+                        ]
                     }
-                ],                  
+                ],
                 "screenshots": [
                     "/cv-frontend/images/projects/News-web/1.jpg",
                     "/cv-frontend/images/projects/News-web/2.jpg",
@@ -1451,8 +2144,7 @@
             },
             {
                 "name": "Evklid-web",
-                "summary" : 
-                "Pixel-perfect layout of the page according to the design, with implementation of responsiveness, slider, and accordion.",
+                "summary": "Pixel-perfect layout of a page based on a design, featuring adaptive design, a slider, and an accordion",
                 "repo": "https://github.com/mspolermo/Evklid-web",
                 "ghPage": "https://mspolermo.github.io/Evklid-web/",
                 "important": false,
@@ -1466,24 +2158,24 @@
                 ],
                 "description": [
                     {
-                      "title": "Description",
-                      "info": "Developed using SCSS, JavaScript, Swiper, jQuery (Accordion). The project is built with Webpack."
+                        "title": "Description",
+                        "info": "Developed using SCSS, JavaScript, Swiper, and jQuery (Accordion). The project is bundled with WebPack."
                     },
                     {
-                      "title": "Instructions to Run the Project",
-                      "info": [
-                        "Clone the repository to your PC",
-                        "Switch to the master branch using the command 'git checkout master' in the terminal at the root of the project",
-                        "Start the project using the command 'npm start' in the terminal at the root of the project"
-                      ]
+                        "title": "Project Launch Instructions",
+                        "info": [
+                            "Clone the repository to your PC.",
+                            "Switch to the master branch using the command `git checkout master` in the terminal at the project root.",
+                            "Run the project using the command `npm start` in the terminal at the project root."
+                        ]
                     },
                     {
-                      "title": "Functionality and Appearance",
-                      "info": [
-                        "Animation and highlighting on hover/focus for buttons, forms, and links",
-                        "Implemented slider, accordion, and tabs",
-                        "In the tablet and mobile versions of the website, the site menu opens by clicking on the burger menu button"
-                      ]
+                        "title": "Functionality and Appearance",
+                        "info": [
+                            "Animations and highlighting on hover/focus for buttons, forms, and links.",
+                            "Implemented slider, accordion, and tabs.",
+                            "In the tablet and mobile versions, the site menu opens via a burger-menu button."
+                        ]
                     }
                 ],
                 "screenshots": [
@@ -1493,7 +2185,7 @@
                     "/cv-frontend/images/projects/Evklid-web/4.jpg",
                     "/cv-frontend/images/projects/Evklid-web/5.jpg"
                 ]
-            }
+            }            
         ]
     },
     "works" : {
@@ -1528,11 +2220,10 @@
                 ],
                 "descriptionShort": [
                     "С нуля и до релиза разрабатывал высоконагруженный продукт для крупных клиентов компании (РЕСО, Ренессанс, Т-банк и пр.).",
-                    "Реализовал интерактивный редактор повреждений (референс - визуальная часть draw.io): по клику на автозапчасти в GIF-канвасе и SVG-изображениях пользователи могут добавлять повреждения, которые автоматически отмечаются цветами на изображениях. С нуля собрал формы редактора и отображения уже добавленных повреждений. Добавил табличное представление всех деталей и их поиск. Внедрил сохранение всего текущего состояния взаимодействия в query-параметрах, что решило задачу при шаринге ссылки открывать редактор с выбранными частями изображения и активностью редактора другого пользователя.",
+                    "Реализовал интерактивный canvas редактор повреждений (референс - визуальная часть draw.io)",
                     "Разработал функционал для работы с формами: создание и редактирование страховых дел.",
                     "Создал админ-панель для управления клиентами, квотами, биллингами и другими сущностями (добавление, просмотр, редактирование).",
                     "Реализовал обширный функционал для работы со списком страховых дел: отчеты, перенаправление, отклонение, возвраты, отладочные функции, сортировки и прочее.",
-                    "Разделял большие монолитные компоненты на самостоятельные модули, улучшив читаемость, тестируемость и повторное использование кода.",
                     "Значительно расширил и оптимизировал UI-kit компании, внедрив новые компоненты и улучшив существующие.",
                     "Развивал тестирование приложений (скриншотные и e2e тесты на Playwright), что снизило количество ошибок на этапе разработки.",
                     "Участвовал в проектировании и внедрении новой архитектуры проектов."
@@ -1579,10 +2270,8 @@
                 ],
                 "descriptionShort": [
                     "Поддерживал и развивал Frontend-часть внутреннего документооборота военного завода (критическая инфраструктура оборонного предприятия, 5000+ пользователей). Разрабатывал формы, шаблоны и различные компоненты с референсальным визуалом общей дизайн-системы (без привлечения дизайнера).",
-                    "Занимался глобальным переводом текущего Legacy-кода (JS, классовый React) на современный стэк (TypeScript, React Hooks), чтобы улучшить читаемость и понизить порог входа на проект. Самостоятельно разобрался и покрыл код документацией.",
+                    "Занимался глобальным переводом текущего Legacy-кода (JS, классовый React) на современный стэк (TypeScript, React Hooks). Покрыл код документацией.",
                     "Развивал клиентский функционал по работе со служебными записками и приказами: создание, одобрение, подтверждение, просмотр истории и пр.",
-                    "Перенастроил webpack конфигурацию, что значительно ускорило сборку проекта, а также сократило время релиза.",
-                    "Верстал шаблоны и черновики документов на cshtml. Брал на себя часть разработки бизнес-логики на бэкенде (C#).",
                     "Разработал и внедрил монорепозиторий с кастомными UI-компонентами, хуками и хелперами. Настроил EsLint, Prettier, Storybook и переиспользуемый сборщик.",
                     "Писал служебные скрипты и плагины для браузера на ванильном JavaScript."
                 ],
@@ -1619,16 +2308,18 @@
                     "Problem-solving"
                 ],
                 "descriptionShort": [
-                    "Разрабатывал и поддерживал веб-приложения, используя современные технологии, включая TypeScript, React, Redux, SCSS и другие.",
-                    "Участвовал во всех этапах разработки проектов, включая анализ требований, проектирование интерфейсов, написание и отладку кода, тестирование и развертывание приложений.",
-                    "Оптимизировал пользовательский интерфейс для обеспечения высокой отзывчивости приложений.",
-                    "Разрабатывал адаптивный и кросс-браузерный интерфейс, применяя современные методы верстки и CSS-процессоры.",
-                    "Взаимодействовал с API и интегрировал сторонние сервисы для получения и обработки данных.",
-                    "Оптимизировал и улучшал существующий код, исправлял ошибки и устранял проблемы, с целью повышения качества и производительности приложений.",
-                    "Обменивался опытом и применял лучшие практики разработки для улучшения качества кода и эффективности работы.",
-                    "Исследовал новые технологии, фреймворки и инструменты разработки для постоянного совершенствования своих навыков."
+                    "Создал и внедрил новые карточки номеров для отелей в разных странах, учитывая культурные и региональные особенности, что значительно улучшило пользовательский опыт и восприятие бренда.",
+                    "Внедрил интернационализацию в проект (i18n, английский язык), что позволило привлечь англоговорящих пользователей.",
+                    "Реализовал ряд оптимизаций, направленных на ускорение загрузки и работы приложения (код-сплиттинг, lazy loading, кэширование и сжатие изображений).",
+                    "Создавал/обновлял стори-кейсы и внутренний UI-kit компании. Верстал по макетам Figma. Писал и поддерживал unit/e2e/скриншотные тесты на RTL, Jest, Cypress и Loki."
                 ],
                 "descriptionFull": [
+                    "Реализовал обновление данных в реальном времени, обеспечив пользователям доступ к актуальной информации о номерах и услугах.",
+                    "Создал и внедрил новые карточки номеров для отелей в разных странах, учитывая культурные и региональные особенности, что значительно улучшило пользовательский опыт и восприятие бренда.",
+                    "Внедрил интернационализацию в проект (i18n, английский язык), что позволило привлечь англоговорящих пользователей.",
+                    "Реализовал ряд оптимизаций, направленных на ускорение загрузки и работы приложения (код-сплиттинг, lazy loading, кэширование и сжатие изображений).",
+                    "Создавал/обновлял стори-кейсы и внутренний UI-kit компании. Верстал по макетам Figma.",
+                    "Писал и поддерживал unit/e2e/скриншотные тесты на RTL, Jest, Cypress и Loki.",
                     "Участие в разработке и поддержке веб-приложений с использованием современных технологий, включая TypeScript, React, Redux, HTML, CSS и другие.",
                     "Активное участие во всех этапах разработки проектов: анализ требований, проектирование интерфейсов, написание и отладка кода, тестирование и развертывание приложений.",
                     "Оптимизация пользовательского интерфейса для обеспечения отзывчивости приложений.",
@@ -1760,6 +2451,7 @@
             }        
         ],
         "en" : [
+
             {
                 "title": "Frontend Developer (React)",
                 "company": "SpectrumData",
@@ -1789,25 +2481,24 @@
                     "Problem-solving"
                 ],
                 "descriptionShort": [
-                    "Developed a high-load product from scratch to release for major company clients (RESO, Renaissance, T-Bank, etc.).",
-                    "Implemented an interactive damage editor (visual reference: draw.io): enabled users to add damages by clicking on car parts in a GIF canvas and SVG images, with damages automatically marked by color. Built the editor forms and damage display from scratch. Added a tabular view for parts with a search feature. Implemented state-saving in query parameters, solving the issue of link sharing by allowing the editor to open with selected image parts and user activity preserved.",
+                    "Developed a high-load product from scratch to release for the company's major clients (RESO, Renaissance, T-Bank, etc.).",
+                    "Implemented an interactive damage canvas editor (reference: the visual part of draw.io).",
                     "Developed functionality for working with forms: creating and editing insurance cases.",
                     "Created an admin panel to manage clients, quotas, billings, and other entities (add, view, edit).",
-                    "Implemented extensive functionality for working with insurance case lists: reports, redirects, rejections, returns, debug functions, sorting, etc.",
-                    "Refactored large monolithic components into independent modules, improving readability, testability, and reusability.",
-                    "Significantly expanded and optimized the company UI-kit by adding new components and improving existing ones.",
-                    "Enhanced application testing (screenshot and e2e tests using Playwright), reducing bugs during development.",
+                    "Implemented extensive functionality for working with insurance case lists: reports, redirects, rejections, returns, debugging features, sorting, and more.",
+                    "Significantly expanded and optimized the company's UI-kit by introducing new components and improving existing ones.",
+                    "Enhanced application testing (screenshot and e2e tests with Playwright), reducing the number of development-stage bugs.",
                     "Participated in designing and implementing a new project architecture."
                 ],
                 "descriptionFull": [
-                    "Developed a high-load product from scratch to release for major company clients (RESO, Renaissance, T-Bank, etc.).",
-                    "Implemented an interactive damage editor (visual reference: draw.io): enabled users to add damages by clicking on car parts in a GIF canvas and SVG images, with damages automatically marked by color. Built the editor forms and damage display from scratch. Added a tabular view for parts with a search feature. Implemented state-saving in query parameters, solving the issue of link sharing by allowing the editor to open with selected image parts and user activity preserved.",
+                    "Developed a high-load product from scratch to release for the company's major clients (RESO, Renaissance, T-Bank, etc.).",
+                    "Implemented an interactive damage editor (reference: the visual part of draw.io). Users could click on car parts in GIF canvases and SVG images to add damage, which was automatically marked with colors on the images. Built editor forms and displayed added damage from scratch. Added a tabular view of all parts with search functionality. Enabled saving the entire interaction state in query parameters, solving the issue of opening the editor with selected parts and user activity when sharing links.",
                     "Developed functionality for working with forms: creating and editing insurance cases.",
                     "Created an admin panel to manage clients, quotas, billings, and other entities (add, view, edit).",
-                    "Implemented extensive functionality for working with insurance case lists: reports, redirects, rejections, returns, debug functions, sorting, etc.",
-                    "Refactored large monolithic components into independent modules, improving readability, testability, and reusability.",
-                    "Significantly expanded and optimized the company UI-kit by adding new components and improving existing ones.",
-                    "Enhanced application testing (screenshot and e2e tests using Playwright), reducing bugs during development.",
+                    "Implemented extensive functionality for working with insurance case lists: reports, redirects, rejections, returns, debugging features, sorting, and more.",
+                    "Refactored large monolithic components into independent modules, improving code readability, testability, and reusability.",
+                    "Significantly expanded and optimized the company's UI-kit by introducing new components and improving existing ones.",
+                    "Enhanced application testing (screenshot and e2e tests with Playwright), reducing the number of development-stage bugs.",
                     "Participated in designing and implementing a new project architecture."
                 ]
             },
@@ -1840,22 +2531,20 @@
                     "Problem-solving"
                 ],
                 "descriptionShort": [
-                    "Maintained and developed the Frontend part of the internal document management system for a military plant (critical infrastructure with 5000+ users). Developed forms, templates, and components based on a unified design system without involving a designer.",
-                    "Migrated legacy code (JS, class-based React) to a modern stack (TypeScript, React Hooks) to improve readability and lower the project entry barrier. Independently documented the code.",
-                    "Developed client-side features for working with memos and orders: creation, approval, confirmation, history viewing, etc.",
-                    "Reconfigured Webpack, significantly speeding up project builds and reducing release time.",
-                    "Designed templates and drafts for documents in Cshtml. Contributed to backend business logic development using C#.",
-                    "Developed and implemented a monorepository with custom UI components, hooks, and helpers. Configured EsLint, Prettier, Storybook, and reusable bundlers.",
-                    "Created utility scripts and browser plugins using vanilla JavaScript."
+                    "Maintained and developed the frontend part of the internal document management system of a military plant (critical defense infrastructure with 5000+ users). Developed forms, templates, and various components referencing the design system without involving a designer.",
+                    "Globally migrated legacy code (JS, class-based React) to a modern stack (TypeScript, React Hooks). Documented the code.",
+                    "Enhanced client functionality for working with service notes and orders: creation, approval, confirmation, viewing history, etc.",
+                    "Developed and implemented a monorepo with custom UI components, hooks, and helpers. Configured EsLint, Prettier, Storybook, and a reusable bundler.",
+                    "Wrote utility scripts and browser plugins using vanilla JavaScript."
                 ],
                 "descriptionFull": [
-                    "Maintained and developed the Frontend part of the internal document management system for a military plant (critical infrastructure with 5000+ users). Developed forms, templates, and components based on a unified design system without involving a designer.",
-                    "Migrated legacy code (JS, class-based React) to a modern stack (TypeScript, React Hooks) to improve readability and lower the project entry barrier. Independently documented the code.",
-                    "Developed client-side features for working with memos and orders: creation, approval, confirmation, history viewing, etc.",
-                    "Reconfigured Webpack, significantly speeding up project builds and reducing release time.",
-                    "Designed templates and drafts for documents in Cshtml. Contributed to backend business logic development using C#.",
-                    "Developed and implemented a monorepository with custom UI components, hooks, and helpers. Configured EsLint, Prettier, Storybook, and reusable bundlers.",
-                    "Created utility scripts and browser plugins using vanilla JavaScript."
+                    "Maintained and developed the frontend part of the internal document management system of a military plant (critical defense infrastructure with 5000+ users). Developed forms, templates, and various components referencing the design system without involving a designer.",
+                    "Globally migrated legacy code (JS, class-based React) to a modern stack (TypeScript, React Hooks) to improve readability and lower the project entry barrier. Independently documented the code.",
+                    "Enhanced client functionality for working with service notes and orders: creation, approval, confirmation, viewing history, etc.",
+                    "Reconfigured the Webpack setup, significantly speeding up the project's build process and reducing release times.",
+                    "Created templates and draft documents using Cshtml. Took part in developing backend business logic (C#).",
+                    "Developed and implemented a monorepo with custom UI components, hooks, and helpers. Configured EsLint, Prettier, Storybook, and a reusable bundler.",
+                    "Wrote utility scripts and browser plugins using vanilla JavaScript."
                 ]
             },
             {
@@ -1881,26 +2570,28 @@
                     "Problem-solving"
                 ],
                 "descriptionShort": [
-                    "Developed and maintained web applications using modern technologies, including TypeScript, React, Redux, SCSS, and others.",
-                    "Participated in all stages of project development, including requirements analysis, interface design, coding, debugging, testing, and application deployment.",
-                    "Optimized user interfaces to ensure high application responsiveness.",
-                    "Developed adaptive and cross-browser interfaces using modern layout methods and CSS preprocessors.",
-                    "Interacted with APIs and integrated third-party services for data retrieval and processing.",
-                    "Optimized and improved existing code, fixed bugs, and addressed issues to enhance application quality and performance.",
-                    "Shared knowledge and applied best development practices to improve code quality and work efficiency.",
-                    "Explored new technologies, frameworks, and tools for continuous skill improvement."
+                    "Designed and implemented new room cards for hotels in different countries, considering cultural and regional specifics, significantly improving user experience and brand perception.",
+                    "Implemented project internationalization (i18n, English language), attracting English-speaking users.",
+                    "Introduced several optimizations to accelerate app loading and performance (code-splitting, lazy loading, caching, and image compression).",
+                    "Created/updated story cases and the company's internal UI-kit. Developed layouts based on Figma designs. Wrote and maintained unit/e2e/screenshot tests using RTL, Jest, Cypress, and Loki."
                 ],
                 "descriptionFull": [
-                    "Participated in the development and support of web applications using modern technologies, including TypeScript, React, Redux, HTML, CSS, and others.",
-                    "Actively involved in all stages of project development: requirements analysis, interface design, coding, debugging, testing, and application deployment.",
-                    "Optimized user interfaces to ensure responsiveness.",
+                    "Implemented real-time data updates, providing users with up-to-date information about rooms and services.",
+                    "Designed and implemented new room cards for hotels in different countries, considering cultural and regional specifics, significantly improving user experience and brand perception.",
+                    "Implemented project internationalization (i18n, English language), attracting English-speaking users.",
+                    "Introduced several optimizations to accelerate app loading and performance (code-splitting, lazy loading, caching, and image compression).",
+                    "Created/updated story cases and the company's internal UI-kit. Developed layouts based on Figma designs.",
+                    "Wrote and maintained unit/e2e/screenshot tests using RTL, Jest, Cypress, and Loki.",
+                    "Participated in the development and maintenance of web applications using modern technologies, including TypeScript, React, Redux, HTML, CSS, and others.",
+                    "Actively engaged in all stages of project development: requirements analysis, interface design, coding and debugging, testing, and application deployment.",
+                    "Optimized user interfaces to ensure responsive applications.",
                     "Developed adaptive and cross-browser interfaces using modern layout methods and CSS preprocessors.",
-                    "Interacted with APIs and integrated third-party services for data retrieval and processing.",
-                    "Optimized and improved existing code, fixed bugs, and addressed issues to enhance application quality and performance.",
-                    "Shared knowledge and applied best development practices to improve code quality and work efficiency.",
-                    "Explored new technologies, frameworks, and tools for continuous skill improvement."
+                    "Interacted with APIs and integrated third-party services to retrieve and process data.",
+                    "Optimized and improved existing code, fixed bugs, and resolved issues to enhance application quality and performance.",
+                    "Shared knowledge and applied best practices to improve code quality and work efficiency.",
+                    "Researched new technologies, frameworks, and development tools to continuously improve skills."
                 ]
-            },            
+            },
             {
                 "title": "System engineer",
                 "company": "SAP",
@@ -2085,7 +2776,7 @@
     },
     "about" : {
         "ru": [
-            "Уровень Английского языка около Upper-intermediate, EF SET Quick Check - 75.",
+            "Английский язык Upper-intermediate (B2), EF SET Quick Check - 75.",
             "Знание SQL на базовом уровне.",
             "Знание базовой теории тестирования.",
             {
@@ -2113,7 +2804,7 @@
             "Имеется автомобиль и права категории B."
         ],
         "en" : [
-            "English level is close to Upper-intermediate, EF SET Quick Check - 75.",
+            "English level - Upper-intermediate (B2), EF SET Quick Check - 75.",
             "Basic knowledge of SQL.",
             "Knowledge of testing theory.",
             {

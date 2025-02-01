@@ -178,12 +178,10 @@ const ListMapper:FC<ListMapperProps> = ({type, name}) => {
 
                     { (name === 'about') && <ul className={classes.list__list}>
                         <AboutBlock point={user.about.ru[0]}/>
-                        <AboutBlock point={user.about.ru[1]}/>
                     </ul>}
 
                     { (name === 'aboutEn') && <ul className={classes.list__list}>
                         <AboutBlock point={user.about.en[0]}/>
-                        <AboutBlock point={user.about.en[1]}/>
                     </ul>}
 
                 </div>
