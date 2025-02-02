@@ -58,6 +58,7 @@
                     "Axios",
                     "I18n",
                     "Jest",
+                    "JWT",
                     "React testing library",
                     "React-router",
                     "React-bootstrap"
@@ -76,7 +77,9 @@
                 "title": "Nest", 
                 "value" : [
                     "Swagger",
-                    "Sequelize"
+                    "Sequelize",
+                    "PostgreSQL",
+                    "MongoDB"
                 ]
             },
             "Next",
@@ -119,6 +122,7 @@
                     "MobX",
                     "Swagger",
                     "Sequelize",
+                    "JWT",
                     "TypeScript"
                 ],
                 "description" : [
@@ -138,15 +142,18 @@
                         "title": "Клиентская часть:",
                         "info": [
                             "Визуализация организационных структур.",
-                            "Удобный интерфейс для создания, редактирования и просмотра данных."
+                            "Удобный интерфейс для создания, редактирования и просмотра данных о сотрудниках, пользователях и отделов предприятия.",
+                            "Архитектурный подход Feature Sliced Design",
+                            "Storybook для UI-KIT"
                         ]
                     },
                     {
                         "title": "Серверная часть:",
                         "info": [
                             "API для обработки данных организационных структур.",
-                            "Авторизация и аутентификация.",
-                            "Работа с базой данных."
+                            "Авторизация и аутентификация на JWT-токенах.",
+                            "Работа с базой данных Sequelize/PostgreSQL.",
+                            "Документация эндпойнтов на Swagger"
                         ]
                     },
                     {
@@ -195,7 +202,7 @@
                         "info": [
                             "Получение/обновление уникальной ссылки на сайты с фильмами без прав на прокат;",
                             "Отображение актуальных сервисов такси в Полевском;",
-                            "Мини-приложение Расписание автобусов с возможностью посмотреть расписание/обратное расписание автобусов Полевской - Екатеринбург;",
+                            "Мини-приложение Расписание автобусов с возможностью посмотреть расписание/обратное расписание автобусов Полевской - Екатеринбург (версии на React и VUE). Парсинг данных на Express;",
                             "Пожаловаться на работу бота/предложить функционал."
                         ]
                     },
@@ -420,6 +427,7 @@
                             "Axios",
                             "I18n",
                             "Storybook",
+                            "JWT",
                             "React-router",
                             "React testing library"
                         ]
@@ -1169,6 +1177,7 @@
                     "MobX",
                     "Swagger",
                     "Sequelize",
+                    "JWT",
                     "TypeScript"
                 ],
                 "description": [
@@ -1470,6 +1479,7 @@
                             "Axios",
                             "I18n",
                             "Storybook",
+                            "JWT",
                             "React-router",
                             "React testing library"
                         ]
@@ -2367,7 +2377,7 @@
                 ]
             },
             {
-                "title": "Системный администратор",
+                "title": "Программист",
                 "company": "ЦСПСиД",
                 "companyEn": "CSPSiD",
                 "start": "06.2014",
@@ -2380,6 +2390,7 @@
                     "Customer orientation"
                 ],
                 "descriptionShort": [
+                    "Развивал и поддерживал сайт компании - HTML, CSS, JavaScript",
                     "Администрировал Windows Server 2008 (AD, FTP, Backup), VipNet, SecretNet, ИССОН.",
                     "Обслуживал и организовывал рабочие места сотрудников компании.",
                     "Осуществлял поддержку и обучение пользователей."
@@ -2394,33 +2405,6 @@
                     "Контроль своевременной установки всех необходимых обновлений для программного обеспечения.",
                     "Мелкий ремонт копировально-множительной техники (устранение замятий бумаги, замена батарей ИБП и т.п.).",
                     "Windows Server 2008 (AD, FTP, Backup), VipNet, SecretNet, ИССОН"
-                ]
-            },
-            {
-                "title": "Специалист тендерного отдела",
-                "company": "Онлайн",
-                "companyEn": "Online",
-                "start": "10.2017",
-                "finish": "01.2018",
-                "important" : false,
-                "skills": [
-                    "Problem-solving",
-                    "Time management",
-                    "Customer orientation"
-                ],
-                "descriptionShort": [
-                    "Проектировал IT инфраструктуру предприятий и внедрял решения.",
-                    "Занимался подбором и закупкой оборудования, комплектующих, софта.",
-                    "Составлял ТЗ в соответствии с законами № 44-ФЗ и № 223-ФЗ."
-                ],
-                "descriptionFull": [
-                    "Проектирование IT инфраструктуры предприятия и внедрение решений.",
-                    "Подбор и закупка оборудования, комплектующих, софта.",
-                    "Составление ТЗ в соответствии с законами № 44-ФЗ и № 223-ФЗ.",
-                    "Ввод в эксплуатацию оборудования.",
-                    "Предупреждение и устранение аварий.",
-                    "Техническая поддержка пользователей.",
-                    "Работа в 1C 8.3"
                 ]
             },
             {
@@ -2451,7 +2435,6 @@
             }        
         ],
         "en" : [
-
             {
                 "title": "Frontend Developer (React)",
                 "company": "SpectrumData",
@@ -2629,7 +2612,7 @@
                 ]
             },
             {
-                "title": "System Administrator",
+                "title": "Developer",
                 "company": "CSPSiD",
                 "companyEn": "CSPSiD",
                 "start": "06.2014",
@@ -2642,6 +2625,7 @@
                     "Emotional control"
                 ],
                 "descriptionShort": [
+                    "Developed company's website - HTML, CSS, JavaScript",
                     "Administered Windows Server 2008 (AD, FTP, Backup), VipNet, SecretNet, ISSON.",
                     "Maintained and organized workstations for company employees.",
                     "Provided user support and training."
@@ -2655,33 +2639,6 @@
                     "Ensuring timely installation of all necessary software updates.",
                     "Minor repairs of copiers and multipliers (paper jams, replacement of UPS batteries, etc.).",
                     "Windows Server 2008 administration (AD, FTP, Backup), VipNet, SecretNet, ISSON."
-                ]
-            },
-            {
-                "title": "Tender Specialist",
-                "company": "Online",
-                "companyEn": "Online",
-                "start": "10.2017",
-                "finish": "01.2018",
-                "important" : false,
-                "skills": [
-                    "Problem-solving",
-                    "Time management",
-                    "Customer orientation"
-                ],
-                "descriptionShort": [
-                    "Designed IT infrastructure for enterprises and implemented solutions.",
-                    "Conducted equipment, components, and software selection and procurement.",
-                    "Prepared technical specifications in accordance with the laws of Federal Law 44."
-                ],
-                "descriptionFull": [
-                    "Designing IT infrastructure for the enterprise and implementing solutions.",
-                    "Equipment, components, and software selection and procurement.",
-                    "Preparing technical specifications in accordance with Federal Law 44.",
-                    "Commissioning of equipment.",
-                    "Preventing and resolving equipment failures.",
-                    "Providing technical support to users.",
-                    "Working with 1C 8.3."
                 ]
             },
             {
