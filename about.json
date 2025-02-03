@@ -8,8 +8,8 @@
         "/cv-frontend/images/avatars/photo1.jpg"
     ],
     "summary" : {
-        "ru": "Специализируюсь на создании SPA/SSR/PWA с нуля и их поддержке. Увлекаюсь разработкой telegram-ботов и сервисов. Имею бэкграунд работы в международной IT-корпорации SAP (4 года) на позиции Location Responsible (системный администратор / IT-Support 2 line / тестировщик). TypeScript. Могу в бэк (Node.js, Nest.js, Express, MongoDB, PostgreSQL, MySQL, Firebase), но ближе по душе фронт (React, Vue).",
-        "en": "Before professional development worked at the international IT corporation SAP (4 years) in the position of Location Responsible (system administrator / IT support 2nd line / coordinator). In the field of programming, I tried my hand at Backend development (Node.js, Nest.js, Express, MongoDB, PostgreSQL, MySQL, Firebase), but realized that Frontend (React, Vue) was more to my liking. Specializes both in creating SPA/SSR/PWA from scratch and supporting them, as well as in developing telegram bots and services."
+        "ru": "Специализируюсь на создании SPA/SSR/PWA с нуля и их поддержке. Увлекаюсь разработкой telegram-ботов и сервисов. Могу в бэк на Node.js и TypeScript (Nest.js, Express.js, MongoDB, PostgreSQL, MySQL, Firebase), но ближе по душе фронт (React, Vue).",
+        "en": "I specialize in creating SPA/SSR/PWA from scratch and maintaining them. I'm passionate about developing Telegram bots and services. I can handle backend development with Node.js and TypeScript (Nest.js, Express.js, MongoDB, PostgreSQL, MySQL, Firebase), but frontend development (React, Vue) is closer to my heart."
     },
     "contacts": [
         {
@@ -2229,17 +2229,16 @@
                     "Problem-solving"
                 ],
                 "descriptionShort": [
-                    "С нуля и до релиза разрабатывал высоконагруженный продукт для крупных клиентов компании (РЕСО, Ренессанс, Т-банк и пр.).",
+                    "Со старта до релиза разрабатывал флагманский продукт для крупных клиентов компании (РЕСО, Ренессанс, Т-банк и пр.). Суть приложения - импортозамещение Audatex (полный рассчет ремонтых работ и трудозатрат для автомобильных страховых компаний).",
                     "Реализовал интерактивный canvas редактор повреждений (референс - визуальная часть draw.io)",
                     "Разработал функционал для работы с формами: создание и редактирование страховых дел.",
                     "Создал админ-панель для управления клиентами, квотами, биллингами и другими сущностями (добавление, просмотр, редактирование).",
                     "Реализовал обширный функционал для работы со списком страховых дел: отчеты, перенаправление, отклонение, возвраты, отладочные функции, сортировки и прочее.",
                     "Значительно расширил и оптимизировал UI-kit компании, внедрив новые компоненты и улучшив существующие.",
-                    "Развивал тестирование приложений (скриншотные и e2e тесты на Playwright), что снизило количество ошибок на этапе разработки.",
-                    "Участвовал в проектировании и внедрении новой архитектуры проектов."
+                    "Развивал тестирование приложений (скриншотные и e2e тесты на Playwright), что снизило количество ошибок на этапе разработки."
                 ],
                 "descriptionFull": [
-                    "С нуля и до релиза разрабатывал высоконагруженный продукт для крупных клиентов компании (РЕСО, Ренессанс, Т-банк и пр.).",
+                    "Со старта до релиза разрабатывал флагманский продукт для крупных клиентов компании (РЕСО, Ренессанс, Т-банк и пр.). Суть приложения - импортозамещение Audatex (полный рассчет ремонтых работ и трудозатрат для автомобильных страховых компаний).",
                     "Реализовал интерактивный редактор повреждений (референс - визуальная часть draw.io): по клику на автозапчасти в GIF-канвасе и SVG-изображениях пользователи могут добавлять повреждения, которые автоматически отмечаются цветами на изображениях. С нуля собрал формы редактора и отображения уже добавленных повреждений. Добавил табличное представление всех деталей и их поиск. Внедрил сохранение всего текущего состояния взаимодействия в query-параметрах, что решило задачу при шаринге ссылки открывать редактор с выбранными частями изображения и активностью редактора другого пользователя.",
                     "Разработал функционал для работы с формами: создание и редактирование страховых дел.",
                     "Создал админ-панель для управления клиентами, квотами, биллингами и другими сущностями (добавление, просмотр, редактирование).",
@@ -2299,7 +2298,7 @@
                 "title": "Web-разработчик (TypeScript, React)",
                 "company": "Hotels.ru",
                 "companyEn": "Hotels.ru",
-                "start": "07.2021",
+                "start": "01.2021",
                 "finish": "10.2022",
                 "important" : true,
                 "skills": [
@@ -2466,17 +2465,17 @@
                 "descriptionShort": [
                     "Developed a high-load product from scratch to release for the company's major clients (RESO, Renaissance, T-Bank, etc.).",
                     "Implemented an interactive damage canvas editor (reference: the visual part of draw.io).",
-                    "Developed functionality for working with forms: creating and editing insurance cases.",
+                    "Built functionality for managing insurance cases.",
                     "Created an admin panel to manage clients, quotas, billings, and other entities (add, view, edit).",
                     "Implemented extensive functionality for working with insurance case lists: reports, redirects, rejections, returns, debugging features, sorting, and more.",
-                    "Significantly expanded and optimized the company's UI-kit by introducing new components and improving existing ones.",
+                    "Expanded and optimized the company’s UI kit",
                     "Enhanced application testing (screenshot and e2e tests with Playwright), reducing the number of development-stage bugs.",
                     "Participated in designing and implementing a new project architecture."
                 ],
                 "descriptionFull": [
                     "Developed a high-load product from scratch to release for the company's major clients (RESO, Renaissance, T-Bank, etc.).",
                     "Implemented an interactive damage editor (reference: the visual part of draw.io). Users could click on car parts in GIF canvases and SVG images to add damage, which was automatically marked with colors on the images. Built editor forms and displayed added damage from scratch. Added a tabular view of all parts with search functionality. Enabled saving the entire interaction state in query parameters, solving the issue of opening the editor with selected parts and user activity when sharing links.",
-                    "Developed functionality for working with forms: creating and editing insurance cases.",
+                    "Built functionality for managing insurance cases.",
                     "Created an admin panel to manage clients, quotas, billings, and other entities (add, view, edit).",
                     "Implemented extensive functionality for working with insurance case lists: reports, redirects, rejections, returns, debugging features, sorting, and more.",
                     "Refactored large monolithic components into independent modules, improving code readability, testability, and reusability.",
@@ -2534,7 +2533,7 @@
                 "title": "Web Developer (TypeScript, React)",
                 "company": "Hotels.ru",
                 "companyEn": "Hotels.ru",
-                "start": "07.2021",
+                "start": "01.2021",
                 "finish": "10.2022",
                 "important": true,
                 "skills": [
@@ -2734,18 +2733,8 @@
     "about" : {
         "ru": [
             "Английский язык Upper-intermediate (B2), EF SET Quick Check - 75.",
-            "Знание SQL на базовом уровне.",
+            "Знание SQL (MySQL, PostgreSQL) на базовом уровне.",
             "Знание базовой теории тестирования.",
-            {
-                "title" : "Изученные материалы по теории тестирования:",
-                "value": [
-                    "«Tестирование dot com» Роман Савин;",
-                    "«Тестирование программного обеспечения. Базовый курс» Святослав Куликов;",
-                    "«Тестирование программного обеспечения. Фундаментальные концепции менеджмента бизнес-приложений» Сэм Канер, Джек Фолк, Енг Кек Нгуен;",
-                    "Курс Артема Русова (YouTube);",
-                    "Курс «Тестирование ПО» от «Контур» (Ulearn.me)." 
-                ]
-            },
             "Большой опыт работы системным администратором. Умение быстро развернуть и настроить необходимое ПО (macOS/linux/windows).",
             {
                 "title" : "Мои хобби и увлечения:",
@@ -2756,24 +2745,12 @@
                     "Домашние животные;",
                     "Путешествия." 
                 ]
-            },
-
-            "Имеется автомобиль и права категории B."
+            }
         ],
         "en" : [
             "English level - Upper-intermediate (B2), EF SET Quick Check - 75.",
-            "Basic knowledge of SQL.",
+            "Basic knowledge of SQL (MySQL, PostgreSQL).",
             "Knowledge of testing theory.",
-            {
-                "title" : "Studied materials on the theory of testing:",
-                "value": [
-                    "«Testing dot com» Roman Savin;",
-                    "«Software Testing. Basic course» Svyatoslav Kulikov;",
-                    "«Software testing. Fundamental concepts of business application management» Sam Kaner, Jack Falk, Yeng Kek Nguyen;",
-                    "Artem Rusov's course (YouTube);",
-                    "Course «Software Testing» («Kontur» Ulearn.me)." 
-                ]
-            },
             "Extensive experience as a system administrator. Ability to quickly deploy and configure the necessary software (macOS/linux/windows).",
             {
                 "title" : "My hobbies and passions:",
@@ -2784,9 +2761,7 @@
                     "Pets;",
                     "Trips." 
                 ]
-            },
-
-            "I have a car and a B-license."
+            }
         ]
     }
 }
